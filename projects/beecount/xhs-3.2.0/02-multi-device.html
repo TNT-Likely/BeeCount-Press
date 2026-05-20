@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8" />
+<title>02 · 多设备协同</title>
+<link rel="stylesheet" href="../../../shared/shared.css" />
+<link rel="stylesheet" href="series.css" />
+<style>
+  .cover {
+    background:
+      radial-gradient(circle at 92% -5%, rgba(244, 168, 43, 0.36) 0%, transparent 55%),
+      radial-gradient(circle at -10% 105%, rgba(127, 176, 105, 0.3) 0%, transparent 55%),
+      var(--bg-cream);
+  }
+
+  /* visual 三栏:左手机真截图 + 中云 hub + 右 Web 设备页真截图 */
+  .sync-stage {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 280px 160px 1fr;
+    align-items: center;
+    gap: 18px;
+    position: relative;
+  }
+
+  /* 左:手机 mock,内嵌真截图(raw/zh/01-home.png · 1179×2556 iPhone 6.5") */
+  .phone-shot {
+    background: linear-gradient(180deg, #1c1611 0%, #2c2418 100%);
+    border-radius: 42px;
+    padding: 12px;
+    box-shadow: 0 28px 60px rgba(61, 51, 39, 0.3);
+    position: relative;
+    width: 280px;
+    aspect-ratio: 1179 / 2556;
+  }
+  .phone-shot .screen {
+    width: 100%; height: 100%;
+    border-radius: 32px;
+    overflow: hidden;
+    background: var(--white);
+    position: relative;
+  }
+  .phone-shot .screen img {
+    width: 100%; height: 100%;
+    display: block;
+    object-fit: contain;
+    object-position: top left;
+  }
+  .phone-shot .source-tag {
+    position: absolute;
+    top: -16px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--honey);
+    color: var(--white);
+    padding: 6px 16px;
+    border-radius: 999px;
+    font-size: 16px;
+    font-weight: 700;
+    box-shadow: 0 6px 14px rgba(216, 142, 21, 0.4);
+    white-space: nowrap;
+    z-index: 5;
+  }
+
+  /* 中:云 hub */
+  .sync-hub {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+  }
+  .sync-hub .arrow-glyph {
+    color: var(--honey-deep);
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1;
+  }
+  .sync-hub .cloud-circle {
+    width: 140px; height: 140px;
+    background: linear-gradient(135deg, var(--honey) 0%, var(--honey-deep) 100%);
+    border-radius: 50%;
+    border: 7px solid var(--white);
+    display: flex; align-items: center; justify-content: center;
+    box-shadow: 0 18px 40px rgba(216, 142, 21, 0.45);
+  }
+  .sync-hub .cloud-circle .g { font-size: 68px; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.15)); }
+  .sync-hub .label {
+    font-family: var(--font-serif);
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--text-primary);
+    line-height: 1.2;
+    text-align: center;
+  }
+  .sync-hub .sub-label {
+    font-size: 16px;
+    color: var(--text-secondary);
+    text-align: center;
+    line-height: 1.4;
+  }
+  .sync-hub .badges {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-top: 4px;
+    align-items: center;
+  }
+  .sync-hub .badge {
+    background: var(--text-primary);
+    color: var(--honey);
+    padding: 6px 14px;
+    border-radius: 999px;
+    font-size: 14px;
+    font-weight: 700;
+    white-space: nowrap;
+  }
+
+  /* 右:Web mock,内嵌真截图 */
+  .web-shot {
+    background: linear-gradient(180deg, #1c1611 0%, #2c2418 100%);
+    border-radius: 16px;
+    padding: 14px 14px 22px;
+    box-shadow: 0 28px 60px rgba(61, 51, 39, 0.3);
+    position: relative;
+    width: 100%;
+  }
+  .web-shot::after {
+    content: ''; position: absolute; bottom: 8px; left: 50%; transform: translateX(-50%);
+    width: 60px; height: 4px; background: #4a3d2a; border-radius: 0 0 6px 6px;
+  }
+  .web-shot .screen {
+    background: var(--white);
+    border-radius: 6px;
+    overflow: hidden;
+    aspect-ratio: 1920 / 1080;
+    position: relative;
+  }
+  .web-shot .screen img {
+    width: 100%; height: 100%;
+    display: block;
+    object-fit: cover;
+    object-position: top left;
+  }
+  .web-shot .source-tag {
+    position: absolute;
+    top: -14px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--sage);
+    color: var(--white);
+    padding: 6px 18px;
+    border-radius: 999px;
+    font-size: 16px;
+    font-weight: 700;
+    box-shadow: 0 6px 14px rgba(127, 176, 105, 0.4);
+    white-space: nowrap;
+    z-index: 5;
+  }
+
+  .stat-trio {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 14px;
+    width: 100%;
+    margin-bottom: 24px;
+  }
+  .stat-trio .s {
+    background: var(--white);
+    border-radius: 22px;
+    padding: 20px 22px;
+    text-align: center;
+    box-shadow: 0 6px 18px rgba(61, 51, 39, 0.05);
+  }
+  .stat-trio .s .v {
+    font-family: var(--font-serif);
+    font-size: 46px;
+    font-weight: 700;
+    color: var(--honey-deep);
+    line-height: 1;
+    margin-bottom: 6px;
+  }
+  .stat-trio .s .l { font-size: 22px; color: var(--text-secondary); }
+</style>
+</head>
+<body>
+<div class="cover">
+  <div class="blob honey" style="right: -250px; top: -180px;"></div>
+  <div class="blob sage" style="left: -180px; bottom: -100px;"></div>
+
+  <div class="top-row">
+    <div class="page-no">02<span class="sep">/</span><span class="total">07</span></div>
+    <div class="brand-chip">
+      <div class="logo">🐝</div>
+      <div class="name">BeeCount · 蜜蜂记账</div>
+    </div>
+  </div>
+
+  <span class="eyebrow">特性 1 · 多设备协同</span>
+
+  <h1 class="title">
+    一端记一笔<br/>
+    <span class="accent">处处同步</span>到
+  </h1>
+  <p class="sub">
+    手机、Web、LLM 客户端三端实时双向同步<br/>
+    在哪台设备记的、谁在用,清清楚楚一目了然
+  </p>
+
+  <div class="visual">
+    <div class="sync-stage">
+      <!-- 左:手机真截图(首页) -->
+      <div class="phone-shot">
+        <span class="source-tag">📱 移动端</span>
+        <div class="screen">
+          <img src="../store/raw/zh/01-home.png" alt="BeeCount 移动端首页" />
+        </div>
+      </div>
+
+      <!-- 中:云 hub -->
+      <div class="sync-hub">
+        <span class="arrow-glyph">⇆</span>
+        <div class="cloud-circle"><span class="g">☁️</span></div>
+        <div class="label">BeeCount<br/>Cloud</div>
+        <div class="sub-label">实时双向同步</div>
+        <div class="badges">
+          <span class="badge">⚡ 秒级到账</span>
+          <span class="badge">🔒 加密传输</span>
+        </div>
+      </div>
+
+      <!-- 右:Web 真截图(交易列表 - 同一笔账在 Web 端) -->
+      <div class="web-shot">
+        <span class="source-tag">🌐 Web 交易列表</span>
+        <div class="screen">
+          <img src="../assets/preview/web/zh-02-transactions.png" alt="Web 交易列表" />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="stat-trio">
+    <div class="s"><div class="v">秒级</div><div class="l">跨端到账</div></div>
+    <div class="s"><div class="v">双向</div><div class="l">任意端写入</div></div>
+    <div class="s"><div class="v">在线</div><div class="l">设备一目了然</div></div>
+  </div>
+
+  <div class="footer">
+    <span class="ver-chip">BeeCount-Cloud v1.3.1</span>
+    <span class="sign">移动 · Web · LLM 客户端 · <strong>三端打通</strong></span>
+  </div>
+</div>
+</body>
+</html>

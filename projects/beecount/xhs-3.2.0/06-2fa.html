@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8" />
+<title>04 · 双因素认证</title>
+<link rel="stylesheet" href="../../../shared/shared.css" />
+<link rel="stylesheet" href="series.css" />
+<style>
+  .auth-stack {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+  }
+  .auth-card {
+    background: var(--white);
+    border-radius: 32px;
+    padding: 44px 40px;
+    box-shadow: 0 30px 70px rgba(61, 51, 39, 0.14);
+    width: 480px;
+    position: relative;
+  }
+  .auth-card .app-row {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 28px;
+    padding-bottom: 22px;
+    border-bottom: 1px solid var(--bg-cream-2);
+  }
+  .auth-card .app-row .ic {
+    width: 64px; height: 64px;
+    background: var(--honey);
+    border-radius: 18px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 36px;
+  }
+  .auth-card .app-row .info .name {
+    font-family: var(--font-serif);
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 4px;
+  }
+  .auth-card .app-row .info .acc {
+    font-size: 22px;
+    color: var(--text-tertiary);
+  }
+  .auth-card .code-zone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    margin-bottom: 24px;
+  }
+  .auth-card .code-zone .digit {
+    width: 64px; height: 80px;
+    background: var(--bg-cream-2);
+    border-radius: 14px;
+    display: flex; align-items: center; justify-content: center;
+    font-family: var(--font-serif);
+    font-size: 56px;
+    font-weight: 700;
+    color: var(--text-primary);
+    letter-spacing: -2px;
+  }
+  .auth-card .code-zone .digit.honey {
+    background: var(--honey);
+    color: var(--white);
+  }
+  .auth-card .timer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 22px;
+    color: var(--text-tertiary);
+  }
+  .auth-card .timer .bar {
+    flex: 1;
+    margin-left: 14px;
+    height: 6px;
+    background: var(--bg-cream-2);
+    border-radius: 3px;
+    overflow: hidden;
+  }
+  .auth-card .timer .bar span {
+    display: block;
+    height: 100%;
+    width: 65%;
+    background: var(--honey);
+    border-radius: 3px;
+  }
+
+  .checks {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+    width: 100%;
+    margin-bottom: 24px;
+  }
+  .checks .c {
+    background: var(--white);
+    border-radius: 18px;
+    padding: 18px 22px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    box-shadow: 0 6px 18px rgba(61, 51, 39, 0.06);
+  }
+  .checks .c .ic {
+    width: 44px; height: 44px;
+    background: rgba(127, 176, 105, 0.18);
+    color: #4f7a3e;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    font-weight: 700;
+    flex-shrink: 0;
+  }
+  .checks .c .t {
+    font-size: 26px;
+    font-weight: 600;
+    color: var(--text-primary);
+  }
+</style>
+</head>
+<body>
+<div class="cover">
+  <div class="blob peach" style="right: -150px; top: -100px;"></div>
+  <div class="blob honey" style="left: -200px; bottom: -100px;"></div>
+
+  <div class="top-row">
+    <div class="page-no">06<span class="sep">/</span><span class="total">07</span></div>
+    <div class="brand-chip">
+      <div class="logo">🐝</div>
+      <div class="name">BeeCount · 蜜蜂记账</div>
+    </div>
+  </div>
+
+  <span class="eyebrow peach">特性 3 · 账户安全</span>
+
+  <h1 class="title">
+    双因素认证<br/>
+    <span class="accent">2FA</span> 上线
+  </h1>
+  <p class="sub">
+    BeeCount-Cloud 账户支持 TOTP 二次验证<br/>
+    Authenticator 一扫即用,资金数据多一道防线
+  </p>
+
+  <div class="visual">
+    <div class="auth-stack">
+      <div class="auth-card">
+        <div class="app-row">
+          <div class="ic">🐝</div>
+          <div class="info">
+            <div class="name">BeeCount-Cloud</div>
+            <div class="acc">your-account</div>
+          </div>
+        </div>
+        <div class="code-zone">
+          <span class="digit">3</span>
+          <span class="digit">8</span>
+          <span class="digit honey">2</span>
+          <span class="digit honey">9</span>
+          <span class="digit">4</span>
+          <span class="digit">1</span>
+        </div>
+        <div class="timer">
+          <span>20s 后刷新</span>
+          <div class="bar"><span></span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="checks">
+    <div class="c"><div class="ic">✓</div><div class="t">TOTP 标准协议</div></div>
+    <div class="c"><div class="ic">✓</div><div class="t">10 组一次性备用码</div></div>
+    <div class="c"><div class="ic">✓</div><div class="t">兼容 Authy / 1Password</div></div>
+    <div class="c"><div class="ic">✓</div><div class="t">登录 / 关键操作触发</div></div>
+  </div>
+
+  <div class="footer">
+    <span class="ver-chip">BeeCount v3.1.0 起</span>
+    <span class="sign">蜂巢云账户 · <strong>零信任安全</strong></span>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8" />
+<title>BeeCount · 小红书物料预览</title>
+<link rel="stylesheet" href="assets/shared.css" />
+<script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jszip@3.10.1/dist/jszip.min.js"></script>
+<style>
+body {
+  background: #f5f5f0;
+  display: block;
+  padding: 40px;
+  font-family: var(--font-sans);
+}
+.dashboard-header {
+  background: var(--white);
+  padding: 32px 40px;
+  border-radius: 24px;
+  box-shadow: var(--shadow-soft);
+  margin-bottom: 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.dashboard-header h1 {
+  font-family: var(--font-serif);
+  font-size: 32px;
+  color: var(--text-primary);
+}
+.dashboard-header .controls { display: flex; gap: 12px; }
+.dashboard-header button {
+  background: var(--honey);
+  color: white;
+  border: none;
+  padding: 14px 28px;
+  border-radius: 12px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: var(--font-sans);
+}
+.dashboard-header button.outline {
+  background: transparent;
+  border: 2px solid var(--text-primary);
+  color: var(--text-primary);
+}
+.dashboard-header button:hover { opacity: 0.85; }
+.section-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: 24px 0 16px;
+}
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+  gap: 24px;
+}
+.frame-wrap {
+  background: var(--white);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: var(--shadow-soft);
+}
+.frame-wrap iframe {
+  border: 0;
+  display: block;
+  width: 100%;
+}
+.frame-wrap iframe.cover {
+  height: 506px; /* 380 * (1656/1242) ≈ 506 */
+}
+.frame-wrap iframe.square {
+  height: 380px;
+}
+.frame-wrap .meta {
+  padding: 12px 16px;
+  font-size: 13px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--bg-cream);
+}
+.frame-wrap .meta .name { font-weight: 600; }
+.frame-wrap .meta button {
+  background: var(--text-primary);
+  color: white;
+  border: none;
+  padding: 6px 14px;
+  border-radius: 8px;
+  font-size: 12px;
+  cursor: pointer;
+}
+.hint {
+  background: var(--bg-cream-2);
+  padding: 16px 20px;
+  border-radius: 12px;
+  font-size: 14px;
+  color: var(--text-secondary);
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+.hint code {
+  background: white;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-family: 'SF Mono', Menlo, monospace;
+  font-size: 12px;
+}
+</style>
+</head>
+<body>
+
+<div class="dashboard-header">
+  <h1>🐝 BeeCount · 小红书物料预览</h1>
+  <div class="controls">
+    <button id="export-current" class="outline">导出当前可见</button>
+    <button id="export-all">一键导出全部 15 张</button>
+  </div>
+</div>
+
+<div class="hint">
+  ⚠️ <strong>必须本地 http server 跑:</strong> <code>cd /path/to/BeeCount && python3 -m http.server 8000</code>,然后浏览器开
+  <code>http://localhost:8000/marketing/xiaohongshu/index.html</code>。
+  导出走 html2canvas → 浏览器下载文件夹直接落 PNG / Zip 包。
+</div>
+
+<h2 class="section-title">📕 主题封面 · 9 张(3:4 / 1242×1656)</h2>
+<div class="gallery" id="covers"></div>
+
+<h2 class="section-title">🟦 信息图 · 6 张(1:1 / 1242×1242)</h2>
+<div class="gallery" id="cards"></div>
+
+<script>
+const COVERS = [
+  { id: '01-data-reveal', name: '数据揭示型' },
+  { id: '02-data-sovereignty', name: '数据自主' },
+  { id: '03-couple-share', name: '情侣共享' },
+  { id: '04-30day-challenge', name: '30 天挑战' },
+  { id: '05-deleted-paid-apps', name: '删付费 App' },
+  { id: '06-photo-to-record', name: '拍照记账' },
+  { id: '07-multi-ledger', name: '多账本' },
+  { id: '08-open-source', name: '开源' },
+  { id: '09-annual-report', name: '年度账单' },
+];
+
+const CARDS = [
+  { id: '01-cloud-comparison', name: '5 种云同步对比' },
+  { id: '02-9-features', name: '9 大功能速览' },
+  { id: '03-morning-routine', name: '早晨 5 分钟 routine' },
+  { id: '04-annual-data', name: '年度数据卡' },
+  { id: '05-ai-step-by-step', name: 'AI 三步走' },
+  { id: '06-pain-vs-solution', name: '痛点 vs 解决' },
+];
+
+function renderGallery(container, items, dir, sizeClass) {
+  for (const item of items) {
+    const wrap = document.createElement('div');
+    wrap.className = 'frame-wrap';
+    wrap.dataset.id = item.id;
+    wrap.dataset.dir = dir;
+    wrap.innerHTML = `
+      <iframe class="${sizeClass}" src="${dir}/${item.id}.html"></iframe>
+      <div class="meta">
+        <span class="name">${item.name}</span>
+        <button data-id="${item.id}" data-dir="${dir}">导出 PNG</button>
+      </div>
+    `;
+    container.appendChild(wrap);
+  }
+}
+
+renderGallery(document.getElementById('covers'), COVERS, 'covers', 'cover');
+renderGallery(document.getElementById('cards'), CARDS, 'info-cards', 'square');
+
+async function captureFrame(iframe) {
+  // iframe contentDocument 直接给 html2canvas 渲染
+  const doc = iframe.contentDocument;
+  const root = doc.querySelector('.xhs-cover, .xhs-square');
+  if (!root) throw new Error('frame not loaded');
+  return await html2canvas(root, {
+    backgroundColor: null,
+    useCORS: true,
+    scale: 1,
+  });
+}
+
+async function exportOne(id, dir) {
+  const iframe = document.querySelector(`[data-id="${id}"][data-dir="${dir}"]`);
+  if (!iframe) return;
+  const frameEl = document.querySelector(`.frame-wrap[data-id="${id}"][data-dir="${dir}"] iframe`);
+  const canvas = await captureFrame(frameEl);
+  const blob = await new Promise(r => canvas.toBlob(r, 'image/png'));
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = `${dir}-${id}.png`;
+  a.click();
+  URL.revokeObjectURL(url);
+}
+
+document.querySelectorAll('.frame-wrap button').forEach(btn => {
+  btn.addEventListener('click', () => exportOne(btn.dataset.id, btn.dataset.dir));
+});
+
+document.getElementById('export-all').addEventListener('click', async () => {
+  const zip = new JSZip();
+  const allFrames = [...document.querySelectorAll('.frame-wrap')];
+  const btn = document.getElementById('export-all');
+  for (let i = 0; i < allFrames.length; i++) {
+    const wrap = allFrames[i];
+    btn.textContent = `渲染中 ${i + 1}/${allFrames.length}...`;
+    const iframe = wrap.querySelector('iframe');
+    const canvas = await captureFrame(iframe);
+    const blob = await new Promise(r => canvas.toBlob(r, 'image/png'));
+    zip.file(`${wrap.dataset.dir}-${wrap.dataset.id}.png`, blob);
+  }
+  btn.textContent = '打包中...';
+  const content = await zip.generateAsync({ type: 'blob' });
+  const url = URL.createObjectURL(content);
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = `beecount-xhs-${new Date().toISOString().slice(0, 10)}.zip`;
+  a.click();
+  URL.revokeObjectURL(url);
+  btn.textContent = '一键导出全部 15 张';
+});
+
+document.getElementById('export-current').addEventListener('click', async () => {
+  // 简化:只导出当前滚动可见的
+  alert('请用「一键导出全部」或单张「导出 PNG」按钮');
+});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8" />
+<title>05 · 共享账本</title>
+<link rel="stylesheet" href="../../../shared/shared.css" />
+<link rel="stylesheet" href="series.css" />
+<style>
+  .shared-art {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+  }
+  .ledger-card {
+    background: var(--white);
+    border-radius: 28px;
+    padding: 32px 30px;
+    width: 480px;
+    box-shadow: 0 26px 60px rgba(61, 51, 39, 0.14);
+    position: relative;
+  }
+  .ledger-card .head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 18px;
+  }
+  .ledger-card .head .name {
+    font-family: var(--font-serif);
+    font-size: 32px;
+    font-weight: 700;
+  }
+  .ledger-card .head .tag {
+    background: rgba(127, 176, 105, 0.18);
+    color: #4f7a3e;
+    padding: 5px 14px;
+    border-radius: 999px;
+    font-size: 20px;
+    font-weight: 700;
+  }
+  .ledger-card .members {
+    display: flex;
+    align-items: center;
+    margin-bottom: 22px;
+  }
+  .ledger-card .members .av {
+    width: 50px; height: 50px;
+    border-radius: 50%;
+    background: var(--bg-cream-2);
+    border: 3px solid var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    margin-right: -12px;
+    position: relative;
+  }
+  .ledger-card .members .av.a1 { background: #FCE4C8; }
+  .ledger-card .members .av.a2 { background: #E5F1D9; }
+  .ledger-card .members .av.a3 { background: #FAD6CB; }
+  .ledger-card .members .av.a4 { background: #DAE5F5; }
+  .ledger-card .members .label {
+    margin-left: 24px;
+    font-size: 22px;
+    color: var(--text-secondary);
+  }
+  .ledger-card .members .label strong { color: var(--text-primary); font-weight: 700; }
+  .ledger-card .tx {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 14px 0;
+    border-bottom: 1px solid var(--bg-cream-2);
+  }
+  .ledger-card .tx:last-child { border-bottom: 0; }
+  .ledger-card .tx .ic {
+    width: 44px; height: 44px;
+    border-radius: 50%;
+    background: var(--bg-cream-2);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 22px;
+  }
+  .ledger-card .tx .body {
+    flex: 1;
+    min-width: 0;
+  }
+  .ledger-card .tx .body .ti {
+    font-size: 24px;
+    font-weight: 600;
+  }
+  .ledger-card .tx .body .who {
+    font-size: 18px;
+    color: var(--text-tertiary);
+    margin-top: 2px;
+  }
+  .ledger-card .tx .amt {
+    font-family: var(--font-serif);
+    font-size: 26px;
+    font-weight: 700;
+    color: var(--text-primary);
+  }
+  .ledger-card .tx .amt.in { color: var(--sage); }
+
+  .stat-trio {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 14px;
+    margin-bottom: 24px;
+    width: 100%;
+  }
+  .stat-trio .s {
+    background: var(--white);
+    border-radius: 22px;
+    padding: 20px 22px;
+    text-align: center;
+    box-shadow: 0 6px 18px rgba(61, 51, 39, 0.05);
+  }
+  .stat-trio .s .v {
+    font-family: var(--font-serif);
+    font-size: 52px;
+    font-weight: 700;
+    color: var(--honey-deep);
+    line-height: 1;
+    margin-bottom: 6px;
+  }
+  .stat-trio .s .l { font-size: 22px; color: var(--text-secondary); }
+</style>
+</head>
+<body>
+<div class="cover">
+  <div class="blob sage" style="right: -150px; top: -150px;"></div>
+  <div class="blob honey" style="left: -200px; bottom: -100px;"></div>
+
+  <div class="top-row">
+    <div class="page-no">04<span class="sep">/</span><span class="total">07</span></div>
+    <div class="brand-chip">
+      <div class="logo">🐝</div>
+      <div class="name">BeeCount · 蜜蜂记账</div>
+    </div>
+  </div>
+
+  <span class="eyebrow sage">特性 4 · 重磅功能</span>
+
+  <h1 class="title">
+    共享账本<br/>
+    <span class="accent">多人协作</span>
+  </h1>
+  <p class="sub">
+    家庭 / 情侣 / 团队都能用<br/>
+    每个账本独立邀请成员,所有人写入实时刷新
+  </p>
+
+  <div class="visual">
+    <div class="shared-art">
+      <div class="ledger-card">
+        <div class="head">
+          <span class="name">📒 我们的家</span>
+          <span class="tag">共享 · 4 人</span>
+        </div>
+        <div class="members">
+          <div class="av a1">👨</div>
+          <div class="av a2">👩</div>
+          <div class="av a3">🧒</div>
+          <div class="av a4">👵</div>
+          <span class="label">成员 <strong>4 人</strong> · 实时刷新</span>
+        </div>
+        <div class="tx">
+          <div class="ic">🛒</div>
+          <div class="body">
+            <div class="ti">超市采购</div>
+            <div class="who">爸爸 · 5 分钟前</div>
+          </div>
+          <div class="amt">-326.50</div>
+        </div>
+        <div class="tx">
+          <div class="ic">🎓</div>
+          <div class="body">
+            <div class="ti">钢琴课</div>
+            <div class="who">妈妈 · 1 小时前</div>
+          </div>
+          <div class="amt">-280.00</div>
+        </div>
+        <div class="tx">
+          <div class="ic">💰</div>
+          <div class="body">
+            <div class="ti">月度家用</div>
+            <div class="who">爸爸 · 今天 09:00</div>
+          </div>
+          <div class="amt in">+8,000</div>
+        </div>
+        <div class="tx">
+          <div class="ic">🍱</div>
+          <div class="body">
+            <div class="ti">家庭聚餐</div>
+            <div class="who">奶奶 · 昨天</div>
+          </div>
+          <div class="amt">-486.00</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="stat-trio">
+    <div class="s"><div class="v">∞</div><div class="l">成员数不限</div></div>
+    <div class="s"><div class="v">实时</div><div class="l">多人写入</div></div>
+    <div class="s"><div class="v">分账</div><div class="l">谁记的清清楚楚</div></div>
+  </div>
+
+  <div class="footer">
+    <span class="ver-chip new"><span class="label">★</span> 3.2 主打功能</span>
+    <span class="sign">BeeCount v3.2.0 · <strong>需 BeeCount-Cloud</strong></span>
+  </div>
+</div>
+</body>
+</html>

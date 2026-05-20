@@ -1,0 +1,97 @@
+/* BeeCount · 小红书 3:4 卡片导出工具样式
+ * 风格沿用 assets/store/screenshots/templates 的暗色控制栏。
+ * 单列大预览(去掉右侧缩略 grid,避免与大预览抢空间)。
+ */
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  background: #0a0a0a;
+  color: #fff;
+  font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text',
+    'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  padding-bottom: 40px;
+}
+
+.topbar {
+  position: sticky; top: 0;
+  background: #0d0d0d;
+  border-bottom: 1px solid #2a2a2a;
+  padding: 16px 24px;
+  z-index: 100;
+}
+.topbar h1 {
+  font-size: 18px; font-weight: 600;
+  margin-bottom: 12px; letter-spacing: -0.2px;
+}
+.topbar .controls {
+  display: flex; gap: 12px; flex-wrap: wrap; align-items: center;
+}
+.topbar label {
+  font-size: 12px; color: #aaa;
+  display: flex; gap: 6px; align-items: center;
+}
+.topbar select {
+  background: #222; color: #fff; border: 1px solid #3a3a3a;
+  border-radius: 6px; padding: 6px 10px; font-size: 12px;
+}
+.topbar button {
+  background: #333; color: #fff;
+  border: 1px solid #4a4a4a; border-radius: 6px;
+  padding: 7px 14px; font-size: 12px; font-weight: 600;
+  cursor: pointer; transition: background 0.15s;
+}
+.topbar button:hover:not(:disabled) { background: #444; }
+.topbar button:disabled { opacity: 0.5; cursor: wait; }
+.topbar button.primary {
+  background: #FFC83D; color: #2a1a0a;
+  border-color: #FFC83D;
+}
+.topbar button.primary:hover:not(:disabled) { background: #FFD45F; }
+.topbar .hint {
+  font-size: 11px; color: #888;
+  margin-top: 8px; line-height: 1.6;
+}
+.topbar code {
+  background: #222; padding: 2px 5px;
+  border-radius: 3px; color: #FFC83D;
+}
+
+main {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.preview-wrap {
+  background: #1a1a1a;
+  border: 1px solid #2a2a2a;
+  border-radius: 12px;
+  padding: 16px;
+  display: flex;
+  justify-content: center;
+  /* overflow auto:1x 模式 iframe 大于视口时允许滚动看完整 */
+  overflow: auto;
+  max-width: 100%;
+}
+#preview {
+  border: 0;
+  background: #FFF8EC;
+  border-radius: 8px;
+  /* 尺寸由 JS 设置 */
+}
+
+.meta-row-inline {
+  display: flex;
+  gap: 18px;
+  font-size: 12px;
+  color: #888;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.meta-row-inline span span { display: inline-block; }
+.meta-row-inline .k { color: #666; margin-right: 6px; }
+.meta-row-inline .v { color: #ddd; font-weight: 600; }

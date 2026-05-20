@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8" />
+<title>03 · Web 端</title>
+<link rel="stylesheet" href="../../../shared/shared.css" />
+<link rel="stylesheet" href="series.css" />
+<style>
+  /* 3 张真实截图:左主图(日间·交易列表) + 右两张副图(日间设备 + 暗黑模式概览)
+   * 关键:object-position: top left,所有图都从左上角对齐,不再被中心裁掉关键区域。
+   */
+  .web-collage {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 360px;
+    gap: 16px;
+    align-items: stretch;
+  }
+  .shot {
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 22px 50px rgba(61, 51, 39, 0.22),
+                0 8px 18px rgba(61, 51, 39, 0.08);
+    background: var(--white);
+    position: relative;
+  }
+  .shot img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    object-position: top left;
+  }
+  .shot-main {
+    height: 100%;
+    min-height: 0;
+  }
+  .shot-side {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    min-height: 0;
+  }
+  .shot-side .shot {
+    flex: 1;
+    min-height: 0;
+  }
+  /* 暗色背景的截图,容器底色也用深色避免对比突兀 */
+  .shot.dark { background: #1c1611; }
+  .shot .tag {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    background: rgba(0, 0, 0, 0.78);
+    color: var(--honey);
+    padding: 5px 14px;
+    border-radius: 999px;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    z-index: 2;
+  }
+  .shot .live-tag {
+    position: absolute;
+    right: 12px;
+    top: 12px;
+    background: var(--text-primary);
+    color: var(--honey);
+    padding: 6px 12px;
+    border-radius: 999px;
+    font-size: 15px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    z-index: 2;
+  }
+  .shot .live-tag .pulse {
+    width: 7px; height: 7px;
+    background: #4ade80;
+    border-radius: 50%;
+    box-shadow: 0 0 0 3px rgba(74, 222, 128, 0.3);
+  }
+  .shot .mode-tag {
+    position: absolute;
+    right: 12px;
+    top: 12px;
+    background: rgba(244, 168, 43, 0.92);
+    color: var(--text-primary);
+    padding: 4px 10px;
+    border-radius: 999px;
+    font-size: 13px;
+    font-weight: 700;
+    z-index: 2;
+  }
+</style>
+</head>
+<body>
+<div class="cover">
+  <div class="blob honey" style="right: -200px; top: -100px;"></div>
+  <div class="blob peach" style="left: -200px; bottom: -150px;"></div>
+
+  <div class="top-row">
+    <div class="page-no">03<span class="sep">/</span><span class="total">07</span></div>
+    <div class="brand-chip">
+      <div class="logo">🐝</div>
+      <div class="name">BeeCount · 蜜蜂记账</div>
+    </div>
+  </div>
+
+  <span class="eyebrow sage">特性 2 · Web 管理端</span>
+
+  <h1 class="title">
+    浏览器打开<br/>
+    <span class="accent">大屏更顺手</span>
+  </h1>
+  <p class="sub">
+    无需下载客户端,登录 BeeCount-Cloud 即用<br/>
+    交易整理、设备管理、暗黑模式 一气呵成
+  </p>
+
+  <div class="visual">
+    <div class="web-collage">
+      <div class="shot shot-main">
+        <span class="tag">交易列表</span>
+        <span class="live-tag"><span class="pulse"></span>实时同步</span>
+        <img src="../assets/preview/web/zh-02-transactions.png" alt="Web 交易列表" />
+      </div>
+      <div class="shot-side">
+        <div class="shot">
+          <span class="tag">在线设备</span>
+          <img src="../assets/preview/web/zh-03-devices.png" alt="Web 在线设备" />
+        </div>
+        <div class="shot dark">
+          <span class="tag">数据概览</span>
+          <span class="mode-tag">🌙 暗黑模式</span>
+          <img src="../assets/preview/web/zh-01-home.png" alt="Web 概览 暗黑模式" />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="pills">
+    <span class="pill"><span class="dot"></span>免下载</span>
+    <span class="pill sage"><span class="dot"></span>大屏适配</span>
+    <span class="pill peach"><span class="dot"></span>明暗双主题</span>
+  </div>
+
+  <div class="footer">
+    <span class="ver-chip">BeeCount-Cloud v1.3.1</span>
+    <span class="sign">GitHub 开源 · <strong>github.com/TNT-Likely/BeeCount-Cloud</strong></span>
+  </div>
+</div>
+</body>
+</html>

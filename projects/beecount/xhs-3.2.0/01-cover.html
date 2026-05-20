@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8" />
+<title>01 · BeeCount 3.x 总封面</title>
+<link rel="stylesheet" href="../../../shared/shared.css" />
+<link rel="stylesheet" href="series.css" />
+<style>
+  /* 总封面:三端协同 hub 示意,Hero 大标题 + 版本号双 chip + 五大能力副标 */
+  .cover {
+    background:
+      radial-gradient(circle at 92% -5%, rgba(244, 168, 43, 0.42) 0%, transparent 50%),
+      radial-gradient(circle at -10% 110%, rgba(232, 180, 160, 0.4) 0%, transparent 50%),
+      var(--bg-cream);
+  }
+
+  /* 五大能力副标 chips */
+  .feature-chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 24px;
+    position: relative;
+    z-index: 2;
+  }
+  .feature-chips .chip {
+    background: var(--white);
+    border-radius: 999px;
+    padding: 10px 20px;
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--text-primary);
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    box-shadow: 0 6px 16px rgba(61, 51, 39, 0.05);
+  }
+  .feature-chips .chip .num {
+    font-family: var(--font-serif);
+    color: var(--honey-deep);
+    font-weight: 700;
+  }
+  .feature-chips .chip.new {
+    background: var(--text-primary);
+    color: var(--white);
+  }
+  .feature-chips .chip.new .num { color: var(--honey); }
+
+  /* hero stage 三端 hub */
+  .cover-stage {
+    position: relative;
+    width: 100%; height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .cover-stage .hub {
+    width: 280px; height: 280px;
+    background: linear-gradient(135deg, var(--honey) 0%, var(--honey-deep) 100%);
+    border-radius: 50%;
+    border: 10px solid var(--white);
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    box-shadow: 0 28px 70px rgba(216, 142, 21, 0.45);
+    position: relative;
+    z-index: 3;
+  }
+  .cover-stage .hub .glyph {
+    font-size: 130px;
+    line-height: 1;
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.18));
+  }
+  .cover-stage .hub .label {
+    margin-top: -4px;
+    color: var(--white);
+    font-family: var(--font-serif);
+    font-weight: 700;
+    font-size: 24px;
+    letter-spacing: 0.5px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+  }
+  .cover-stage .hub .sub-label {
+    margin-top: 2px;
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 1px;
+  }
+  .cover-stage .ep {
+    position: absolute;
+    width: 196px; height: 196px;
+    background: var(--white);
+    border-radius: 38px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    box-shadow: 0 18px 44px rgba(61, 51, 39, 0.14);
+    z-index: 2;
+  }
+  .cover-stage .ep .ic-wrap {
+    width: 72px; height: 72px;
+    border-radius: 20px;
+    background: rgba(244, 168, 43, 0.16);
+    color: var(--honey-deep);
+    display: flex; align-items: center; justify-content: center;
+  }
+  .cover-stage .ep .ic-wrap svg { width: 38px; height: 38px; fill: currentColor; }
+  .cover-stage .ep .lbl {
+    font-family: var(--font-serif);
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-top: 4px;
+  }
+  .cover-stage .ep .tag {
+    font-size: 15px;
+    color: var(--text-tertiary);
+    font-weight: 600;
+  }
+  .cover-stage .ep.tl { left: 40px; top: 20px; }
+  .cover-stage .ep.tr { right: 40px; top: 20px; }
+  .cover-stage .ep.bl { left: 40px; bottom: 20px; }
+  .cover-stage .ep.br { right: 40px; bottom: 20px; }
+  /* 4 端点配色 */
+  .cover-stage .ep.tl .ic-wrap { background: rgba(127, 176, 105, 0.18); color: #4f7a3e; }
+  .cover-stage .ep.tr .ic-wrap { background: rgba(232, 180, 160, 0.32); color: #b86d4e; }
+  .cover-stage .ep.br .ic-wrap { background: rgba(61, 51, 39, 0.1); color: var(--text-primary); }
+
+  .cover-stage svg.lines {
+    position: absolute;
+    inset: 0;
+    width: 100%; height: 100%;
+    z-index: 1;
+  }
+
+  /* 双版本号 */
+  .version-stack {
+    margin-top: -8px;
+    margin-bottom: 28px;
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 2;
+  }
+  .version-stack .v {
+    padding: 12px 22px;
+    border-radius: 14px;
+    background: var(--white);
+    box-shadow: 0 6px 18px rgba(61, 51, 39, 0.08);
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+  }
+  .version-stack .v .lbl { font-size: 22px; color: var(--text-secondary); }
+  .version-stack .v .num {
+    font-family: var(--font-serif);
+    font-size: 32px;
+    color: var(--honey-deep);
+    letter-spacing: -1px;
+    font-weight: 700;
+  }
+  .version-stack .v.dark {
+    background: var(--text-primary);
+  }
+  .version-stack .v.dark .lbl { color: rgba(255, 255, 255, 0.6); }
+  .version-stack .v.dark .num { color: var(--honey); }
+
+  /* hero eyebrow 升级版 */
+  .cover .eyebrow {
+    background: var(--text-primary);
+    color: var(--honey);
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 24px;
+    padding: 12px 26px;
+  }
+  .cover .eyebrow .pulse {
+    width: 10px; height: 10px;
+    background: var(--honey);
+    border-radius: 50%;
+    box-shadow: 0 0 0 4px rgba(244, 168, 43, 0.3);
+  }
+
+  /* 标题加点装饰 */
+  .cover .title {
+    margin-bottom: 22px;
+  }
+  .cover .title .scribble {
+    font-family: var(--font-script);
+    color: var(--honey-deep);
+    font-size: 72px;
+    display: block;
+    margin-bottom: 4px;
+    transform: rotate(-2deg);
+    transform-origin: left center;
+    letter-spacing: -2px;
+  }
+
+  /* 装饰星 */
+  .star-deco {
+    position: absolute;
+    font-family: var(--font-script);
+    color: var(--honey);
+    line-height: 1;
+    z-index: 1;
+    opacity: 0.65;
+    pointer-events: none;
+  }
+</style>
+</head>
+<body>
+<div class="cover">
+  <div class="blob honey" style="right: -250px; top: -200px;"></div>
+  <div class="blob peach" style="left: -180px; bottom: -120px;"></div>
+  <span class="star-deco" style="left: 60px; top: 260px; font-size: 56px;">✦</span>
+  <span class="star-deco" style="right: 130px; top: 720px; font-size: 40px;">✧</span>
+  <span class="star-deco" style="left: 100px; bottom: 280px; font-size: 48px;">✦</span>
+
+  <div class="top-row">
+    <div class="page-no">01<span class="sep">/</span><span class="total">07</span></div>
+    <div class="brand-chip">
+      <div class="logo">🐝</div>
+      <div class="name">BeeCount · 蜜蜂记账</div>
+    </div>
+  </div>
+
+  <span class="eyebrow">
+    <span class="pulse"></span>
+    BeeCount 3.x · 大版本上线
+  </span>
+
+  <h1 class="title">
+    <span class="scribble">蜜蜂记账</span>
+    这次更新<br/>
+    带来<span class="accent">五件大事</span>
+  </h1>
+
+  <div class="version-stack">
+    <div class="v"><span class="lbl">移动端</span><span class="num">v3.2.0</span></div>
+    <div class="v dark"><span class="lbl">BeeCount-Cloud</span><span class="num">v1.3.1</span></div>
+  </div>
+
+  <div class="feature-chips">
+    <span class="chip"><span class="num">01</span>多设备协同</span>
+    <span class="chip"><span class="num">02</span>Web 管理端</span>
+    <span class="chip"><span class="num">03</span>共享账本</span>
+    <span class="chip new"><span class="num">04</span>MCP × LLM</span>
+    <span class="chip"><span class="num">05</span>双因素认证</span>
+  </div>
+
+  <div class="visual">
+    <div class="cover-stage">
+      <svg class="lines" viewBox="0 0 1066 580" preserveAspectRatio="none">
+        <defs>
+          <linearGradient id="ln" x1="0" x2="1">
+            <stop offset="0%" stop-color="#F4A82B" stop-opacity="0.8"/>
+            <stop offset="100%" stop-color="#F4A82B" stop-opacity="0.18"/>
+          </linearGradient>
+        </defs>
+        <!-- 中心 533,290;4 端点中心:tl 138,118; tr 928,118; bl 138,462; br 928,462 -->
+        <line x1="138" y1="118" x2="533" y2="290" stroke="url(#ln)" stroke-width="3.5" stroke-dasharray="9 7"/>
+        <line x1="928" y1="118" x2="533" y2="290" stroke="url(#ln)" stroke-width="3.5" stroke-dasharray="9 7"/>
+        <line x1="138" y1="462" x2="533" y2="290" stroke="url(#ln)" stroke-width="3.5" stroke-dasharray="9 7"/>
+        <line x1="928" y1="462" x2="533" y2="290" stroke="url(#ln)" stroke-width="3.5" stroke-dasharray="9 7"/>
+      </svg>
+
+      <div class="ep tl">
+        <div class="ic-wrap">
+          <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2m6.93 6H16.4a15.7 15.7 0 0 0-1.38-3.56A8.03 8.03 0 0 1 18.93 8M12 4.04c.83 1.2 1.48 2.53 1.91 3.96h-3.82c.43-1.43 1.08-2.76 1.91-3.96M4.26 14C4.1 13.36 4 12.69 4 12s.1-1.36.26-2h2.89c-.04.66-.07 1.32-.07 2s.03 1.34.07 2H4.26m.82 2h2.53c.27 1.27.65 2.45 1.14 3.56A7.99 7.99 0 0 1 5.08 16m2.53-8H5.08a7.99 7.99 0 0 1 3.66-3.56C8.25 5.55 7.87 6.73 7.6 8M12 19.96c-.83-1.2-1.48-2.53-1.91-3.96h3.82c-.43 1.43-1.08 2.76-1.91 3.96M14.34 14H9.66c-.05-.66-.09-1.32-.09-2s.04-1.35.09-2h4.68c.05.65.09 1.32.09 2s-.04 1.34-.09 2m.25 5.56c.49-1.11.87-2.29 1.14-3.56h2.53a8.03 8.03 0 0 1-3.67 3.56M16.85 14c.04-.66.07-1.32.07-2s-.03-1.34-.07-2h2.89c.16.64.26 1.31.26 2s-.1 1.36-.26 2z"/></svg>
+        </div>
+        <span class="lbl">Web 端</span>
+        <span class="tag">浏览器即开</span>
+      </div>
+
+      <div class="ep tr">
+        <div class="ic-wrap">
+          <svg viewBox="0 0 24 24"><path d="M17.523 15.34c-.566 0-1.025-.46-1.025-1.024 0-.566.46-1.023 1.025-1.023.566 0 1.023.457 1.023 1.023 0 .564-.457 1.024-1.023 1.024m-11.046 0c-.564 0-1.024-.46-1.024-1.024 0-.566.46-1.023 1.024-1.023.567 0 1.024.457 1.024 1.023 0 .564-.457 1.024-1.024 1.024m11.41-6.339l2.047-3.547a.426.426 0 0 0-.738-.426l-2.072 3.589c-1.585-.72-3.36-1.123-5.243-1.123-1.882 0-3.658.402-5.243 1.123L4.566 4.96a.426.426 0 0 0-.738.427l2.046 3.546C2.36 10.917.4 14.071 0 17.755h24c-.4-3.683-2.36-6.837-5.873-8.755"/></svg>
+        </div>
+        <span class="lbl">Android</span>
+        <span class="tag">Google Play</span>
+      </div>
+
+      <div class="ep bl">
+        <div class="ic-wrap">
+          <svg viewBox="0 0 24 24"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09M12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25Z"/></svg>
+        </div>
+        <span class="lbl">iOS</span>
+        <span class="tag">App Store</span>
+      </div>
+
+      <div class="ep br">
+        <div class="ic-wrap">
+          <svg viewBox="0 0 24 24"><path d="M20 2H4c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2M9 11H7V9h2v2m4 0h-2V9h2v2m4 0h-2V9h2v2Z"/></svg>
+        </div>
+        <span class="lbl">LLM 客户端</span>
+        <span class="tag">MCP 协议</span>
+      </div>
+
+      <div class="hub">
+        <span class="glyph">☁️</span>
+        <span class="label">BeeCount</span>
+        <span class="sub-label">CLOUD</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <span class="ver-chip new"><span class="label">★</span> 5 大新能力 · 一图看完</span>
+    <span class="sign">→ 翻页继续看 · <strong>github.com/TNT-Likely/BeeCount</strong></span>
+  </div>
+</div>
+</body>
+</html>

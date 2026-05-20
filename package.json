@@ -1,0 +1,15 @@
+{
+  "name": "beecount-press",
+  "version": "0.1.0",
+  "description": "用 HTML 写模板,html2canvas 出图。一切宣发物料的工作台。",
+  "private": true,
+  "scripts": {
+    "dev": "python3 -m http.server 8765 --bind 127.0.0.1",
+    "open": "open http://localhost:8765/"
+  },
+  "license": "BUSL-1.1",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/TNT-Likely/BeeCount-Press.git"
+  }
+}

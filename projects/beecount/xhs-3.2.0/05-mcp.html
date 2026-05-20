@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8" />
+<title>06 · MCP × LLM</title>
+<link rel="stylesheet" href="../../../shared/shared.css" />
+<link rel="stylesheet" href="series.css" />
+<style>
+  .chat-canvas {
+    width: 100%;
+    background: var(--text-primary);
+    border-radius: 32px;
+    padding: 36px 36px 32px;
+    color: var(--white);
+    box-shadow: 0 30px 70px rgba(61, 51, 39, 0.32);
+  }
+  .chat-canvas .term-bar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    margin-bottom: 24px;
+  }
+  .term-dot {
+    width: 14px; height: 14px; border-radius: 50%;
+  }
+  .term-dot.r { background: #ff5f57; }
+  .term-dot.y { background: #febc2e; }
+  .term-dot.g { background: #28c840; }
+  .term-title {
+    margin-left: 14px;
+    color: rgba(255, 255, 255, 0.5);
+    font-family: 'SF Mono', Menlo, monospace;
+    font-size: 22px;
+  }
+  .term-status {
+    margin-left: auto;
+    background: rgba(244, 168, 43, 0.2);
+    color: var(--honey);
+    padding: 5px 14px;
+    border-radius: 999px;
+    font-size: 18px;
+    font-weight: 700;
+  }
+  .msg {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 22px;
+    align-items: flex-start;
+  }
+  .msg:last-child { margin-bottom: 0; }
+  .msg .avatar {
+    width: 56px; height: 56px;
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 28px;
+    flex-shrink: 0;
+  }
+  .msg.user .avatar { background: rgba(255, 255, 255, 0.1); }
+  .msg.bot .avatar { background: var(--honey); color: var(--text-primary); }
+  .msg .bubble {
+    flex: 1;
+    background: rgba(255, 255, 255, 0.06);
+    border-radius: 18px;
+    padding: 20px 26px;
+    font-size: 26px;
+    line-height: 1.55;
+  }
+  .msg.bot .bubble {
+    background: rgba(244, 168, 43, 0.1);
+    border: 1px solid rgba(244, 168, 43, 0.25);
+  }
+  .msg .bubble .tag {
+    background: rgba(127, 176, 105, 0.18);
+    color: #B5D6A1;
+    padding: 4px 12px;
+    border-radius: 999px;
+    font-size: 20px;
+    font-weight: 700;
+    margin-right: 8px;
+  }
+  .msg .bubble .amt {
+    color: var(--honey);
+    font-weight: 700;
+    font-family: var(--font-serif);
+  }
+  .msg .bubble .footer-line {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 20px;
+    margin-top: 8px;
+  }
+
+  .clients-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-bottom: 24px;
+  }
+  .clients-row .lbl { font-size: 24px; color: var(--text-secondary); margin-right: 6px; }
+  .clients-row .chip {
+    padding: 8px 18px;
+    background: var(--white);
+    border-radius: 999px;
+    font-size: 24px;
+    font-weight: 600;
+    box-shadow: 0 6px 16px rgba(61, 51, 39, 0.06);
+  }
+</style>
+</head>
+<body>
+<div class="cover">
+  <div class="blob honey" style="right: -200px; top: -150px;"></div>
+  <div class="blob peach" style="left: -150px; bottom: -200px;"></div>
+
+  <div class="top-row">
+    <div class="page-no">05<span class="sep">/</span><span class="total">07</span></div>
+    <div class="brand-chip">
+      <div class="logo">🐝</div>
+      <div class="name">BeeCount · 蜜蜂记账</div>
+    </div>
+  </div>
+
+  <span class="eyebrow dark">特性 5 · 全新玩法</span>
+
+  <h1 class="title small">
+    用 LLM <span class="accent">管账本</span><br/>
+    MCP 协议原生支持
+  </h1>
+  <p class="sub">
+    BeeCount-Cloud 暴露标准 MCP 接口<br/>
+    Claude / Cursor 等任意 MCP 客户端直接读写你的账本
+  </p>
+
+  <div class="visual">
+    <div class="chat-canvas">
+      <div class="term-bar">
+        <span class="term-dot r"></span>
+        <span class="term-dot y"></span>
+        <span class="term-dot g"></span>
+        <span class="term-title">BeeCount MCP · claude-desktop</span>
+        <span class="term-status">● 已连接</span>
+      </div>
+
+      <div class="msg user">
+        <div class="avatar">🙂</div>
+        <div class="bubble">上个月我伙食花了多少?分一下午餐和外卖的占比。</div>
+      </div>
+
+      <div class="msg bot">
+        <div class="avatar">🐝</div>
+        <div class="bubble">
+          <span class="tag">伙食 · 4 月</span>共 <span class="amt">¥ 2,840</span><br/>
+          午餐 <span class="amt">¥ 1,846</span>(65%) · 外卖 <span class="amt">¥ 994</span>(35%)
+        </div>
+      </div>
+
+      <div class="msg user">
+        <div class="avatar">🙂</div>
+        <div class="bubble">帮我记一下:今天瑞幸 25 块,工作日提神。</div>
+      </div>
+
+      <div class="msg bot">
+        <div class="avatar">🐝</div>
+        <div class="bubble">
+          ✓ 已入账 <span class="amt">-25.00</span> · 「咖啡」· 账本「日常」
+          <div class="footer-line">来源:claude-desktop · 已同步到 iOS / Android / Web</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="clients-row">
+    <span class="lbl">已验证 ▸</span>
+    <span class="chip">Claude Desktop</span>
+    <span class="chip">Cursor</span>
+    <span class="chip">Cline</span>
+    <span class="chip">任意 MCP 客户端</span>
+  </div>
+
+  <div class="footer">
+    <span class="ver-chip new"><span class="label">★</span> NEW · MCP × LLM</span>
+    <span class="sign">BeeCount-Cloud v1.3.1 · <strong>原生支持</strong></span>
+  </div>
+</div>
+</body>
+</html>
