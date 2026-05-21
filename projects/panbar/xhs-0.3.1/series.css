@@ -1,0 +1,232 @@
+/* PanBar 0.3.x 发布系列 · 小红书 3:4 卡片共享样式
+ *
+ * 跟 BeeCount 完全两套美学:
+ *   BeeCount = 软糯、暖色、blob、serif、暖手账
+ *   PanBar   = 硬边、深色、扫描线、mono、Bloomberg terminal
+ *
+ * 不用 .stage / .blob / .grid-bg / .version-chip / .section-* 这些 BeeCount 同款类名,
+ * 改用 .pb-* 命名 + 完全不同的布局结构。
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700;800&display=swap');
+
+:root {
+  --pb-bg:        #0A0B12;
+  --pb-bg-2:      #11131F;
+  --pb-bg-3:      #181B2A;
+  --pb-line:      rgba(255, 255, 255, 0.08);
+  --pb-line-2:    rgba(255, 255, 255, 0.04);
+  --pb-accent:    #7C5CFF;
+  --pb-accent-2:  #C49EFF;
+  --pb-accent-deep: #5E3FE0;
+  --pb-up:        #FF4D4F;
+  --pb-down:      #2EE680;
+  --pb-text:      #FFFFFF;
+  --pb-text-2:    #B8BDD4;
+  --pb-text-3:    #5D6481;
+  --pb-text-4:    #353952;
+  --pb-mono:      'JetBrains Mono', 'SF Mono', 'Menlo', monospace;
+  --pb-sans:      -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Noto Sans SC', sans-serif;
+}
+
+.cover {
+  width: 1242px;
+  height: 1656px;
+  background: var(--pb-bg);
+  position: relative;
+  overflow: hidden;
+  color: var(--pb-text);
+  font-family: var(--pb-sans);
+  font-size: 28px;
+  line-height: 1.5;
+}
+
+/* 扫描线 + 网格 — 硬边版,不要 BeeCount 那种模糊 blob */
+.cover::before {
+  content: "";
+  position: absolute; inset: 0;
+  background-image:
+    repeating-linear-gradient(
+      0deg,
+      transparent 0,
+      transparent 3px,
+      rgba(255, 255, 255, 0.015) 3px,
+      rgba(255, 255, 255, 0.015) 4px
+    );
+  pointer-events: none;
+  z-index: 1;
+}
+.cover::after {
+  content: "";
+  position: absolute; inset: 0;
+  background-image:
+    linear-gradient(90deg, var(--pb-line-2) 1px, transparent 1px);
+  background-size: 124px 100%;
+  opacity: 0.6;
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* 顶部 macOS 菜单栏 — 占满整个卡片宽度,无圆角无内缩 */
+.pb-menubar {
+  position: relative;
+  z-index: 5;
+  background: rgba(8, 9, 18, 0.92);
+  border-bottom: 1px solid var(--pb-line);
+  backdrop-filter: blur(14px);
+  height: 68px;
+  display: flex;
+  align-items: center;
+  padding: 0 28px;
+  gap: 16px;
+  font-family: var(--pb-mono);
+  font-size: 22px;
+  color: var(--pb-text-2);
+}
+.pb-menubar .traffic {
+  display: flex; gap: 8px; margin-right: 6px;
+}
+.pb-menubar .traffic span {
+  width: 12px; height: 12px; border-radius: 50%;
+  background: rgba(255, 255, 255, 0.18);
+}
+.pb-menubar .menus {
+  display: flex; gap: 22px;
+  color: var(--pb-text-2);
+  font-family: var(--pb-sans);
+  font-size: 20px;
+  font-weight: 600;
+}
+.pb-menubar .menus .app { color: white; font-weight: 800; }
+.pb-menubar .right {
+  margin-left: auto;
+  display: flex; align-items: center; gap: 14px;
+}
+.pb-menubar .right .p-mark {
+  width: 30px; height: 30px;
+  border-radius: 7px;
+  background: linear-gradient(135deg, var(--pb-accent), var(--pb-accent-deep));
+  display: inline-flex; align-items: center; justify-content: center;
+  font-weight: 900; color: white; font-size: 19px; line-height: 1;
+}
+.pb-menubar .right .tick { color: var(--pb-text); }
+.pb-menubar .right .up   { color: var(--pb-up);   font-weight: 700; }
+.pb-menubar .right .down { color: var(--pb-down); font-weight: 700; }
+.pb-menubar .right .sep  { color: var(--pb-text-4); }
+.pb-menubar .right .clock {
+  color: var(--pb-text-2);
+  font-family: var(--pb-sans);
+  font-size: 19px;
+  font-weight: 600;
+}
+
+/* 主体区域 — 没有 padding 大留白,贴近金融终端排版 */
+.pb-body {
+  position: relative;
+  z-index: 4;
+  height: calc(100% - 68px);
+  display: flex;
+  flex-direction: column;
+}
+
+/* 通用的 ticker 一行(类似 Bloomberg 滚动条) */
+.pb-ticker-strip {
+  background: var(--pb-bg-2);
+  border-top: 1px solid var(--pb-line);
+  border-bottom: 1px solid var(--pb-line);
+  padding: 14px 32px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  font-family: var(--pb-mono);
+  font-size: 22px;
+  color: var(--pb-text-2);
+  white-space: nowrap;
+  overflow: hidden;
+}
+.pb-ticker-strip .sym { color: var(--pb-text); font-weight: 700; }
+.pb-ticker-strip .up   { color: var(--pb-up);   font-weight: 700; }
+.pb-ticker-strip .down { color: var(--pb-down); font-weight: 700; }
+.pb-ticker-strip .dot  {
+  width: 6px; height: 6px; border-radius: 50%;
+  background: var(--pb-text-4);
+  flex-shrink: 0;
+}
+
+/* 大数字面板(终端风) */
+.pb-numbers {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  border-bottom: 1px solid var(--pb-line);
+}
+.pb-numbers .cell {
+  padding: 36px 28px;
+  border-right: 1px solid var(--pb-line);
+}
+.pb-numbers .cell:last-child { border-right: none; }
+.pb-numbers .cell .label {
+  font-family: var(--pb-mono);
+  font-size: 16px;
+  color: var(--pb-text-3);
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+.pb-numbers .cell .value {
+  font-family: var(--pb-mono);
+  font-size: 56px;
+  font-weight: 800;
+  line-height: 1;
+  margin-top: 12px;
+  letter-spacing: -1px;
+}
+.pb-numbers .cell .delta {
+  font-family: var(--pb-mono);
+  font-size: 22px;
+  font-weight: 700;
+  margin-top: 10px;
+}
+.pb-numbers .cell .delta.up   { color: var(--pb-up); }
+.pb-numbers .cell .delta.down { color: var(--pb-down); }
+
+/* 底部栏 — 不放装饰 logo,只放 mono 路径 */
+.pb-footer {
+  margin-top: auto;
+  border-top: 1px solid var(--pb-line);
+  background: var(--pb-bg-2);
+  padding: 22px 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: var(--pb-mono);
+  font-size: 18px;
+  color: var(--pb-text-3);
+  letter-spacing: 1px;
+}
+.pb-footer .brand {
+  display: flex; align-items: center; gap: 12px;
+  color: var(--pb-text);
+  font-weight: 700;
+}
+.pb-footer .brand .p {
+  width: 28px; height: 28px;
+  border-radius: 6px;
+  background: linear-gradient(135deg, var(--pb-accent), var(--pb-accent-deep));
+  display: inline-flex; align-items: center; justify-content: center;
+  font-weight: 900; color: white; font-size: 18px; line-height: 1;
+}
+
+/* P logo 大尺寸(用于封面) */
+.pb-logo-xl {
+  width: 200px; height: 200px;
+  border-radius: 44px;
+  background: linear-gradient(135deg, var(--pb-accent), var(--pb-accent-deep));
+  display: flex; align-items: center; justify-content: center;
+  font-family: var(--pb-sans);
+  font-size: 124px;
+  font-weight: 900;
+  color: white;
+  box-shadow:
+    0 24px 64px rgba(124, 92, 255, 0.45),
+    inset 0 -8px 24px rgba(0, 0, 0, 0.25);
+  letter-spacing: -4px;
+}

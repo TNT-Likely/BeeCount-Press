@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8" />
+<title>02 · 真实截图</title>
+<link rel="stylesheet" href="series.css" />
+<style>
+  body { margin: 0; padding: 0; background: var(--pb-bg); }
+
+  /* 这一张模拟一个 macOS 桌面:菜单栏在顶部,下面是 wallpaper,popover 浮在中间 */
+  .desktop {
+    flex: 1;
+    position: relative;
+    background:
+      radial-gradient(ellipse at 30% 20%, rgba(124, 92, 255, 0.32) 0%, transparent 55%),
+      radial-gradient(ellipse at 80% 90%, rgba(94, 63, 224, 0.25) 0%, transparent 60%),
+      linear-gradient(160deg, #1a1530 0%, #0a0b12 100%);
+    display: flex;
+    flex-direction: column;
+  }
+  /* 桌面背景的极细网格,跟封面区分 */
+  .desktop::before {
+    content: "";
+    position: absolute; inset: 0;
+    background-image:
+      linear-gradient(rgba(255,255,255,0.025) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255,255,255,0.025) 1px, transparent 1px);
+    background-size: 80px 80px;
+    pointer-events: none;
+  }
+
+  .caption-bar {
+    position: relative;
+    z-index: 2;
+    padding: 32px 64px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .caption-bar .eyebrow {
+    font-family: var(--pb-mono);
+    font-size: 20px;
+    letter-spacing: 6px;
+    color: var(--pb-accent-2);
+    text-transform: uppercase;
+  }
+  .caption-bar .headline {
+    font-family: var(--pb-sans);
+    font-size: 64px;
+    font-weight: 900;
+    color: white;
+    line-height: 1.1;
+    letter-spacing: -1px;
+  }
+  .caption-bar .sub {
+    font-family: var(--pb-mono);
+    font-size: 22px;
+    color: var(--pb-text-2);
+    margin-top: 8px;
+  }
+
+  .shot-stage {
+    flex: 1;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 32px 64px;
+    gap: 48px;
+  }
+  .shot-img {
+    flex: 0 0 auto;
+    border-radius: 24px;
+    box-shadow:
+      0 50px 100px rgba(0, 0, 0, 0.55),
+      0 0 0 1px rgba(255, 255, 255, 0.08);
+    overflow: hidden;
+    /* 截图是 365x555;放大到 ~500x760,小红书 1242 宽足够清晰 */
+    width: 500px;
+    height: auto;
+  }
+  .shot-img img { display: block; width: 100%; height: auto; }
+
+  /* 截图旁边的标注列表 — Bloomberg 注释风 */
+  .annotations {
+    flex: 1;
+    display: flex; flex-direction: column;
+    gap: 18px;
+  }
+  .anno {
+    display: flex;
+    gap: 16px;
+    padding: 16px 18px;
+    border-left: 3px solid var(--pb-accent);
+    background: rgba(124, 92, 255, 0.06);
+    font-family: var(--pb-sans);
+  }
+  .anno .num {
+    font-family: var(--pb-mono);
+    font-size: 22px;
+    font-weight: 800;
+    color: var(--pb-accent-2);
+    line-height: 1.2;
+    flex-shrink: 0;
+    width: 36px;
+  }
+  .anno .text {
+    display: flex; flex-direction: column;
+    gap: 4px;
+  }
+  .anno .text .t {
+    font-size: 22px;
+    font-weight: 800;
+    color: white;
+    line-height: 1.2;
+  }
+  .anno .text .d {
+    font-size: 18px;
+    color: var(--pb-text-2);
+    line-height: 1.45;
+  }
+
+  /* 顶部 ticker 在桌面上往下 8px,稍微脱离菜单栏,模拟"刚有报价更新" */
+  .pb-ticker-strip {
+    position: relative;
+    z-index: 2;
+  }
+</style>
+</head>
+<body>
+
+<div class="cover">
+
+  <!-- 顶部 macOS 菜单栏 -->
+  <div class="pb-menubar">
+    <div class="traffic"><span></span><span></span><span></span></div>
+    <div class="menus">
+      <span class="app">PanBar</span>
+      <span>File</span><span>Edit</span><span>View</span><span>Help</span>
+    </div>
+    <div class="right">
+      <span class="p-mark">P</span>
+      <span class="sym">指数</span><span>4077.28</span><span class="down">-2.04%</span>
+      <span class="sep">·</span>
+      <span class="sym">600519</span><span>¥1,311</span>
+      <span class="sep">·</span>
+      <span class="clock">周四 23:45</span>
+    </div>
+  </div>
+
+  <div class="pb-body">
+
+    <div class="desktop">
+
+      <!-- 一行 ticker(模拟其他 app / 报价插件) -->
+      <div class="pb-ticker-strip">
+        <span class="dot"></span>
+        <span class="sym">SH000001</span><span>3,401</span><span class="up">+0.42%</span>
+        <span class="dot"></span>
+        <span class="sym">HSI</span><span>26,156</span><span class="down">-1.12%</span>
+        <span class="dot"></span>
+        <span class="sym">NDX</span><span>21,884</span><span class="up">+0.88%</span>
+        <span class="dot"></span>
+        <span class="sym">USDCNH</span><span>7.1812</span>
+      </div>
+
+      <div class="caption-bar">
+        <span class="eyebrow">real screenshot · v0.3.x</span>
+        <div class="headline">点开就是<br/>整个仪表盘</div>
+        <div class="sub">A 股 + 港股 + 美股 · 本位币自动汇总</div>
+      </div>
+
+      <div class="shot-stage">
+        <div class="shot-img">
+          <img src="assets/screenshot.png" alt="PanBar 真实截图" />
+        </div>
+        <div class="annotations">
+          <div class="anno">
+            <span class="num">01</span>
+            <div class="text">
+              <span class="t">菜单栏滚动 ticker</span>
+              <span class="d">A / 港 / 美 持仓在状态栏不断滚动,工作时一抬眼就能看</span>
+            </div>
+          </div>
+          <div class="anno">
+            <span class="num">02</span>
+            <div class="text">
+              <span class="t">三市开/休市状态</span>
+              <span class="d">小绿点显示哪个市场正在开盘,休市自动暂停轮询</span>
+            </div>
+          </div>
+          <div class="anno">
+            <span class="num">03</span>
+            <div class="text">
+              <span class="t">本位币汇总</span>
+              <span class="d">¥ / $ / HK$ 任选一种作为本位币,多币种 PnL 一眼算清</span>
+            </div>
+          </div>
+          <div class="anno">
+            <span class="num">04</span>
+            <div class="text">
+              <span class="t">数据源 fallback</span>
+              <span class="d">腾讯 / 东方财富 / Yahoo / Finnhub 每市场独立优先级,挂了自动切</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="pb-footer">
+      <div class="brand"><span class="p">P</span><span>PanBar</span></div>
+      <span>github.com/TNT-Likely/PanBar/releases/latest</span>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

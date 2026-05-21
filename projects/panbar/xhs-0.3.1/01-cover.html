@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8" />
+<title>01 · PanBar 总封面</title>
+<link rel="stylesheet" href="series.css" />
+<style>
+  body { margin: 0; padding: 0; background: var(--pb-bg); }
+
+  .hero {
+    flex: 1;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-content: center;
+    justify-items: center;
+    text-align: center;
+    padding: 56px 64px 40px;
+    gap: 32px;
+    position: relative;
+  }
+  /* 一个聚焦光斑(只有这一处,不复刻 BeeCount 的多 blob) */
+  .hero::before {
+    content: "";
+    position: absolute;
+    top: -120px; left: 50%; transform: translateX(-50%);
+    width: 900px; height: 900px;
+    background: radial-gradient(circle, rgba(124,92,255,0.28) 0%, transparent 60%);
+    pointer-events: none;
+    z-index: 0;
+  }
+  .hero > * { position: relative; z-index: 1; }
+
+  .eyebrow {
+    font-family: var(--pb-mono);
+    font-size: 22px;
+    color: var(--pb-accent-2);
+    letter-spacing: 8px;
+    text-transform: uppercase;
+  }
+  .title {
+    font-family: var(--pb-sans);
+    font-size: 200px;
+    font-weight: 900;
+    line-height: 1;
+    letter-spacing: -8px;
+    background: linear-gradient(180deg, #ffffff 0%, #B7A6FF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  .sub {
+    font-family: var(--pb-mono);
+    font-size: 28px;
+    color: var(--pb-text-2);
+    letter-spacing: 1px;
+    max-width: 900px;
+    line-height: 1.5;
+  }
+  .stat-row {
+    display: flex;
+    gap: 24px;
+    margin-top: 16px;
+  }
+  .stat-chip {
+    display: inline-flex; align-items: baseline; gap: 8px;
+    padding: 14px 22px;
+    border: 1px solid var(--pb-line);
+    border-radius: 8px;
+    background: var(--pb-bg-2);
+    font-family: var(--pb-mono);
+    font-size: 22px;
+    color: var(--pb-text);
+  }
+  .stat-chip .k { color: var(--pb-text-3); font-size: 18px; letter-spacing: 2px; text-transform: uppercase; }
+  .stat-chip .v { font-weight: 800; }
+
+  .barcode {
+    display: flex; gap: 3px; align-items: flex-end;
+    height: 60px; margin-top: 24px;
+    opacity: 0.85;
+  }
+  .barcode i {
+    display: inline-block;
+    width: 4px;
+    background: var(--pb-accent);
+    border-radius: 1px;
+  }
+</style>
+</head>
+<body>
+
+<div class="cover">
+
+  <!-- 顶部 macOS 菜单栏:PanBar 的真实 ticker 形态 -->
+  <div class="pb-menubar">
+    <div class="traffic"><span></span><span></span><span></span></div>
+    <div class="menus">
+      <span class="app">PanBar</span>
+      <span>File</span><span>Edit</span><span>View</span><span>Help</span>
+    </div>
+    <div class="right">
+      <span class="p-mark">P</span>
+      <span class="sym">600519</span><span>¥1,311</span><span class="down">-0.30%</span>
+      <span class="sep">·</span>
+      <span class="sym">LI</span><span>$16.04</span><span class="up">+6.14%</span>
+      <span class="sep">·</span>
+      <span class="sym">09988</span><span>HK$126</span><span class="down">-4.47%</span>
+      <span class="sep">·</span>
+      <span class="clock">周四 23:45</span>
+    </div>
+  </div>
+
+  <div class="pb-body">
+
+    <!-- Hero 区域 -->
+    <div class="hero">
+      <div class="pb-logo-xl">P</div>
+      <div class="eyebrow">menubar · stock ticker</div>
+      <div class="title">PanBar</div>
+      <div class="sub">
+        macOS 菜单栏盯盘工具 · A 股 / 港股 / 美股<br/>
+        本地存储、零埋点、完全免费
+      </div>
+      <div class="stat-row">
+        <span class="stat-chip"><span class="k">ver</span><span class="v">0.3.x</span></span>
+        <span class="stat-chip"><span class="k">os</span><span class="v">macOS 13+</span></span>
+        <span class="stat-chip"><span class="k">arch</span><span class="v">universal</span></span>
+        <span class="stat-chip"><span class="k">lic</span><span class="v">MIT</span></span>
+      </div>
+
+      <!-- 条形码风的装饰条:呼应金融终端的脉冲图 -->
+      <div class="barcode">
+        <i style="height:30%"></i><i style="height:55%"></i><i style="height:90%"></i>
+        <i style="height:42%"></i><i style="height:70%"></i><i style="height:25%"></i>
+        <i style="height:65%"></i><i style="height:95%"></i><i style="height:50%"></i>
+        <i style="height:80%"></i><i style="height:35%"></i><i style="height:60%"></i>
+        <i style="height:88%"></i><i style="height:48%"></i><i style="height:72%"></i>
+        <i style="height:28%"></i><i style="height:58%"></i><i style="height:84%"></i>
+        <i style="height:40%"></i><i style="height:66%"></i><i style="height:92%"></i>
+        <i style="height:38%"></i><i style="height:74%"></i><i style="height:52%"></i>
+      </div>
+    </div>
+
+    <!-- Bloomberg 风格汇总条 -->
+    <div class="pb-numbers">
+      <div class="cell">
+        <div class="label">today p/l</div>
+        <div class="value">-¥12,489</div>
+        <div class="delta down">-1.86%</div>
+      </div>
+      <div class="cell">
+        <div class="label">total asset</div>
+        <div class="value">¥658,043</div>
+        <div class="delta">CNY · 5 holdings</div>
+      </div>
+      <div class="cell">
+        <div class="label">cumulative</div>
+        <div class="value">-¥110,432</div>
+        <div class="delta down">-14.37%</div>
+      </div>
+    </div>
+
+    <div class="pb-footer">
+      <div class="brand"><span class="p">P</span><span>PanBar</span></div>
+      <span>github.com/TNT-Likely/PanBar</span>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
