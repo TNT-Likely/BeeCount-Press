@@ -21,8 +21,8 @@ const themes = [
     // 第一屏专攻最强 USP：开源 + 数据隐私。其他 8 张全部回归功能描述。
     // 截图本身（首页交易列表）作为"app 真实画面"佐证字幕承诺（看不到广告/付费墙）。
     file: '01-home.png',
-    zh: { title: '开源透明 数据隐私', sub: '100% 免费 · 无广告 · 离线优先' },
-    en: { title: 'Open-source, privacy-first', sub: '100% free · ad-free · offline-first' },
+    zh: { title: '开源透明 数据隐私', sub: '开源 · 隐私优先 · 离线优先' },
+    en: { title: 'Open-source, privacy-first', sub: 'Open-source · privacy-first · offline-first' },
   },
   {
     id: 'open-source',
@@ -150,13 +150,13 @@ const FEATURE_COPY = {
     brand: 'BeeCount',
     brandSub: '蜜蜂记账',
     tagline: '你的数据，你做主',
-    chips: ['本地优先', '真隐私', '真同步', '开源免费'],
+    chips: ['本地优先', '真隐私', '真同步', '开源透明'],
   },
   en: {
     brand: 'BeeCount',
     brandSub: 'Privacy-first ledger',
     tagline: 'Your data, your way',
-    chips: ['Local-first', 'Private', 'Real sync', 'Open & free'],
+    chips: ['Local-first', 'Private', 'Real sync', 'Open-source'],
   },
 };
 
