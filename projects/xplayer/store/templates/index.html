@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="zh">
+<head>
+  <meta charset="utf-8">
+  <title>XPlayer · 商店截图预览</title>
+  <link rel="stylesheet" href="shared.css">
+  <style>
+    body { background: #07100c; color: #cfe; padding: 24px;
+      font-family: -apple-system, 'PingFang SC', sans-serif; }
+    h1 { font-size: 18px; margin-bottom: 6px; }
+    .hint { font-size: 12px; color: #8aa; margin-bottom: 20px; line-height: 1.7; }
+    .hint code { background: #10231a; color: #6f6; padding: 2px 6px; border-radius: 4px; }
+    .grid { display: flex; flex-wrap: wrap; gap: 22px; align-items: flex-start; }
+    .col { display: flex; flex-direction: column; align-items: center; }
+    .label { font-size: 11px; color: #8aa; margin-top: 8px; font-family: ui-monospace, monospace; }
+    .wrap { flex: 0 0 auto; }
+  </style>
+</head>
+<body>
+  <h1>XPlayer · 商店截图预览</h1>
+  <div class="hint">
+    预览用。出图跑:<code>bash projects/xplayer/store/build.sh</code> → 写到 <code>output/apple</code> + <code>output/google-play</code>。<br>
+    改文案:<code>templates/app.js</code> 的 <code>SCENES</code> / <code>FEATURE_COPY</code>;改样式:<code>templates/shared.css</code>。
+  </div>
+  <div class="grid" id="grid"></div>
+  <script src="app.js"></script>
+  <script>
+    const grid = document.getElementById('grid');
+    const ZOOM = 0.17;
+    function add(store, lang, n, labelText) {
+      const dev = DEVICES[store];
+      const wrap = document.createElement('div'); wrap.className = 'wrap';
+      wrap.style.width = (dev.w * ZOOM) + 'px';
+      wrap.style.height = (dev.h * ZOOM) + 'px';
+      const card = document.createElement('div');
+      card.style.transform = `scale(${ZOOM})`;
+      card.style.transformOrigin = 'top left';
+      renderCard(card, store, lang, (n === 'feature' ? 0 : n - 1));
+      wrap.appendChild(card);
+      const col = document.createElement('div'); col.className = 'col';
+      const lab = document.createElement('div'); lab.className = 'label'; lab.textContent = labelText;
+      col.appendChild(wrap); col.appendChild(lab); grid.appendChild(col);
+    }
+    for (const lang of ['en', 'zh']) {
+      for (let n = 1; n <= SCENES.length; n++) add('apple', lang, n, `apple ${lang} ${String(n).padStart(2, '0')}`);
+      for (let n = 1; n <= SCENES.length; n++) add('android', lang, n, `android ${lang} ${String(n).padStart(2, '0')}`);
+      for (let n = 1; n <= IPAD_SCENES.length; n++) add('ipad', lang, n, `ipad ${lang} ${String(n).padStart(2, '0')}`);
+      for (let n = 1; n <= MAC_SCENES.length; n++) add('mac', lang, n, `mac ${lang} ${String(n).padStart(2, '0')}`);
+      add('feature', lang, 'feature', `feature ${lang}`);
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="shared.css">
+  <style>html, body { margin: 0; background: #070A09; overflow: hidden; }</style>
+</head>
+<body>
+  <!-- 单卡渲染页:供 build.sh 用 headless Chrome 按精确尺寸截图。
+       URL 参数:?store=apple|android & lang=en|zh & n=1..5,或 ?n=feature&lang=en|zh -->
+  <script src="app.js"></script>
+  <script>
+    const p = new URLSearchParams(location.search);
+    const store = p.get('store') || 'apple';
+    const lang = p.get('lang') || 'en';
+    const n = p.get('n') || '1';
+    const card = document.createElement('div');
+    document.body.appendChild(card);
+    if (n === 'feature') renderCard(card, 'feature', lang, 0);
+    else renderCard(card, store, lang, parseInt(n, 10) - 1);
+  </script>
+</body>
+</html>

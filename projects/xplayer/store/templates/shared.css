@@ -1,0 +1,102 @@
+/* XPlayer 商店截图模板 · 深色基底 + 绿色点缀(呼应 app 暗色 UI / 绿色强调色) */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  background: #070A09;
+  color: #fff;
+  font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text',
+    'Helvetica Neue', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-feature-settings: 'kern', 'ss01';
+}
+
+/* ── 单张截图卡 ─────────────────────────────────────── */
+.card {
+  position: relative;
+  overflow: hidden;
+  background-color: #0A0F0D;
+  background-image:
+    radial-gradient(ellipse 78% 30% at 50% -4%, rgba(52, 199, 89, 0.30) 0%, transparent 68%),
+    radial-gradient(ellipse 50% 40% at 92% 102%, rgba(40, 170, 150, 0.18) 0%, transparent 60%),
+    linear-gradient(165deg, #0E1512 0%, #0B100E 48%, #080B0A 100%);
+}
+
+.card .header { position: absolute; top: 6%; left: 7%; right: 7%; z-index: 3; text-align: center; }
+.card .header h1 {
+  font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Hiragino Sans GB', sans-serif;
+  font-weight: 700; color: #FFFFFF; letter-spacing: -0.5px; line-height: 1.12;
+  margin-bottom: 24px; font-feature-settings: 'kern', 'ss01', 'cv11'; text-rendering: optimizeLegibility;
+}
+.card .header h2 {
+  font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Hiragino Sans GB', sans-serif;
+  font-weight: 500; color: rgba(225, 240, 232, 0.74); letter-spacing: 0; line-height: 1.4;
+}
+
+/* 绿色光斑 + 星星(装饰,用真实 DOM 元素避免 multiple-bg 渲染坑) */
+.card .d-glow, .card .d-star { position: absolute; pointer-events: none; user-select: none; }
+.card .d-glow { border-radius: 50%; }
+.card[data-device="apple"] .d-glow-1 { top: 12%; left: 2%; width: 300px; height: 300px;
+  background: rgba(52, 199, 89, 0.16); box-shadow: 0 0 90px 50px rgba(52, 199, 89, 0.07); }
+.card[data-device="apple"] .d-glow-2 { bottom: 15%; right: 0%; width: 360px; height: 360px;
+  background: rgba(45, 180, 160, 0.14); box-shadow: 0 0 110px 60px rgba(45, 180, 160, 0.06); }
+.card[data-device="android"] .d-glow-1 { top: 12%; left: 2%; width: 240px; height: 240px;
+  background: rgba(52, 199, 89, 0.16); box-shadow: 0 0 80px 40px rgba(52, 199, 89, 0.07); }
+.card[data-device="android"] .d-glow-2 { bottom: 15%; right: 0%; width: 290px; height: 290px;
+  background: rgba(45, 180, 160, 0.14); box-shadow: 0 0 90px 48px rgba(45, 180, 160, 0.06); }
+
+.card .d-star { color: rgba(52, 199, 89, 0.40); font-family: 'SF Pro Display', serif;
+  font-weight: 300; line-height: 1; text-shadow: 0 0 26px rgba(52, 199, 89, 0.40); }
+.card[data-device="apple"] .d-star-1 { top: 6%; right: 12%; font-size: 84px; transform: rotate(-8deg); }
+.card[data-device="apple"] .d-star-2 { top: 30%; left: 7%; font-size: 50px; transform: rotate(18deg); }
+.card[data-device="android"] .d-star-1 { top: 6%; right: 12%; font-size: 68px; transform: rotate(-8deg); }
+.card[data-device="android"] .d-star-2 { top: 30%; left: 7%; font-size: 42px; transform: rotate(18deg); }
+.card[data-device="mac"] .d-glow-1 { top: 8%; left: 3%; width: 240px; height: 240px;
+  background: rgba(52, 199, 89, 0.14); box-shadow: 0 0 80px 40px rgba(52, 199, 89, 0.06); }
+.card[data-device="mac"] .d-glow-2 { bottom: 10%; right: 2%; width: 300px; height: 300px;
+  background: rgba(45, 180, 160, 0.12); box-shadow: 0 0 90px 50px rgba(45, 180, 160, 0.05); }
+.card[data-device="mac"] .d-star-1 { top: 9%; right: 9%; font-size: 46px; transform: rotate(-8deg); }
+.card[data-device="ipad"] .d-glow-1 { top: 7%; left: 3%; width: 460px; height: 460px;
+  background: rgba(52, 199, 89, 0.13); box-shadow: 0 0 140px 70px rgba(52, 199, 89, 0.05); }
+.card[data-device="ipad"] .d-glow-2 { bottom: 9%; right: 2%; width: 560px; height: 560px;
+  background: rgba(45, 180, 160, 0.11); box-shadow: 0 0 160px 80px rgba(45, 180, 160, 0.045); }
+.card[data-device="ipad"] .d-star-1 { top: 8%; right: 9%; font-size: 88px; transform: rotate(-8deg); }
+
+/* 设备屏(尺寸/定位由 app.js 写显式像素) */
+.card .device {
+  position: absolute; background: #000; overflow: hidden; z-index: 2;
+  box-shadow:
+    0 50px 110px rgba(0, 0, 0, 0.55),
+    0 18px 50px rgba(0, 0, 0, 0.50),
+    0 0 0 1px rgba(255, 255, 255, 0.07),
+    0 0 70px rgba(52, 199, 89, 0.10);
+}
+.card .device img { width: 100%; height: 100%; object-fit: cover; display: block; }
+
+/* ── Feature Graphic(Google Play 1024×500 横版 banner)──────────────── */
+.card.card-feature {
+  background-image:
+    radial-gradient(ellipse 55% 90% at 80% 50%, rgba(52, 199, 89, 0.26) 0%, transparent 62%),
+    radial-gradient(ellipse 45% 70% at 16% 40%, rgba(40, 170, 150, 0.16) 0%, transparent 60%),
+    linear-gradient(135deg, #0E1512 0%, #11201A 50%, #070B0A 100%);
+}
+.card-feature .feature-zone { position: absolute; left: 56px; top: 50%; transform: translateY(-50%);
+  width: 470px; display: flex; flex-direction: column; gap: 18px; z-index: 2; }
+.card-feature .feature-logo-row { display: flex; align-items: center; gap: 14px; }
+.card-feature .feature-logo { width: 66px; height: 66px; border-radius: 16px; object-fit: cover;
+  border: 1px solid rgba(52, 199, 89, 0.40); box-shadow: 0 6px 22px rgba(52, 199, 89, 0.28); background: #000; }
+.card-feature .feature-brand-stack { display: flex; flex-direction: column; line-height: 1; }
+.card-feature .feature-brand { font-size: 46px; font-weight: 800; color: #fff; letter-spacing: -1px; }
+.card-feature .feature-brand-sub { font-size: 18px; font-weight: 500; color: rgba(52, 199, 89, 0.95);
+  letter-spacing: 0.4px; margin-top: 7px; }
+.card-feature .feature-tagline { font-size: 30px; font-weight: 600; color: #fff; line-height: 1.25; }
+.card-feature .feature-chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 4px; }
+.card-feature .feature-chip { font-size: 15px; font-weight: 600; color: rgba(150, 235, 180, 0.95);
+  border: 1.5px solid rgba(52, 199, 89, 0.42); border-radius: 6px; padding: 5px 12px;
+  background: rgba(52, 199, 89, 0.10); }
+.card-feature .feature-device { position: absolute; border-radius: 20px; overflow: hidden; background: #000; }
+.card-feature .feature-device img { width: 100%; height: 100%; object-fit: cover; object-position: top; display: block; }
+.card-feature .feature-device-back { right: 232px; top: 40px; width: 176px; height: 382px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6), 0 0 0 2px rgba(255, 255, 255, 0.06); opacity: 0.9; }
+.card-feature .feature-device-front { right: 44px; top: 22px; width: 192px; height: 416px; z-index: 2;
+  box-shadow: 0 30px 70px rgba(0, 0, 0, 0.7), 0 0 0 2px rgba(52, 199, 89, 0.18); }
