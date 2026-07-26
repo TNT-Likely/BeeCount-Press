@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8" />
+<title>BeeCount · 小红书 3:4 卡片生成</title>
+<link rel="stylesheet" href="export.css" />
+<script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jszip@3.10.1/dist/jszip.min.js"></script>
+</head>
+<body>
+
+<header class="topbar">
+  <h1>BeeCount 3.7.0 桌面小组件 · 小红书 3:4 卡片(2 张)</h1>
+  <div class="controls">
+    <label>模板
+      <select id="template"></select>
+    </label>
+    <label>预览缩放
+      <select id="zoom">
+        <option value="0.25">0.25x</option>
+        <option value="0.35" selected>0.35x</option>
+        <option value="0.5">0.5x</option>
+        <option value="0.75">0.75x</option>
+        <option value="1">1x(导出尺寸)</option>
+      </select>
+    </label>
+    <label>导出 DPR
+      <select id="dpr">
+        <option value="1">1x(1242×1656)</option>
+        <option value="2" selected>2x(2484×3312 · 高清)</option>
+      </select>
+    </label>
+    <button id="export-current" class="primary">导出当前 PNG</button>
+    <button id="export-all">导出全部 7 张</button>
+  </div>
+  <div class="hint">
+    Chrome/Edge:点导出后弹「选文件夹」,<strong>选
+    <code>marketing/xiaohongshu/long/output/</code></strong> 直写。
+    Safari / 旧浏览器自动 fallback 成 PNG / ZIP 下载。
+    用顶部「模板」下拉切换看哪张。
+  </div>
+</header>
+
+<main>
+  <div class="preview-wrap">
+    <iframe id="preview" title="预览"></iframe>
+  </div>
+  <div class="meta-row-inline">
+    <span><span class="k">尺寸</span><span class="v" id="m-size">—</span></span>
+    <span><span class="k">比例</span><span class="v" id="m-ratio">—</span></span>
+    <span><span class="k">用途</span><span class="v">小红书图文 9 张内</span></span>
+  </div>
+</main>
+
+<script src="export.js"></script>
+</body>
+</html>

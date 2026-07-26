@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8" />
+<title>02 · BeeCount 3.7.0 桌面小组件 · 全家福</title>
+<link rel="stylesheet" href="../../../shared/shared.css" />
+<link rel="stylesheet" href="series.css" />
+<style>
+  /* 全家福:6 类各一张代表图,2 列 × 3 行,每格带类型标签 */
+  .cover {
+    background:
+      radial-gradient(circle at -8% -6%, rgba(127, 176, 105, 0.22) 0%, transparent 45%),
+      radial-gradient(circle at 108% 108%, rgba(244, 168, 43, 0.36) 0%, transparent 50%),
+      var(--bg-cream);
+  }
+
+  .lineup {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 26px;
+    align-content: center;
+  }
+  .cell {
+    background: var(--white);
+    border-radius: 26px;
+    box-shadow: var(--shadow-soft);
+    padding: 18px 18px 14px;
+    display: flex;
+    flex-direction: column;
+  }
+  .cell .frame {
+    /* 统一 2:1 画框:medium 图原比例呈现,dashboard 方图 cover 裁顶部 */
+    aspect-ratio: 2 / 1;
+    border-radius: 18px;
+    overflow: hidden;
+    background: var(--bg-cream-2);
+  }
+  .cell .frame img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
+  }
+  .cell .meta {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    padding: 14px 6px 2px;
+  }
+  .cell .meta .nm {
+    font-family: var(--font-serif);
+    font-size: 30px;
+    font-weight: 700;
+  }
+  .cell .meta .sz {
+    font-family: var(--font-script);
+    font-size: 30px;
+    color: var(--honey-deep);
+    font-weight: 700;
+  }
+
+  /* 装饰星(3.2.0 系列同款:absolute 散落,不占文档流) */
+  .star-deco {
+    position: absolute;
+    font-family: var(--font-script);
+    color: var(--honey);
+    line-height: 1;
+    z-index: 1;
+    opacity: 0.65;
+    pointer-events: none;
+  }
+</style>
+</head>
+<body>
+<div class="cover">
+  <div class="blob sage" style="left: -160px; top: -140px;"></div>
+  <div class="blob honey" style="right: -220px; bottom: -180px;"></div>
+  <span class="star-deco" style="right: 110px; top: 250px; font-size: 52px;">✦</span>
+
+  <div class="top-row">
+    <div class="page-no">02<span class="sep">/</span><span class="total">02</span></div>
+    <div class="brand-chip">
+      <div class="logo">🐝</div>
+      <div class="name">BeeCount · 蜜蜂记账</div>
+    </div>
+  </div>
+
+  <span class="eyebrow sage">6 类组件全家福 · 共 12 种规格</span>
+
+  <h1 class="title small">
+    总有一块,<span class="accent">适合你的桌面</span>
+  </h1>
+
+  <div class="visual" style="margin-top: 4px;">
+    <div class="lineup">
+      <div class="cell">
+        <div class="frame"><img src="assets/widget_preview_glance.png" alt="收支速览" /></div>
+        <div class="meta"><span class="nm">收支速览</span><span class="sz">小 / 中</span></div>
+      </div>
+      <div class="cell">
+        <div class="frame"><img src="assets/widget_preview_networth.png" alt="净资产" /></div>
+        <div class="meta"><span class="nm">净资产</span><span class="sz">小 / 中 / 大</span></div>
+      </div>
+      <div class="cell">
+        <div class="frame"><img src="assets/widget_preview_quickadd_medium.png" alt="快速记账" /></div>
+        <div class="meta"><span class="nm">快速记账</span><span class="sz">小 / 中</span></div>
+      </div>
+      <div class="cell">
+        <div class="frame"><img src="assets/widget_preview_budget_medium.png" alt="预算进度" /></div>
+        <div class="meta"><span class="nm">预算进度</span><span class="sz">小 / 中</span></div>
+      </div>
+      <div class="cell">
+        <div class="frame"><img src="assets/widget_preview_recent.png" alt="最近交易" /></div>
+        <div class="meta"><span class="nm">最近交易</span><span class="sz">中 / 大</span></div>
+      </div>
+      <div class="cell">
+        <div class="frame"><img src="assets/widget_preview_dashboard.png" alt="综合仪表盘" /></div>
+        <div class="meta"><span class="nm">综合仪表盘</span><span class="sz">大</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <span class="ver-chip"><span class="label">★</span> 暗黑模式 · 多语言 · 主题色跟随</span>
+    <span class="sign">开源免费 · <strong>github.com/TNT-Likely/BeeCount</strong></span>
+  </div>
+</div>
+</body>
+</html>
