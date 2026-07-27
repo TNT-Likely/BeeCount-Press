@@ -3,7 +3,7 @@
 //   - html2canvas 截图 + JSZip 兜底 + File System Access API 直写
 //   - 多张卡片在 TEMPLATES 数组里挂,单张 / 全部 都能导出
 //
-// 当前系列:BeeCount 3.7.0 桌面小组件发布物料(2 张 3:4)
+// 当前系列:BeeCount 3.7.0 桌面小组件发布物料(3 张 3:4 · 按小/中/大尺寸)
 // 尺寸固定 1242 × 1656(小红书封面 3:4 标准)
 
 const CARD_W = 1242;
@@ -11,8 +11,9 @@ const CARD_H = 1656;
 
 /// 模板配置 — 新增卡片时在这里加一项即可。
 const TEMPLATES = [
-  { id: '01-cover',  name: '01 · 封面(把账本钉在桌面上)', file: '01-cover.html' },
-  { id: '02-lineup', name: '02 · 全家福(6 类 × 12 规格)',  file: '02-lineup.html' },
+  { id: '01-small',  name: '01 · 小尺寸(封面 · 4 款)', file: '01-small.html' },
+  { id: '02-medium', name: '02 · 中尺寸(5 款)',        file: '02-medium.html' },
+  { id: '03-large',  name: '03 · 大尺寸(3 款)',        file: '03-large.html' },
 ];
 
 const $ = (sel) => document.querySelector(sel);

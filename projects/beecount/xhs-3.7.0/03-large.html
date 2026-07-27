@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8" />
+<title>03 · BeeCount 3.7.0 桌面小组件 · 大尺寸</title>
+<link rel="stylesheet" href="../../../shared/shared.css" />
+<link rel="stylesheet" href="series.css" />
+<style>
+  .cover {
+    background:
+      radial-gradient(circle at 92% -5%, rgba(244, 168, 43, 0.40) 0%, transparent 50%),
+      radial-gradient(circle at -10% 110%, rgba(232, 180, 160, 0.38) 0%, transparent 50%),
+      var(--bg-cream);
+  }
+
+  /* 真实 app logo(白色圆角托底) */
+  .brand-chip .logo {
+    background: var(--white);
+    box-shadow: 0 6px 16px rgba(61, 51, 39, 0.14);
+    padding: 7px;
+  }
+  .brand-chip .logo img { width: 100%; height: 100%; object-fit: contain; display: block; }
+
+  /* 大尺寸 3 款:flex 换行,2+1 自动居中 */
+  .size-grid {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    align-content: center;
+  }
+  .cell {
+    width: 452px;
+    background: var(--white);
+    border-radius: 28px;
+    box-shadow: var(--shadow-soft);
+    padding: 18px 18px 12px;
+    display: flex;
+    flex-direction: column;
+  }
+  .cell .frame {
+    aspect-ratio: 20 / 21;
+    border-radius: 18px;
+    overflow: hidden;
+    background: var(--bg-cream-2);
+  }
+  .cell .frame img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: top center; }
+  .cell .meta {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    padding: 14px 4px 2px;
+  }
+  .cell .meta .nm { font-family: var(--font-serif); font-size: 28px; font-weight: 700; }
+  .cell .meta .sz { font-family: var(--font-script); font-size: 30px; color: var(--honey-deep); font-weight: 700; }
+
+  .star-deco {
+    position: absolute;
+    font-family: var(--font-script);
+    color: var(--honey);
+    line-height: 1;
+    z-index: 1;
+    opacity: 0.65;
+    pointer-events: none;
+  }
+</style>
+</head>
+<body>
+<div class="cover">
+  <div class="blob honey" style="right: -240px; top: -190px;"></div>
+  <div class="blob peach" style="left: -170px; bottom: -130px;"></div>
+  <span class="star-deco" style="left: 70px; top: 260px; font-size: 54px;">✦</span>
+  <span class="star-deco" style="right: 120px; bottom: 250px; font-size: 42px;">✧</span>
+
+  <div class="top-row">
+    <div class="page-no">03<span class="sep">/</span><span class="total">03</span></div>
+    <div class="brand-chip">
+      <div class="logo"><img src="assets/logo.png" alt="BeeCount" /></div>
+      <div class="name">BeeCount · 蜜蜂记账</div>
+    </div>
+  </div>
+
+  <span class="eyebrow peach">大尺寸 · 一屏尽览</span>
+
+  <h1 class="title small">
+    一块大号,<span class="accent">一览无余</span>
+  </h1>
+
+  <div class="visual" style="margin-top: 4px;">
+    <div class="size-grid">
+      <div class="cell">
+        <div class="frame"><img src="assets/widget_preview_networth_large.png" alt="净资产" /></div>
+        <div class="meta"><span class="nm">净资产</span><span class="sz">大</span></div>
+      </div>
+      <div class="cell">
+        <div class="frame"><img src="assets/widget_preview_recent_large.png" alt="最近交易" /></div>
+        <div class="meta"><span class="nm">最近交易</span><span class="sz">大</span></div>
+      </div>
+      <div class="cell">
+        <div class="frame"><img src="assets/widget_preview_dashboard.png" alt="综合仪表盘" /></div>
+        <div class="meta"><span class="nm">综合仪表盘</span><span class="sz">大</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <span class="ver-chip"><span class="label">★</span> 暗黑模式 · 多语言 · 主题色跟随</span>
+    <span class="sign">开源免费 · <strong>github.com/TNT-Likely/BeeCount</strong></span>
+  </div>
+</div>
+</body>
+</html>
