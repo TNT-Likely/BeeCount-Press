@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>BeeCount v4 · 商店素材工作台</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="workbench">
+    <div class="workbench-heading">
+      <div>
+        <h1 data-i18n="heading">BeeCount v4 商店素材</h1>
+        <p class="intro" data-i18n="intro">12 个真实界面，中文与英文、iOS 与 Android、浅色与深色完整对应。延续蜂蜜渐变与居中标题，完整原生截图直接展示，不加模拟手机框，不裁切，不跨平台借图。</p>
+      </div>
+      <a class="help-link" href="README.md" data-i18n="readme">使用说明</a>
+    </div>
+    <div class="controls" aria-label="预览筛选">
+      <label><span data-i18n="platform">平台</span>
+        <select id="platform">
+          <option value="ios">iPhone 6.9″ · 1320 × 2868</option>
+          <option value="android">Android · 1080 × 2400</option>
+          <option value="feature">Play feature · 1024 × 500</option>
+        </select>
+      </label>
+      <label><span data-i18n="language">语言</span>
+        <select id="lang"><option value="zh">中文</option><option value="en">English</option></select>
+      </label>
+      <label><span data-i18n="appearance">外观</span>
+        <select id="mode"><option value="light">浅色 / Light</option><option value="dark">深色 / Dark</option></select>
+      </label>
+      <label class="scene-control"><span data-i18n="scene">主题</span>
+        <select id="scene"><option value="all">全部 12 个主题</option></select>
+      </label>
+      <button id="download" type="button" data-i18n="download">下载当前清单</button>
+    </div>
+    <div class="workbench-status">
+      <p id="status" role="status" aria-live="polite">正在载入原图…</p>
+      <p id="source-note" class="source-note"></p>
+    </div>
+    <details class="export-help" id="export-help">
+      <summary data-i18n="exportHelp">批量导出与预览说明</summary>
+      <p data-i18n="exportIntro">页面不依赖 CDN。PNG 由 Node + Playwright 使用本机 Chrome 按元素截图，下面的按钮复制命令，不会在浏览器中重绘原图。</p>
+      <div class="export-actions">
+        <button id="copy-current" type="button" data-i18n="copyCurrent">复制当前筛选导出命令</button>
+        <button id="copy-all" type="button" class="primary" data-i18n="copyAll">复制全部 98 张导出命令</button>
+      </div>
+      <label class="command-label" for="export-command" data-i18n="commandLabel">在 Press 仓库根目录运行；如未安装 Playwright，请先设置 BEECOUNT_PLAYWRIGHT_MODULE。</label>
+      <textarea id="export-command" rows="3" readonly spellcheck="false" aria-label="Export command"></textarea>
+      <p data-i18n="outputNote">输出目录默认拒绝覆盖。Play feature 固定使用 Android 浅色原图，只按语言导出两张；12 个主题是完整候选素材集，可按商店名额挑选上传。</p>
+    </details>
+  </header>
+  <main class="gallery" id="cards" aria-label="商店素材预览"></main>
+  <noscript>请启用 JavaScript，以预览真实原图与商店排版。</noscript>
+  <script type="module" src="screenshots.js"></script>
+</body>
+</html>
