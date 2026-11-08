@@ -1,0 +1,518 @@
+{
+  "kind": "store-layouts",
+  "nativeScreenshotsUncropped": true,
+  "images": [
+    {
+      "path": "ios/zh/light/01-home.png",
+      "width": 1320,
+      "height": 2868,
+      "bytes": 267553,
+      "sha256": "72f058b08231bce0163899855209c8980595b18500aa3bd061d6e5d4d67465a9",
+      "raw": "raw/ios/zh/light/01-home.png"
+    },
+    {
+      "path": "ios/zh/light/05-transaction.png",
+      "width": 1320,
+      "height": 2868,
+      "bytes": 219985,
+      "sha256": "e503093458e4aef0c9a763e14a66bdc344cf8ee8f34ccfa1a1744f06ae257971",
+      "raw": "raw/ios/zh/light/05-transaction.png"
+    },
+    {
+      "path": "ios/zh/light/02-analytics.png",
+      "width": 1320,
+      "height": 2868,
+      "bytes": 210818,
+      "sha256": "854a80948479ec209e0b748d8c8691af98c5db32b0c9d1683c31549e1062b26f",
+      "raw": "raw/ios/zh/light/02-analytics.png"
+    },
+    {
+      "path": "ios/zh/light/03-accounts.png",
+      "width": 1320,
+      "height": 2868,
+      "bytes": 200371,
+      "sha256": "37133b65a05a635f13312e6d16cef8c8cfeb8c965ad122c35e4a7f415d52c6bc",
+      "raw": "raw/ios/zh/light/03-accounts.png"
+    },
+    {
+      "path": "ios/zh/light/04-ledgers.png",
+      "width": 1320,
+      "height": 2868,
+      "bytes": 209264,
+      "sha256": "fba6353109fc946295b683cc47a1e6536521923d810c13e361606a5da90aa9a6",
+      "raw": "raw/ios/zh/light/04-ledgers.png"
+    },
+    {
+      "path": "ios/zh/light/06-budgets.png",
+      "width": 1320,
+      "height": 2868,
+      "bytes": 190521,
+      "sha256": "da25336b7dbb1402f4fc48a8e76e4d27df87783eb6755d66f6e204cbd1607286",
+      "raw": "raw/ios/zh/light/06-budgets.png"
+    },
+    {
+      "path": "ios/zh/light/08-tags.png",
+      "width": 1320,
+      "height": 2868,
+      "bytes": 126061,
+      "sha256": "9a09dc9980b5c95c1585acfda9baa2de5048983c214e31983f9ceda8cb89b051",
+      "raw": "raw/ios/zh/light/08-tags.png"
+    },
+    {
+      "path": "ios/zh/light/07-mine.png",
+      "width": 1320,
+      "height": 2868,
+      "bytes": 255515,
+      "sha256": "4a4e8d93b61ceee3339fb4163b2f0e5e02524c38ace1377138d847682b312277",
+      "raw": "raw/ios/zh/light/07-mine.png"
+    },
+    {
+      "path": "ios/zh/dark/01-home.png",
+      "width": 1320,
+      "height": 2868,
+      "bytes": 273259,
+      "sha256": "72312553234c4f00569056e7aec6f2345644666c2465963a7387725fbf76e498",
+      "raw": "raw/ios/zh/dark/01-home.png"
+    },
+    {
+      "path": "ios/zh/dark/05-transaction.png",
+      "width": 1320,
+      "height": 2868,
+      "bytes": 226686,
+      "sha256": "76bdba2e3262ee8b241ce9d5e037e53f7346aa81b063d39f96fa0640ea3be343",
+      "raw": "raw/ios/zh/dark/05-transaction.png"
+    },
+    {
+      "path": "ios/zh/dark/02-analytics.png",
+      "width": 1320,
+      "height": 2868,
+      "bytes": 215592,
+      "sha256": "c84d724cbfbfac33f2086b78e15e37a298ce8ede382268aad0197fd7927e6d60",
+      "raw": "raw/ios/zh/dark/02-analytics.png"
+    },
+    {
+      "path": "ios/zh/dark/03-accounts.png",
+      "width": 1320,
+      "height": 2868,
+      "bytes": 201264,
+      "sha256": "608b20ae8460315eccab81c78948c652eedb6bb105c9ba2febc9cab71f9c931d",
+      "raw": "raw/ios/zh/dark/03-accounts.png"
+    },
+    {
+      "path": "ios/zh/dark/04-ledgers.png",
+      "width": 1320,
+      "height": 2868,
+      "bytes": 210877,
+      "sha256": "e15f99557858e30bae5f0ab8e630de4551117cd054d2079a95f73d953bf40390",
+      "raw": "raw/ios/zh/dark/04-ledgers.png"
+    },
+    {
+      "path": "ios/zh/dark/06-budgets.png",
+      "width": 1320,
+      "height": 2868,
+      "bytes": 194577,
+      "sha256": "b3fd6afbde4e9d24ba1b8536f6f4b0cfe23dbf7b6cbc66fe80ecbf509a86e33c",
+      "raw": "raw/ios/zh/dark/06-budgets.png"
+    },
+    {
+      "path": "ios/zh/dark/08-tags.png",
+      "width": 1320,
+      "height": 2868,
+      "bytes": 123976,
+      "sha256": "2a45a536fdc98565cd5e1d108ac6125c29abf5e4205cf53bd87cb1ede9f74ae4",
+      "raw": "raw/ios/zh/dark/08-tags.png"
+    },
+    {
+      "path": "ios/zh/dark/07-mine.png",
+      "width": 1320,
+      "height": 2868,
+      "bytes": 263914,
+      "sha256": "3301f6c61d56264bc832293c05043749bfb8d9b07e55b27ee7ca0250d125c345",
+      "raw": "raw/ios/zh/dark/07-mine.png"
+    },
+    {
+      "path": "ios/en/light/01-home.png",
+      "width": 1320,
+      "height": 2868,
+      "bytes": 294967,
+      "sha256": "92c8e97cd656aa5bf0714ffcb28ce333bc8979d541029cb4ab15e790ed0895c9",
+      "raw": "raw/ios/en/light/01-home.png"
+    },
+    {
+      "path": "ios/en/light/05-transaction.png",
+      "width": 1320,
+      "height": 2868,
+      "bytes": 223400,
+      "sha256": "59613319fdcfa7cde93a934cfd26a109dee5c3e7efe84faec162dc31624a3e0c",
+      "raw": "raw/ios/en/light/05-transaction.png"
+    },
+    {
+      "path": "ios/en/light/02-analytics.png",
+      "width": 1320,
+      "height": 2868,
+      "bytes": 232339,
+      "sha256": "81bb99ea6a293b05453c20dc49c6627ba000da3ccb017ee4f8e5b8c4e2a31172",
+      "raw": "raw/ios/en/light/02-analytics.png"
+    },
+    {
+      "path": "ios/en/light/03-accounts.png",
+      "width": 1320,
+      "height": 2868,
+      "bytes": 213085,
+      "sha256": "b070a9ee5268feface18d4fb622f1d683131f714dcd3ee37f6c95fe8c714a6d5",
+      "raw": "raw/ios/en/light/03-accounts.png"
+    },
+    {
+      "path": "ios/en/light/04-ledgers.png",
+      "width": 1320,
+      "height": 2868,
+      "bytes": 223004,
+      "sha256": "72e12146f84682b8e08b0fd5e3221a8ad8d226db68cfa58c115e47ad98619f12",
+      "raw": "raw/ios/en/light/04-ledgers.png"
+    },
+    {
+      "path": "ios/en/light/06-budgets.png",
+      "width": 1320,
+      "height": 2868,
+      "bytes": 199787,
+      "sha256": "1ecbb1d111f27acedea01e29b46f5edf37738d75da5c5d733752737612d3ab87",
+      "raw": "raw/ios/en/light/06-budgets.png"
+    },
+    {
+      "path": "ios/en/light/08-tags.png",
+      "width": 1320,
+      "height": 2868,
+      "bytes": 139014,
+      "sha256": "67425c2c100e62e71ee0c59f11db8008656daec91979d8d0b6267036768c233d",
+      "raw": "raw/ios/en/light/08-tags.png"
+    },
+    {
+      "path": "ios/en/light/07-mine.png",
+      "width": 1320,
+      "height": 2868,
+      "bytes": 272535,
+      "sha256": "c595537835fd728b034a5cb348e31276baa55dd05ff4653a4eeeec9c6d9751e3",
+      "raw": "raw/ios/en/light/07-mine.png"
+    },
+    {
+      "path": "ios/en/dark/01-home.png",
+      "width": 1320,
+      "height": 2868,
+      "bytes": 303964,
+      "sha256": "1f501dc52b56dda86e2b528205787e4b6e48927756e5e36de7f73a1a94a30f1e",
+      "raw": "raw/ios/en/dark/01-home.png"
+    },
+    {
+      "path": "ios/en/dark/05-transaction.png",
+      "width": 1320,
+      "height": 2868,
+      "bytes": 230554,
+      "sha256": "8d1cec4b4b9bc19940d46ea67f852019ed274bdf070b15da3ba330eae4555510",
+      "raw": "raw/ios/en/dark/05-transaction.png"
+    },
+    {
+      "path": "ios/en/dark/02-analytics.png",
+      "width": 1320,
+      "height": 2868,
+      "bytes": 242194,
+      "sha256": "919600abdbf50f2a1c32380b5ae70622badd245298ac1cef5cdb8022a4410821",
+      "raw": "raw/ios/en/dark/02-analytics.png"
+    },
+    {
+      "path": "ios/en/dark/03-accounts.png",
+      "width": 1320,
+      "height": 2868,
+      "bytes": 217426,
+      "sha256": "676823abcb636661722cf6529f60a69de8b50cbbb5e277433ecdffa5b5dff0be",
+      "raw": "raw/ios/en/dark/03-accounts.png"
+    },
+    {
+      "path": "ios/en/dark/04-ledgers.png",
+      "width": 1320,
+      "height": 2868,
+      "bytes": 226285,
+      "sha256": "a6d107fc1eeb460ec9b6e2f17635b9c0c1ea684ee239d9e8780fef5f58e44d1b",
+      "raw": "raw/ios/en/dark/04-ledgers.png"
+    },
+    {
+      "path": "ios/en/dark/06-budgets.png",
+      "width": 1320,
+      "height": 2868,
+      "bytes": 206851,
+      "sha256": "cba9215f6d48a483ef5184672242d7b838562a4fdb5a2ab4e7e559911793e6a5",
+      "raw": "raw/ios/en/dark/06-budgets.png"
+    },
+    {
+      "path": "ios/en/dark/08-tags.png",
+      "width": 1320,
+      "height": 2868,
+      "bytes": 141308,
+      "sha256": "8b448ed4e30c3065742b17e8d16bae2e7c6491946ccfb3a1d2c5fbe406b860f6",
+      "raw": "raw/ios/en/dark/08-tags.png"
+    },
+    {
+      "path": "ios/en/dark/07-mine.png",
+      "width": 1320,
+      "height": 2868,
+      "bytes": 286554,
+      "sha256": "30b4f66e702acc0c9fbba2d6a7c88a5191f035b8de03401416ee3eab715349b6",
+      "raw": "raw/ios/en/dark/07-mine.png"
+    },
+    {
+      "path": "android/zh/light/01-home.png",
+      "width": 1080,
+      "height": 2400,
+      "bytes": 212517,
+      "sha256": "c0497fc09f15d0eff3aaa00ed69cbb374d6797f799856b19422852e1a7bbcca9",
+      "raw": "raw/android/zh/light/01-home.png"
+    },
+    {
+      "path": "android/zh/light/05-transaction.png",
+      "width": 1080,
+      "height": 2400,
+      "bytes": 187386,
+      "sha256": "b3148149780f7aed2f89319e119fc971d19ff7242bfc5bf176248b5644b949fe",
+      "raw": "raw/android/zh/light/05-transaction.png"
+    },
+    {
+      "path": "android/zh/light/02-analytics.png",
+      "width": 1080,
+      "height": 2400,
+      "bytes": 176723,
+      "sha256": "d03fa70df46cf604c7ff0f5bda9047c43f0eed1608259f3090a4cb9cf25ab48e",
+      "raw": "raw/android/zh/light/02-analytics.png"
+    },
+    {
+      "path": "android/zh/light/03-accounts.png",
+      "width": 1080,
+      "height": 2400,
+      "bytes": 175846,
+      "sha256": "7bb732eb6ce00484b86fa5f96563cd7455bf4f5e96f052ede9deeeab6cdff411",
+      "raw": "raw/android/zh/light/03-accounts.png"
+    },
+    {
+      "path": "android/zh/light/04-ledgers.png",
+      "width": 1080,
+      "height": 2400,
+      "bytes": 178461,
+      "sha256": "0efd0bff769e9dde480348b1371247c47f82a7b055b06145520bf3646c0043a7",
+      "raw": "raw/android/zh/light/04-ledgers.png"
+    },
+    {
+      "path": "android/zh/light/06-budgets.png",
+      "width": 1080,
+      "height": 2400,
+      "bytes": 162269,
+      "sha256": "4a03185b859a395451a8be5161635d0bb7c081eb10eae24f9eb2fd26de0b80af",
+      "raw": "raw/android/zh/light/06-budgets.png"
+    },
+    {
+      "path": "android/zh/light/08-tags.png",
+      "width": 1080,
+      "height": 2400,
+      "bytes": 110486,
+      "sha256": "bc5f055b0da767fb5c41dcc4248e61c9f62b872baa879591f3356aabbb9524f1",
+      "raw": "raw/android/zh/light/08-tags.png"
+    },
+    {
+      "path": "android/zh/light/07-mine.png",
+      "width": 1080,
+      "height": 2400,
+      "bytes": 205145,
+      "sha256": "2cad20096f82680b1a0baacbcb46085e2de759af7193e54fd755023ae4880ae5",
+      "raw": "raw/android/zh/light/07-mine.png"
+    },
+    {
+      "path": "android/zh/dark/01-home.png",
+      "width": 1080,
+      "height": 2400,
+      "bytes": 216777,
+      "sha256": "f5061b130e456407b4d89cfe90eed72b52a5940c24f4010025cbd2e6758d52c1",
+      "raw": "raw/android/zh/dark/01-home.png"
+    },
+    {
+      "path": "android/zh/dark/05-transaction.png",
+      "width": 1080,
+      "height": 2400,
+      "bytes": 192108,
+      "sha256": "53932bb77967be1912e77fcc9996d0de8891e1c92b44c281d8b5a66b5dcada6c",
+      "raw": "raw/android/zh/dark/05-transaction.png"
+    },
+    {
+      "path": "android/zh/dark/02-analytics.png",
+      "width": 1080,
+      "height": 2400,
+      "bytes": 179922,
+      "sha256": "5eac41e7f1cbcb47c534174510fd2a4c68aa1a412ad8dd5354ce140df54e9032",
+      "raw": "raw/android/zh/dark/02-analytics.png"
+    },
+    {
+      "path": "android/zh/dark/03-accounts.png",
+      "width": 1080,
+      "height": 2400,
+      "bytes": 177679,
+      "sha256": "d07c23881d14abd6ae1f371122df56ace52a1c3a95074e89d45584d405a2d835",
+      "raw": "raw/android/zh/dark/03-accounts.png"
+    },
+    {
+      "path": "android/zh/dark/04-ledgers.png",
+      "width": 1080,
+      "height": 2400,
+      "bytes": 179038,
+      "sha256": "551728721841dd0e9fbf48812795dfd3d0677b8e9a44a12f74dc7e235fb40936",
+      "raw": "raw/android/zh/dark/04-ledgers.png"
+    },
+    {
+      "path": "android/zh/dark/06-budgets.png",
+      "width": 1080,
+      "height": 2400,
+      "bytes": 165309,
+      "sha256": "4f1eecb459245fd60959bc34cbea7bc5ae13975206978396928e88b3c29b51b6",
+      "raw": "raw/android/zh/dark/06-budgets.png"
+    },
+    {
+      "path": "android/zh/dark/08-tags.png",
+      "width": 1080,
+      "height": 2400,
+      "bytes": 107888,
+      "sha256": "8956bc08c8aee096a4a54d6cda1978e1f01869853b33a5617b6a9b717aa81d95",
+      "raw": "raw/android/zh/dark/08-tags.png"
+    },
+    {
+      "path": "android/zh/dark/07-mine.png",
+      "width": 1080,
+      "height": 2400,
+      "bytes": 209480,
+      "sha256": "52a70e2b433bd630ad9929ffad7646a6a1aadd9efefd54a0193a1add6ed54716",
+      "raw": "raw/android/zh/dark/07-mine.png"
+    },
+    {
+      "path": "android/en/light/01-home.png",
+      "width": 1080,
+      "height": 2400,
+      "bytes": 222411,
+      "sha256": "b6e98fc221f0daecb935cfd80e498857d55fd7a458c54d27e7507f00b1d3f7d9",
+      "raw": "raw/android/en/light/01-home.png"
+    },
+    {
+      "path": "android/en/light/05-transaction.png",
+      "width": 1080,
+      "height": 2400,
+      "bytes": 175546,
+      "sha256": "3706c177ea7de3cb2429f7ab24b9066f439e2ecb981ebd8d2e125c5aa5aeba96",
+      "raw": "raw/android/en/light/05-transaction.png"
+    },
+    {
+      "path": "android/en/light/02-analytics.png",
+      "width": 1080,
+      "height": 2400,
+      "bytes": 189309,
+      "sha256": "70e0deca17e9f35a001e9692781ac277c1530de9a6f6553b17a4f8a58a29e4d2",
+      "raw": "raw/android/en/light/02-analytics.png"
+    },
+    {
+      "path": "android/en/light/03-accounts.png",
+      "width": 1080,
+      "height": 2400,
+      "bytes": 166620,
+      "sha256": "3a5d21e4d3fd645615ffc1218de996849917dacb8d114ddc22c13e2dc14ffe21",
+      "raw": "raw/android/en/light/03-accounts.png"
+    },
+    {
+      "path": "android/en/light/04-ledgers.png",
+      "width": 1080,
+      "height": 2400,
+      "bytes": 184770,
+      "sha256": "b19dfa231ad38a92face737a73427c88f0e7fc26fbab49828d9aabe6156b650f",
+      "raw": "raw/android/en/light/04-ledgers.png"
+    },
+    {
+      "path": "android/en/light/06-budgets.png",
+      "width": 1080,
+      "height": 2400,
+      "bytes": 165371,
+      "sha256": "108f2939724826a77380110c8cb38c862da515b2162f4805cc52264b6e3467c2",
+      "raw": "raw/android/en/light/06-budgets.png"
+    },
+    {
+      "path": "android/en/light/08-tags.png",
+      "width": 1080,
+      "height": 2400,
+      "bytes": 116173,
+      "sha256": "18565fd18fe919785b8dd982161eacd358e0bd18bafdca3b94896b0c09e8088e",
+      "raw": "raw/android/en/light/08-tags.png"
+    },
+    {
+      "path": "android/en/light/07-mine.png",
+      "width": 1080,
+      "height": 2400,
+      "bytes": 211617,
+      "sha256": "bae2bed2c3c05def7843abcee2bdb841e18d80309617c7325affb22034b4d44f",
+      "raw": "raw/android/en/light/07-mine.png"
+    },
+    {
+      "path": "android/en/dark/01-home.png",
+      "width": 1080,
+      "height": 2400,
+      "bytes": 229144,
+      "sha256": "69026ff5805001f3bcf2667645e10aaccfe383462a16fdec67248d02ea2e67dc",
+      "raw": "raw/android/en/dark/01-home.png"
+    },
+    {
+      "path": "android/en/dark/05-transaction.png",
+      "width": 1080,
+      "height": 2400,
+      "bytes": 178327,
+      "sha256": "23765e4935769d33b3aa3b831b193b8b7f5572a126bf7d6bd7e1b42493462adb",
+      "raw": "raw/android/en/dark/05-transaction.png"
+    },
+    {
+      "path": "android/en/dark/02-analytics.png",
+      "width": 1080,
+      "height": 2400,
+      "bytes": 201051,
+      "sha256": "583cc7acd8e5ab85bf458f16f17ee5b5986e47d86cce07ec844cdfd53bb6411b",
+      "raw": "raw/android/en/dark/02-analytics.png"
+    },
+    {
+      "path": "android/en/dark/03-accounts.png",
+      "width": 1080,
+      "height": 2400,
+      "bytes": 167687,
+      "sha256": "7e12afce45dfe688f1988113fcf811d15362ce3bdc6c80e5cd7714e34a19b7cb",
+      "raw": "raw/android/en/dark/03-accounts.png"
+    },
+    {
+      "path": "android/en/dark/04-ledgers.png",
+      "width": 1080,
+      "height": 2400,
+      "bytes": 186123,
+      "sha256": "bc1800838dedce183dd36c84e9325f6b54addbd87230c404565e2e1c0eb5b72f",
+      "raw": "raw/android/en/dark/04-ledgers.png"
+    },
+    {
+      "path": "android/en/dark/06-budgets.png",
+      "width": 1080,
+      "height": 2400,
+      "bytes": 169250,
+      "sha256": "9519c51ce2122020b728b6190fdba0ecf44a53800e3ec406ea7e35fc0d83f67b",
+      "raw": "raw/android/en/dark/06-budgets.png"
+    },
+    {
+      "path": "android/en/dark/08-tags.png",
+      "width": 1080,
+      "height": 2400,
+      "bytes": 117195,
+      "sha256": "86ad6c85fbe73e68a85770f522ed4ca8641f68a9b552037292f5d01f40085bad",
+      "raw": "raw/android/en/dark/08-tags.png"
+    },
+    {
+      "path": "android/en/dark/07-mine.png",
+      "width": 1080,
+      "height": 2400,
+      "bytes": 219077,
+      "sha256": "99663b9f8fee8534c5e10663aab7481ccdba597f6f1decf68b46be6b72809bac",
+      "raw": "raw/android/en/dark/07-mine.png"
+    }
+  ]
+}

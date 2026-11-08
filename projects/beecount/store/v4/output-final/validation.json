@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "ok": true,
+  "count": {
+    "screenshots": 96,
+    "featureGraphics": 2,
+    "total": 98
+  },
+  "nativeSourcesChecked": 96,
+  "missing": [],
+  "overlaps": [],
+  "clipped": [],
+  "fontErrors": [],
+  "runtimeErrors": [],
+  "failedRequests": [],
+  "minTextToScreenshotGap": 47,
+  "fontFamilies": [
+    ".SF NS",
+    "蘋方-簡"
+  ],
+  "sourceHashesUnchanged": true,
+  "outputHashesReadBack": true,
+  "noCrossPlatformFallback": true,
+  "nativeScreenshotsUncropped": true,
+  "noSimulatedDeviceFrames": true
+}

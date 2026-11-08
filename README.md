@@ -22,6 +22,10 @@ BeeCount-Press/
 └─ README.md
 ```
 
+## BeeCount v4
+
+v4 真实模拟器截图、中英文与明暗模式、iOS / Android 商店排版位于 [`projects/beecount/store/v4/`](projects/beecount/store/v4/README.md)。这套素材独立于旧版商店模板，原图不跨平台兜底，页面无 CDN 依赖。
+
 ## 快速开始
 
 ```bash

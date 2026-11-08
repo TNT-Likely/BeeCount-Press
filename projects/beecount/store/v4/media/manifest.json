@@ -1,0 +1,807 @@
+{
+  "schema_version": 2,
+  "kind": "workflow-recordings",
+  "app_sha": "ec03623409454bee6c83accb298bcf6dc8b35746",
+  "files": [
+    {
+      "path": "ios/zh/light/01-add-transaction.mp4",
+      "bytes": 350865,
+      "sha256": "f7be2d54cefb8072f87e305430d4e56c0ed73e54570d9f8ef65a21fc2964a09c",
+      "duration_seconds": 10.36,
+      "platform": "ios",
+      "language": "zh",
+      "appearance": "light",
+      "workflow": "01-add-transaction"
+    },
+    {
+      "path": "ios/zh/light/01-add-transaction.gif",
+      "bytes": 743563,
+      "sha256": "9cf2324f5ebc20f55252d00c029dbd80f41780b7f7a703fcbbf688b32a9ea91c",
+      "duration_seconds": 10.36,
+      "platform": "ios",
+      "language": "zh",
+      "appearance": "light",
+      "workflow": "01-add-transaction"
+    },
+    {
+      "path": "ios/zh/light/04-data-analysis.mp4",
+      "bytes": 262817,
+      "sha256": "5b9f8d45579a404d001a5be2c700c2fed3ed7a65b36da983c31639c1eb4347b5",
+      "duration_seconds": 9.41,
+      "platform": "ios",
+      "language": "zh",
+      "appearance": "light",
+      "workflow": "04-data-analysis"
+    },
+    {
+      "path": "ios/zh/light/04-data-analysis.gif",
+      "bytes": 456594,
+      "sha256": "cd1e743efbfda91997c97304ccc1eeef308a50a96e58bebbad03ce6e4bdd344f",
+      "duration_seconds": 9.41,
+      "platform": "ios",
+      "language": "zh",
+      "appearance": "light",
+      "workflow": "04-data-analysis"
+    },
+    {
+      "path": "ios/zh/light/05-copy-transaction.mp4",
+      "bytes": 317347,
+      "sha256": "46684682c85d468e003d01ebd18fb2c123636466d15bac877bf9ffcb59a00b18",
+      "duration_seconds": 12.64,
+      "platform": "ios",
+      "language": "zh",
+      "appearance": "light",
+      "workflow": "05-copy-transaction"
+    },
+    {
+      "path": "ios/zh/light/05-copy-transaction.gif",
+      "bytes": 724777,
+      "sha256": "64686ec3cae1edacfb0d7e3560f2309d792492c9b8d2d6969ee8c357a93d803b",
+      "duration_seconds": 12.64,
+      "platform": "ios",
+      "language": "zh",
+      "appearance": "light",
+      "workflow": "05-copy-transaction"
+    },
+    {
+      "path": "ios/zh/light/02-ai-chat.mp4",
+      "bytes": 297151,
+      "sha256": "a140cb440580b039d14eb6a43e30f29cedffff5f767209d88d4aeb647468cd73",
+      "duration_seconds": 10.84,
+      "platform": "ios",
+      "language": "zh",
+      "appearance": "light",
+      "workflow": "02-ai-chat"
+    },
+    {
+      "path": "ios/zh/light/02-ai-chat.gif",
+      "bytes": 620276,
+      "sha256": "43eca3b2e8e5890ee16d69f7c664339c3b5a1a8225954d5705eb4a54406cbc0d",
+      "duration_seconds": 10.84,
+      "platform": "ios",
+      "language": "zh",
+      "appearance": "light",
+      "workflow": "02-ai-chat"
+    },
+    {
+      "path": "ios/zh/light/06-import-ledger.mp4",
+      "bytes": 384987,
+      "sha256": "3e6a19fbd6e43779bac6c5d7087d2a94fa026b093e78eced95ab41df1d88adb5",
+      "duration_seconds": 9.56,
+      "platform": "ios",
+      "language": "zh",
+      "appearance": "light",
+      "workflow": "06-import-ledger"
+    },
+    {
+      "path": "ios/zh/light/06-import-ledger.gif",
+      "bytes": 649794,
+      "sha256": "743cefd0f4a92fefa863f40dae9684f1501440694218d55d7f6707803132583e",
+      "duration_seconds": 9.56,
+      "platform": "ios",
+      "language": "zh",
+      "appearance": "light",
+      "workflow": "06-import-ledger"
+    },
+    {
+      "path": "ios/zh/dark/01-add-transaction.mp4",
+      "bytes": 316203,
+      "sha256": "c2c8358c30eb6862adea5f4dba824bc0b3d876225dae71aa21d9cbf4c97e9980",
+      "duration_seconds": 9.87,
+      "platform": "ios",
+      "language": "zh",
+      "appearance": "dark",
+      "workflow": "01-add-transaction"
+    },
+    {
+      "path": "ios/zh/dark/01-add-transaction.gif",
+      "bytes": 780922,
+      "sha256": "1cabdfe21b4bcf2ffef1d9d36ee18c734b3e1c9b8f7e738c49f5fd276e712882",
+      "duration_seconds": 9.87,
+      "platform": "ios",
+      "language": "zh",
+      "appearance": "dark",
+      "workflow": "01-add-transaction"
+    },
+    {
+      "path": "ios/zh/dark/04-data-analysis.mp4",
+      "bytes": 267912,
+      "sha256": "0197ede8f040c021e84ef66b888159e1836bec0509ac8f1f5d041ccd220c6475",
+      "duration_seconds": 9.42,
+      "platform": "ios",
+      "language": "zh",
+      "appearance": "dark",
+      "workflow": "04-data-analysis"
+    },
+    {
+      "path": "ios/zh/dark/04-data-analysis.gif",
+      "bytes": 475272,
+      "sha256": "4a23e770ea20602227a574b96eddf4704837846292e7cfe51e213648ac8174ff",
+      "duration_seconds": 9.42,
+      "platform": "ios",
+      "language": "zh",
+      "appearance": "dark",
+      "workflow": "04-data-analysis"
+    },
+    {
+      "path": "ios/zh/dark/05-copy-transaction.mp4",
+      "bytes": 317747,
+      "sha256": "30cc3c16adc4f343af1237e94dbf913cb0ee083c71f2735c7142633490926afa",
+      "duration_seconds": 12.52,
+      "platform": "ios",
+      "language": "zh",
+      "appearance": "dark",
+      "workflow": "05-copy-transaction"
+    },
+    {
+      "path": "ios/zh/dark/05-copy-transaction.gif",
+      "bytes": 787099,
+      "sha256": "38fee4ed7d653fc1ecfc8b8309fd61d791ea959ad6db7e0f24211313ad6a9d6e",
+      "duration_seconds": 12.52,
+      "platform": "ios",
+      "language": "zh",
+      "appearance": "dark",
+      "workflow": "05-copy-transaction"
+    },
+    {
+      "path": "ios/zh/dark/02-ai-chat.mp4",
+      "bytes": 323955,
+      "sha256": "6090670e93a6d9380eae5a3558b539c02301d087c6d6c81187a5734bc23417b7",
+      "duration_seconds": 9.6,
+      "platform": "ios",
+      "language": "zh",
+      "appearance": "dark",
+      "workflow": "02-ai-chat"
+    },
+    {
+      "path": "ios/zh/dark/02-ai-chat.gif",
+      "bytes": 646062,
+      "sha256": "480f3abc206c245165b6f813da62f30ce3032a7bf89137b16c7e4386eb1a3487",
+      "duration_seconds": 9.6,
+      "platform": "ios",
+      "language": "zh",
+      "appearance": "dark",
+      "workflow": "02-ai-chat"
+    },
+    {
+      "path": "ios/zh/dark/06-import-ledger.mp4",
+      "bytes": 399009,
+      "sha256": "f2d3077c34301632f88bc5f1aa94b593859fe6d7a226926c31c3b9f09b54d88d",
+      "duration_seconds": 9.45,
+      "platform": "ios",
+      "language": "zh",
+      "appearance": "dark",
+      "workflow": "06-import-ledger"
+    },
+    {
+      "path": "ios/zh/dark/06-import-ledger.gif",
+      "bytes": 686136,
+      "sha256": "9696b4836626f5ddfba5ffe8db7f947d381752ceaa1b2e7e8cd5bf86ec81e952",
+      "duration_seconds": 9.45,
+      "platform": "ios",
+      "language": "zh",
+      "appearance": "dark",
+      "workflow": "06-import-ledger"
+    },
+    {
+      "path": "ios/en/light/01-add-transaction.mp4",
+      "bytes": 387632,
+      "sha256": "874d6f3341f4117d6d5566217180a1f6efeaa3304a72e4e6e697682db263bbb8",
+      "duration_seconds": 11.77,
+      "platform": "ios",
+      "language": "en",
+      "appearance": "light",
+      "workflow": "01-add-transaction"
+    },
+    {
+      "path": "ios/en/light/01-add-transaction.gif",
+      "bytes": 824532,
+      "sha256": "36d956da0f6911e84337fefefb861c102488ac0cd9a53a437f074478e3c54999",
+      "duration_seconds": 11.77,
+      "platform": "ios",
+      "language": "en",
+      "appearance": "light",
+      "workflow": "01-add-transaction"
+    },
+    {
+      "path": "ios/en/light/04-data-analysis.mp4",
+      "bytes": 290293,
+      "sha256": "1e61120180a6bb67d47edb114649af7a4c95b5d5277de88629ea162fe7255170",
+      "duration_seconds": 9.41,
+      "platform": "ios",
+      "language": "en",
+      "appearance": "light",
+      "workflow": "04-data-analysis"
+    },
+    {
+      "path": "ios/en/light/04-data-analysis.gif",
+      "bytes": 492544,
+      "sha256": "93ad19bb053b153016598b37e158fade496dcf56622902dd12b4a2e83cce6787",
+      "duration_seconds": 9.41,
+      "platform": "ios",
+      "language": "en",
+      "appearance": "light",
+      "workflow": "04-data-analysis"
+    },
+    {
+      "path": "ios/en/light/05-copy-transaction.mp4",
+      "bytes": 415572,
+      "sha256": "41f923601a28d99666ff1e748b9993cf1a1d82ae961c153e84672104bb53d0f1",
+      "duration_seconds": 15.62,
+      "platform": "ios",
+      "language": "en",
+      "appearance": "light",
+      "workflow": "05-copy-transaction"
+    },
+    {
+      "path": "ios/en/light/05-copy-transaction.gif",
+      "bytes": 840605,
+      "sha256": "f3598f2c74fdfe5a663433efe4ce57c7f3c134a8f8e59c33483c79b5704b99be",
+      "duration_seconds": 15.62,
+      "platform": "ios",
+      "language": "en",
+      "appearance": "light",
+      "workflow": "05-copy-transaction"
+    },
+    {
+      "path": "ios/en/light/02-ai-chat.mp4",
+      "bytes": 369507,
+      "sha256": "9fe533ee0f0d9398dde5f37997ab182c807665ceffe20e27f86a79549bf78970",
+      "duration_seconds": 14.13,
+      "platform": "ios",
+      "language": "en",
+      "appearance": "light",
+      "workflow": "02-ai-chat"
+    },
+    {
+      "path": "ios/en/light/02-ai-chat.gif",
+      "bytes": 707665,
+      "sha256": "f428f49d6f537d79b6ba64770cffa04454bf1df620b79ca7d4a412aafedb3ea7",
+      "duration_seconds": 14.13,
+      "platform": "ios",
+      "language": "en",
+      "appearance": "light",
+      "workflow": "02-ai-chat"
+    },
+    {
+      "path": "ios/en/light/06-import-ledger.mp4",
+      "bytes": 437093,
+      "sha256": "f504dc54a4d7e33f663de4e62fb6bcf1561a81c5d8014b863769ba001b2ac083",
+      "duration_seconds": 9.43,
+      "platform": "ios",
+      "language": "en",
+      "appearance": "light",
+      "workflow": "06-import-ledger"
+    },
+    {
+      "path": "ios/en/light/06-import-ledger.gif",
+      "bytes": 693904,
+      "sha256": "1611efd21721cd4ffe0c0b2edd1313868db31019b7b32ccc9520b1878a4cea2f",
+      "duration_seconds": 9.43,
+      "platform": "ios",
+      "language": "en",
+      "appearance": "light",
+      "workflow": "06-import-ledger"
+    },
+    {
+      "path": "ios/en/dark/01-add-transaction.mp4",
+      "bytes": 385715,
+      "sha256": "fb9ecaeb3509ff751aa7c0517417703ce83716776152b028fcf05e214b77a5b1",
+      "duration_seconds": 11.67,
+      "platform": "ios",
+      "language": "en",
+      "appearance": "dark",
+      "workflow": "01-add-transaction"
+    },
+    {
+      "path": "ios/en/dark/01-add-transaction.gif",
+      "bytes": 872040,
+      "sha256": "9c6d0c6145fd4649d865e84e65ddb69d094f935562a89c41671cd40fd8a7058f",
+      "duration_seconds": 11.67,
+      "platform": "ios",
+      "language": "en",
+      "appearance": "dark",
+      "workflow": "01-add-transaction"
+    },
+    {
+      "path": "ios/en/dark/04-data-analysis.mp4",
+      "bytes": 293837,
+      "sha256": "8d07d5b4498fe7abca505b0073560723142d8f7f13ad61f8342774d36d890dcb",
+      "duration_seconds": 9.41,
+      "platform": "ios",
+      "language": "en",
+      "appearance": "dark",
+      "workflow": "04-data-analysis"
+    },
+    {
+      "path": "ios/en/dark/04-data-analysis.gif",
+      "bytes": 518151,
+      "sha256": "db9353399efca08184d4c8e5bc7bde688426f9f5bc38d84eef33c64a0ecbfc91",
+      "duration_seconds": 9.41,
+      "platform": "ios",
+      "language": "en",
+      "appearance": "dark",
+      "workflow": "04-data-analysis"
+    },
+    {
+      "path": "ios/en/dark/05-copy-transaction.mp4",
+      "bytes": 420481,
+      "sha256": "751da195a1d23ad2fcc960b6d9a009acb5e3ff4ec12d436c4d81f57eb3c1b9f8",
+      "duration_seconds": 15.62,
+      "platform": "ios",
+      "language": "en",
+      "appearance": "dark",
+      "workflow": "05-copy-transaction"
+    },
+    {
+      "path": "ios/en/dark/05-copy-transaction.gif",
+      "bytes": 884096,
+      "sha256": "187a314c5a50b25c4e27ad82a41a787cbde4087a725f1567a686115b3bc0d840",
+      "duration_seconds": 15.62,
+      "platform": "ios",
+      "language": "en",
+      "appearance": "dark",
+      "workflow": "05-copy-transaction"
+    },
+    {
+      "path": "ios/en/dark/02-ai-chat.mp4",
+      "bytes": 389372,
+      "sha256": "68e0dc4b42f1ad53e5f609aeec0e7aee5f31768a456a3c7b8bda272dc121c3dd",
+      "duration_seconds": 14.13,
+      "platform": "ios",
+      "language": "en",
+      "appearance": "dark",
+      "workflow": "02-ai-chat"
+    },
+    {
+      "path": "ios/en/dark/02-ai-chat.gif",
+      "bytes": 805330,
+      "sha256": "eacf8510e5f5c216ba2ef13b65f09abfb40e98e2f2e7984c9e02652b55d2d89d",
+      "duration_seconds": 14.13,
+      "platform": "ios",
+      "language": "en",
+      "appearance": "dark",
+      "workflow": "02-ai-chat"
+    },
+    {
+      "path": "ios/en/dark/06-import-ledger.mp4",
+      "bytes": 439836,
+      "sha256": "36dc24e868a1aa2b748d756ef2eb8879eb2768ace2dd4e67441e07b04becb1d3",
+      "duration_seconds": 9.41,
+      "platform": "ios",
+      "language": "en",
+      "appearance": "dark",
+      "workflow": "06-import-ledger"
+    },
+    {
+      "path": "ios/en/dark/06-import-ledger.gif",
+      "bytes": 730649,
+      "sha256": "0ea403bd46629cba84ae04638b402281edd05fb6672a842d8a11313dcbbfef95",
+      "duration_seconds": 9.41,
+      "platform": "ios",
+      "language": "en",
+      "appearance": "dark",
+      "workflow": "06-import-ledger"
+    },
+    {
+      "path": "android/en/dark/01-add-transaction.mp4",
+      "bytes": 387642,
+      "sha256": "30b34dfe9c48518c0051f8c525b26f1a34e069bbeb86ec09abe0819bca4324df",
+      "duration_seconds": 12.77,
+      "platform": "android",
+      "language": "en",
+      "appearance": "dark",
+      "workflow": "01-add-transaction"
+    },
+    {
+      "path": "android/en/dark/01-add-transaction.gif",
+      "bytes": 764974,
+      "sha256": "d7fbf8fc73be57ef999c11e33134c079e2acb1eecbb9a4095d3dcc7bc8aaeaf2",
+      "duration_seconds": 12.77,
+      "platform": "android",
+      "language": "en",
+      "appearance": "dark",
+      "workflow": "01-add-transaction"
+    },
+    {
+      "path": "android/en/dark/02-ai-chat.mp4",
+      "bytes": 402022,
+      "sha256": "fc59f10f20227381454c6696fe9a89c209291efaa06043509561cad50856a1c3",
+      "duration_seconds": 18.3,
+      "platform": "android",
+      "language": "en",
+      "appearance": "dark",
+      "workflow": "02-ai-chat"
+    },
+    {
+      "path": "android/en/dark/02-ai-chat.gif",
+      "bytes": 734540,
+      "sha256": "f14447ad515079040c86ca5d0819f19cffc9cdb498bd00b125aedd68b081ad17",
+      "duration_seconds": 18.3,
+      "platform": "android",
+      "language": "en",
+      "appearance": "dark",
+      "workflow": "02-ai-chat"
+    },
+    {
+      "path": "android/en/dark/04-data-analysis.mp4",
+      "bytes": 224368,
+      "sha256": "c7b7a69a0649892495bdfad6d2db353ec9be2cacfed0f2f5f08f1f610d621ba5",
+      "duration_seconds": 9.59,
+      "platform": "android",
+      "language": "en",
+      "appearance": "dark",
+      "workflow": "04-data-analysis"
+    },
+    {
+      "path": "android/en/dark/04-data-analysis.gif",
+      "bytes": 450306,
+      "sha256": "91a19d71b755786d4b19074cb5f286f97a4bf337f08be347b480bc1064c9bbd0",
+      "duration_seconds": 9.59,
+      "platform": "android",
+      "language": "en",
+      "appearance": "dark",
+      "workflow": "04-data-analysis"
+    },
+    {
+      "path": "android/en/dark/05-copy-transaction.mp4",
+      "bytes": 427213,
+      "sha256": "9edbd834cdc77f59d38a968a43ce73406df11a809d7ac74f405f155928b4e5ae",
+      "duration_seconds": 17.91,
+      "platform": "android",
+      "language": "en",
+      "appearance": "dark",
+      "workflow": "05-copy-transaction"
+    },
+    {
+      "path": "android/en/dark/05-copy-transaction.gif",
+      "bytes": 809342,
+      "sha256": "0256f4a78da3dc45d6f27d5ac52e575c383495921230229f6b0462db5f292283",
+      "duration_seconds": 17.91,
+      "platform": "android",
+      "language": "en",
+      "appearance": "dark",
+      "workflow": "05-copy-transaction"
+    },
+    {
+      "path": "android/en/dark/06-import-ledger.mp4",
+      "bytes": 468047,
+      "sha256": "57964610b3b009ca5ef1fcc9ea25ce700f5824625e94e6c4a37f2838a2bcd497",
+      "duration_seconds": 10.31,
+      "platform": "android",
+      "language": "en",
+      "appearance": "dark",
+      "workflow": "06-import-ledger"
+    },
+    {
+      "path": "android/en/dark/06-import-ledger.gif",
+      "bytes": 910461,
+      "sha256": "79fe75bfd75ec545e31f4a6b1b12a97ccb2e9c4521590464044e7eed39d3eabe",
+      "duration_seconds": 10.31,
+      "platform": "android",
+      "language": "en",
+      "appearance": "dark",
+      "workflow": "06-import-ledger"
+    },
+    {
+      "path": "android/en/light/01-add-transaction.mp4",
+      "bytes": 403218,
+      "sha256": "987e7ec67786a14f94efb21e3b3cc06813bafdd9a8ae9ff6448654a157f40ddf",
+      "duration_seconds": 13.35,
+      "platform": "android",
+      "language": "en",
+      "appearance": "light",
+      "workflow": "01-add-transaction"
+    },
+    {
+      "path": "android/en/light/01-add-transaction.gif",
+      "bytes": 770140,
+      "sha256": "34118a46427f4f0f36835cde5cdeaddff4c0632d7cf918390d25f6bd6bccaae3",
+      "duration_seconds": 13.35,
+      "platform": "android",
+      "language": "en",
+      "appearance": "light",
+      "workflow": "01-add-transaction"
+    },
+    {
+      "path": "android/en/light/02-ai-chat.mp4",
+      "bytes": 431705,
+      "sha256": "b91f3a0797212461a5af8d99277f53bedcf76d0385d9d0ba87c58a023262bd82",
+      "duration_seconds": 17.29,
+      "platform": "android",
+      "language": "en",
+      "appearance": "light",
+      "workflow": "02-ai-chat"
+    },
+    {
+      "path": "android/en/light/02-ai-chat.gif",
+      "bytes": 809063,
+      "sha256": "7ff97b9a3594a58d72f6d4bcd98a891b7f219912629668593afb4df1c5460208",
+      "duration_seconds": 17.29,
+      "platform": "android",
+      "language": "en",
+      "appearance": "light",
+      "workflow": "02-ai-chat"
+    },
+    {
+      "path": "android/en/light/04-data-analysis.mp4",
+      "bytes": 251684,
+      "sha256": "de4f13c724b2b788ad4be5a1dea58790d300f6fd59080f8094a2759bf6882375",
+      "duration_seconds": 9.46,
+      "platform": "android",
+      "language": "en",
+      "appearance": "light",
+      "workflow": "04-data-analysis"
+    },
+    {
+      "path": "android/en/light/04-data-analysis.gif",
+      "bytes": 452294,
+      "sha256": "ecc3285e461ac734fdbd761bfa71ab6cbfd64b2d71f7f6259f06043221ff4e41",
+      "duration_seconds": 9.46,
+      "platform": "android",
+      "language": "en",
+      "appearance": "light",
+      "workflow": "04-data-analysis"
+    },
+    {
+      "path": "android/en/light/05-copy-transaction.mp4",
+      "bytes": 426581,
+      "sha256": "eaf302ec174b4f4ee5a0da0c3bcd40bf820c627bd2b4b0780442f9346f952e3b",
+      "duration_seconds": 17.79,
+      "platform": "android",
+      "language": "en",
+      "appearance": "light",
+      "workflow": "05-copy-transaction"
+    },
+    {
+      "path": "android/en/light/05-copy-transaction.gif",
+      "bytes": 799451,
+      "sha256": "0a2fcbba06e1c430607eea1d70fd95544d42bc508c190d577f7b97daabc67bdb",
+      "duration_seconds": 17.79,
+      "platform": "android",
+      "language": "en",
+      "appearance": "light",
+      "workflow": "05-copy-transaction"
+    },
+    {
+      "path": "android/en/light/06-import-ledger.mp4",
+      "bytes": 464801,
+      "sha256": "affbcd0a9cbda11d7b6bece93e3ce4cfc72ab30fd35bef6e75d4efaa00d602c5",
+      "duration_seconds": 10.0,
+      "platform": "android",
+      "language": "en",
+      "appearance": "light",
+      "workflow": "06-import-ledger"
+    },
+    {
+      "path": "android/en/light/06-import-ledger.gif",
+      "bytes": 804527,
+      "sha256": "8f28412b49d07b4a13d417ff05845c04a421f3420b04ee5a4e28103366c2f6b2",
+      "duration_seconds": 10.0,
+      "platform": "android",
+      "language": "en",
+      "appearance": "light",
+      "workflow": "06-import-ledger"
+    },
+    {
+      "path": "android/zh/dark/01-add-transaction.mp4",
+      "bytes": 345850,
+      "sha256": "ab9748e8460f2d7f6cde2da9fc36c1200eab8282fea08ab4839d163571c98e8b",
+      "duration_seconds": 11.03,
+      "platform": "android",
+      "language": "zh",
+      "appearance": "dark",
+      "workflow": "01-add-transaction"
+    },
+    {
+      "path": "android/zh/dark/01-add-transaction.gif",
+      "bytes": 742941,
+      "sha256": "4697c560a54bccedfa903e46916c8426766b862460fe81d2f893685fae4372fa",
+      "duration_seconds": 11.03,
+      "platform": "android",
+      "language": "zh",
+      "appearance": "dark",
+      "workflow": "01-add-transaction"
+    },
+    {
+      "path": "android/zh/dark/02-ai-chat.mp4",
+      "bytes": 336556,
+      "sha256": "3cd0f92fb245efaa5f4d4a6fcd5338ae87822932efaaf56edea4b4de5b0f9ac5",
+      "duration_seconds": 11.12,
+      "platform": "android",
+      "language": "zh",
+      "appearance": "dark",
+      "workflow": "02-ai-chat"
+    },
+    {
+      "path": "android/zh/dark/02-ai-chat.gif",
+      "bytes": 722177,
+      "sha256": "bee28b862235a34ec275f6dd51a82634cf7cb88943888f1135cbd2c993263578",
+      "duration_seconds": 11.12,
+      "platform": "android",
+      "language": "zh",
+      "appearance": "dark",
+      "workflow": "02-ai-chat"
+    },
+    {
+      "path": "android/zh/dark/04-data-analysis.mp4",
+      "bytes": 208584,
+      "sha256": "179c1fb3a773fdb7b0d5e94123dc7ccedaed5fcde2c19985905b4065e03b95c8",
+      "duration_seconds": 9.56,
+      "platform": "android",
+      "language": "zh",
+      "appearance": "dark",
+      "workflow": "04-data-analysis"
+    },
+    {
+      "path": "android/zh/dark/04-data-analysis.gif",
+      "bytes": 399658,
+      "sha256": "dd6e57f9b46436bd338b98bc01672cf21d4f698ad6dc287660e4816f1d0c6d67",
+      "duration_seconds": 9.56,
+      "platform": "android",
+      "language": "zh",
+      "appearance": "dark",
+      "workflow": "04-data-analysis"
+    },
+    {
+      "path": "android/zh/dark/05-copy-transaction.mp4",
+      "bytes": 361378,
+      "sha256": "826d8863a91016c9f752488112b5c266dcedc39050c5e54f55586c67a2a0d28b",
+      "duration_seconds": 13.74,
+      "platform": "android",
+      "language": "zh",
+      "appearance": "dark",
+      "workflow": "05-copy-transaction"
+    },
+    {
+      "path": "android/zh/dark/05-copy-transaction.gif",
+      "bytes": 711953,
+      "sha256": "4e87c609335846e7272ffb2aca0afd50e4755a8e152e0d03313d50ff9dcf460f",
+      "duration_seconds": 13.74,
+      "platform": "android",
+      "language": "zh",
+      "appearance": "dark",
+      "workflow": "05-copy-transaction"
+    },
+    {
+      "path": "android/zh/dark/06-import-ledger.mp4",
+      "bytes": 432441,
+      "sha256": "6516003c2c64f744390d4dfa9a54a60f2d34b7e883b1a023be169bcc682d9c9b",
+      "duration_seconds": 10.02,
+      "platform": "android",
+      "language": "zh",
+      "appearance": "dark",
+      "workflow": "06-import-ledger"
+    },
+    {
+      "path": "android/zh/dark/06-import-ledger.gif",
+      "bytes": 872759,
+      "sha256": "3c866c043b3b89d2fd7e45de1417d1b00dd99d4058ac665bb5e98e40b219c9a7",
+      "duration_seconds": 10.02,
+      "platform": "android",
+      "language": "zh",
+      "appearance": "dark",
+      "workflow": "06-import-ledger"
+    },
+    {
+      "path": "android/zh/light/01-add-transaction.mp4",
+      "bytes": 361930,
+      "sha256": "306957c8b5d834a2b257351ca829defe606947710942badd4e941ad8e4b00c9e",
+      "duration_seconds": 11.42,
+      "platform": "android",
+      "language": "zh",
+      "appearance": "light",
+      "workflow": "01-add-transaction"
+    },
+    {
+      "path": "android/zh/light/01-add-transaction.gif",
+      "bytes": 784109,
+      "sha256": "83eec6cc9c2cb758935b54acd8b670de5d39e2f59d9a0735ce1ec382bd4d2637",
+      "duration_seconds": 11.42,
+      "platform": "android",
+      "language": "zh",
+      "appearance": "light",
+      "workflow": "01-add-transaction"
+    },
+    {
+      "path": "android/zh/light/02-ai-chat.mp4",
+      "bytes": 346043,
+      "sha256": "8b19e5fd928d1bc5dc7f50bbb37dbfa168931270c5d65d8cbdb3ca8fb8f52b5e",
+      "duration_seconds": 12.14,
+      "platform": "android",
+      "language": "zh",
+      "appearance": "light",
+      "workflow": "02-ai-chat"
+    },
+    {
+      "path": "android/zh/light/02-ai-chat.gif",
+      "bytes": 717598,
+      "sha256": "457d0b3acbbce2cdefb6454d6c891fe68ca8e380b8707346ecd8df697fe4ae24",
+      "duration_seconds": 12.14,
+      "platform": "android",
+      "language": "zh",
+      "appearance": "light",
+      "workflow": "02-ai-chat"
+    },
+    {
+      "path": "android/zh/light/04-data-analysis.mp4",
+      "bytes": 274621,
+      "sha256": "4df511e7f1425f2f347164ae400b3e04cd00d67919fa251631de252d4f7b8518",
+      "duration_seconds": 9.6,
+      "platform": "android",
+      "language": "zh",
+      "appearance": "light",
+      "workflow": "04-data-analysis"
+    },
+    {
+      "path": "android/zh/light/04-data-analysis.gif",
+      "bytes": 497536,
+      "sha256": "18e53d93fae92e4e4420970357629015b157114441ea5946cbb6470af4bcbe57",
+      "duration_seconds": 9.6,
+      "platform": "android",
+      "language": "zh",
+      "appearance": "light",
+      "workflow": "04-data-analysis"
+    },
+    {
+      "path": "android/zh/light/05-copy-transaction.mp4",
+      "bytes": 380468,
+      "sha256": "daf77044418ec58c1ea1ac635ce5e110d4901510a8103457599cb872d1692d6e",
+      "duration_seconds": 13.74,
+      "platform": "android",
+      "language": "zh",
+      "appearance": "light",
+      "workflow": "05-copy-transaction"
+    },
+    {
+      "path": "android/zh/light/05-copy-transaction.gif",
+      "bytes": 750736,
+      "sha256": "9ad5b27f6181756a0fcb5de2a71a237a324be0b06ba3eb4e4f9ecc1f06711a0c",
+      "duration_seconds": 13.74,
+      "platform": "android",
+      "language": "zh",
+      "appearance": "light",
+      "workflow": "05-copy-transaction"
+    },
+    {
+      "path": "android/zh/light/06-import-ledger.mp4",
+      "bytes": 426326,
+      "sha256": "8396efcde642e0a34ba38961bc7ea4474fb73cbb95c2152adb768c63a9606d6c",
+      "duration_seconds": 10.89,
+      "platform": "android",
+      "language": "zh",
+      "appearance": "light",
+      "workflow": "06-import-ledger"
+    },
+    {
+      "path": "android/zh/light/06-import-ledger.gif",
+      "bytes": 715287,
+      "sha256": "93a0aac7a9b2d312362488f1ef30ccac08b4a7ebaea1c354a052ef0237797df3",
+      "duration_seconds": 10.89,
+      "platform": "android",
+      "language": "zh",
+      "appearance": "light",
+      "workflow": "06-import-ledger"
+    }
+  ]
+}
