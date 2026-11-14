@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "ok": true,
+  "count": {
+    "screenshots": 3,
+    "featureGraphics": 0,
+    "total": 3
+  },
+  "nativeSourcesChecked": 144,
+  "missing": [],
+  "overlaps": [],
+  "clipped": [],
+  "fontErrors": [],
+  "runtimeErrors": [],
+  "failedRequests": [],
+  "minTextToScreenshotGap": 57.03125,
+  "fontFamilies": [
+    "Smiley Sans Oblique"
+  ],
+  "sourceHashesUnchanged": true,
+  "outputHashesReadBack": true,
+  "noCrossPlatformFallback": true,
+  "nativeScreenshotsUncropped": true,
+  "noSimulatedDeviceFrames": true
+}

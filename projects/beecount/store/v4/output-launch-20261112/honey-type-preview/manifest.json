@@ -1,0 +1,170 @@
+{
+  "schemaVersion": 3,
+  "kind": "beecount-v4-store-artwork",
+  "generatedAt": "2026-11-12T14:34:01.464Z",
+  "renderer": "Chrome 157.0.8103.51 / Playwright",
+  "origin": "http://127.0.0.1:8766",
+  "count": {
+    "screenshots": 3,
+    "featureGraphics": 0,
+    "total": 3
+  },
+  "themeCount": 12,
+  "selections": {
+    "suite": "pages",
+    "platforms": [
+      "ios"
+    ],
+    "languages": [
+      "zh"
+    ],
+    "modes": [
+      "light"
+    ],
+    "scenes": [
+      "01-home",
+      "02-analytics",
+      "04-ledgers"
+    ]
+  },
+  "nativeScreenshotsUncropped": true,
+  "noSimulatedDeviceFrames": true,
+  "featureSources": "Android light only, matching language",
+  "images": [
+    {
+      "path": "ios/zh/light/01-home.png",
+      "kind": "screenshot",
+      "platform": "ios",
+      "language": "zh",
+      "appearance": "light",
+      "scene": "01-home",
+      "width": 1320,
+      "height": 2868,
+      "bytes": 502866,
+      "sha256": "1cc5dea330ce0c3bb93fe47b79dc837ce5c2a8b376512d81e4701ea8430fc5ad",
+      "copy": {
+        "title": "每一笔都清楚",
+        "sub": "每一笔日常，汇成清楚的收支与结余"
+      },
+      "raw": [
+        {
+          "path": "raw/ios/zh/light/01-home.png",
+          "width": 1320,
+          "height": 2868,
+          "bytes": 343256,
+          "sha256": "b1b1484f87366f14eb444141c345556b9ea39747379d192b72c39dbbfee156ef"
+        }
+      ],
+      "checks": {
+        "missing": 0,
+        "overlaps": 0,
+        "clipped": 0,
+        "noSimulatedDeviceFrames": true,
+        "textToScreenshotGap": 57.03125,
+        "fonts": [
+          {
+            "text": "每一笔都清楚",
+            "fonts": [
+              {
+                "familyName": "Smiley Sans Oblique",
+                "postScriptName": "SmileySans-Oblique",
+                "isCustomFont": true,
+                "glyphCount": 6
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "path": "ios/zh/light/02-analytics.png",
+      "kind": "screenshot",
+      "platform": "ios",
+      "language": "zh",
+      "appearance": "light",
+      "scene": "02-analytics",
+      "width": 1320,
+      "height": 2868,
+      "bytes": 436318,
+      "sha256": "1a6d82fa25d50713eed335fd92683da966f256b43fc08814168a1925e46e6c54",
+      "copy": {
+        "title": "看清钱去哪了",
+        "sub": "收支趋势与分类排行，让变化看得见"
+      },
+      "raw": [
+        {
+          "path": "raw/ios/zh/light/02-analytics.png",
+          "width": 1320,
+          "height": 2868,
+          "bytes": 282764,
+          "sha256": "d6cb3972cc55d27ddae3a82cd89ab774dc7cf409c98b7cb0fccaa61840464a3d"
+        }
+      ],
+      "checks": {
+        "missing": 0,
+        "overlaps": 0,
+        "clipped": 0,
+        "noSimulatedDeviceFrames": true,
+        "textToScreenshotGap": 57.03125,
+        "fonts": [
+          {
+            "text": "看清钱去哪了",
+            "fonts": [
+              {
+                "familyName": "Smiley Sans Oblique",
+                "postScriptName": "SmileySans-Oblique",
+                "isCustomFont": true,
+                "glyphCount": 6
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "path": "ios/zh/light/04-ledgers.png",
+      "kind": "screenshot",
+      "platform": "ios",
+      "language": "zh",
+      "appearance": "light",
+      "scene": "04-ledgers",
+      "width": 1320,
+      "height": 2868,
+      "bytes": 440438,
+      "sha256": "bb1a0aadf91eb9b05aa178d0d8418aed66421ff23a1d354453b86df299c85beb",
+      "copy": {
+        "title": "生活分本记录",
+        "sub": "生活、旅行与成长，各有一本账"
+      },
+      "raw": [
+        {
+          "path": "raw/ios/zh/light/04-ledgers.png",
+          "width": 1320,
+          "height": 2868,
+          "bytes": 265023,
+          "sha256": "2a39c65e3041d01a5fa00f4b12b8ce9e6c7993d0bfa89b7422ab89f7c3d66fb4"
+        }
+      ],
+      "checks": {
+        "missing": 0,
+        "overlaps": 0,
+        "clipped": 0,
+        "noSimulatedDeviceFrames": true,
+        "textToScreenshotGap": 57.03125,
+        "fonts": [
+          {
+            "text": "生活分本记录",
+            "fonts": [
+              {
+                "familyName": "Smiley Sans Oblique",
+                "postScriptName": "SmileySans-Oblique",
+                "isCustomFont": true,
+                "glyphCount": 6
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

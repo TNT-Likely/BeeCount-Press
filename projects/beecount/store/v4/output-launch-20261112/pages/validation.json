@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "ok": true,
+  "count": {
+    "screenshots": 144,
+    "featureGraphics": 2,
+    "total": 146
+  },
+  "nativeSourcesChecked": 144,
+  "missing": [],
+  "overlaps": [],
+  "clipped": [],
+  "fontErrors": [],
+  "runtimeErrors": [],
+  "failedRequests": [],
+  "minTextToScreenshotGap": 28.796875,
+  "fontFamilies": [
+    "Source Han Sans SC"
+  ],
+  "sourceHashesUnchanged": true,
+  "outputHashesReadBack": true,
+  "noCrossPlatformFallback": true,
+  "nativeScreenshotsUncropped": true,
+  "noSimulatedDeviceFrames": true
+}

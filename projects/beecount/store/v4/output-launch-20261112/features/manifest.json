@@ -1,0 +1,4983 @@
+{
+  "schemaVersion": 3,
+  "kind": "beecount-v4-store-artwork",
+  "generatedAt": "2026-11-13T11:01:03.738Z",
+  "renderer": "Chrome 157.0.8103.51 / Playwright",
+  "origin": "http://127.0.0.1:8766",
+  "count": {
+    "screenshots": 96,
+    "featureGraphics": 2,
+    "total": 98
+  },
+  "themeCount": 12,
+  "selections": {
+    "suite": "features",
+    "platforms": [
+      "ios",
+      "ios-medium",
+      "android",
+      "feature"
+    ],
+    "languages": [
+      "zh",
+      "en"
+    ],
+    "modes": [
+      "light",
+      "dark"
+    ],
+    "scenes": [
+      "01-local",
+      "02-cloud",
+      "03-ai",
+      "04-photo",
+      "05-open",
+      "06-import",
+      "07-ledgers",
+      "08-theme"
+    ]
+  },
+  "nativeScreenshotsUncropped": true,
+  "noSimulatedDeviceFrames": true,
+  "featureSources": "Android light only, matching language",
+  "images": [
+    {
+      "path": "ios/zh/light/01-local.png",
+      "kind": "screenshot",
+      "platform": "ios",
+      "language": "zh",
+      "appearance": "light",
+      "scene": "01-local",
+      "width": 1320,
+      "height": 2868,
+      "bytes": 570174,
+      "sha256": "d535be4b2b5bae8970a511030c1f7b18d56a80195128da7ff81defc93c706839",
+      "copy": {
+        "title": "本地优先",
+        "sub": "账本默认保存在设备上，日常记账不必连接云服务。",
+        "points": [
+          "账本默认存本地",
+          "离线也能记录收支",
+          "云端与 AI 按需启用"
+        ]
+      },
+      "raw": [
+        {
+          "path": "raw/ios/zh/light/01-home.png",
+          "width": 1320,
+          "height": 2868,
+          "bytes": 343256,
+          "sha256": "b1b1484f87366f14eb444141c345556b9ea39747379d192b72c39dbbfee156ef"
+        }
+      ],
+      "checks": {
+        "missing": 0,
+        "overlaps": 0,
+        "clipped": 0,
+        "noSimulatedDeviceFrames": true,
+        "textToScreenshotGap": 31.828125,
+        "fonts": [
+          {
+            "text": "本地优先",
+            "fonts": [
+              {
+                "familyName": "Source Han Sans SC",
+                "postScriptName": "SourceHanSansSC-Bold",
+                "isCustomFont": true,
+                "glyphCount": 4
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "path": "ios/zh/light/02-cloud.png",
+      "kind": "screenshot",
+      "platform": "ios",
+      "language": "zh",
+      "appearance": "light",
+      "scene": "02-cloud",
+      "width": 1320,
+      "height": 2868,
+      "bytes": 361555,
+      "sha256": "585d4a2ab9077cddc06eb2abbc2417a0b2a751716c7ef7bca30aa38b5e469907",
+      "copy": {
+        "title": "云服务按需选",
+        "sub": "从本地记账开始，再选择适合自己的同步方式。",
+        "points": [
+          "不连接云也能记账",
+          "按需选择同步服务",
+          "支持自托管 BeeCount Cloud"
+        ]
+      },
+      "raw": [
+        {
+          "path": "raw/ios/zh/light/09-cloud.png",
+          "width": 1320,
+          "height": 2868,
+          "bytes": 138318,
+          "sha256": "7de94cdee9e54597701551fe00d7eb33b049a1dc5cd213be7a6c327811bea0d0"
+        }
+      ],
+      "checks": {
+        "missing": 0,
+        "overlaps": 0,
+        "clipped": 0,
+        "noSimulatedDeviceFrames": true,
+        "textToScreenshotGap": 31.828125,
+        "fonts": [
+          {
+            "text": "云服务按需选",
+            "fonts": [
+              {
+                "familyName": "Source Han Sans SC",
+                "postScriptName": "SourceHanSansSC-Bold",
+                "isCustomFont": true,
+                "glyphCount": 6
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "path": "ios/zh/light/03-ai.png",
+      "kind": "screenshot",
+      "platform": "ios",
+      "language": "zh",
+      "appearance": "light",
+      "scene": "03-ai",
+      "width": 1320,
+      "height": 2868,
+      "bytes": 501974,
+      "sha256": "5f828bf26a0efe24f6cf8761168d544cce0ed16d11063d8747c72e2ee150ab7a",
+      "copy": {
+        "title": "AI 按需开启",
+        "sub": "按自己的需要配置 AI，让助手读懂你的账本。",
+        "points": [
+          "AI 功能按需配置",
+          "选择自己的模型服务",
+          "不用 AI 也能完整记账"
+        ]
+      },
+      "raw": [
+        {
+          "path": "raw/stills/ios/zh/light/13-aichat.png",
+          "width": 1320,
+          "height": 2868,
+          "bytes": 276481,
+          "sha256": "fb1cef6a8fbea7552ef9f0623da6dcd8eb6594623a54189ccbc4bb3878d151f4"
+        }
+      ],
+      "checks": {
+        "missing": 0,
+        "overlaps": 0,
+        "clipped": 0,
+        "noSimulatedDeviceFrames": true,
+        "textToScreenshotGap": 31.828125,
+        "fonts": [
+          {
+            "text": "AI 按需开启",
+            "fonts": [
+              {
+                "familyName": "Source Han Sans SC",
+                "postScriptName": "SourceHanSansSC-Bold",
+                "isCustomFont": true,
+                "glyphCount": 7
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "path": "ios/zh/light/04-photo.png",
+      "kind": "screenshot",
+      "platform": "ios",
+      "language": "zh",
+      "appearance": "light",
+      "scene": "04-photo",
+      "width": 1320,
+      "height": 2868,
+      "bytes": 567823,
+      "sha256": "0324b26c75c8e1192c2ca8488bca1aca0f0a6ac592c1ef3afaebf3929dfff5f7",
+      "copy": {
+        "title": "图片也能记账",
+        "sub": "从账单图片提取收支，让日常记录更轻松。",
+        "points": [
+          "从相册选择账单图片",
+          "模型识别金额与分类",
+          "入账后回到账本查看"
+        ]
+      },
+      "raw": [
+        {
+          "path": "raw/stills/ios/zh/light/14-photo.png",
+          "width": 1320,
+          "height": 2868,
+          "bytes": 337991,
+          "sha256": "70032be69007b571645088e38ab24e45519deeeaa1cd5c4b907e0258af020343"
+        }
+      ],
+      "checks": {
+        "missing": 0,
+        "overlaps": 0,
+        "clipped": 0,
+        "noSimulatedDeviceFrames": true,
+        "textToScreenshotGap": 31.828125,
+        "fonts": [
+          {
+            "text": "图片也能记账",
+            "fonts": [
+              {
+                "familyName": "Source Han Sans SC",
+                "postScriptName": "SourceHanSansSC-Bold",
+                "isCustomFont": true,
+                "glyphCount": 6
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "path": "ios/zh/light/05-open.png",
+      "kind": "screenshot",
+      "platform": "ios",
+      "language": "zh",
+      "appearance": "light",
+      "scene": "05-open",
+      "width": 1320,
+      "height": 2868,
+      "bytes": 569841,
+      "sha256": "e0d81477bb137a5e0ce382b0a960aad4c7fd907477a132d271afecdd25dba66f",
+      "copy": {
+        "title": "开源透明",
+        "sub": "代码公开可查，让每一份信任都有据可循。",
+        "points": [
+          "源代码公开可查",
+          "日常记账没有广告打扰",
+          "持续改进的开源项目"
+        ]
+      },
+      "raw": [
+        {
+          "path": "raw/ios/zh/light/01-home.png",
+          "width": 1320,
+          "height": 2868,
+          "bytes": 343256,
+          "sha256": "b1b1484f87366f14eb444141c345556b9ea39747379d192b72c39dbbfee156ef"
+        }
+      ],
+      "checks": {
+        "missing": 0,
+        "overlaps": 0,
+        "clipped": 0,
+        "noSimulatedDeviceFrames": true,
+        "textToScreenshotGap": 31.828125,
+        "fonts": [
+          {
+            "text": "开源透明",
+            "fonts": [
+              {
+                "familyName": "Source Han Sans SC",
+                "postScriptName": "SourceHanSansSC-Bold",
+                "isCustomFont": true,
+                "glyphCount": 4
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "path": "ios/zh/light/06-import.png",
+      "kind": "screenshot",
+      "platform": "ios",
+      "language": "zh",
+      "appearance": "light",
+      "scene": "06-import",
+      "width": 1320,
+      "height": 2868,
+      "bytes": 564692,
+      "sha256": "b055940c4e9fd87787b08508c0fdaa55cc6d2345a624c5ae7196840a3a45ca28",
+      "copy": {
+        "title": "旧账轻松导入",
+        "sub": "导入已有账单，确认映射后继续你的记账习惯。",
+        "points": [
+          "导入 CSV 账单",
+          "确认字段与分类映射",
+          "导出数据，自主保管"
+        ]
+      },
+      "raw": [
+        {
+          "path": "raw/ios/zh/light/07-mine.png",
+          "width": 1320,
+          "height": 2868,
+          "bytes": 345821,
+          "sha256": "90a8860ddb7c538bd005c43da4830b042d683ec5139fe35c4d972469c933ab3b"
+        }
+      ],
+      "checks": {
+        "missing": 0,
+        "overlaps": 0,
+        "clipped": 0,
+        "noSimulatedDeviceFrames": true,
+        "textToScreenshotGap": 31.828125,
+        "fonts": [
+          {
+            "text": "旧账轻松导入",
+            "fonts": [
+              {
+                "familyName": "Source Han Sans SC",
+                "postScriptName": "SourceHanSansSC-Bold",
+                "isCustomFont": true,
+                "glyphCount": 6
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "path": "ios/zh/light/07-ledgers.png",
+      "kind": "screenshot",
+      "platform": "ios",
+      "language": "zh",
+      "appearance": "light",
+      "scene": "07-ledgers",
+      "width": 1320,
+      "height": 2868,
+      "bytes": 513208,
+      "sha256": "d0e9857f58da1cd5551c6f17d0f8cfdce05cccc3ce40de40b2bc44a54792712b",
+      "copy": {
+        "title": "多账本分开记",
+        "sub": "日常、旅行与成长，按自己的生活方式分本记录。",
+        "points": [
+          "日常生活一本账",
+          "旅行计划分开记录",
+          "同一个 App，自由切换"
+        ]
+      },
+      "raw": [
+        {
+          "path": "raw/ios/zh/light/04-ledgers.png",
+          "width": 1320,
+          "height": 2868,
+          "bytes": 265023,
+          "sha256": "2a39c65e3041d01a5fa00f4b12b8ce9e6c7993d0bfa89b7422ab89f7c3d66fb4"
+        }
+      ],
+      "checks": {
+        "missing": 0,
+        "overlaps": 0,
+        "clipped": 0,
+        "noSimulatedDeviceFrames": true,
+        "textToScreenshotGap": 31.828125,
+        "fonts": [
+          {
+            "text": "多账本分开记",
+            "fonts": [
+              {
+                "familyName": "Source Han Sans SC",
+                "postScriptName": "SourceHanSansSC-Bold",
+                "isCustomFont": true,
+                "glyphCount": 6
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "path": "ios/zh/light/08-theme.png",
+      "kind": "screenshot",
+      "platform": "ios",
+      "language": "zh",
+      "appearance": "light",
+      "scene": "08-theme",
+      "width": 1320,
+      "height": 2868,
+      "bytes": 496675,
+      "sha256": "e8245e75c041a08c4300cbb18bba09c1fa1b2b5646091f56c98fb058d05108e8",
+      "copy": {
+        "title": "外观由你决定",
+        "sub": "浅色、暗黑与主题色，让每天打开都合心意。",
+        "points": [
+          "浅色与暗黑外观",
+          "多种预设主题色",
+          "自定义喜欢的颜色"
+        ]
+      },
+      "raw": [
+        {
+          "path": "raw/ios/zh/light/11-personalization.png",
+          "width": 1320,
+          "height": 2868,
+          "bytes": 233050,
+          "sha256": "a9503a4764419194a9054a33ce37cf49b1b5b1317121553af669d6532cd049ca"
+        }
+      ],
+      "checks": {
+        "missing": 0,
+        "overlaps": 0,
+        "clipped": 0,
+        "noSimulatedDeviceFrames": true,
+        "textToScreenshotGap": 31.828125,
+        "fonts": [
+          {
+            "text": "外观由你决定",
+            "fonts": [
+              {
+                "familyName": "Source Han Sans SC",
+                "postScriptName": "SourceHanSansSC-Bold",
+                "isCustomFont": true,
+                "glyphCount": 6
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "path": "ios/zh/dark/01-local.png",
+      "kind": "screenshot",
+      "platform": "ios",
+      "language": "zh",
+      "appearance": "dark",
+      "scene": "01-local",
+      "width": 1320,
+      "height": 2868,
+      "bytes": 649356,
+      "sha256": "48cd81b1d456e9b0622824538214a9c7d0ccc32c64e838454c9d0415fba7af17",
+      "copy": {
+        "title": "本地优先",
+        "sub": "账本默认保存在设备上，日常记账不必连接云服务。",
+        "points": [
+          "账本默认存本地",
+          "离线也能记录收支",
+          "云端与 AI 按需启用"
+        ]
+      },
+      "raw": [
+        {
+          "path": "raw/ios/zh/dark/01-home.png",
+          "width": 1320,
+          "height": 2868,
+          "bytes": 353663,
+          "sha256": "496c36f99d17592770a156e23d4ec7063b8b31ed11d3f4c3bd1a84832862edfc"
+        }
+      ],
+      "checks": {
+        "missing": 0,
+        "overlaps": 0,
+        "clipped": 0,
+        "noSimulatedDeviceFrames": true,
+        "textToScreenshotGap": 31.828125,
+        "fonts": [
+          {
+            "text": "本地优先",
+            "fonts": [
+              {
+                "familyName": "Source Han Sans SC",
+                "postScriptName": "SourceHanSansSC-Bold",
+                "isCustomFont": true,
+                "glyphCount": 4
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "path": "ios/zh/dark/02-cloud.png",
+      "kind": "screenshot",
+      "platform": "ios",
+      "language": "zh",
+      "appearance": "dark",
+      "scene": "02-cloud",
+      "width": 1320,
+      "height": 2868,
+      "bytes": 423651,
+      "sha256": "93f204316efc33f4a462a38a11bac8779cd5c76d01d8a933ae0def78146e4b61",
+      "copy": {
+        "title": "云服务按需选",
+        "sub": "从本地记账开始，再选择适合自己的同步方式。",
+        "points": [
+          "不连接云也能记账",
+          "按需选择同步服务",
+          "支持自托管 BeeCount Cloud"
+        ]
+      },
+      "raw": [
+        {
+          "path": "raw/ios/zh/dark/09-cloud.png",
+          "width": 1320,
+          "height": 2868,
+          "bytes": 142436,
+          "sha256": "47b952738f0abe416fc71a1fb2e1d32c877a82273e03ad973cdec89986e88f1d"
+        }
+      ],
+      "checks": {
+        "missing": 0,
+        "overlaps": 0,
+        "clipped": 0,
+        "noSimulatedDeviceFrames": true,
+        "textToScreenshotGap": 31.828125,
+        "fonts": [
+          {
+            "text": "云服务按需选",
+            "fonts": [
+              {
+                "familyName": "Source Han Sans SC",
+                "postScriptName": "SourceHanSansSC-Bold",
+                "isCustomFont": true,
+                "glyphCount": 6
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "path": "ios/zh/dark/03-ai.png",
+      "kind": "screenshot",
+      "platform": "ios",
+      "language": "zh",
+      "appearance": "dark",
+      "scene": "03-ai",
+      "width": 1320,
+      "height": 2868,
+      "bytes": 565169,
+      "sha256": "448ce4b6fcda8ae3ec106f029cf1462837ec7e244b22ae8b07efd1d9402f428f",
+      "copy": {
+        "title": "AI 按需开启",
+        "sub": "按自己的需要配置 AI，让助手读懂你的账本。",
+        "points": [
+          "AI 功能按需配置",
+          "选择自己的模型服务",
+          "不用 AI 也能完整记账"
+        ]
+      },
+      "raw": [
+        {
+          "path": "raw/stills/ios/zh/dark/13-aichat.png",
+          "width": 1320,
+          "height": 2868,
+          "bytes": 279072,
+          "sha256": "818fdde16aebbf2c0a08d94870aa1b4a9bc5c05d3ddb51eec11f103edc892fb7"
+        }
+      ],
+      "checks": {
+        "missing": 0,
+        "overlaps": 0,
+        "clipped": 0,
+        "noSimulatedDeviceFrames": true,
+        "textToScreenshotGap": 31.828125,
+        "fonts": [
+          {
+            "text": "AI 按需开启",
+            "fonts": [
+              {
+                "familyName": "Source Han Sans SC",
+                "postScriptName": "SourceHanSansSC-Bold",
+                "isCustomFont": true,
+                "glyphCount": 7
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "path": "ios/zh/dark/04-photo.png",
+      "kind": "screenshot",
+      "platform": "ios",
+      "language": "zh",
+      "appearance": "dark",
+      "scene": "04-photo",
+      "width": 1320,
+      "height": 2868,
+      "bytes": 647754,
+      "sha256": "660d57014a44422a9e3aaa884e399c6f3020fad200f51dbe1281f3a937494813",
+      "copy": {
+        "title": "图片也能记账",
+        "sub": "从账单图片提取收支，让日常记录更轻松。",
+        "points": [
+          "从相册选择账单图片",
+          "模型识别金额与分类",
+          "入账后回到账本查看"
+        ]
+      },
+      "raw": [
+        {
+          "path": "raw/stills/ios/zh/dark/14-photo.png",
+          "width": 1320,
+          "height": 2868,
+          "bytes": 346538,
+          "sha256": "61f18aa44cdc8e3bddc32b7feb02153e452ae478529d4b51303b2e8dba48283f"
+        }
+      ],
+      "checks": {
+        "missing": 0,
+        "overlaps": 0,
+        "clipped": 0,
+        "noSimulatedDeviceFrames": true,
+        "textToScreenshotGap": 31.828125,
+        "fonts": [
+          {
+            "text": "图片也能记账",
+            "fonts": [
+              {
+                "familyName": "Source Han Sans SC",
+                "postScriptName": "SourceHanSansSC-Bold",
+                "isCustomFont": true,
+                "glyphCount": 6
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "path": "ios/zh/dark/05-open.png",
+      "kind": "screenshot",
+      "platform": "ios",
+      "language": "zh",
+      "appearance": "dark",
+      "scene": "05-open",
+      "width": 1320,
+      "height": 2868,
+      "bytes": 647460,
+      "sha256": "e06d8d0844d44a79cd679a9178a1771186bbbd21f0270985fed9b5cd8c4e78f1",
+      "copy": {
+        "title": "开源透明",
+        "sub": "代码公开可查，让每一份信任都有据可循。",
+        "points": [
+          "源代码公开可查",
+          "日常记账没有广告打扰",
+          "持续改进的开源项目"
+        ]
+      },
+      "raw": [
+        {
+          "path": "raw/ios/zh/dark/01-home.png",
+          "width": 1320,
+          "height": 2868,
+          "bytes": 353663,
+          "sha256": "496c36f99d17592770a156e23d4ec7063b8b31ed11d3f4c3bd1a84832862edfc"
+        }
+      ],
+      "checks": {
+        "missing": 0,
+        "overlaps": 0,
+        "clipped": 0,
+        "noSimulatedDeviceFrames": true,
+        "textToScreenshotGap": 31.828125,
+        "fonts": [
+          {
+            "text": "开源透明",
+            "fonts": [
+              {
+                "familyName": "Source Han Sans SC",
+                "postScriptName": "SourceHanSansSC-Bold",
+                "isCustomFont": true,
+                "glyphCount": 4
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "path": "ios/zh/dark/06-import.png",
+      "kind": "screenshot",
+      "platform": "ios",
+      "language": "zh",
+      "appearance": "dark",
+      "scene": "06-import",
+      "width": 1320,
+      "height": 2868,
+      "bytes": 645850,
+      "sha256": "5f714f41a58046d037079be1966daa7d104c3c709c8f4faf60205ae97cda0e93",
+      "copy": {
+        "title": "旧账轻松导入",
+        "sub": "导入已有账单，确认映射后继续你的记账习惯。",
+        "points": [
+          "导入 CSV 账单",
+          "确认字段与分类映射",
+          "导出数据，自主保管"
+        ]
+      },
+      "raw": [
+        {
+          "path": "raw/ios/zh/dark/07-mine.png",
+          "width": 1320,
+          "height": 2868,
+          "bytes": 359936,
+          "sha256": "2cff9659542eab9d46f017c876f6df91be51ed9ddfd48103d60c51afd9e221c2"
+        }
+      ],
+      "checks": {
+        "missing": 0,
+        "overlaps": 0,
+        "clipped": 0,
+        "noSimulatedDeviceFrames": true,
+        "textToScreenshotGap": 31.828125,
+        "fonts": [
+          {
+            "text": "旧账轻松导入",
+            "fonts": [
+              {
+                "familyName": "Source Han Sans SC",
+                "postScriptName": "SourceHanSansSC-Bold",
+                "isCustomFont": true,
+                "glyphCount": 6
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "path": "ios/zh/dark/07-ledgers.png",
+      "kind": "screenshot",
+      "platform": "ios",
+      "language": "zh",
+      "appearance": "dark",
+      "scene": "07-ledgers",
+      "width": 1320,
+      "height": 2868,
+      "bytes": 584099,
+      "sha256": "da129e6f4677dcdbdb5e056f65f6299cc1a36dfad6acd1135084665521263f83",
+      "copy": {
+        "title": "多账本分开记",
+        "sub": "日常、旅行与成长，按自己的生活方式分本记录。",
+        "points": [
+          "日常生活一本账",
+          "旅行计划分开记录",
+          "同一个 App，自由切换"
+        ]
+      },
+      "raw": [
+        {
+          "path": "raw/ios/zh/dark/04-ledgers.png",
+          "width": 1320,
+          "height": 2868,
+          "bytes": 272448,
+          "sha256": "78d6b774c74f16fd3397f3db1f3ddc4d32afd095611aa6fca4610e9f808fdfee"
+        }
+      ],
+      "checks": {
+        "missing": 0,
+        "overlaps": 0,
+        "clipped": 0,
+        "noSimulatedDeviceFrames": true,
+        "textToScreenshotGap": 31.828125,
+        "fonts": [
+          {
+            "text": "多账本分开记",
+            "fonts": [
+              {
+                "familyName": "Source Han Sans SC",
+                "postScriptName": "SourceHanSansSC-Bold",
+                "isCustomFont": true,
+                "glyphCount": 6
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "path": "ios/zh/dark/08-theme.png",
+      "kind": "screenshot",
+      "platform": "ios",
+      "language": "zh",
+      "appearance": "dark",
+      "scene": "08-theme",
+      "width": 1320,
+      "height": 2868,
+      "bytes": 570833,
+      "sha256": "31a63ac06f32e489e80fba76f76c1bb8ae703fc1aaab0bdcad802ac1d4dc45ab",
+      "copy": {
+        "title": "外观由你决定",
+        "sub": "浅色、暗黑与主题色，让每天打开都合心意。",
+        "points": [
+          "浅色与暗黑外观",
+          "多种预设主题色",
+          "自定义喜欢的颜色"
+        ]
+      },
+      "raw": [
+        {
+          "path": "raw/ios/zh/dark/11-personalization.png",
+          "width": 1320,
+          "height": 2868,
+          "bytes": 253902,
+          "sha256": "48361c8c2b2a268d2d5d9e7bbe405a0cf89c33fb938100df364f946966fbd9c1"
+        }
+      ],
+      "checks": {
+        "missing": 0,
+        "overlaps": 0,
+        "clipped": 0,
+        "noSimulatedDeviceFrames": true,
+        "textToScreenshotGap": 31.828125,
+        "fonts": [
+          {
+            "text": "外观由你决定",
+            "fonts": [
+              {
+                "familyName": "Source Han Sans SC",
+                "postScriptName": "SourceHanSansSC-Bold",
+                "isCustomFont": true,
+                "glyphCount": 6
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "path": "ios/en/light/01-local.png",
+      "kind": "screenshot",
+      "platform": "ios",
+      "language": "en",
+      "appearance": "light",
+      "scene": "01-local",
+      "width": 1320,
+      "height": 2868,
+      "bytes": 592179,
+      "sha256": "6ec8ed142ef72fcd056b6118b9ed2e8ac6d7347316c1e03bc4ef5a1fa1343012",
+      "copy": {
+        "title": "Local first",
+        "sub": "Keep your books on your device. Cloud is optional.",
+        "points": [
+          "Stored on your device",
+          "Record entries offline",
+          "Cloud and AI are optional"
+        ]
+      },
+      "raw": [
+        {
+          "path": "raw/ios/en/light/01-home.png",
+          "width": 1320,
+          "height": 2868,
+          "bytes": 369761,
+          "sha256": "4acaac036f7dfc444acd45209d3ca868fc7a6a8f2fd9f1dc273bee122ccc774c"
+        }
+      ],
+      "checks": {
+        "missing": 0,
+        "overlaps": 0,
+        "clipped": 0,
+        "noSimulatedDeviceFrames": true,
+        "textToScreenshotGap": 64.828125,
+        "fonts": [
+          {
+            "text": "Local first",
+            "fonts": [
+              {
+                "familyName": "Source Han Sans SC",
+                "postScriptName": "SourceHanSansSC-Bold",
+                "isCustomFont": true,
+                "glyphCount": 10
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "path": "ios/en/light/02-cloud.png",
+      "kind": "screenshot",
+      "platform": "ios",
+      "language": "en",
+      "appearance": "light",
+      "scene": "02-cloud",
+      "width": 1320,
+      "height": 2868,
+      "bytes": 359370,
+      "sha256": "b270d88edc8e20aced4061d4d22b6e0b8dc01e975b46ccb93d61c760d61170b3",
+      "copy": {
+        "title": "Choose your cloud",
+        "sub": "Start locally. Connect a sync service when you need it.",
+        "points": [
+          "Works without cloud",
+          "Choose your sync service",
+          "Self-host BeeCount Cloud"
+        ]
+      },
+      "raw": [
+        {
+          "path": "raw/ios/en/light/09-cloud.png",
+          "width": 1320,
+          "height": 2868,
+          "bytes": 136779,
+          "sha256": "a666bdcd14a48fb600c377c26392f837401be19164c61496abe0594351bb48d7"
+        }
+      ],
+      "checks": {
+        "missing": 0,
+        "overlaps": 0,
+        "clipped": 0,
+        "noSimulatedDeviceFrames": true,
+        "textToScreenshotGap": 64.828125,
+        "fonts": [
+          {
+            "text": "Choose your cloud",
+            "fonts": [
+              {
+                "familyName": "Source Han Sans SC",
+                "postScriptName": "SourceHanSansSC-Bold",
+                "isCustomFont": true,
+                "glyphCount": 17
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "path": "ios/en/light/03-ai.png",
+      "kind": "screenshot",
+      "platform": "ios",
+      "language": "en",
+      "appearance": "light",
+      "scene": "03-ai",
+      "width": 1320,
+      "height": 2868,
+      "bytes": 539917,
+      "sha256": "6e5bfc4a0ed52fa7611cd54ad7e64c76da45957cea06a590c2d793ecdc3c9868",
+      "copy": {
+        "title": "AI, on your terms",
+        "sub": "Configure an assistant that works with your books.",
+        "points": [
+          "Configure AI when needed",
+          "Choose a model provider",
+          "Everyday tracking works without AI"
+        ]
+      },
+      "raw": [
+        {
+          "path": "raw/stills/ios/en/light/13-aichat.png",
+          "width": 1320,
+          "height": 2868,
+          "bytes": 285369,
+          "sha256": "d74f3f255dd1ef2a28fd910bff5e0ac19033d6faa484f90b4a0e79d5705d6719"
+        }
+      ],
+      "checks": {
+        "missing": 0,
+        "overlaps": 0,
+        "clipped": 0,
+        "noSimulatedDeviceFrames": true,
+        "textToScreenshotGap": 64.828125,
+        "fonts": [
+          {
+            "text": "AI, on your terms",
+            "fonts": [
+              {
+                "familyName": "Source Han Sans SC",
+                "postScriptName": "SourceHanSansSC-Bold",
+                "isCustomFont": true,
+                "glyphCount": 17
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "path": "ios/en/light/04-photo.png",
+      "kind": "screenshot",
+      "platform": "ios",
+      "language": "en",
+      "appearance": "light",
+      "scene": "04-photo",
+      "width": 1320,
+      "height": 2868,
+      "bytes": 590304,
+      "sha256": "f4be642034c13ec47595c31427f08e7555771aefb525aa104c64c6727d1b3b28",
+      "copy": {
+        "title": "A picture, an entry",
+        "sub": "Extract transaction details from a receipt or bill.",
+        "points": [
+          "Pick a bill or receipt",
+          "Recognize amount and category",
+          "Find the entry in your ledger"
+        ]
+      },
+      "raw": [
+        {
+          "path": "raw/stills/ios/en/light/14-photo.png",
+          "width": 1320,
+          "height": 2868,
+          "bytes": 356625,
+          "sha256": "0d0a6296b15e5c7f516e09faa3e7adc9770cd1d9d73017268ec6b6ed83b45c5c"
+        }
+      ],
+      "checks": {
+        "missing": 0,
+        "overlaps": 0,
+        "clipped": 0,
+        "noSimulatedDeviceFrames": true,
+        "textToScreenshotGap": 64.828125,
+        "fonts": [
+          {
+            "text": "A picture, an entry",
+            "fonts": [
+              {
+                "familyName": "Source Han Sans SC",
+                "postScriptName": "SourceHanSansSC-Bold",
+                "isCustomFont": true,
+                "glyphCount": 19
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "path": "ios/en/light/05-open.png",
+      "kind": "screenshot",
+      "platform": "ios",
+      "language": "en",
+      "appearance": "light",
+      "scene": "05-open",
+      "width": 1320,
+      "height": 2868,
+      "bytes": 593790,
+      "sha256": "944dbb089dd0b8ef3955b727ad45bbedf141fed02126a15208f0258b26ee8c3c",
+      "copy": {
+        "title": "Open source",
+        "sub": "Public source code, built for your everyday books.",
+        "points": [
+          "Public source code",
+          "No ads inside the App",
+          "An evolving open-source project"
+        ]
+      },
+      "raw": [
+        {
+          "path": "raw/ios/en/light/01-home.png",
+          "width": 1320,
+          "height": 2868,
+          "bytes": 369761,
+          "sha256": "4acaac036f7dfc444acd45209d3ca868fc7a6a8f2fd9f1dc273bee122ccc774c"
+        }
+      ],
+      "checks": {
+        "missing": 0,
+        "overlaps": 0,
+        "clipped": 0,
+        "noSimulatedDeviceFrames": true,
+        "textToScreenshotGap": 64.828125,
+        "fonts": [
+          {
+            "text": "Open source",
+            "fonts": [
+              {
+                "familyName": "Source Han Sans SC",
+                "postScriptName": "SourceHanSansSC-Bold",
+                "isCustomFont": true,
+                "glyphCount": 11
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "path": "ios/en/light/06-import.png",
+      "kind": "screenshot",
+      "platform": "ios",
+      "language": "en",
+      "appearance": "light",
+      "scene": "06-import",
+      "width": 1320,
+      "height": 2868,
+      "bytes": 588975,
+      "sha256": "e691658c7362bfaf368f40366a2298d7e77168d3d6bbf218e6b236990f913775",
+      "copy": {
+        "title": "Bring your history",
+        "sub": "Import existing bills and keep your history together.",
+        "points": [
+          "Import CSV records",
+          "Review fields and categories",
+          "Export and keep your data"
+        ]
+      },
+      "raw": [
+        {
+          "path": "raw/ios/en/light/07-mine.png",
+          "width": 1320,
+          "height": 2868,
+          "bytes": 363797,
+          "sha256": "a7a018413bb542863921c3cee9026d5b5c4c8711636c0188c338e0a7aaf3acc8"
+        }
+      ],
+      "checks": {
+        "missing": 0,
+        "overlaps": 0,
+        "clipped": 0,
+        "noSimulatedDeviceFrames": true,
+        "textToScreenshotGap": 64.828125,
+        "fonts": [
+          {
+            "text": "Bring your history",
+            "fonts": [
+              {
+                "familyName": "Source Han Sans SC",
+                "postScriptName": "SourceHanSansSC-Bold",
+                "isCustomFont": true,
+                "glyphCount": 18
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "path": "ios/en/light/07-ledgers.png",
+      "kind": "screenshot",
+      "platform": "ios",
+      "language": "en",
+      "appearance": "light",
+      "scene": "07-ledgers",
+      "width": 1320,
+      "height": 2868,
+      "bytes": 529000,
+      "sha256": "f23d8e6f3701c88f65c589654b3699af6b054f819c34725e164246d83c5123f0",
+      "copy": {
+        "title": "Separate your books",
+        "sub": "Separate books for everyday life, travel and learning.",
+        "points": [
+          "A book for everyday life",
+          "Travel plans kept separate",
+          "Switch books in one App"
+        ]
+      },
+      "raw": [
+        {
+          "path": "raw/ios/en/light/04-ledgers.png",
+          "width": 1320,
+          "height": 2868,
+          "bytes": 272284,
+          "sha256": "217f25eac87615dfb8c8dc35bda8d1fdc45b4e0b86d85da4e62ce5f0d9237efd"
+        }
+      ],
+      "checks": {
+        "missing": 0,
+        "overlaps": 0,
+        "clipped": 0,
+        "noSimulatedDeviceFrames": true,
+        "textToScreenshotGap": 64.828125,
+        "fonts": [
+          {
+            "text": "Separate your books",
+            "fonts": [
+              {
+                "familyName": "Source Han Sans SC",
+                "postScriptName": "SourceHanSansSC-Bold",
+                "isCustomFont": true,
+                "glyphCount": 19
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "path": "ios/en/light/08-theme.png",
+      "kind": "screenshot",
+      "platform": "ios",
+      "language": "en",
+      "appearance": "light",
+      "scene": "08-theme",
+      "width": 1320,
+      "height": 2868,
+      "bytes": 511090,
+      "sha256": "2610f02e0696ae49f098f63f7f3510bcdbf6ffb03a9ee9f0fc9b36e8f47aead6",
+      "copy": {
+        "title": "Your colors, your way",
+        "sub": "Light, dark and a palette that feels like you.",
+        "points": [
+          "Light and dark modes",
+          "Ready-to-use palettes",
+          "Your own custom colors"
+        ]
+      },
+      "raw": [
+        {
+          "path": "raw/ios/en/light/11-personalization.png",
+          "width": 1320,
+          "height": 2868,
+          "bytes": 235715,
+          "sha256": "4419cbb60f4b1a410b8084822c5823b0c3fff855b203a6a8071dbf3d0747ffaa"
+        }
+      ],
+      "checks": {
+        "missing": 0,
+        "overlaps": 0,
+        "clipped": 0,
+        "noSimulatedDeviceFrames": true,
+        "textToScreenshotGap": 64.828125,
+        "fonts": [
+          {
+            "text": "Your colors, your way",
+            "fonts": [
+              {
+                "familyName": "Source Han Sans SC",
+                "postScriptName": "SourceHanSansSC-Bold",
+                "isCustomFont": true,
+                "glyphCount": 21
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "path": "ios/en/dark/01-local.png",
+      "kind": "screenshot",
+      "platform": "ios",
+      "language": "en",
+      "appearance": "dark",
+      "scene": "01-local",
+      "width": 1320,
+      "height": 2868,
+      "bytes": 677102,
+      "sha256": "d52883952ffd2233705d14dcf1c760da6f60f0916fa869731938ca369134f555",
+      "copy": {
+        "title": "Local first",
+        "sub": "Keep your books on your device. Cloud is optional.",
+        "points": [
+          "Stored on your device",
+          "Record entries offline",
+          "Cloud and AI are optional"
+        ]
+      },
+      "raw": [
+        {
+          "path": "raw/ios/en/dark/01-home.png",
+          "width": 1320,
+          "height": 2868,
+          "bytes": 384012,
+          "sha256": "58d90a00c7dded23e4ead4b2458a986aa89fad52ac028b591a4a4885eb7f91d9"
+        }
+      ],
+      "checks": {
+        "missing": 0,
+        "overlaps": 0,
+        "clipped": 0,
+        "noSimulatedDeviceFrames": true,
+        "textToScreenshotGap": 64.828125,
+        "fonts": [
+          {
+            "text": "Local first",
+            "fonts": [
+              {
+                "familyName": "Source Han Sans SC",
+                "postScriptName": "SourceHanSansSC-Bold",
+                "isCustomFont": true,
+                "glyphCount": 10
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "path": "ios/en/dark/02-cloud.png",
+      "kind": "screenshot",
+      "platform": "ios",
+      "language": "en",
+      "appearance": "dark",
+      "scene": "02-cloud",
+      "width": 1320,
+      "height": 2868,
+      "bytes": 420332,
+      "sha256": "ea1a90264dea5e90911782aaee3b04525b9fa411dd7f20d0b496014f2bef3247",
+      "copy": {
+        "title": "Choose your cloud",
+        "sub": "Start locally. Connect a sync service when you need it.",
+        "points": [
+          "Works without cloud",
+          "Choose your sync service",
+          "Self-host BeeCount Cloud"
+        ]
+      },
+      "raw": [
+        {
+          "path": "raw/ios/en/dark/09-cloud.png",
+          "width": 1320,
+          "height": 2868,
+          "bytes": 140256,
+          "sha256": "161b5f2f2074cd67083d5b618c5d03cdd2990ac304ca6a129361feb08852a547"
+        }
+      ],
+      "checks": {
+        "missing": 0,
+        "overlaps": 0,
+        "clipped": 0,
+        "noSimulatedDeviceFrames": true,
+        "textToScreenshotGap": 64.828125,
+        "fonts": [
+          {
+            "text": "Choose your cloud",
+            "fonts": [
+              {
+                "familyName": "Source Han Sans SC",
+                "postScriptName": "SourceHanSansSC-Bold",
+                "isCustomFont": true,
+                "glyphCount": 17
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "path": "ios/en/dark/03-ai.png",
+      "kind": "screenshot",
+      "platform": "ios",
+      "language": "en",
+      "appearance": "dark",
+      "scene": "03-ai",
+      "width": 1320,
+      "height": 2868,
+      "bytes": 656133,
+      "sha256": "494102b5cfab3d11321eb14155c6fb04c3ee664e0ec7e8db226d46aca54bd4b9",
+      "copy": {
+        "title": "AI, on your terms",
+        "sub": "Configure an assistant that works with your books.",
+        "points": [
+          "Configure AI when needed",
+          "Choose a model provider",
+          "Everyday tracking works without AI"
+        ]
+      },
+      "raw": [
+        {
+          "path": "raw/stills/ios/en/dark/13-aichat.png",
+          "width": 1320,
+          "height": 2868,
+          "bytes": 330998,
+          "sha256": "5209040e94366f8262b6697254d79b8e490c615f3995d4c32f253923feffdd7a"
+        }
+      ],
+      "checks": {
+        "missing": 0,
+        "overlaps": 0,
+        "clipped": 0,
+        "noSimulatedDeviceFrames": true,
+        "textToScreenshotGap": 64.828125,
+        "fonts": [
+          {
+            "text": "AI, on your terms",
+            "fonts": [
+              {
+                "familyName": "Source Han Sans SC",
+                "postScriptName": "SourceHanSansSC-Bold",
+                "isCustomFont": true,
+                "glyphCount": 17
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "path": "ios/en/dark/04-photo.png",
+      "kind": "screenshot",
+      "platform": "ios",
+      "language": "en",
+      "appearance": "dark",
+      "scene": "04-photo",
+      "width": 1320,
+      "height": 2868,
+      "bytes": 671593,
+      "sha256": "1ebc7f5464e9824a078794670212261d8799f9fd3b4f4b88823a029402879bc3",
+      "copy": {
+        "title": "A picture, an entry",
+        "sub": "Extract transaction details from a receipt or bill.",
+        "points": [
+          "Pick a bill or receipt",
+          "Recognize amount and category",
+          "Find the entry in your ledger"
+        ]
+      },
+      "raw": [
+        {
+          "path": "raw/stills/ios/en/dark/14-photo.png",
+          "width": 1320,
+          "height": 2868,
+          "bytes": 363729,
+          "sha256": "e74d7302927df57101012deb75fd5e4f906b2f5bb0499d82cfb19a04a9bd37f3"
+        }
+      ],
+      "checks": {
+        "missing": 0,
+        "overlaps": 0,
+        "clipped": 0,
+        "noSimulatedDeviceFrames": true,
+        "textToScreenshotGap": 64.828125,
+        "fonts": [
+          {
+            "text": "A picture, an entry",
+            "fonts": [
+              {
+                "familyName": "Source Han Sans SC",
+                "postScriptName": "SourceHanSansSC-Bold",
+                "isCustomFont": true,
+                "glyphCount": 19
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "path": "ios/en/dark/05-open.png",
+      "kind": "screenshot",
+      "platform": "ios",
+      "language": "en",
+      "appearance": "dark",
+      "scene": "05-open",
+      "width": 1320,
+      "height": 2868,
+      "bytes": 677080,
+      "sha256": "b501db9633f7a84817261e836e4934bc4a63a783a104d8542d71ca742405f246",
+      "copy": {
+        "title": "Open source",
+        "sub": "Public source code, built for your everyday books.",
+        "points": [
+          "Public source code",
+          "No ads inside the App",
+          "An evolving open-source project"
+        ]
+      },
+      "raw": [
+        {
+          "path": "raw/ios/en/dark/01-home.png",
+          "width": 1320,
+          "height": 2868,
+          "bytes": 384012,
+          "sha256": "58d90a00c7dded23e4ead4b2458a986aa89fad52ac028b591a4a4885eb7f91d9"
+        }
+      ],
+      "checks": {
+        "missing": 0,
+        "overlaps": 0,
+        "clipped": 0,
+        "noSimulatedDeviceFrames": true,
+        "textToScreenshotGap": 64.828125,
+        "fonts": [
+          {
+            "text": "Open source",
+            "fonts": [
+              {
+                "familyName": "Source Han Sans SC",
+                "postScriptName": "SourceHanSansSC-Bold",
+                "isCustomFont": true,
+                "glyphCount": 11
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "path": "ios/en/dark/06-import.png",
+      "kind": "screenshot",
+      "platform": "ios",
+      "language": "en",
+      "appearance": "dark",
+      "scene": "06-import",
+      "width": 1320,
+      "height": 2868,
+      "bytes": 675465,
+      "sha256": "526097051680e3742194e52352330e9455292dfa5eec60fd3f4d2c3626623012",
+      "copy": {
+        "title": "Bring your history",
+        "sub": "Import existing bills and keep your history together.",
+        "points": [
+          "Import CSV records",
+          "Review fields and categories",
+          "Export and keep your data"
+        ]
+      },
+      "raw": [
+        {
+          "path": "raw/ios/en/dark/07-mine.png",
+          "width": 1320,
+          "height": 2868,
+          "bytes": 381951,
+          "sha256": "78ebfe1095751d4b1ae4fd89a956e877d424cb1b62bb77923caac06462fcb2d8"
+        }
+      ],
+      "checks": {
+        "missing": 0,
+        "overlaps": 0,
+        "clipped": 0,
+        "noSimulatedDeviceFrames": true,
+        "textToScreenshotGap": 64.828125,
+        "fonts": [
+          {
+            "text": "Bring your history",
+            "fonts": [
+              {
+                "familyName": "Source Han Sans SC",
+                "postScriptName": "SourceHanSansSC-Bold",
+                "isCustomFont": true,
+                "glyphCount": 18
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "path": "ios/en/dark/07-ledgers.png",
+      "kind": "screenshot",
+      "platform": "ios",
+      "language": "en",
+      "appearance": "dark",
+      "scene": "07-ledgers",
+      "width": 1320,
+      "height": 2868,
+      "bytes": 601635,
+      "sha256": "7bd410537a9c9e06feedbc5278e2c532c54dbfe829ae3adc18c7461581970777",
+      "copy": {
+        "title": "Separate your books",
+        "sub": "Separate books for everyday life, travel and learning.",
+        "points": [
+          "A book for everyday life",
+          "Travel plans kept separate",
+          "Switch books in one App"
+        ]
+      },
+      "raw": [
+        {
+          "path": "raw/ios/en/dark/04-ledgers.png",
+          "width": 1320,
+          "height": 2868,
+          "bytes": 279695,
+          "sha256": "57358bfa289f2121f5e2c270836b1531d394c9bccefd289cb01489fcf6b00c6f"
+        }
+      ],
+      "checks": {
+        "missing": 0,
+        "overlaps": 0,
+        "clipped": 0,
+        "noSimulatedDeviceFrames": true,
+        "textToScreenshotGap": 64.828125,
+        "fonts": [
+          {
+            "text": "Separate your books",
+            "fonts": [
+              {
+                "familyName": "Source Han Sans SC",
+                "postScriptName": "SourceHanSansSC-Bold",
+                "isCustomFont": true,
+                "glyphCount": 19
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "path": "ios/en/dark/08-theme.png",
+      "kind": "screenshot",
+      "platform": "ios",
+      "language": "en",
+      "appearance": "dark",
+      "scene": "08-theme",
+      "width": 1320,
+      "height": 2868,
+      "bytes": 586734,
+      "sha256": "7c33bab7ace03da3e2ea1398be2d8112d8a158fb64b3f3a4ee34ae8fbbbfa52c",
+      "copy": {
+        "title": "Your colors, your way",
+        "sub": "Light, dark and a palette that feels like you.",
+        "points": [
+          "Light and dark modes",
+          "Ready-to-use palettes",
+          "Your own custom colors"
+        ]
+      },
+      "raw": [
+        {
+          "path": "raw/ios/en/dark/11-personalization.png",
+          "width": 1320,
+          "height": 2868,
+          "bytes": 256507,
+          "sha256": "2f2a8ea2fc488e74ab7a699c70a19c908790ab0fd497e0b64bbd3c502933c747"
+        }
+      ],
+      "checks": {
+        "missing": 0,
+        "overlaps": 0,
+        "clipped": 0,
+        "noSimulatedDeviceFrames": true,
+        "textToScreenshotGap": 64.828125,
+        "fonts": [
+          {
+            "text": "Your colors, your way",
+            "fonts": [
+              {
+                "familyName": "Source Han Sans SC",
+                "postScriptName": "SourceHanSansSC-Bold",
+                "isCustomFont": true,
+                "glyphCount": 21
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "path": "ios-medium/zh/light/01-local.png",
+      "kind": "screenshot",
+      "platform": "ios-medium",
+      "language": "zh",
+      "appearance": "light",
+      "scene": "01-local",
+      "width": 1206,
+      "height": 2622,
+      "bytes": 501675,
+      "sha256": "33d27faaf620c7e69af6ef44b32bfd4ce3396881ac0bb22145bbfebae85c1325",
+      "copy": {
+        "title": "本地优先",
+        "sub": "账本默认保存在设备上，日常记账不必连接云服务。",
+        "points": [
+          "账本默认存本地",
+          "离线也能记录收支",
+          "云端与 AI 按需启用"
+        ]
+      },
+      "raw": [
+        {
+          "path": "raw/ios-medium/zh/light/01-home.png",
+          "width": 1206,
+          "height": 2622,
+          "bytes": 306548,
+          "sha256": "3f5872071c95fd6e301a54b66a165c5a8333c67f6353c0acda4466c53e0ca1e5"
+        }
+      ],
+      "checks": {
+        "missing": 0,
+        "overlaps": 0,
+        "clipped": 0,
+        "noSimulatedDeviceFrames": true,
+        "textToScreenshotGap": 30.890625,
+        "fonts": [
+          {
+            "text": "本地优先",
+            "fonts": [
+              {
+                "familyName": "Source Han Sans SC",
+                "postScriptName": "SourceHanSansSC-Bold",
+                "isCustomFont": true,
+                "glyphCount": 4
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "path": "ios-medium/zh/light/02-cloud.png",
+      "kind": "screenshot",
+      "platform": "ios-medium",
+      "language": "zh",
+      "appearance": "light",
+      "scene": "02-cloud",
+      "width": 1206,
+      "height": 2622,
+      "bytes": 318941,
+      "sha256": "598ee9ca01e28477e8da5c76f51049a7cf49c920ced0a9739c7979e846e333fb",
+      "copy": {
+        "title": "云服务按需选",
+        "sub": "从本地记账开始，再选择适合自己的同步方式。",
+        "points": [
+          "不连接云也能记账",
+          "按需选择同步服务",
+          "支持自托管 BeeCount Cloud"
+        ]
+      },
+      "raw": [
+        {
+          "path": "raw/ios-medium/zh/light/09-cloud.png",
+          "width": 1206,
+          "height": 2622,
+          "bytes": 124402,
+          "sha256": "782fc23cf8f55de155adf9697828300bae0faee2f6580d6d5a14780ed2f97690"
+        }
+      ],
+      "checks": {
+        "missing": 0,
+        "overlaps": 0,
+        "clipped": 0,
+        "noSimulatedDeviceFrames": true,
+        "textToScreenshotGap": 30.890625,
+        "fonts": [
+          {
+            "text": "云服务按需选",
+            "fonts": [
+              {
+                "familyName": "Source Han Sans SC",
+                "postScriptName": "SourceHanSansSC-Bold",
+                "isCustomFont": true,
+                "glyphCount": 6
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "path": "ios-medium/zh/light/03-ai.png",
+      "kind": "screenshot",
+      "platform": "ios-medium",
+      "language": "zh",
+      "appearance": "light",
+      "scene": "03-ai",
+      "width": 1206,
+      "height": 2622,
+      "bytes": 433665,
+      "sha256": "1af7962c26bf342cdc0aed7d1931566c76055dc22eeacb6c1bdb992a4713473f",
+      "copy": {
+        "title": "AI 按需开启",
+        "sub": "按自己的需要配置 AI，让助手读懂你的账本。",
+        "points": [
+          "AI 功能按需配置",
+          "选择自己的模型服务",
+          "不用 AI 也能完整记账"
+        ]
+      },
+      "raw": [
+        {
+          "path": "raw/stills/ios/zh/light/13-aichat.png",
+          "width": 1320,
+          "height": 2868,
+          "bytes": 276481,
+          "sha256": "fb1cef6a8fbea7552ef9f0623da6dcd8eb6594623a54189ccbc4bb3878d151f4"
+        }
+      ],
+      "checks": {
+        "missing": 0,
+        "overlaps": 0,
+        "clipped": 0,
+        "noSimulatedDeviceFrames": true,
+        "textToScreenshotGap": 30.890625,
+        "fonts": [
+          {
+            "text": "AI 按需开启",
+            "fonts": [
+              {
+                "familyName": "Source Han Sans SC",
+                "postScriptName": "SourceHanSansSC-Bold",
+                "isCustomFont": true,
+                "glyphCount": 7
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "path": "ios-medium/zh/light/04-photo.png",
+      "kind": "screenshot",
+      "platform": "ios-medium",
+      "language": "zh",
+      "appearance": "light",
+      "scene": "04-photo",
+      "width": 1206,
+      "height": 2622,
+      "bytes": 494522,
+      "sha256": "675f397272514a9c2d81d86bf487a7fc5992ef17b1273ae25278a6152af0bf4d",
+      "copy": {
+        "title": "图片也能记账",
+        "sub": "从账单图片提取收支，让日常记录更轻松。",
+        "points": [
+          "从相册选择账单图片",
+          "模型识别金额与分类",
+          "入账后回到账本查看"
+        ]
+      },
+      "raw": [
+        {
+          "path": "raw/stills/ios/zh/light/14-photo.png",
+          "width": 1320,
+          "height": 2868,
+          "bytes": 337991,
+          "sha256": "70032be69007b571645088e38ab24e45519deeeaa1cd5c4b907e0258af020343"
+        }
+      ],
+      "checks": {
+        "missing": 0,
+        "overlaps": 0,
+        "clipped": 0,
+        "noSimulatedDeviceFrames": true,
+        "textToScreenshotGap": 30.890625,
+        "fonts": [
+          {
+            "text": "图片也能记账",
+            "fonts": [
+              {
+                "familyName": "Source Han Sans SC",
+                "postScriptName": "SourceHanSansSC-Bold",
+                "isCustomFont": true,
+                "glyphCount": 6
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "path": "ios-medium/zh/light/05-open.png",
+      "kind": "screenshot",
+      "platform": "ios-medium",
+      "language": "zh",
+      "appearance": "light",
+      "scene": "05-open",
+      "width": 1206,
+      "height": 2622,
+      "bytes": 500118,
+      "sha256": "e9ff2ea8eea11582b2e68aa37ca49613d276596fe2beedce3df7bd4ebe459818",
+      "copy": {
+        "title": "开源透明",
+        "sub": "代码公开可查，让每一份信任都有据可循。",
+        "points": [
+          "源代码公开可查",
+          "日常记账没有广告打扰",
+          "持续改进的开源项目"
+        ]
+      },
+      "raw": [
+        {
+          "path": "raw/ios-medium/zh/light/01-home.png",
+          "width": 1206,
+          "height": 2622,
+          "bytes": 306548,
+          "sha256": "3f5872071c95fd6e301a54b66a165c5a8333c67f6353c0acda4466c53e0ca1e5"
+        }
+      ],
+      "checks": {
+        "missing": 0,
+        "overlaps": 0,
+        "clipped": 0,
+        "noSimulatedDeviceFrames": true,
+        "textToScreenshotGap": 30.890625,
+        "fonts": [
+          {
+            "text": "开源透明",
+            "fonts": [
+              {
+                "familyName": "Source Han Sans SC",
+                "postScriptName": "SourceHanSansSC-Bold",
+                "isCustomFont": true,
+                "glyphCount": 4
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "path": "ios-medium/zh/light/06-import.png",
+      "kind": "screenshot",
+      "platform": "ios-medium",
+      "language": "zh",
+      "appearance": "light",
+      "scene": "06-import",
+      "width": 1206,
+      "height": 2622,
+      "bytes": 491632,
+      "sha256": "a0f4d99b00df5fa3d02753984d5f7643b36065c869cc49fe8322517ac92b6497",
+      "copy": {
+        "title": "旧账轻松导入",
+        "sub": "导入已有账单，确认映射后继续你的记账习惯。",
+        "points": [
+          "导入 CSV 账单",
+          "确认字段与分类映射",
+          "导出数据，自主保管"
+        ]
+      },
+      "raw": [
+        {
+          "path": "raw/ios-medium/zh/light/07-mine.png",
+          "width": 1206,
+          "height": 2622,
+          "bytes": 307982,
+          "sha256": "726c4dd4b2045beb2a00e19f2a5f2999a72e6eeab908828770d38ef6fde36e92"
+        }
+      ],
+      "checks": {
+        "missing": 0,
+        "overlaps": 0,
+        "clipped": 0,
+        "noSimulatedDeviceFrames": true,
+        "textToScreenshotGap": 30.890625,
+        "fonts": [
+          {
+            "text": "旧账轻松导入",
+            "fonts": [
+              {
+                "familyName": "Source Han Sans SC",
+                "postScriptName": "SourceHanSansSC-Bold",
+                "isCustomFont": true,
+                "glyphCount": 6
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "path": "ios-medium/zh/light/07-ledgers.png",
+      "kind": "screenshot",
+      "platform": "ios-medium",
+      "language": "zh",
+      "appearance": "light",
+      "scene": "07-ledgers",
+      "width": 1206,
+      "height": 2622,
+      "bytes": 460416,
+      "sha256": "2e8764ce49dfedd00429e8c761b11740d7f108358c68fdb0b3c897f9e1901f23",
+      "copy": {
+        "title": "多账本分开记",
+        "sub": "日常、旅行与成长，按自己的生活方式分本记录。",
+        "points": [
+          "日常生活一本账",
+          "旅行计划分开记录",
+          "同一个 App，自由切换"
+        ]
+      },
+      "raw": [
+        {
+          "path": "raw/ios-medium/zh/light/04-ledgers.png",
+          "width": 1206,
+          "height": 2622,
+          "bytes": 243606,
+          "sha256": "dc1f5bd5d608c31adf16e9e7478e0506244776c4d9fbe086d499d9c01010fafb"
+        }
+      ],
+      "checks": {
+        "missing": 0,
+        "overlaps": 0,
+        "clipped": 0,
+        "noSimulatedDeviceFrames": true,
+        "textToScreenshotGap": 30.890625,
+        "fonts": [
+          {
+            "text": "多账本分开记",
+            "fonts": [
+              {
+                "familyName": "Source Han Sans SC",
+                "postScriptName": "SourceHanSansSC-Bold",
+                "isCustomFont": true,
+                "glyphCount": 6
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "path": "ios-medium/zh/light/08-theme.png",
+      "kind": "screenshot",
+      "platform": "ios-medium",
+      "language": "zh",
+      "appearance": "light",
+      "scene": "08-theme",
+      "width": 1206,
+      "height": 2622,
+      "bytes": 434051,
+      "sha256": "25e2b4bc3e1f0f18c15b64dfa87f3d77646131cc23030e818340e4338d79648e",
+      "copy": {
+        "title": "外观由你决定",
+        "sub": "浅色、暗黑与主题色，让每天打开都合心意。",
+        "points": [
+          "浅色与暗黑外观",
+          "多种预设主题色",
+          "自定义喜欢的颜色"
+        ]
+      },
+      "raw": [
+        {
+          "path": "raw/ios-medium/zh/light/11-personalization.png",
+          "width": 1206,
+          "height": 2622,
+          "bytes": 203100,
+          "sha256": "078af19abbeefa376d637970fd98d0244060c55e7f4e530aa9b66f7fdd18936f"
+        }
+      ],
+      "checks": {
+        "missing": 0,
+        "overlaps": 0,
+        "clipped": 0,
+        "noSimulatedDeviceFrames": true,
+        "textToScreenshotGap": 30.890625,
+        "fonts": [
+          {
+            "text": "外观由你决定",
+            "fonts": [
+              {
+                "familyName": "Source Han Sans SC",
+                "postScriptName": "SourceHanSansSC-Bold",
+                "isCustomFont": true,
+                "glyphCount": 6
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "path": "ios-medium/zh/dark/01-local.png",
+      "kind": "screenshot",
+      "platform": "ios-medium",
+      "language": "zh",
+      "appearance": "dark",
+      "scene": "01-local",
+      "width": 1206,
+      "height": 2622,
+      "bytes": 576855,
+      "sha256": "d9f74b66ad6a10efc8e0a63c3c00f8da0c7f32e663b4a9be2468183b9eab1c27",
+      "copy": {
+        "title": "本地优先",
+        "sub": "账本默认保存在设备上，日常记账不必连接云服务。",
+        "points": [
+          "账本默认存本地",
+          "离线也能记录收支",
+          "云端与 AI 按需启用"
+        ]
+      },
+      "raw": [
+        {
+          "path": "raw/ios-medium/zh/dark/01-home.png",
+          "width": 1206,
+          "height": 2622,
+          "bytes": 318265,
+          "sha256": "5f46697273f206cac3f3b6bd69f3b34db6b834029a1b40664735dee1bcd7c4bb"
+        }
+      ],
+      "checks": {
+        "missing": 0,
+        "overlaps": 0,
+        "clipped": 0,
+        "noSimulatedDeviceFrames": true,
+        "textToScreenshotGap": 30.890625,
+        "fonts": [
+          {
+            "text": "本地优先",
+            "fonts": [
+              {
+                "familyName": "Source Han Sans SC",
+                "postScriptName": "SourceHanSansSC-Bold",
+                "isCustomFont": true,
+                "glyphCount": 4
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "path": "ios-medium/zh/dark/02-cloud.png",
+      "kind": "screenshot",
+      "platform": "ios-medium",
+      "language": "zh",
+      "appearance": "dark",
+      "scene": "02-cloud",
+      "width": 1206,
+      "height": 2622,
+      "bytes": 376820,
+      "sha256": "09f6952609b1772e71362f43978419aa50734b79cde5a6f382c82d175368ddb9",
+      "copy": {
+        "title": "云服务按需选",
+        "sub": "从本地记账开始，再选择适合自己的同步方式。",
+        "points": [
+          "不连接云也能记账",
+          "按需选择同步服务",
+          "支持自托管 BeeCount Cloud"
+        ]
+      },
+      "raw": [
+        {
+          "path": "raw/ios-medium/zh/dark/09-cloud.png",
+          "width": 1206,
+          "height": 2622,
+          "bytes": 127271,
+          "sha256": "ddb91cd08395db5d2e215532359725d2f82b11365f499bd733a8e5c9ae9af5d9"
+        }
+      ],
+      "checks": {
+        "missing": 0,
+        "overlaps": 0,
+        "clipped": 0,
+        "noSimulatedDeviceFrames": true,
+        "textToScreenshotGap": 30.890625,
+        "fonts": [
+          {
+            "text": "云服务按需选",
+            "fonts": [
+              {
+                "familyName": "Source Han Sans SC",
+                "postScriptName": "SourceHanSansSC-Bold",
+                "isCustomFont": true,
+                "glyphCount": 6
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "path": "ios-medium/zh/dark/03-ai.png",
+      "kind": "screenshot",
+      "platform": "ios-medium",
+      "language": "zh",
+      "appearance": "dark",
+      "scene": "03-ai",
+      "width": 1206,
+      "height": 2622,
+      "bytes": 492604,
+      "sha256": "f0644cff846990b095211842db4ccb95994b28c87162fbdeda852ade491ef836",
+      "copy": {
+        "title": "AI 按需开启",
+        "sub": "按自己的需要配置 AI，让助手读懂你的账本。",
+        "points": [
+          "AI 功能按需配置",
+          "选择自己的模型服务",
+          "不用 AI 也能完整记账"
+        ]
+      },
+      "raw": [
+        {
+          "path": "raw/stills/ios/zh/dark/13-aichat.png",
+          "width": 1320,
+          "height": 2868,
+          "bytes": 279072,
+          "sha256": "818fdde16aebbf2c0a08d94870aa1b4a9bc5c05d3ddb51eec11f103edc892fb7"
+        }
+      ],
+      "checks": {
+        "missing": 0,
+        "overlaps": 0,
+        "clipped": 0,
+        "noSimulatedDeviceFrames": true,
+        "textToScreenshotGap": 30.890625,
+        "fonts": [
+          {
+            "text": "AI 按需开启",
+            "fonts": [
+              {
+                "familyName": "Source Han Sans SC",
+                "postScriptName": "SourceHanSansSC-Bold",
+                "isCustomFont": true,
+                "glyphCount": 7
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "path": "ios-medium/zh/dark/04-photo.png",
+      "kind": "screenshot",
+      "platform": "ios-medium",
+      "language": "zh",
+      "appearance": "dark",
+      "scene": "04-photo",
+      "width": 1206,
+      "height": 2622,
+      "bytes": 566272,
+      "sha256": "cce38ca285ff680922adad7217aae13f7696fd8cb28d42f8dcb4e578b7527fad",
+      "copy": {
+        "title": "图片也能记账",
+        "sub": "从账单图片提取收支，让日常记录更轻松。",
+        "points": [
+          "从相册选择账单图片",
+          "模型识别金额与分类",
+          "入账后回到账本查看"
+        ]
+      },
+      "raw": [
+        {
+          "path": "raw/stills/ios/zh/dark/14-photo.png",
+          "width": 1320,
+          "height": 2868,
+          "bytes": 346538,
+          "sha256": "61f18aa44cdc8e3bddc32b7feb02153e452ae478529d4b51303b2e8dba48283f"
+        }
+      ],
+      "checks": {
+        "missing": 0,
+        "overlaps": 0,
+        "clipped": 0,
+        "noSimulatedDeviceFrames": true,
+        "textToScreenshotGap": 30.890625,
+        "fonts": [
+          {
+            "text": "图片也能记账",
+            "fonts": [
+              {
+                "familyName": "Source Han Sans SC",
+                "postScriptName": "SourceHanSansSC-Bold",
+                "isCustomFont": true,
+                "glyphCount": 6
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "path": "ios-medium/zh/dark/05-open.png",
+      "kind": "screenshot",
+      "platform": "ios-medium",
+      "language": "zh",
+      "appearance": "dark",
+      "scene": "05-open",
+      "width": 1206,
+      "height": 2622,
+      "bytes": 575654,
+      "sha256": "bdaac2a83be762850d33590da83b4c4cbb1ae7c23b3358c98bc1322113e529a9",
+      "copy": {
+        "title": "开源透明",
+        "sub": "代码公开可查，让每一份信任都有据可循。",
+        "points": [
+          "源代码公开可查",
+          "日常记账没有广告打扰",
+          "持续改进的开源项目"
+        ]
+      },
+      "raw": [
+        {
+          "path": "raw/ios-medium/zh/dark/01-home.png",
+          "width": 1206,
+          "height": 2622,
+          "bytes": 318265,
+          "sha256": "5f46697273f206cac3f3b6bd69f3b34db6b834029a1b40664735dee1bcd7c4bb"
+        }
+      ],
+      "checks": {
+        "missing": 0,
+        "overlaps": 0,
+        "clipped": 0,
+        "noSimulatedDeviceFrames": true,
+        "textToScreenshotGap": 30.890625,
+        "fonts": [
+          {
+            "text": "开源透明",
+            "fonts": [
+              {
+                "familyName": "Source Han Sans SC",
+                "postScriptName": "SourceHanSansSC-Bold",
+                "isCustomFont": true,
+                "glyphCount": 4
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "path": "ios-medium/zh/dark/06-import.png",
+      "kind": "screenshot",
+      "platform": "ios-medium",
+      "language": "zh",
+      "appearance": "dark",
+      "scene": "06-import",
+      "width": 1206,
+      "height": 2622,
+      "bytes": 567437,
+      "sha256": "8174c4b64379879ceaa1b4a1a76b1e17fc9391dd37283de0470e5527e7e36e69",
+      "copy": {
+        "title": "旧账轻松导入",
+        "sub": "导入已有账单，确认映射后继续你的记账习惯。",
+        "points": [
+          "导入 CSV 账单",
+          "确认字段与分类映射",
+          "导出数据，自主保管"
+        ]
+      },
+      "raw": [
+        {
+          "path": "raw/ios-medium/zh/dark/07-mine.png",
+          "width": 1206,
+          "height": 2622,
+          "bytes": 318710,
+          "sha256": "0846a5dbab34f4d871c7f3411f57c433ba845d47780d324457a26709ff2857d6"
+        }
+      ],
+      "checks": {
+        "missing": 0,
+        "overlaps": 0,
+        "clipped": 0,
+        "noSimulatedDeviceFrames": true,
+        "textToScreenshotGap": 30.890625,
+        "fonts": [
+          {
+            "text": "旧账轻松导入",
+            "fonts": [
+              {
+                "familyName": "Source Han Sans SC",
+                "postScriptName": "SourceHanSansSC-Bold",
+                "isCustomFont": true,
+                "glyphCount": 6
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "path": "ios-medium/zh/dark/07-ledgers.png",
+      "kind": "screenshot",
+      "platform": "ios-medium",
+      "language": "zh",
+      "appearance": "dark",
+      "scene": "07-ledgers",
+      "width": 1206,
+      "height": 2622,
+      "bytes": 526686,
+      "sha256": "e1b821e703700549a3f60fb188e46b867d659182579974c068440bd9a4cd1432",
+      "copy": {
+        "title": "多账本分开记",
+        "sub": "日常、旅行与成长，按自己的生活方式分本记录。",
+        "points": [
+          "日常生活一本账",
+          "旅行计划分开记录",
+          "同一个 App，自由切换"
+        ]
+      },
+      "raw": [
+        {
+          "path": "raw/ios-medium/zh/dark/04-ledgers.png",
+          "width": 1206,
+          "height": 2622,
+          "bytes": 250659,
+          "sha256": "d866f1ac6cf8744dd1c5de2a98936d7b75caa1d978b43e3bc262380c2123b3dc"
+        }
+      ],
+      "checks": {
+        "missing": 0,
+        "overlaps": 0,
+        "clipped": 0,
+        "noSimulatedDeviceFrames": true,
+        "textToScreenshotGap": 30.890625,
+        "fonts": [
+          {
+            "text": "多账本分开记",
+            "fonts": [
+              {
+                "familyName": "Source Han Sans SC",
+                "postScriptName": "SourceHanSansSC-Bold",
+                "isCustomFont": true,
+                "glyphCount": 6
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "path": "ios-medium/zh/dark/08-theme.png",
+      "kind": "screenshot",
+      "platform": "ios-medium",
+      "language": "zh",
+      "appearance": "dark",
+      "scene": "08-theme",
+      "width": 1206,
+      "height": 2622,
+      "bytes": 501655,
+      "sha256": "df00d867bb6e4a74669715ca404f86a65fda024198439ddedfb15a44bec6d1dc",
+      "copy": {
+        "title": "外观由你决定",
+        "sub": "浅色、暗黑与主题色，让每天打开都合心意。",
+        "points": [
+          "浅色与暗黑外观",
+          "多种预设主题色",
+          "自定义喜欢的颜色"
+        ]
+      },
+      "raw": [
+        {
+          "path": "raw/ios-medium/zh/dark/11-personalization.png",
+          "width": 1206,
+          "height": 2622,
+          "bytes": 222413,
+          "sha256": "ac96400e5186e00bef573afd74fa00db47f5a648611a03d55e07998153055585"
+        }
+      ],
+      "checks": {
+        "missing": 0,
+        "overlaps": 0,
+        "clipped": 0,
+        "noSimulatedDeviceFrames": true,
+        "textToScreenshotGap": 30.890625,
+        "fonts": [
+          {
+            "text": "外观由你决定",
+            "fonts": [
+              {
+                "familyName": "Source Han Sans SC",
+                "postScriptName": "SourceHanSansSC-Bold",
+                "isCustomFont": true,
+                "glyphCount": 6
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "path": "ios-medium/en/light/01-local.png",
+      "kind": "screenshot",
+      "platform": "ios-medium",
+      "language": "en",
+      "appearance": "light",
+      "scene": "01-local",
+      "width": 1206,
+      "height": 2622,
+      "bytes": 523504,
+      "sha256": "58c75a6c5ffa812550bca1d2b4e929521abeb5a9c9cbe073a6309b52978d1ee6",
+      "copy": {
+        "title": "Local first",
+        "sub": "Keep your books on your device. Cloud is optional.",
+        "points": [
+          "Stored on your device",
+          "Record entries offline",
+          "Cloud and AI are optional"
+        ]
+      },
+      "raw": [
+        {
+          "path": "raw/ios-medium/en/light/01-home.png",
+          "width": 1206,
+          "height": 2622,
+          "bytes": 329874,
+          "sha256": "16ab1075512d6a5b7ee3b1dd95f91bc861a86e0e5cc6ae58d9c36647b79cfcf4"
+        }
+      ],
+      "checks": {
+        "missing": 0,
+        "overlaps": 0,
+        "clipped": 0,
+        "noSimulatedDeviceFrames": true,
+        "textToScreenshotGap": 57.890625,
+        "fonts": [
+          {
+            "text": "Local first",
+            "fonts": [
+              {
+                "familyName": "Source Han Sans SC",
+                "postScriptName": "SourceHanSansSC-Bold",
+                "isCustomFont": true,
+                "glyphCount": 10
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "path": "ios-medium/en/light/02-cloud.png",
+      "kind": "screenshot",
+      "platform": "ios-medium",
+      "language": "en",
+      "appearance": "light",
+      "scene": "02-cloud",
+      "width": 1206,
+      "height": 2622,
+      "bytes": 318352,
+      "sha256": "a4a8e9b45a39a74112ad79146f5f91330bdc295d9c1626f4c8196f8fa8ebf6cc",
+      "copy": {
+        "title": "Choose your cloud",
+        "sub": "Start locally. Connect a sync service when you need it.",
+        "points": [
+          "Works without cloud",
+          "Choose your sync service",
+          "Self-host BeeCount Cloud"
+        ]
+      },
+      "raw": [
+        {
+          "path": "raw/ios-medium/en/light/09-cloud.png",
+          "width": 1206,
+          "height": 2622,
+          "bytes": 123020,
+          "sha256": "8dfdf938ac9f3007ebe27b84ca8e50d0c6a25af0ace885664ec002c287553d22"
+        }
+      ],
+      "checks": {
+        "missing": 0,
+        "overlaps": 0,
+        "clipped": 0,
+        "noSimulatedDeviceFrames": true,
+        "textToScreenshotGap": 57.890625,
+        "fonts": [
+          {
+            "text": "Choose your cloud",
+            "fonts": [
+              {
+                "familyName": "Source Han Sans SC",
+                "postScriptName": "SourceHanSansSC-Bold",
+                "isCustomFont": true,
+                "glyphCount": 17
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "path": "ios-medium/en/light/03-ai.png",
+      "kind": "screenshot",
+      "platform": "ios-medium",
+      "language": "en",
+      "appearance": "light",
+      "scene": "03-ai",
+      "width": 1206,
+      "height": 2622,
+      "bytes": 469366,
+      "sha256": "444001470394ef2d18c53b9b803cc9e1f20bc9f459c4cb48790e0af26c330ede",
+      "copy": {
+        "title": "AI, on your terms",
+        "sub": "Configure an assistant that works with your books.",
+        "points": [
+          "Configure AI when needed",
+          "Choose a model provider",
+          "Everyday tracking works without AI"
+        ]
+      },
+      "raw": [
+        {
+          "path": "raw/stills/ios/en/light/13-aichat.png",
+          "width": 1320,
+          "height": 2868,
+          "bytes": 285369,
+          "sha256": "d74f3f255dd1ef2a28fd910bff5e0ac19033d6faa484f90b4a0e79d5705d6719"
+        }
+      ],
+      "checks": {
+        "missing": 0,
+        "overlaps": 0,
+        "clipped": 0,
+        "noSimulatedDeviceFrames": true,
+        "textToScreenshotGap": 57.890625,
+        "fonts": [
+          {
+            "text": "AI, on your terms",
+            "fonts": [
+              {
+                "familyName": "Source Han Sans SC",
+                "postScriptName": "SourceHanSansSC-Bold",
+                "isCustomFont": true,
+                "glyphCount": 17
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "path": "ios-medium/en/light/04-photo.png",
+      "kind": "screenshot",
+      "platform": "ios-medium",
+      "language": "en",
+      "appearance": "light",
+      "scene": "04-photo",
+      "width": 1206,
+      "height": 2622,
+      "bytes": 514443,
+      "sha256": "7dde637e0849ce829cfb7f85d86264172eb4dc04bf9534d5e476adc2852ad465",
+      "copy": {
+        "title": "A picture, an entry",
+        "sub": "Extract transaction details from a receipt or bill.",
+        "points": [
+          "Pick a bill or receipt",
+          "Recognize amount and category",
+          "Find the entry in your ledger"
+        ]
+      },
+      "raw": [
+        {
+          "path": "raw/stills/ios/en/light/14-photo.png",
+          "width": 1320,
+          "height": 2868,
+          "bytes": 356625,
+          "sha256": "0d0a6296b15e5c7f516e09faa3e7adc9770cd1d9d73017268ec6b6ed83b45c5c"
+        }
+      ],
+      "checks": {
+        "missing": 0,
+        "overlaps": 0,
+        "clipped": 0,
+        "noSimulatedDeviceFrames": true,
+        "textToScreenshotGap": 57.890625,
+        "fonts": [
+          {
+            "text": "A picture, an entry",
+            "fonts": [
+              {
+                "familyName": "Source Han Sans SC",
+                "postScriptName": "SourceHanSansSC-Bold",
+                "isCustomFont": true,
+                "glyphCount": 19
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "path": "ios-medium/en/light/05-open.png",
+      "kind": "screenshot",
+      "platform": "ios-medium",
+      "language": "en",
+      "appearance": "light",
+      "scene": "05-open",
+      "width": 1206,
+      "height": 2622,
+      "bytes": 525176,
+      "sha256": "d20fd7ba8aa93a896cc4cd2da1b52caa2bdb7778b113958278e4e016d02aa310",
+      "copy": {
+        "title": "Open source",
+        "sub": "Public source code, built for your everyday books.",
+        "points": [
+          "Public source code",
+          "No ads inside the App",
+          "An evolving open-source project"
+        ]
+      },
+      "raw": [
+        {
+          "path": "raw/ios-medium/en/light/01-home.png",
+          "width": 1206,
+          "height": 2622,
+          "bytes": 329874,
+          "sha256": "16ab1075512d6a5b7ee3b1dd95f91bc861a86e0e5cc6ae58d9c36647b79cfcf4"
+        }
+      ],
+      "checks": {
+        "missing": 0,
+        "overlaps": 0,
+        "clipped": 0,
+        "noSimulatedDeviceFrames": true,
+        "textToScreenshotGap": 57.890625,
+        "fonts": [
+          {
+            "text": "Open source",
+            "fonts": [
+              {
+                "familyName": "Source Han Sans SC",
+                "postScriptName": "SourceHanSansSC-Bold",
+                "isCustomFont": true,
+                "glyphCount": 11
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "path": "ios-medium/en/light/06-import.png",
+      "kind": "screenshot",
+      "platform": "ios-medium",
+      "language": "en",
+      "appearance": "light",
+      "scene": "06-import",
+      "width": 1206,
+      "height": 2622,
+      "bytes": 514660,
+      "sha256": "5803a3d0b2df7d366e74d486cb6b1053b69b8daa492b6d7dba8d840807506a6b",
+      "copy": {
+        "title": "Bring your history",
+        "sub": "Import existing bills and keep your history together.",
+        "points": [
+          "Import CSV records",
+          "Review fields and categories",
+          "Export and keep your data"
+        ]
+      },
+      "raw": [
+        {
+          "path": "raw/ios-medium/en/light/07-mine.png",
+          "width": 1206,
+          "height": 2622,
+          "bytes": 323559,
+          "sha256": "1978f10de8bebfb43635c5255b2e0bea6da0547ad9f6cf75821be5aa9a33ab78"
+        }
+      ],
+      "checks": {
+        "missing": 0,
+        "overlaps": 0,
+        "clipped": 0,
+        "noSimulatedDeviceFrames": true,
+        "textToScreenshotGap": 57.890625,
+        "fonts": [
+          {
+            "text": "Bring your history",
+            "fonts": [
+              {
+                "familyName": "Source Han Sans SC",
+                "postScriptName": "SourceHanSansSC-Bold",
+                "isCustomFont": true,
+                "glyphCount": 18
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "path": "ios-medium/en/light/07-ledgers.png",
+      "kind": "screenshot",
+      "platform": "ios-medium",
+      "language": "en",
+      "appearance": "light",
+      "scene": "07-ledgers",
+      "width": 1206,
+      "height": 2622,
+      "bytes": 476983,
+      "sha256": "cfcd50a35686927a4288e037d3ad76f414c9953080b168d290f6397b6f67cc9d",
+      "copy": {
+        "title": "Separate your books",
+        "sub": "Separate books for everyday life, travel and learning.",
+        "points": [
+          "A book for everyday life",
+          "Travel plans kept separate",
+          "Switch books in one App"
+        ]
+      },
+      "raw": [
+        {
+          "path": "raw/ios-medium/en/light/04-ledgers.png",
+          "width": 1206,
+          "height": 2622,
+          "bytes": 252193,
+          "sha256": "d42287a78fffbd7be2f5bf9fd35710e5d7471aca8a4f6fb3eed12ea5828edbe7"
+        }
+      ],
+      "checks": {
+        "missing": 0,
+        "overlaps": 0,
+        "clipped": 0,
+        "noSimulatedDeviceFrames": true,
+        "textToScreenshotGap": 57.890625,
+        "fonts": [
+          {
+            "text": "Separate your books",
+            "fonts": [
+              {
+                "familyName": "Source Han Sans SC",
+                "postScriptName": "SourceHanSansSC-Bold",
+                "isCustomFont": true,
+                "glyphCount": 19
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "path": "ios-medium/en/light/08-theme.png",
+      "kind": "screenshot",
+      "platform": "ios-medium",
+      "language": "en",
+      "appearance": "light",
+      "scene": "08-theme",
+      "width": 1206,
+      "height": 2622,
+      "bytes": 448906,
+      "sha256": "93c60801983b26cd0b439cc7758325fd45037e995c3c8edd5505398339b76774",
+      "copy": {
+        "title": "Your colors, your way",
+        "sub": "Light, dark and a palette that feels like you.",
+        "points": [
+          "Light and dark modes",
+          "Ready-to-use palettes",
+          "Your own custom colors"
+        ]
+      },
+      "raw": [
+        {
+          "path": "raw/ios-medium/en/light/11-personalization.png",
+          "width": 1206,
+          "height": 2622,
+          "bytes": 210340,
+          "sha256": "4afc30b7913e2109efee131c2474259943163b831aaf770cbff4ec221dbbf5aa"
+        }
+      ],
+      "checks": {
+        "missing": 0,
+        "overlaps": 0,
+        "clipped": 0,
+        "noSimulatedDeviceFrames": true,
+        "textToScreenshotGap": 57.890625,
+        "fonts": [
+          {
+            "text": "Your colors, your way",
+            "fonts": [
+              {
+                "familyName": "Source Han Sans SC",
+                "postScriptName": "SourceHanSansSC-Bold",
+                "isCustomFont": true,
+                "glyphCount": 21
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "path": "ios-medium/en/dark/01-local.png",
+      "kind": "screenshot",
+      "platform": "ios-medium",
+      "language": "en",
+      "appearance": "dark",
+      "scene": "01-local",
+      "width": 1206,
+      "height": 2622,
+      "bytes": 597869,
+      "sha256": "f26789a2f39f4d4c4aaa2677b317813cbe19a16880d397d4ab82bee3cc1fef2d",
+      "copy": {
+        "title": "Local first",
+        "sub": "Keep your books on your device. Cloud is optional.",
+        "points": [
+          "Stored on your device",
+          "Record entries offline",
+          "Cloud and AI are optional"
+        ]
+      },
+      "raw": [
+        {
+          "path": "raw/ios-medium/en/dark/01-home.png",
+          "width": 1206,
+          "height": 2622,
+          "bytes": 339144,
+          "sha256": "d0718d909514dfa6a37204426b42671ccba53a91c80be2d5420e6535b8a68cc2"
+        }
+      ],
+      "checks": {
+        "missing": 0,
+        "overlaps": 0,
+        "clipped": 0,
+        "noSimulatedDeviceFrames": true,
+        "textToScreenshotGap": 57.890625,
+        "fonts": [
+          {
+            "text": "Local first",
+            "fonts": [
+              {
+                "familyName": "Source Han Sans SC",
+                "postScriptName": "SourceHanSansSC-Bold",
+                "isCustomFont": true,
+                "glyphCount": 10
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "path": "ios-medium/en/dark/02-cloud.png",
+      "kind": "screenshot",
+      "platform": "ios-medium",
+      "language": "en",
+      "appearance": "dark",
+      "scene": "02-cloud",
+      "width": 1206,
+      "height": 2622,
+      "bytes": 376817,
+      "sha256": "7e3a1b25e5b071809179eddd2c83df8b08973341961d25dbbeebb674e078cf27",
+      "copy": {
+        "title": "Choose your cloud",
+        "sub": "Start locally. Connect a sync service when you need it.",
+        "points": [
+          "Works without cloud",
+          "Choose your sync service",
+          "Self-host BeeCount Cloud"
+        ]
+      },
+      "raw": [
+        {
+          "path": "raw/ios-medium/en/dark/09-cloud.png",
+          "width": 1206,
+          "height": 2622,
+          "bytes": 125451,
+          "sha256": "b7e4879e4131d0998131516700b01b00062da3a3456ca8d17b0b492ce2d672e3"
+        }
+      ],
+      "checks": {
+        "missing": 0,
+        "overlaps": 0,
+        "clipped": 0,
+        "noSimulatedDeviceFrames": true,
+        "textToScreenshotGap": 57.890625,
+        "fonts": [
+          {
+            "text": "Choose your cloud",
+            "fonts": [
+              {
+                "familyName": "Source Han Sans SC",
+                "postScriptName": "SourceHanSansSC-Bold",
+                "isCustomFont": true,
+                "glyphCount": 17
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "path": "ios-medium/en/dark/03-ai.png",
+      "kind": "screenshot",
+      "platform": "ios-medium",
+      "language": "en",
+      "appearance": "dark",
+      "scene": "03-ai",
+      "width": 1206,
+      "height": 2622,
+      "bytes": 573359,
+      "sha256": "bdd40979a072b0b27c81b747405059f559bb4cc0b63d22b21188596c38f15e3f",
+      "copy": {
+        "title": "AI, on your terms",
+        "sub": "Configure an assistant that works with your books.",
+        "points": [
+          "Configure AI when needed",
+          "Choose a model provider",
+          "Everyday tracking works without AI"
+        ]
+      },
+      "raw": [
+        {
+          "path": "raw/stills/ios/en/dark/13-aichat.png",
+          "width": 1320,
+          "height": 2868,
+          "bytes": 330998,
+          "sha256": "5209040e94366f8262b6697254d79b8e490c615f3995d4c32f253923feffdd7a"
+        }
+      ],
+      "checks": {
+        "missing": 0,
+        "overlaps": 0,
+        "clipped": 0,
+        "noSimulatedDeviceFrames": true,
+        "textToScreenshotGap": 57.890625,
+        "fonts": [
+          {
+            "text": "AI, on your terms",
+            "fonts": [
+              {
+                "familyName": "Source Han Sans SC",
+                "postScriptName": "SourceHanSansSC-Bold",
+                "isCustomFont": true,
+                "glyphCount": 17
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "path": "ios-medium/en/dark/04-photo.png",
+      "kind": "screenshot",
+      "platform": "ios-medium",
+      "language": "en",
+      "appearance": "dark",
+      "scene": "04-photo",
+      "width": 1206,
+      "height": 2622,
+      "bytes": 586700,
+      "sha256": "3acc1fbe790068d8a5fd33f25d623acf6b2f7b8f64a3ee22b63c00ab4a1eb141",
+      "copy": {
+        "title": "A picture, an entry",
+        "sub": "Extract transaction details from a receipt or bill.",
+        "points": [
+          "Pick a bill or receipt",
+          "Recognize amount and category",
+          "Find the entry in your ledger"
+        ]
+      },
+      "raw": [
+        {
+          "path": "raw/stills/ios/en/dark/14-photo.png",
+          "width": 1320,
+          "height": 2868,
+          "bytes": 363729,
+          "sha256": "e74d7302927df57101012deb75fd5e4f906b2f5bb0499d82cfb19a04a9bd37f3"
+        }
+      ],
+      "checks": {
+        "missing": 0,
+        "overlaps": 0,
+        "clipped": 0,
+        "noSimulatedDeviceFrames": true,
+        "textToScreenshotGap": 57.890625,
+        "fonts": [
+          {
+            "text": "A picture, an entry",
+            "fonts": [
+              {
+                "familyName": "Source Han Sans SC",
+                "postScriptName": "SourceHanSansSC-Bold",
+                "isCustomFont": true,
+                "glyphCount": 19
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "path": "ios-medium/en/dark/05-open.png",
+      "kind": "screenshot",
+      "platform": "ios-medium",
+      "language": "en",
+      "appearance": "dark",
+      "scene": "05-open",
+      "width": 1206,
+      "height": 2622,
+      "bytes": 599297,
+      "sha256": "52232dbcc3027720136d6601301ac1e2fed3f3c9c00668a283407ec5a065874b",
+      "copy": {
+        "title": "Open source",
+        "sub": "Public source code, built for your everyday books.",
+        "points": [
+          "Public source code",
+          "No ads inside the App",
+          "An evolving open-source project"
+        ]
+      },
+      "raw": [
+        {
+          "path": "raw/ios-medium/en/dark/01-home.png",
+          "width": 1206,
+          "height": 2622,
+          "bytes": 339144,
+          "sha256": "d0718d909514dfa6a37204426b42671ccba53a91c80be2d5420e6535b8a68cc2"
+        }
+      ],
+      "checks": {
+        "missing": 0,
+        "overlaps": 0,
+        "clipped": 0,
+        "noSimulatedDeviceFrames": true,
+        "textToScreenshotGap": 57.890625,
+        "fonts": [
+          {
+            "text": "Open source",
+            "fonts": [
+              {
+                "familyName": "Source Han Sans SC",
+                "postScriptName": "SourceHanSansSC-Bold",
+                "isCustomFont": true,
+                "glyphCount": 11
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "path": "ios-medium/en/dark/06-import.png",
+      "kind": "screenshot",
+      "platform": "ios-medium",
+      "language": "en",
+      "appearance": "dark",
+      "scene": "06-import",
+      "width": 1206,
+      "height": 2622,
+      "bytes": 594775,
+      "sha256": "7f0c701f676638a55eca7e694ce5a45d1d81afb217111e8016ebce3ce5af4235",
+      "copy": {
+        "title": "Bring your history",
+        "sub": "Import existing bills and keep your history together.",
+        "points": [
+          "Import CSV records",
+          "Review fields and categories",
+          "Export and keep your data"
+        ]
+      },
+      "raw": [
+        {
+          "path": "raw/ios-medium/en/dark/07-mine.png",
+          "width": 1206,
+          "height": 2622,
+          "bytes": 338539,
+          "sha256": "35a7730c14643df606c3de034b00a3a908f8d8121aa78c82ce2ec13b0d382b54"
+        }
+      ],
+      "checks": {
+        "missing": 0,
+        "overlaps": 0,
+        "clipped": 0,
+        "noSimulatedDeviceFrames": true,
+        "textToScreenshotGap": 57.890625,
+        "fonts": [
+          {
+            "text": "Bring your history",
+            "fonts": [
+              {
+                "familyName": "Source Han Sans SC",
+                "postScriptName": "SourceHanSansSC-Bold",
+                "isCustomFont": true,
+                "glyphCount": 18
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "path": "ios-medium/en/dark/07-ledgers.png",
+      "kind": "screenshot",
+      "platform": "ios-medium",
+      "language": "en",
+      "appearance": "dark",
+      "scene": "07-ledgers",
+      "width": 1206,
+      "height": 2622,
+      "bytes": 545171,
+      "sha256": "8286b75e7a256dd593f1ef4e8b47444a6bb8f6b46f9cfad80dab535c0a4dbf0b",
+      "copy": {
+        "title": "Separate your books",
+        "sub": "Separate books for everyday life, travel and learning.",
+        "points": [
+          "A book for everyday life",
+          "Travel plans kept separate",
+          "Switch books in one App"
+        ]
+      },
+      "raw": [
+        {
+          "path": "raw/ios-medium/en/dark/04-ledgers.png",
+          "width": 1206,
+          "height": 2622,
+          "bytes": 259758,
+          "sha256": "39900c6520a8599bee7cf408f2f0e8cc3919fb381815a19d71f5242296d81263"
+        }
+      ],
+      "checks": {
+        "missing": 0,
+        "overlaps": 0,
+        "clipped": 0,
+        "noSimulatedDeviceFrames": true,
+        "textToScreenshotGap": 57.890625,
+        "fonts": [
+          {
+            "text": "Separate your books",
+            "fonts": [
+              {
+                "familyName": "Source Han Sans SC",
+                "postScriptName": "SourceHanSansSC-Bold",
+                "isCustomFont": true,
+                "glyphCount": 19
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "path": "ios-medium/en/dark/08-theme.png",
+      "kind": "screenshot",
+      "platform": "ios-medium",
+      "language": "en",
+      "appearance": "dark",
+      "scene": "08-theme",
+      "width": 1206,
+      "height": 2622,
+      "bytes": 521277,
+      "sha256": "cd1c3019fafcab7630871842a826ea4f0637e10cdab07b74081d34c85b629af3",
+      "copy": {
+        "title": "Your colors, your way",
+        "sub": "Light, dark and a palette that feels like you.",
+        "points": [
+          "Light and dark modes",
+          "Ready-to-use palettes",
+          "Your own custom colors"
+        ]
+      },
+      "raw": [
+        {
+          "path": "raw/ios-medium/en/dark/11-personalization.png",
+          "width": 1206,
+          "height": 2622,
+          "bytes": 228522,
+          "sha256": "c9c7f03a7f7536cfdf446ecbb0d99f83f625910f62293577bab0cf970f0bc481"
+        }
+      ],
+      "checks": {
+        "missing": 0,
+        "overlaps": 0,
+        "clipped": 0,
+        "noSimulatedDeviceFrames": true,
+        "textToScreenshotGap": 57.890625,
+        "fonts": [
+          {
+            "text": "Your colors, your way",
+            "fonts": [
+              {
+                "familyName": "Source Han Sans SC",
+                "postScriptName": "SourceHanSansSC-Bold",
+                "isCustomFont": true,
+                "glyphCount": 21
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "path": "android/zh/light/01-local.png",
+      "kind": "screenshot",
+      "platform": "android",
+      "language": "zh",
+      "appearance": "light",
+      "scene": "01-local",
+      "width": 1080,
+      "height": 1920,
+      "bytes": 437396,
+      "sha256": "39dd54529ed13cd0d6f0ca8c53e0b7a8a02cbb0ef387fb3332d062f258ea5a0b",
+      "copy": {
+        "title": "本地优先",
+        "sub": "账本默认保存在设备上，日常记账不必连接云服务。",
+        "points": [
+          "账本默认存本地",
+          "离线也能记录收支",
+          "云端与 AI 按需启用"
+        ]
+      },
+      "raw": [
+        {
+          "path": "raw/android/zh/light/01-home.png",
+          "width": 1080,
+          "height": 2400,
+          "bytes": 241606,
+          "sha256": "25c07d8421cbe2e5f6b4fab96480a042f9618c4bf6b0d26a32f603448d794230"
+        }
+      ],
+      "checks": {
+        "missing": 0,
+        "overlaps": 0,
+        "clipped": 0,
+        "noSimulatedDeviceFrames": true,
+        "textToScreenshotGap": 28.796875,
+        "fonts": [
+          {
+            "text": "本地优先",
+            "fonts": [
+              {
+                "familyName": "Source Han Sans SC",
+                "postScriptName": "SourceHanSansSC-Bold",
+                "isCustomFont": true,
+                "glyphCount": 4
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "path": "android/zh/light/02-cloud.png",
+      "kind": "screenshot",
+      "platform": "android",
+      "language": "zh",
+      "appearance": "light",
+      "scene": "02-cloud",
+      "width": 1080,
+      "height": 1920,
+      "bytes": 284951,
+      "sha256": "c21e0769bbb3d17e035d24405f1d3d3ccc4b3cbabd07a64542a513b283a6c6f0",
+      "copy": {
+        "title": "云服务按需选",
+        "sub": "从本地记账开始，再选择适合自己的同步方式。",
+        "points": [
+          "不连接云也能记账",
+          "按需选择同步服务",
+          "支持自托管 BeeCount Cloud"
+        ]
+      },
+      "raw": [
+        {
+          "path": "raw/android/zh/light/09-cloud.png",
+          "width": 1080,
+          "height": 2400,
+          "bytes": 67658,
+          "sha256": "cc4c9e973626c9cf91f024768f18bcf3d23fb529ee5be9ea9acbaa332634a21f"
+        }
+      ],
+      "checks": {
+        "missing": 0,
+        "overlaps": 0,
+        "clipped": 0,
+        "noSimulatedDeviceFrames": true,
+        "textToScreenshotGap": 28.796875,
+        "fonts": [
+          {
+            "text": "云服务按需选",
+            "fonts": [
+              {
+                "familyName": "Source Han Sans SC",
+                "postScriptName": "SourceHanSansSC-Bold",
+                "isCustomFont": true,
+                "glyphCount": 6
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "path": "android/zh/light/03-ai.png",
+      "kind": "screenshot",
+      "platform": "android",
+      "language": "zh",
+      "appearance": "light",
+      "scene": "03-ai",
+      "width": 1080,
+      "height": 1920,
+      "bytes": 394471,
+      "sha256": "6240241246ca693f98db4d3cb1457afbef6de32614bfe562f5070dec6dbc2bd5",
+      "copy": {
+        "title": "AI 按需开启",
+        "sub": "按自己的需要配置 AI，让助手读懂你的账本。",
+        "points": [
+          "AI 功能按需配置",
+          "选择自己的模型服务",
+          "不用 AI 也能完整记账"
+        ]
+      },
+      "raw": [
+        {
+          "path": "raw/stills/android/zh/light/13-aichat.png",
+          "width": 1080,
+          "height": 2400,
+          "bytes": 206113,
+          "sha256": "c638810c8adb1a07d4b7b202fc173d26e55e29bbff6b95a774a4ebb2aa490554"
+        }
+      ],
+      "checks": {
+        "missing": 0,
+        "overlaps": 0,
+        "clipped": 0,
+        "noSimulatedDeviceFrames": true,
+        "textToScreenshotGap": 28.796875,
+        "fonts": [
+          {
+            "text": "AI 按需开启",
+            "fonts": [
+              {
+                "familyName": "Source Han Sans SC",
+                "postScriptName": "SourceHanSansSC-Bold",
+                "isCustomFont": true,
+                "glyphCount": 7
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "path": "android/zh/light/04-photo.png",
+      "kind": "screenshot",
+      "platform": "android",
+      "language": "zh",
+      "appearance": "light",
+      "scene": "04-photo",
+      "width": 1080,
+      "height": 1920,
+      "bytes": 433789,
+      "sha256": "cfc0b34380fa3e0a8852bd2e73bff25bdb06a4d761acaac1792d00090da9c0f1",
+      "copy": {
+        "title": "图片也能记账",
+        "sub": "从账单图片提取收支，让日常记录更轻松。",
+        "points": [
+          "从相册选择账单图片",
+          "模型识别金额与分类",
+          "入账后回到账本查看"
+        ]
+      },
+      "raw": [
+        {
+          "path": "raw/stills/android/zh/light/14-photo.png",
+          "width": 1080,
+          "height": 2400,
+          "bytes": 231484,
+          "sha256": "3292d786119738890d24d6a99d2f79b1f3daced72c660207060ac04b76c7e10c"
+        }
+      ],
+      "checks": {
+        "missing": 0,
+        "overlaps": 0,
+        "clipped": 0,
+        "noSimulatedDeviceFrames": true,
+        "textToScreenshotGap": 28.796875,
+        "fonts": [
+          {
+            "text": "图片也能记账",
+            "fonts": [
+              {
+                "familyName": "Source Han Sans SC",
+                "postScriptName": "SourceHanSansSC-Bold",
+                "isCustomFont": true,
+                "glyphCount": 6
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "path": "android/zh/light/05-open.png",
+      "kind": "screenshot",
+      "platform": "android",
+      "language": "zh",
+      "appearance": "light",
+      "scene": "05-open",
+      "width": 1080,
+      "height": 1920,
+      "bytes": 436396,
+      "sha256": "2dc97ff73264ee3e71125ed94fc31eb7fe96b6a81ab352fab57c562e08d5091c",
+      "copy": {
+        "title": "开源透明",
+        "sub": "代码公开可查，让每一份信任都有据可循。",
+        "points": [
+          "源代码公开可查",
+          "日常记账没有广告打扰",
+          "持续改进的开源项目"
+        ]
+      },
+      "raw": [
+        {
+          "path": "raw/android/zh/light/01-home.png",
+          "width": 1080,
+          "height": 2400,
+          "bytes": 241606,
+          "sha256": "25c07d8421cbe2e5f6b4fab96480a042f9618c4bf6b0d26a32f603448d794230"
+        }
+      ],
+      "checks": {
+        "missing": 0,
+        "overlaps": 0,
+        "clipped": 0,
+        "noSimulatedDeviceFrames": true,
+        "textToScreenshotGap": 28.796875,
+        "fonts": [
+          {
+            "text": "开源透明",
+            "fonts": [
+              {
+                "familyName": "Source Han Sans SC",
+                "postScriptName": "SourceHanSansSC-Bold",
+                "isCustomFont": true,
+                "glyphCount": 4
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "path": "android/zh/light/06-import.png",
+      "kind": "screenshot",
+      "platform": "android",
+      "language": "zh",
+      "appearance": "light",
+      "scene": "06-import",
+      "width": 1080,
+      "height": 1920,
+      "bytes": 416008,
+      "sha256": "0512ffb309b010cbe5f5b177f9a37e18474d03e3c6bdccb107021f2344f6640a",
+      "copy": {
+        "title": "旧账轻松导入",
+        "sub": "导入已有账单，确认映射后继续你的记账习惯。",
+        "points": [
+          "导入 CSV 账单",
+          "确认字段与分类映射",
+          "导出数据，自主保管"
+        ]
+      },
+      "raw": [
+        {
+          "path": "raw/android/zh/light/07-mine.png",
+          "width": 1080,
+          "height": 2400,
+          "bytes": 226143,
+          "sha256": "f48e01159f6976a6419ee9ccc124f678200d9cc0496198f9948098740e04da42"
+        }
+      ],
+      "checks": {
+        "missing": 0,
+        "overlaps": 0,
+        "clipped": 0,
+        "noSimulatedDeviceFrames": true,
+        "textToScreenshotGap": 28.796875,
+        "fonts": [
+          {
+            "text": "旧账轻松导入",
+            "fonts": [
+              {
+                "familyName": "Source Han Sans SC",
+                "postScriptName": "SourceHanSansSC-Bold",
+                "isCustomFont": true,
+                "glyphCount": 6
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "path": "android/zh/light/07-ledgers.png",
+      "kind": "screenshot",
+      "platform": "android",
+      "language": "zh",
+      "appearance": "light",
+      "scene": "07-ledgers",
+      "width": 1080,
+      "height": 1920,
+      "bytes": 397949,
+      "sha256": "ccbd66b8cfd1c4d48e8291db362aa3e26885ca07f416fe9cb84cb75b8012c2b7",
+      "copy": {
+        "title": "多账本分开记",
+        "sub": "日常、旅行与成长，按自己的生活方式分本记录。",
+        "points": [
+          "日常生活一本账",
+          "旅行计划分开记录",
+          "同一个 App，自由切换"
+        ]
+      },
+      "raw": [
+        {
+          "path": "raw/android/zh/light/04-ledgers.png",
+          "width": 1080,
+          "height": 2400,
+          "bytes": 174733,
+          "sha256": "c9084149edca62c63b7ba33a88fde3454fb85da6dfc07bd14051e83102ab18ea"
+        }
+      ],
+      "checks": {
+        "missing": 0,
+        "overlaps": 0,
+        "clipped": 0,
+        "noSimulatedDeviceFrames": true,
+        "textToScreenshotGap": 28.796875,
+        "fonts": [
+          {
+            "text": "多账本分开记",
+            "fonts": [
+              {
+                "familyName": "Source Han Sans SC",
+                "postScriptName": "SourceHanSansSC-Bold",
+                "isCustomFont": true,
+                "glyphCount": 6
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "path": "android/zh/light/08-theme.png",
+      "kind": "screenshot",
+      "platform": "android",
+      "language": "zh",
+      "appearance": "light",
+      "scene": "08-theme",
+      "width": 1080,
+      "height": 1920,
+      "bytes": 394693,
+      "sha256": "21e20eb416c252ad30fe67c77540fe51a0628a3944da334af0d7cc35ea88a9c3",
+      "copy": {
+        "title": "外观由你决定",
+        "sub": "浅色、暗黑与主题色，让每天打开都合心意。",
+        "points": [
+          "浅色与暗黑外观",
+          "多种预设主题色",
+          "自定义喜欢的颜色"
+        ]
+      },
+      "raw": [
+        {
+          "path": "raw/android/zh/light/11-personalization.png",
+          "width": 1080,
+          "height": 2400,
+          "bytes": 151220,
+          "sha256": "a0aa2d65310bc6fe7214a4c1cfbe0c89d346f199e1a9d35bd600bc2d30b795ec"
+        }
+      ],
+      "checks": {
+        "missing": 0,
+        "overlaps": 0,
+        "clipped": 0,
+        "noSimulatedDeviceFrames": true,
+        "textToScreenshotGap": 28.796875,
+        "fonts": [
+          {
+            "text": "外观由你决定",
+            "fonts": [
+              {
+                "familyName": "Source Han Sans SC",
+                "postScriptName": "SourceHanSansSC-Bold",
+                "isCustomFont": true,
+                "glyphCount": 6
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "path": "android/zh/dark/01-local.png",
+      "kind": "screenshot",
+      "platform": "android",
+      "language": "zh",
+      "appearance": "dark",
+      "scene": "01-local",
+      "width": 1080,
+      "height": 1920,
+      "bytes": 509388,
+      "sha256": "0ec425f0ee1c9f630053867afda929efb321348d146d7599199d79a9c945fbaf",
+      "copy": {
+        "title": "本地优先",
+        "sub": "账本默认保存在设备上，日常记账不必连接云服务。",
+        "points": [
+          "账本默认存本地",
+          "离线也能记录收支",
+          "云端与 AI 按需启用"
+        ]
+      },
+      "raw": [
+        {
+          "path": "raw/android/zh/dark/01-home.png",
+          "width": 1080,
+          "height": 2400,
+          "bytes": 242403,
+          "sha256": "4c7471ae2d653d04f6c8c097d5918ef8c26dc05db7fc834dc18da8f1ea477ec0"
+        }
+      ],
+      "checks": {
+        "missing": 0,
+        "overlaps": 0,
+        "clipped": 0,
+        "noSimulatedDeviceFrames": true,
+        "textToScreenshotGap": 28.796875,
+        "fonts": [
+          {
+            "text": "本地优先",
+            "fonts": [
+              {
+                "familyName": "Source Han Sans SC",
+                "postScriptName": "SourceHanSansSC-Bold",
+                "isCustomFont": true,
+                "glyphCount": 4
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "path": "android/zh/dark/02-cloud.png",
+      "kind": "screenshot",
+      "platform": "android",
+      "language": "zh",
+      "appearance": "dark",
+      "scene": "02-cloud",
+      "width": 1080,
+      "height": 1920,
+      "bytes": 337951,
+      "sha256": "270c68b490e32f31ae32da9348923fee9fa26ff21c72092dd50089fe8f825523",
+      "copy": {
+        "title": "云服务按需选",
+        "sub": "从本地记账开始，再选择适合自己的同步方式。",
+        "points": [
+          "不连接云也能记账",
+          "按需选择同步服务",
+          "支持自托管 BeeCount Cloud"
+        ]
+      },
+      "raw": [
+        {
+          "path": "raw/android/zh/dark/09-cloud.png",
+          "width": 1080,
+          "height": 2400,
+          "bytes": 69152,
+          "sha256": "1279d3aca92b77fc39b8eebe927c988f5f7376fe3f52882acf8751208393dad6"
+        }
+      ],
+      "checks": {
+        "missing": 0,
+        "overlaps": 0,
+        "clipped": 0,
+        "noSimulatedDeviceFrames": true,
+        "textToScreenshotGap": 28.796875,
+        "fonts": [
+          {
+            "text": "云服务按需选",
+            "fonts": [
+              {
+                "familyName": "Source Han Sans SC",
+                "postScriptName": "SourceHanSansSC-Bold",
+                "isCustomFont": true,
+                "glyphCount": 6
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "path": "android/zh/dark/03-ai.png",
+      "kind": "screenshot",
+      "platform": "android",
+      "language": "zh",
+      "appearance": "dark",
+      "scene": "03-ai",
+      "width": 1080,
+      "height": 1920,
+      "bytes": 457777,
+      "sha256": "d89d41167442325f423604dd7d9490a8562f519694a445a4e42f766247ce6a58",
+      "copy": {
+        "title": "AI 按需开启",
+        "sub": "按自己的需要配置 AI，让助手读懂你的账本。",
+        "points": [
+          "AI 功能按需配置",
+          "选择自己的模型服务",
+          "不用 AI 也能完整记账"
+        ]
+      },
+      "raw": [
+        {
+          "path": "raw/stills/android/zh/dark/13-aichat.png",
+          "width": 1080,
+          "height": 2400,
+          "bytes": 209989,
+          "sha256": "4662b5db6caa36981facd774b49e08eba6394a5bb0b61b6ec1529b564185890b"
+        }
+      ],
+      "checks": {
+        "missing": 0,
+        "overlaps": 0,
+        "clipped": 0,
+        "noSimulatedDeviceFrames": true,
+        "textToScreenshotGap": 28.796875,
+        "fonts": [
+          {
+            "text": "AI 按需开启",
+            "fonts": [
+              {
+                "familyName": "Source Han Sans SC",
+                "postScriptName": "SourceHanSansSC-Bold",
+                "isCustomFont": true,
+                "glyphCount": 7
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "path": "android/zh/dark/04-photo.png",
+      "kind": "screenshot",
+      "platform": "android",
+      "language": "zh",
+      "appearance": "dark",
+      "scene": "04-photo",
+      "width": 1080,
+      "height": 1920,
+      "bytes": 499812,
+      "sha256": "d20a4c2b9183a28767ea5d7746e6f75a328c3681a2c6c868f796a811fafceead",
+      "copy": {
+        "title": "图片也能记账",
+        "sub": "从账单图片提取收支，让日常记录更轻松。",
+        "points": [
+          "从相册选择账单图片",
+          "模型识别金额与分类",
+          "入账后回到账本查看"
+        ]
+      },
+      "raw": [
+        {
+          "path": "raw/stills/android/zh/dark/14-photo.png",
+          "width": 1080,
+          "height": 2400,
+          "bytes": 227719,
+          "sha256": "c6570c70f41f6e75ccbf91cf9ede7833f48fc2e1465630901b05697d194ec26d"
+        }
+      ],
+      "checks": {
+        "missing": 0,
+        "overlaps": 0,
+        "clipped": 0,
+        "noSimulatedDeviceFrames": true,
+        "textToScreenshotGap": 28.796875,
+        "fonts": [
+          {
+            "text": "图片也能记账",
+            "fonts": [
+              {
+                "familyName": "Source Han Sans SC",
+                "postScriptName": "SourceHanSansSC-Bold",
+                "isCustomFont": true,
+                "glyphCount": 6
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "path": "android/zh/dark/05-open.png",
+      "kind": "screenshot",
+      "platform": "android",
+      "language": "zh",
+      "appearance": "dark",
+      "scene": "05-open",
+      "width": 1080,
+      "height": 1920,
+      "bytes": 508138,
+      "sha256": "fd1872b8b0a3572ef7e5bfe9e0fffc18ec4a6cbcdcc3042968207b6c65af35c6",
+      "copy": {
+        "title": "开源透明",
+        "sub": "代码公开可查，让每一份信任都有据可循。",
+        "points": [
+          "源代码公开可查",
+          "日常记账没有广告打扰",
+          "持续改进的开源项目"
+        ]
+      },
+      "raw": [
+        {
+          "path": "raw/android/zh/dark/01-home.png",
+          "width": 1080,
+          "height": 2400,
+          "bytes": 242403,
+          "sha256": "4c7471ae2d653d04f6c8c097d5918ef8c26dc05db7fc834dc18da8f1ea477ec0"
+        }
+      ],
+      "checks": {
+        "missing": 0,
+        "overlaps": 0,
+        "clipped": 0,
+        "noSimulatedDeviceFrames": true,
+        "textToScreenshotGap": 28.796875,
+        "fonts": [
+          {
+            "text": "开源透明",
+            "fonts": [
+              {
+                "familyName": "Source Han Sans SC",
+                "postScriptName": "SourceHanSansSC-Bold",
+                "isCustomFont": true,
+                "glyphCount": 4
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "path": "android/zh/dark/06-import.png",
+      "kind": "screenshot",
+      "platform": "android",
+      "language": "zh",
+      "appearance": "dark",
+      "scene": "06-import",
+      "width": 1080,
+      "height": 1920,
+      "bytes": 483100,
+      "sha256": "18b29b57da33f50fc6691e3433cc5fcc2d2a9f4ed4c2201e767e5c2ae7ab53c0",
+      "copy": {
+        "title": "旧账轻松导入",
+        "sub": "导入已有账单，确认映射后继续你的记账习惯。",
+        "points": [
+          "导入 CSV 账单",
+          "确认字段与分类映射",
+          "导出数据，自主保管"
+        ]
+      },
+      "raw": [
+        {
+          "path": "raw/android/zh/dark/07-mine.png",
+          "width": 1080,
+          "height": 2400,
+          "bytes": 228171,
+          "sha256": "cbe71225886c95e50ad2d6d6d44dcec96e79aae54c65e71913e6d821c97f871c"
+        }
+      ],
+      "checks": {
+        "missing": 0,
+        "overlaps": 0,
+        "clipped": 0,
+        "noSimulatedDeviceFrames": true,
+        "textToScreenshotGap": 28.796875,
+        "fonts": [
+          {
+            "text": "旧账轻松导入",
+            "fonts": [
+              {
+                "familyName": "Source Han Sans SC",
+                "postScriptName": "SourceHanSansSC-Bold",
+                "isCustomFont": true,
+                "glyphCount": 6
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "path": "android/zh/dark/07-ledgers.png",
+      "kind": "screenshot",
+      "platform": "android",
+      "language": "zh",
+      "appearance": "dark",
+      "scene": "07-ledgers",
+      "width": 1080,
+      "height": 1920,
+      "bytes": 461037,
+      "sha256": "e352cad1dca502c2482506c6f2db15635447483daa6b33ca3e0892704bd200f5",
+      "copy": {
+        "title": "多账本分开记",
+        "sub": "日常、旅行与成长，按自己的生活方式分本记录。",
+        "points": [
+          "日常生活一本账",
+          "旅行计划分开记录",
+          "同一个 App，自由切换"
+        ]
+      },
+      "raw": [
+        {
+          "path": "raw/android/zh/dark/04-ledgers.png",
+          "width": 1080,
+          "height": 2400,
+          "bytes": 177000,
+          "sha256": "1a7c25b06118b1cc68c0563026c5e979423236ae6d189350a981cfaad7c41dc4"
+        }
+      ],
+      "checks": {
+        "missing": 0,
+        "overlaps": 0,
+        "clipped": 0,
+        "noSimulatedDeviceFrames": true,
+        "textToScreenshotGap": 28.796875,
+        "fonts": [
+          {
+            "text": "多账本分开记",
+            "fonts": [
+              {
+                "familyName": "Source Han Sans SC",
+                "postScriptName": "SourceHanSansSC-Bold",
+                "isCustomFont": true,
+                "glyphCount": 6
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "path": "android/zh/dark/08-theme.png",
+      "kind": "screenshot",
+      "platform": "android",
+      "language": "zh",
+      "appearance": "dark",
+      "scene": "08-theme",
+      "width": 1080,
+      "height": 1920,
+      "bytes": 455151,
+      "sha256": "300cae25d3c5c0803a4faa2f047fcd7537b85e568b01049fe8dec5745dad516a",
+      "copy": {
+        "title": "外观由你决定",
+        "sub": "浅色、暗黑与主题色，让每天打开都合心意。",
+        "points": [
+          "浅色与暗黑外观",
+          "多种预设主题色",
+          "自定义喜欢的颜色"
+        ]
+      },
+      "raw": [
+        {
+          "path": "raw/android/zh/dark/11-personalization.png",
+          "width": 1080,
+          "height": 2400,
+          "bytes": 160672,
+          "sha256": "e6621e04107285dcad4358c472979caea7492dc2defa82d8e70620d6bbc2e9d6"
+        }
+      ],
+      "checks": {
+        "missing": 0,
+        "overlaps": 0,
+        "clipped": 0,
+        "noSimulatedDeviceFrames": true,
+        "textToScreenshotGap": 28.796875,
+        "fonts": [
+          {
+            "text": "外观由你决定",
+            "fonts": [
+              {
+                "familyName": "Source Han Sans SC",
+                "postScriptName": "SourceHanSansSC-Bold",
+                "isCustomFont": true,
+                "glyphCount": 6
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "path": "android/en/light/01-local.png",
+      "kind": "screenshot",
+      "platform": "android",
+      "language": "en",
+      "appearance": "light",
+      "scene": "01-local",
+      "width": 1080,
+      "height": 1920,
+      "bytes": 447273,
+      "sha256": "8401fd06012e03195f049bb066300c26eaba2f78b3e0c404b1d412a1c053bb26",
+      "copy": {
+        "title": "Local first",
+        "sub": "Keep your books on your device. Cloud is optional.",
+        "points": [
+          "Stored on your device",
+          "Record entries offline",
+          "Cloud and AI are optional"
+        ]
+      },
+      "raw": [
+        {
+          "path": "raw/android/en/light/01-home.png",
+          "width": 1080,
+          "height": 2400,
+          "bytes": 256063,
+          "sha256": "e9577d166d67aaf7c9802582e56a21b2a2e006cfd8f0db62eccdc92ca484bc99"
+        }
+      ],
+      "checks": {
+        "missing": 0,
+        "overlaps": 0,
+        "clipped": 0,
+        "noSimulatedDeviceFrames": true,
+        "textToScreenshotGap": 40.796875,
+        "fonts": [
+          {
+            "text": "Local first",
+            "fonts": [
+              {
+                "familyName": "Source Han Sans SC",
+                "postScriptName": "SourceHanSansSC-Bold",
+                "isCustomFont": true,
+                "glyphCount": 10
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "path": "android/en/light/02-cloud.png",
+      "kind": "screenshot",
+      "platform": "android",
+      "language": "en",
+      "appearance": "light",
+      "scene": "02-cloud",
+      "width": 1080,
+      "height": 1920,
+      "bytes": 283995,
+      "sha256": "ea992526f4ecb5b635915995df44872cd3497795d127e4e90a59b3115a70239c",
+      "copy": {
+        "title": "Choose your cloud",
+        "sub": "Start locally. Connect a sync service when you need it.",
+        "points": [
+          "Works without cloud",
+          "Choose your sync service",
+          "Self-host BeeCount Cloud"
+        ]
+      },
+      "raw": [
+        {
+          "path": "raw/android/en/light/09-cloud.png",
+          "width": 1080,
+          "height": 2400,
+          "bytes": 63390,
+          "sha256": "43bb2956bc07c67dd7aad1d2de62332f1304274765592f61fe208cc9f59d9696"
+        }
+      ],
+      "checks": {
+        "missing": 0,
+        "overlaps": 0,
+        "clipped": 0,
+        "noSimulatedDeviceFrames": true,
+        "textToScreenshotGap": 40.796875,
+        "fonts": [
+          {
+            "text": "Choose your cloud",
+            "fonts": [
+              {
+                "familyName": "Source Han Sans SC",
+                "postScriptName": "SourceHanSansSC-Bold",
+                "isCustomFont": true,
+                "glyphCount": 17
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "path": "android/en/light/03-ai.png",
+      "kind": "screenshot",
+      "platform": "android",
+      "language": "en",
+      "appearance": "light",
+      "scene": "03-ai",
+      "width": 1080,
+      "height": 1920,
+      "bytes": 418778,
+      "sha256": "b568efed18d341d72b09710cb1b48a992ba51a1ea11be5c4a71209b6f7c1e0b1",
+      "copy": {
+        "title": "AI, on your terms",
+        "sub": "Configure an assistant that works with your books.",
+        "points": [
+          "Configure AI when needed",
+          "Choose a model provider",
+          "Everyday tracking works without AI"
+        ]
+      },
+      "raw": [
+        {
+          "path": "raw/stills/android/en/light/13-aichat.png",
+          "width": 1080,
+          "height": 2400,
+          "bytes": 201739,
+          "sha256": "7bad6b87f45f2007d7d250602de989479e2c7c2130620a2c789b1cb8552e1854"
+        }
+      ],
+      "checks": {
+        "missing": 0,
+        "overlaps": 0,
+        "clipped": 0,
+        "noSimulatedDeviceFrames": true,
+        "textToScreenshotGap": 40.796875,
+        "fonts": [
+          {
+            "text": "AI, on your terms",
+            "fonts": [
+              {
+                "familyName": "Source Han Sans SC",
+                "postScriptName": "SourceHanSansSC-Bold",
+                "isCustomFont": true,
+                "glyphCount": 17
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "path": "android/en/light/04-photo.png",
+      "kind": "screenshot",
+      "platform": "android",
+      "language": "en",
+      "appearance": "light",
+      "scene": "04-photo",
+      "width": 1080,
+      "height": 1920,
+      "bytes": 441970,
+      "sha256": "7c2b118619d7f13e157772f455e778f9347e6ebd80e8994d4431e2559d14a028",
+      "copy": {
+        "title": "A picture, an entry",
+        "sub": "Extract transaction details from a receipt or bill.",
+        "points": [
+          "Pick a bill or receipt",
+          "Recognize amount and category",
+          "Find the entry in your ledger"
+        ]
+      },
+      "raw": [
+        {
+          "path": "raw/stills/android/en/light/14-photo.png",
+          "width": 1080,
+          "height": 2400,
+          "bytes": 238911,
+          "sha256": "cb2fd7363d89322615aa2da1beb3b64f30893ea3e9046b878def646205b3803d"
+        }
+      ],
+      "checks": {
+        "missing": 0,
+        "overlaps": 0,
+        "clipped": 0,
+        "noSimulatedDeviceFrames": true,
+        "textToScreenshotGap": 40.796875,
+        "fonts": [
+          {
+            "text": "A picture, an entry",
+            "fonts": [
+              {
+                "familyName": "Source Han Sans SC",
+                "postScriptName": "SourceHanSansSC-Bold",
+                "isCustomFont": true,
+                "glyphCount": 19
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "path": "android/en/light/05-open.png",
+      "kind": "screenshot",
+      "platform": "android",
+      "language": "en",
+      "appearance": "light",
+      "scene": "05-open",
+      "width": 1080,
+      "height": 1920,
+      "bytes": 448917,
+      "sha256": "24bb85124588ade7cf913941010e18a437e759e223d2f88afde2834c5e17852a",
+      "copy": {
+        "title": "Open source",
+        "sub": "Public source code, built for your everyday books.",
+        "points": [
+          "Public source code",
+          "No ads inside the App",
+          "An evolving open-source project"
+        ]
+      },
+      "raw": [
+        {
+          "path": "raw/android/en/light/01-home.png",
+          "width": 1080,
+          "height": 2400,
+          "bytes": 256063,
+          "sha256": "e9577d166d67aaf7c9802582e56a21b2a2e006cfd8f0db62eccdc92ca484bc99"
+        }
+      ],
+      "checks": {
+        "missing": 0,
+        "overlaps": 0,
+        "clipped": 0,
+        "noSimulatedDeviceFrames": true,
+        "textToScreenshotGap": 40.796875,
+        "fonts": [
+          {
+            "text": "Open source",
+            "fonts": [
+              {
+                "familyName": "Source Han Sans SC",
+                "postScriptName": "SourceHanSansSC-Bold",
+                "isCustomFont": true,
+                "glyphCount": 11
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "path": "android/en/light/06-import.png",
+      "kind": "screenshot",
+      "platform": "android",
+      "language": "en",
+      "appearance": "light",
+      "scene": "06-import",
+      "width": 1080,
+      "height": 1920,
+      "bytes": 426734,
+      "sha256": "9ec0b85a49fc4c45c175a521a19a2b5969139b35375488c59ec36ab432cba40c",
+      "copy": {
+        "title": "Bring your history",
+        "sub": "Import existing bills and keep your history together.",
+        "points": [
+          "Import CSV records",
+          "Review fields and categories",
+          "Export and keep your data"
+        ]
+      },
+      "raw": [
+        {
+          "path": "raw/android/en/light/07-mine.png",
+          "width": 1080,
+          "height": 2400,
+          "bytes": 232864,
+          "sha256": "8400599fd7723d88ce5e83accf1fc446ae8b30bc445097f0e13166873be3f8af"
+        }
+      ],
+      "checks": {
+        "missing": 0,
+        "overlaps": 0,
+        "clipped": 0,
+        "noSimulatedDeviceFrames": true,
+        "textToScreenshotGap": 40.796875,
+        "fonts": [
+          {
+            "text": "Bring your history",
+            "fonts": [
+              {
+                "familyName": "Source Han Sans SC",
+                "postScriptName": "SourceHanSansSC-Bold",
+                "isCustomFont": true,
+                "glyphCount": 18
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "path": "android/en/light/07-ledgers.png",
+      "kind": "screenshot",
+      "platform": "android",
+      "language": "en",
+      "appearance": "light",
+      "scene": "07-ledgers",
+      "width": 1080,
+      "height": 1920,
+      "bytes": 405591,
+      "sha256": "3e8738424df4610d9dcc49cb6f7b30ce5c3d7d6e1ab6f0592cf4f886c5fe9f77",
+      "copy": {
+        "title": "Separate your books",
+        "sub": "Separate books for everyday life, travel and learning.",
+        "points": [
+          "A book for everyday life",
+          "Travel plans kept separate",
+          "Switch books in one App"
+        ]
+      },
+      "raw": [
+        {
+          "path": "raw/android/en/light/04-ledgers.png",
+          "width": 1080,
+          "height": 2400,
+          "bytes": 173722,
+          "sha256": "9d843dd54050c3a90ca9ea73bbadc0e20b3ad2eebbfe8aa6ef2849713dd1a5d0"
+        }
+      ],
+      "checks": {
+        "missing": 0,
+        "overlaps": 0,
+        "clipped": 0,
+        "noSimulatedDeviceFrames": true,
+        "textToScreenshotGap": 40.796875,
+        "fonts": [
+          {
+            "text": "Separate your books",
+            "fonts": [
+              {
+                "familyName": "Source Han Sans SC",
+                "postScriptName": "SourceHanSansSC-Bold",
+                "isCustomFont": true,
+                "glyphCount": 19
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "path": "android/en/light/08-theme.png",
+      "kind": "screenshot",
+      "platform": "android",
+      "language": "en",
+      "appearance": "light",
+      "scene": "08-theme",
+      "width": 1080,
+      "height": 1920,
+      "bytes": 399271,
+      "sha256": "1d2ce119317160df04326259576428ff2edcb8be48b2bc021187ed32ebb8ce91",
+      "copy": {
+        "title": "Your colors, your way",
+        "sub": "Light, dark and a palette that feels like you.",
+        "points": [
+          "Light and dark modes",
+          "Ready-to-use palettes",
+          "Your own custom colors"
+        ]
+      },
+      "raw": [
+        {
+          "path": "raw/android/en/light/11-personalization.png",
+          "width": 1080,
+          "height": 2400,
+          "bytes": 140990,
+          "sha256": "86515860b7c4ee8afd356c43f65127cbf5432002db907f8396f564170dd88008"
+        }
+      ],
+      "checks": {
+        "missing": 0,
+        "overlaps": 0,
+        "clipped": 0,
+        "noSimulatedDeviceFrames": true,
+        "textToScreenshotGap": 40.796875,
+        "fonts": [
+          {
+            "text": "Your colors, your way",
+            "fonts": [
+              {
+                "familyName": "Source Han Sans SC",
+                "postScriptName": "SourceHanSansSC-Bold",
+                "isCustomFont": true,
+                "glyphCount": 21
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "path": "android/en/dark/01-local.png",
+      "kind": "screenshot",
+      "platform": "android",
+      "language": "en",
+      "appearance": "dark",
+      "scene": "01-local",
+      "width": 1080,
+      "height": 1920,
+      "bytes": 521709,
+      "sha256": "0c1a75c83fbffe2982e9cfaab67ae392496d7e1480ad68dab90fd509a3e1f747",
+      "copy": {
+        "title": "Local first",
+        "sub": "Keep your books on your device. Cloud is optional.",
+        "points": [
+          "Stored on your device",
+          "Record entries offline",
+          "Cloud and AI are optional"
+        ]
+      },
+      "raw": [
+        {
+          "path": "raw/android/en/dark/01-home.png",
+          "width": 1080,
+          "height": 2400,
+          "bytes": 258979,
+          "sha256": "baae5c79fa24c4e357f1698ab642fd7f653e092431ba940a6536fa1d04bdf225"
+        }
+      ],
+      "checks": {
+        "missing": 0,
+        "overlaps": 0,
+        "clipped": 0,
+        "noSimulatedDeviceFrames": true,
+        "textToScreenshotGap": 40.796875,
+        "fonts": [
+          {
+            "text": "Local first",
+            "fonts": [
+              {
+                "familyName": "Source Han Sans SC",
+                "postScriptName": "SourceHanSansSC-Bold",
+                "isCustomFont": true,
+                "glyphCount": 10
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "path": "android/en/dark/02-cloud.png",
+      "kind": "screenshot",
+      "platform": "android",
+      "language": "en",
+      "appearance": "dark",
+      "scene": "02-cloud",
+      "width": 1080,
+      "height": 1920,
+      "bytes": 334933,
+      "sha256": "f099b32a8337d98380151d681be5c286c8435b2c781f9abbfbcdf4f0853b512a",
+      "copy": {
+        "title": "Choose your cloud",
+        "sub": "Start locally. Connect a sync service when you need it.",
+        "points": [
+          "Works without cloud",
+          "Choose your sync service",
+          "Self-host BeeCount Cloud"
+        ]
+      },
+      "raw": [
+        {
+          "path": "raw/android/en/dark/09-cloud.png",
+          "width": 1080,
+          "height": 2400,
+          "bytes": 65198,
+          "sha256": "d79338474f9012ad9dfd70aa131293b2917abdefaf17f2b77755142437b4fd67"
+        }
+      ],
+      "checks": {
+        "missing": 0,
+        "overlaps": 0,
+        "clipped": 0,
+        "noSimulatedDeviceFrames": true,
+        "textToScreenshotGap": 40.796875,
+        "fonts": [
+          {
+            "text": "Choose your cloud",
+            "fonts": [
+              {
+                "familyName": "Source Han Sans SC",
+                "postScriptName": "SourceHanSansSC-Bold",
+                "isCustomFont": true,
+                "glyphCount": 17
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "path": "android/en/dark/03-ai.png",
+      "kind": "screenshot",
+      "platform": "android",
+      "language": "en",
+      "appearance": "dark",
+      "scene": "03-ai",
+      "width": 1080,
+      "height": 1920,
+      "bytes": 479800,
+      "sha256": "360ebadbdba4757c72b51c47deafa02b712cc8e6b1589dcff63b81d3d1719a20",
+      "copy": {
+        "title": "AI, on your terms",
+        "sub": "Configure an assistant that works with your books.",
+        "points": [
+          "Configure AI when needed",
+          "Choose a model provider",
+          "Everyday tracking works without AI"
+        ]
+      },
+      "raw": [
+        {
+          "path": "raw/stills/android/en/dark/13-aichat.png",
+          "width": 1080,
+          "height": 2400,
+          "bytes": 217605,
+          "sha256": "db9b9d88a3ca5bc58e03e1c4dc97db85536126cbf377547c55e4e17e49589cff"
+        }
+      ],
+      "checks": {
+        "missing": 0,
+        "overlaps": 0,
+        "clipped": 0,
+        "noSimulatedDeviceFrames": true,
+        "textToScreenshotGap": 40.796875,
+        "fonts": [
+          {
+            "text": "AI, on your terms",
+            "fonts": [
+              {
+                "familyName": "Source Han Sans SC",
+                "postScriptName": "SourceHanSansSC-Bold",
+                "isCustomFont": true,
+                "glyphCount": 17
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "path": "android/en/dark/04-photo.png",
+      "kind": "screenshot",
+      "platform": "android",
+      "language": "en",
+      "appearance": "dark",
+      "scene": "04-photo",
+      "width": 1080,
+      "height": 1920,
+      "bytes": 508502,
+      "sha256": "4fa39163b62bd233cdba179c701c4e9c5735cbb24b832a8b81a7812eab3ba179",
+      "copy": {
+        "title": "A picture, an entry",
+        "sub": "Extract transaction details from a receipt or bill.",
+        "points": [
+          "Pick a bill or receipt",
+          "Recognize amount and category",
+          "Find the entry in your ledger"
+        ]
+      },
+      "raw": [
+        {
+          "path": "raw/stills/android/en/dark/14-photo.png",
+          "width": 1080,
+          "height": 2400,
+          "bytes": 238030,
+          "sha256": "007bfd97f2503971f41d69c0ee48cb5d8d5090be6aa6da0909221a1a9af89498"
+        }
+      ],
+      "checks": {
+        "missing": 0,
+        "overlaps": 0,
+        "clipped": 0,
+        "noSimulatedDeviceFrames": true,
+        "textToScreenshotGap": 40.796875,
+        "fonts": [
+          {
+            "text": "A picture, an entry",
+            "fonts": [
+              {
+                "familyName": "Source Han Sans SC",
+                "postScriptName": "SourceHanSansSC-Bold",
+                "isCustomFont": true,
+                "glyphCount": 19
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "path": "android/en/dark/05-open.png",
+      "kind": "screenshot",
+      "platform": "android",
+      "language": "en",
+      "appearance": "dark",
+      "scene": "05-open",
+      "width": 1080,
+      "height": 1920,
+      "bytes": 522432,
+      "sha256": "e37a8711125cc13db006cbe8c4259e9422aa644b9c2d7de7aa2097805c85b649",
+      "copy": {
+        "title": "Open source",
+        "sub": "Public source code, built for your everyday books.",
+        "points": [
+          "Public source code",
+          "No ads inside the App",
+          "An evolving open-source project"
+        ]
+      },
+      "raw": [
+        {
+          "path": "raw/android/en/dark/01-home.png",
+          "width": 1080,
+          "height": 2400,
+          "bytes": 258979,
+          "sha256": "baae5c79fa24c4e357f1698ab642fd7f653e092431ba940a6536fa1d04bdf225"
+        }
+      ],
+      "checks": {
+        "missing": 0,
+        "overlaps": 0,
+        "clipped": 0,
+        "noSimulatedDeviceFrames": true,
+        "textToScreenshotGap": 40.796875,
+        "fonts": [
+          {
+            "text": "Open source",
+            "fonts": [
+              {
+                "familyName": "Source Han Sans SC",
+                "postScriptName": "SourceHanSansSC-Bold",
+                "isCustomFont": true,
+                "glyphCount": 11
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "path": "android/en/dark/06-import.png",
+      "kind": "screenshot",
+      "platform": "android",
+      "language": "en",
+      "appearance": "dark",
+      "scene": "06-import",
+      "width": 1080,
+      "height": 1920,
+      "bytes": 489455,
+      "sha256": "56e853837f94b1d374f5de6c9635c11dd3cf85c4eb08ed9fa36c7733f7e3d729",
+      "copy": {
+        "title": "Bring your history",
+        "sub": "Import existing bills and keep your history together.",
+        "points": [
+          "Import CSV records",
+          "Review fields and categories",
+          "Export and keep your data"
+        ]
+      },
+      "raw": [
+        {
+          "path": "raw/android/en/dark/07-mine.png",
+          "width": 1080,
+          "height": 2400,
+          "bytes": 235775,
+          "sha256": "adfa685aa68307205428fbfb7562c4d36b11170127c45b83cd933af0f69c2c10"
+        }
+      ],
+      "checks": {
+        "missing": 0,
+        "overlaps": 0,
+        "clipped": 0,
+        "noSimulatedDeviceFrames": true,
+        "textToScreenshotGap": 40.796875,
+        "fonts": [
+          {
+            "text": "Bring your history",
+            "fonts": [
+              {
+                "familyName": "Source Han Sans SC",
+                "postScriptName": "SourceHanSansSC-Bold",
+                "isCustomFont": true,
+                "glyphCount": 18
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "path": "android/en/dark/07-ledgers.png",
+      "kind": "screenshot",
+      "platform": "android",
+      "language": "en",
+      "appearance": "dark",
+      "scene": "07-ledgers",
+      "width": 1080,
+      "height": 1920,
+      "bytes": 466472,
+      "sha256": "00d8ffca5df41cda86bae16a785801b46f7cc63d0773e9486d0523c90d7f0b1c",
+      "copy": {
+        "title": "Separate your books",
+        "sub": "Separate books for everyday life, travel and learning.",
+        "points": [
+          "A book for everyday life",
+          "Travel plans kept separate",
+          "Switch books in one App"
+        ]
+      },
+      "raw": [
+        {
+          "path": "raw/android/en/dark/04-ledgers.png",
+          "width": 1080,
+          "height": 2400,
+          "bytes": 176547,
+          "sha256": "2b37a219a7f7d7cdcc356be226abdcf640d5a2df7d2e741fbfcba2930e2cadd1"
+        }
+      ],
+      "checks": {
+        "missing": 0,
+        "overlaps": 0,
+        "clipped": 0,
+        "noSimulatedDeviceFrames": true,
+        "textToScreenshotGap": 40.796875,
+        "fonts": [
+          {
+            "text": "Separate your books",
+            "fonts": [
+              {
+                "familyName": "Source Han Sans SC",
+                "postScriptName": "SourceHanSansSC-Bold",
+                "isCustomFont": true,
+                "glyphCount": 19
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "path": "android/en/dark/08-theme.png",
+      "kind": "screenshot",
+      "platform": "android",
+      "language": "en",
+      "appearance": "dark",
+      "scene": "08-theme",
+      "width": 1080,
+      "height": 1920,
+      "bytes": 456846,
+      "sha256": "7b56e807b976630cd8ab68d321c43457b4c5a7ff67ed6ce69b43e37432185def",
+      "copy": {
+        "title": "Your colors, your way",
+        "sub": "Light, dark and a palette that feels like you.",
+        "points": [
+          "Light and dark modes",
+          "Ready-to-use palettes",
+          "Your own custom colors"
+        ]
+      },
+      "raw": [
+        {
+          "path": "raw/android/en/dark/11-personalization.png",
+          "width": 1080,
+          "height": 2400,
+          "bytes": 148111,
+          "sha256": "37d279d875585ad1fd10722cdfb64df2581585a9a6a3ff3b6fb23a03fea7b4c6"
+        }
+      ],
+      "checks": {
+        "missing": 0,
+        "overlaps": 0,
+        "clipped": 0,
+        "noSimulatedDeviceFrames": true,
+        "textToScreenshotGap": 40.796875,
+        "fonts": [
+          {
+            "text": "Your colors, your way",
+            "fonts": [
+              {
+                "familyName": "Source Han Sans SC",
+                "postScriptName": "SourceHanSansSC-Bold",
+                "isCustomFont": true,
+                "glyphCount": 21
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "path": "feature/zh/feature.png",
+      "kind": "feature",
+      "platform": "feature",
+      "language": "zh",
+      "appearance": "light",
+      "scene": "feature",
+      "width": 1024,
+      "height": 500,
+      "bytes": 263236,
+      "sha256": "f75a028c5c19119956aa02eb1057bcdd74cc8225a8f2bedbbc877dea9258385c",
+      "copy": {
+        "brand": "BeeCount",
+        "brandSub": "蜜蜂记账",
+        "tagline": "本地优先，选择自由",
+        "chips": [
+          "本地账本",
+          "可选云服务",
+          "可选 AI"
+        ]
+      },
+      "raw": [
+        {
+          "path": "raw/android/zh/light/02-analytics.png",
+          "width": 1080,
+          "height": 2400,
+          "bytes": 186066,
+          "sha256": "24577a7174028ef4b6102c372526c4c5a4442bb646b4d763ed9517ad10efab95"
+        },
+        {
+          "path": "raw/android/zh/light/01-home.png",
+          "width": 1080,
+          "height": 2400,
+          "bytes": 241606,
+          "sha256": "25c07d8421cbe2e5f6b4fab96480a042f9618c4bf6b0d26a32f603448d794230"
+        }
+      ],
+      "checks": {
+        "missing": 0,
+        "overlaps": 0,
+        "clipped": 0,
+        "noSimulatedDeviceFrames": true,
+        "textToScreenshotGap": 53,
+        "fonts": [
+          {
+            "text": "BeeCount",
+            "fonts": [
+              {
+                "familyName": "Source Han Sans SC",
+                "postScriptName": "SourceHanSansSC-Bold",
+                "isCustomFont": true,
+                "glyphCount": 8
+              }
+            ]
+          },
+          {
+            "text": "本地优先，选择自由",
+            "fonts": [
+              {
+                "familyName": "Source Han Sans SC",
+                "postScriptName": "SourceHanSansSC-Bold",
+                "isCustomFont": true,
+                "glyphCount": 9
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "path": "feature/en/feature.png",
+      "kind": "feature",
+      "platform": "feature",
+      "language": "en",
+      "appearance": "light",
+      "scene": "feature",
+      "width": 1024,
+      "height": 500,
+      "bytes": 265577,
+      "sha256": "74613e0419bc20d01c5540b1f08666e12473a5e6a555482d564e499b8c44d250",
+      "copy": {
+        "brand": "BeeCount",
+        "brandSub": "Personal finance",
+        "tagline": "Local first. Your choice.",
+        "chips": [
+          "Local books",
+          "Optional cloud",
+          "Optional AI"
+        ]
+      },
+      "raw": [
+        {
+          "path": "raw/android/en/light/02-analytics.png",
+          "width": 1080,
+          "height": 2400,
+          "bytes": 190570,
+          "sha256": "5436fe597731865c586763d15304e49baff541c1e564f2aab830c8083a06ff4e"
+        },
+        {
+          "path": "raw/android/en/light/01-home.png",
+          "width": 1080,
+          "height": 2400,
+          "bytes": 256063,
+          "sha256": "e9577d166d67aaf7c9802582e56a21b2a2e006cfd8f0db62eccdc92ca484bc99"
+        }
+      ],
+      "checks": {
+        "missing": 0,
+        "overlaps": 0,
+        "clipped": 0,
+        "noSimulatedDeviceFrames": true,
+        "textToScreenshotGap": 53,
+        "fonts": [
+          {
+            "text": "BeeCount",
+            "fonts": [
+              {
+                "familyName": "Source Han Sans SC",
+                "postScriptName": "SourceHanSansSC-Bold",
+                "isCustomFont": true,
+                "glyphCount": 8
+              }
+            ]
+          },
+          {
+            "text": "Local first. Your choice.",
+            "fonts": [
+              {
+                "familyName": "Source Han Sans SC",
+                "postScriptName": "SourceHanSansSC-Bold",
+                "isCustomFont": true,
+                "glyphCount": 25
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}
