@@ -1,6 +1,6 @@
 # BeeCount 4.0 商店素材
 
-本轮素材以 2026-11-12 的 `v4` 工作区为来源，在全新隔离模拟器中生成中英文合成账本并采集。所有页面来自实际 App；使用用户指定的样例头像。旧 `output/` 和 `output-final/` 保留为历史版本。
+本轮素材以 2026-11-12 的 `v4` 工作区为来源，在全新隔离模拟器中生成中英文合成账本并采集。所有页面来自实际 App；使用用户指定的样例头像。旧 `output/` 和 `output-final/` 已从仓库清理，可用 `export.mjs` 重新导出。
 
 ## 2026-11-13 · 经典文案新版
 
@@ -47,7 +47,7 @@ A 另备搜索、分类、云服务、工具四张候选图。B 的 AI 对话和
 - `raw/stills/{ios,android}/…`：16 张操作中的原生静态画面；中尺寸 iPhone 的 B 套按实际原图比例排入大尺寸 iPhone 操作画面，不拉伸、不跨操作系统借图。
 - `raw/manifest.json`：尺寸、源码身份和 SHA256。
 - `media/{ios,android}/{zh,en}/{light,dark}/`：六种实际工作流及 iOS 快捷指令的 MP4、GIF 与静态封面。
-- `output-launch-20261112/pages/`：A 全部 146 张 PNG（含 48 张额外候选）。
+- `output-launch-20261112/pages/`：A 实际上传的 96 张 PNG；搜索、分类、云服务、工具四张候选（48 张）不入库，可重新导出。
 - `output-launch-20261112/features/`：B 全部 98 张 PNG。
 
 本轮定稿导出 `output-launch-20261112/{pages,features}/` 与原图、动图和生成器一起在本仓维护。完整交付包在 BeeCount 忽略的 `.docs/v4-launch-refresh-20261112/delivery/`。

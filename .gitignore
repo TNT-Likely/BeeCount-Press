@@ -12,3 +12,12 @@ node_modules/
 .vscode/
 .idea/
 *.swp
+
+# 4.0 素材：本地产物与可再生文件不进 git
+.claude/
+projects/beecount/store/v4/output-appstore-20261113/
+projects/beecount/store/v4/assets/fonts/*.otf
+projects/beecount/store/v4/output-launch-20261112/pages/*/*/*/07-mine.png
+projects/beecount/store/v4/output-launch-20261112/pages/*/*/*/09-cloud.png
+projects/beecount/store/v4/output-launch-20261112/pages/*/*/*/10-categories.png
+projects/beecount/store/v4/output-launch-20261112/pages/*/*/*/12-search.png
