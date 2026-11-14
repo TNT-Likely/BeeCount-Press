@@ -1,0 +1,161 @@
+{
+  "ok": true,
+  "count": 4,
+  "originalNativeSourcesChecked": 12,
+  "noRuntimeErrors": true,
+  "headlinesClearOfScreens": true,
+  "layouts": [
+    {
+      "mode": "light",
+      "width": 1440,
+      "height": 1920,
+      "title": "每一笔，都清楚",
+      "font": "\"Source Han Sans SC\", sans-serif",
+      "weight": "700",
+      "titleFits": true,
+      "headlineClear": true,
+      "sourceAspectRatiosUnchanged": true,
+      "screenshots": [
+        {
+          "source": "../store/v4/raw/ios/zh/light/02-analytics.png",
+          "naturalWidth": 1320,
+          "naturalHeight": 2868,
+          "left": 17.750268936157227,
+          "top": 643.07958984375,
+          "right": 573.7361087799072,
+          "bottom": 1533.0252685546875
+        },
+        {
+          "source": "../store/v4/raw/ios/zh/light/06-budgets.png",
+          "naturalWidth": 1320,
+          "naturalHeight": 2868,
+          "left": 210.22401428222656,
+          "top": 1476.7750244140625,
+          "right": 766.2098541259766,
+          "bottom": 2366.720703125
+        },
+        {
+          "source": "../store/v4/raw/ios/zh/light/01-home.png",
+          "naturalWidth": 1320,
+          "naturalHeight": 2868,
+          "left": 382.37457275390625,
+          "top": 399.8222961425781,
+          "right": 938.3604125976562,
+          "bottom": 1289.7680969238281
+        },
+        {
+          "source": "../store/v4/raw/ios/zh/light/03-accounts.png",
+          "naturalWidth": 1320,
+          "naturalHeight": 2868,
+          "left": 574.8483276367188,
+          "top": 1233.5177001953125,
+          "right": 1130.8341064453125,
+          "bottom": 2123.46337890625
+        },
+        {
+          "source": "../store/v4/raw/ios/zh/light/05-transaction.png",
+          "naturalWidth": 1320,
+          "naturalHeight": 2868,
+          "left": 829.1060180664062,
+          "top": 512.2100830078125,
+          "right": 1385.0919189453125,
+          "bottom": 1402.15576171875
+        },
+        {
+          "source": "../store/v4/raw/ios/zh/light/04-ledgers.png",
+          "naturalWidth": 1320,
+          "naturalHeight": 2868,
+          "left": 1021.5797729492188,
+          "top": 1345.905517578125,
+          "right": 1577.565673828125,
+          "bottom": 2235.85107421875
+        }
+      ],
+      "angle": "matrix(0.97437, -0.224951, 0.224951, 0.97437, 0, 0)",
+      "fonts": [
+        {
+          "familyName": "Source Han Sans SC",
+          "postScriptName": "SourceHanSansSC-Bold",
+          "isCustomFont": true,
+          "glyphCount": 7
+        }
+      ]
+    },
+    {
+      "mode": "dark",
+      "width": 1440,
+      "height": 1920,
+      "title": "每一笔，都清楚",
+      "font": "\"Source Han Sans SC\", sans-serif",
+      "weight": "700",
+      "titleFits": true,
+      "headlineClear": true,
+      "sourceAspectRatiosUnchanged": true,
+      "screenshots": [
+        {
+          "source": "../store/v4/raw/ios/zh/dark/02-analytics.png",
+          "naturalWidth": 1320,
+          "naturalHeight": 2868,
+          "left": 17.750268936157227,
+          "top": 643.07958984375,
+          "right": 573.7361087799072,
+          "bottom": 1533.0252685546875
+        },
+        {
+          "source": "../store/v4/raw/ios/zh/dark/06-budgets.png",
+          "naturalWidth": 1320,
+          "naturalHeight": 2868,
+          "left": 210.22401428222656,
+          "top": 1476.7750244140625,
+          "right": 766.2098541259766,
+          "bottom": 2366.720703125
+        },
+        {
+          "source": "../store/v4/raw/ios/zh/dark/01-home.png",
+          "naturalWidth": 1320,
+          "naturalHeight": 2868,
+          "left": 382.37457275390625,
+          "top": 399.8222961425781,
+          "right": 938.3604125976562,
+          "bottom": 1289.7680969238281
+        },
+        {
+          "source": "../store/v4/raw/ios/zh/dark/03-accounts.png",
+          "naturalWidth": 1320,
+          "naturalHeight": 2868,
+          "left": 574.8483276367188,
+          "top": 1233.5177001953125,
+          "right": 1130.8341064453125,
+          "bottom": 2123.46337890625
+        },
+        {
+          "source": "../store/v4/raw/ios/zh/dark/05-transaction.png",
+          "naturalWidth": 1320,
+          "naturalHeight": 2868,
+          "left": 829.1060180664062,
+          "top": 512.2100830078125,
+          "right": 1385.0919189453125,
+          "bottom": 1402.15576171875
+        },
+        {
+          "source": "../store/v4/raw/ios/zh/dark/04-ledgers.png",
+          "naturalWidth": 1320,
+          "naturalHeight": 2868,
+          "left": 1021.5797729492188,
+          "top": 1345.905517578125,
+          "right": 1577.565673828125,
+          "bottom": 2235.85107421875
+        }
+      ],
+      "angle": "matrix(0.97437, -0.224951, 0.224951, 0.97437, 0, 0)",
+      "fonts": [
+        {
+          "familyName": "Source Han Sans SC",
+          "postScriptName": "SourceHanSansSC-Bold",
+          "isCustomFont": true,
+          "glyphCount": 7
+        }
+      ]
+    }
+  ]
+}

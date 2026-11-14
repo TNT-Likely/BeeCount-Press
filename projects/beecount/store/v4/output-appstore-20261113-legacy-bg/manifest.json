@@ -1,0 +1,2059 @@
+{
+  "schemaVersion": 3,
+  "kind": "beecount-v4-store-artwork",
+  "generatedAt": "2026-11-13T15:17:13.435Z",
+  "renderer": "Chrome 157.0.8103.51 / Playwright",
+  "origin": "http://127.0.0.1:8767",
+  "count": {
+    "screenshots": 36,
+    "featureGraphics": 0,
+    "total": 36
+  },
+  "themeCount": 9,
+  "selections": {
+    "suite": "classic",
+    "platforms": [
+      "ios-medium"
+    ],
+    "languages": [
+      "zh",
+      "en"
+    ],
+    "modes": [
+      "light",
+      "dark"
+    ],
+    "scenes": [
+      "01-privacy",
+      "02-cloud",
+      "03-analytics",
+      "04-ai",
+      "05-add",
+      "06-ledgers",
+      "07-tags",
+      "08-accounts",
+      "09-budgets"
+    ]
+  },
+  "nativeScreenshotsUncropped": true,
+  "noSimulatedDeviceFrames": true,
+  "featureSources": "Android light only, matching language",
+  "images": [
+    {
+      "path": "ios-medium/zh/light/01-privacy.png",
+      "kind": "screenshot",
+      "platform": "ios-medium",
+      "language": "zh",
+      "appearance": "light",
+      "scene": "01-privacy",
+      "width": 1206,
+      "height": 2622,
+      "bytes": 660049,
+      "sha256": "d736f04b55a9d88ba32f9cc83ba68760a8b9d6226b9ad2684fb13bf5e1508c35",
+      "copy": {
+        "title": "开源透明 数据隐私",
+        "sub": "开源 · 隐私优先 · 离线优先"
+      },
+      "raw": [
+        {
+          "path": "raw/ios-medium/zh/light/01-home.png",
+          "width": 1206,
+          "height": 2622,
+          "bytes": 306548,
+          "sha256": "3f5872071c95fd6e301a54b66a165c5a8333c67f6353c0acda4466c53e0ca1e5"
+        }
+      ],
+      "checks": {
+        "missing": 0,
+        "overlaps": 0,
+        "clipped": 0,
+        "noSimulatedDeviceFrames": true,
+        "textToScreenshotGap": 106.15625,
+        "fonts": [
+          {
+            "text": "开源透明 数据隐私",
+            "fonts": [
+              {
+                "familyName": "Source Han Sans SC",
+                "postScriptName": "SourceHanSansSC-Bold",
+                "isCustomFont": true,
+                "glyphCount": 9
+              }
+            ]
+          },
+          {
+            "text": "开源 · 隐私优先 · 离线优先",
+            "fonts": [
+              {
+                "familyName": "Source Han Sans SC",
+                "postScriptName": "SourceHanSansSC-Bold",
+                "isCustomFont": true,
+                "glyphCount": 16
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "path": "ios-medium/zh/light/02-cloud.png",
+      "kind": "screenshot",
+      "platform": "ios-medium",
+      "language": "zh",
+      "appearance": "light",
+      "scene": "02-cloud",
+      "width": 1206,
+      "height": 2622,
+      "bytes": 484203,
+      "sha256": "177e906489b6003e8e0aa7e059d8ce10b4323863902ffb684d5e85520e87a757",
+      "copy": {
+        "title": "云服务 你做主",
+        "sub": "iCloud · WebDAV · S3 · 自托管"
+      },
+      "raw": [
+        {
+          "path": "raw/ios-medium/zh/light/09-cloud.png",
+          "width": 1206,
+          "height": 2622,
+          "bytes": 124402,
+          "sha256": "782fc23cf8f55de155adf9697828300bae0faee2f6580d6d5a14780ed2f97690"
+        }
+      ],
+      "checks": {
+        "missing": 0,
+        "overlaps": 0,
+        "clipped": 0,
+        "noSimulatedDeviceFrames": true,
+        "textToScreenshotGap": 106.15625,
+        "fonts": [
+          {
+            "text": "云服务 你做主",
+            "fonts": [
+              {
+                "familyName": "Source Han Sans SC",
+                "postScriptName": "SourceHanSansSC-Bold",
+                "isCustomFont": true,
+                "glyphCount": 7
+              }
+            ]
+          },
+          {
+            "text": "iCloud · WebDAV · S3 · 自托管",
+            "fonts": [
+              {
+                "familyName": "Source Han Sans SC",
+                "postScriptName": "SourceHanSansSC-Bold",
+                "isCustomFont": true,
+                "glyphCount": 26
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "path": "ios-medium/zh/light/03-analytics.png",
+      "kind": "screenshot",
+      "platform": "ios-medium",
+      "language": "zh",
+      "appearance": "light",
+      "scene": "03-analytics",
+      "width": 1206,
+      "height": 2622,
+      "bytes": 588627,
+      "sha256": "14e42b9026920186a28cdd2566d719ea72f8b580b962c0353de7666f82967578",
+      "copy": {
+        "title": "看清钱去哪了",
+        "sub": "分类排行 · 月度趋势 · 一目了然"
+      },
+      "raw": [
+        {
+          "path": "raw/ios-medium/zh/light/02-analytics.png",
+          "width": 1206,
+          "height": 2622,
+          "bytes": 241272,
+          "sha256": "265b4c8a06059e5afbee861047368b2edeba5ffdbcc5e0f10cc0e1d94146c5b5"
+        }
+      ],
+      "checks": {
+        "missing": 0,
+        "overlaps": 0,
+        "clipped": 0,
+        "noSimulatedDeviceFrames": true,
+        "textToScreenshotGap": 106.15625,
+        "fonts": [
+          {
+            "text": "看清钱去哪了",
+            "fonts": [
+              {
+                "familyName": "Source Han Sans SC",
+                "postScriptName": "SourceHanSansSC-Bold",
+                "isCustomFont": true,
+                "glyphCount": 6
+              }
+            ]
+          },
+          {
+            "text": "分类排行 · 月度趋势 · 一目了然",
+            "fonts": [
+              {
+                "familyName": "Source Han Sans SC",
+                "postScriptName": "SourceHanSansSC-Bold",
+                "isCustomFont": true,
+                "glyphCount": 18
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "path": "ios-medium/zh/light/04-ai.png",
+      "kind": "screenshot",
+      "platform": "ios-medium",
+      "language": "zh",
+      "appearance": "light",
+      "scene": "04-ai",
+      "width": 1206,
+      "height": 2622,
+      "bytes": 595429,
+      "sha256": "d06ddf38f503e0f166c06879c69c4bf6a1b1f0fad34ef73c0f0b7437d807c28e",
+      "copy": {
+        "title": "AI 智能记账",
+        "sub": "对话记账 · 收支查询 · 智能分析"
+      },
+      "raw": [
+        {
+          "path": "raw/stills/ios/zh/light/13-aichat.png",
+          "width": 1320,
+          "height": 2868,
+          "bytes": 276481,
+          "sha256": "fb1cef6a8fbea7552ef9f0623da6dcd8eb6594623a54189ccbc4bb3878d151f4"
+        }
+      ],
+      "checks": {
+        "missing": 0,
+        "overlaps": 0,
+        "clipped": 0,
+        "noSimulatedDeviceFrames": true,
+        "textToScreenshotGap": 106.15625,
+        "fonts": [
+          {
+            "text": "AI 智能记账",
+            "fonts": [
+              {
+                "familyName": "Source Han Sans SC",
+                "postScriptName": "SourceHanSansSC-Bold",
+                "isCustomFont": true,
+                "glyphCount": 7
+              }
+            ]
+          },
+          {
+            "text": "对话记账 · 收支查询 · 智能分析",
+            "fonts": [
+              {
+                "familyName": "Source Han Sans SC",
+                "postScriptName": "SourceHanSansSC-Bold",
+                "isCustomFont": true,
+                "glyphCount": 18
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "path": "ios-medium/zh/light/05-add.png",
+      "kind": "screenshot",
+      "platform": "ios-medium",
+      "language": "zh",
+      "appearance": "light",
+      "scene": "05-add",
+      "width": 1206,
+      "height": 2622,
+      "bytes": 583377,
+      "sha256": "a0ccf10ff170b2b8b5122a61d3275f722e844ace2dd979ddb916c208d04e6f03",
+      "copy": {
+        "title": "极速记一笔",
+        "sub": "分类 · 账户 · 标签，一次记清楚"
+      },
+      "raw": [
+        {
+          "path": "raw/ios-medium/zh/light/05-transaction.png",
+          "width": 1206,
+          "height": 2622,
+          "bytes": 211140,
+          "sha256": "90dbb1001967574fb4286847b97153762000b65926c4f8ab4394b8acd33b2c7b"
+        }
+      ],
+      "checks": {
+        "missing": 0,
+        "overlaps": 0,
+        "clipped": 0,
+        "noSimulatedDeviceFrames": true,
+        "textToScreenshotGap": 106.15625,
+        "fonts": [
+          {
+            "text": "极速记一笔",
+            "fonts": [
+              {
+                "familyName": "Source Han Sans SC",
+                "postScriptName": "SourceHanSansSC-Bold",
+                "isCustomFont": true,
+                "glyphCount": 5
+              }
+            ]
+          },
+          {
+            "text": "分类 · 账户 · 标签，一次记清楚",
+            "fonts": [
+              {
+                "familyName": "Source Han Sans SC",
+                "postScriptName": "SourceHanSansSC-Bold",
+                "isCustomFont": true,
+                "glyphCount": 18
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "path": "ios-medium/zh/light/06-ledgers.png",
+      "kind": "screenshot",
+      "platform": "ios-medium",
+      "language": "zh",
+      "appearance": "light",
+      "scene": "06-ledgers",
+      "width": 1206,
+      "height": 2622,
+      "bytes": 610036,
+      "sha256": "4aa8fe199c6724c2acef9fb78b95b87535ba93f7c6d9cd9208753ec2df295bd8",
+      "copy": {
+        "title": "多账本管理",
+        "sub": "日常 · 旅行 · 成长，各自独立"
+      },
+      "raw": [
+        {
+          "path": "raw/ios-medium/zh/light/04-ledgers.png",
+          "width": 1206,
+          "height": 2622,
+          "bytes": 243606,
+          "sha256": "dc1f5bd5d608c31adf16e9e7478e0506244776c4d9fbe086d499d9c01010fafb"
+        }
+      ],
+      "checks": {
+        "missing": 0,
+        "overlaps": 0,
+        "clipped": 0,
+        "noSimulatedDeviceFrames": true,
+        "textToScreenshotGap": 106.15625,
+        "fonts": [
+          {
+            "text": "多账本管理",
+            "fonts": [
+              {
+                "familyName": "Source Han Sans SC",
+                "postScriptName": "SourceHanSansSC-Bold",
+                "isCustomFont": true,
+                "glyphCount": 5
+              }
+            ]
+          },
+          {
+            "text": "日常 · 旅行 · 成长，各自独立",
+            "fonts": [
+              {
+                "familyName": "Source Han Sans SC",
+                "postScriptName": "SourceHanSansSC-Bold",
+                "isCustomFont": true,
+                "glyphCount": 17
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "path": "ios-medium/zh/light/07-tags.png",
+      "kind": "screenshot",
+      "platform": "ios-medium",
+      "language": "zh",
+      "appearance": "light",
+      "scene": "07-tags",
+      "width": 1206,
+      "height": 2622,
+      "bytes": 511792,
+      "sha256": "46155a7cfbc82cead17df7fd98ebf4e267c2876ebc5559de5413f7051d5918d8",
+      "copy": {
+        "title": "彩色标签 灵活归类",
+        "sub": "工作 · 周末 · 与朋友，自由整理"
+      },
+      "raw": [
+        {
+          "path": "raw/ios-medium/zh/light/08-tags.png",
+          "width": 1206,
+          "height": 2622,
+          "bytes": 139575,
+          "sha256": "b4d3b4e46879c862ef4579cecd5dea4b836a536a01db6c5a92765b8fd9e98d7a"
+        }
+      ],
+      "checks": {
+        "missing": 0,
+        "overlaps": 0,
+        "clipped": 0,
+        "noSimulatedDeviceFrames": true,
+        "textToScreenshotGap": 106.15625,
+        "fonts": [
+          {
+            "text": "彩色标签 灵活归类",
+            "fonts": [
+              {
+                "familyName": "Source Han Sans SC",
+                "postScriptName": "SourceHanSansSC-Bold",
+                "isCustomFont": true,
+                "glyphCount": 9
+              }
+            ]
+          },
+          {
+            "text": "工作 · 周末 · 与朋友，自由整理",
+            "fonts": [
+              {
+                "familyName": "Source Han Sans SC",
+                "postScriptName": "SourceHanSansSC-Bold",
+                "isCustomFont": true,
+                "glyphCount": 18
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "path": "ios-medium/zh/light/08-accounts.png",
+      "kind": "screenshot",
+      "platform": "ios-medium",
+      "language": "zh",
+      "appearance": "light",
+      "scene": "08-accounts",
+      "width": 1206,
+      "height": 2622,
+      "bytes": 584581,
+      "sha256": "cc74c89ab8e158f28b394baf9cc016c395dbc889a0c21c42edb6697d4841e698",
+      "copy": {
+        "title": "资产清晰 净值一屏",
+        "sub": "多账户 · 总资产 · 总负债 · 净资产"
+      },
+      "raw": [
+        {
+          "path": "raw/ios-medium/zh/light/03-accounts.png",
+          "width": 1206,
+          "height": 2622,
+          "bytes": 232779,
+          "sha256": "e93db835556721cee43c61326225c343b13f002ab9db3b30ea4fa045a8179c55"
+        }
+      ],
+      "checks": {
+        "missing": 0,
+        "overlaps": 0,
+        "clipped": 0,
+        "noSimulatedDeviceFrames": true,
+        "textToScreenshotGap": 106.15625,
+        "fonts": [
+          {
+            "text": "资产清晰 净值一屏",
+            "fonts": [
+              {
+                "familyName": "Source Han Sans SC",
+                "postScriptName": "SourceHanSansSC-Bold",
+                "isCustomFont": true,
+                "glyphCount": 9
+              }
+            ]
+          },
+          {
+            "text": "多账户 · 总资产 · 总负债 · 净资产",
+            "fonts": [
+              {
+                "familyName": "Source Han Sans SC",
+                "postScriptName": "SourceHanSansSC-Bold",
+                "isCustomFont": true,
+                "glyphCount": 21
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "path": "ios-medium/zh/light/09-budgets.png",
+      "kind": "screenshot",
+      "platform": "ios-medium",
+      "language": "zh",
+      "appearance": "light",
+      "scene": "09-budgets",
+      "width": 1206,
+      "height": 2622,
+      "bytes": 582856,
+      "sha256": "71397cd6047bb058e8b25fb84a0532dacf317144947bdf0711e78654c5bb6627",
+      "copy": {
+        "title": "花钱有计划",
+        "sub": "月度预算 · 分类预算 · 进度随时看"
+      },
+      "raw": [
+        {
+          "path": "raw/ios-medium/zh/light/06-budgets.png",
+          "width": 1206,
+          "height": 2622,
+          "bytes": 218888,
+          "sha256": "c7a274da1d0c8ed0524b1b11d636f4a8eb079470606cc64f99636e840ab18770"
+        }
+      ],
+      "checks": {
+        "missing": 0,
+        "overlaps": 0,
+        "clipped": 0,
+        "noSimulatedDeviceFrames": true,
+        "textToScreenshotGap": 106.15625,
+        "fonts": [
+          {
+            "text": "花钱有计划",
+            "fonts": [
+              {
+                "familyName": "Source Han Sans SC",
+                "postScriptName": "SourceHanSansSC-Bold",
+                "isCustomFont": true,
+                "glyphCount": 5
+              }
+            ]
+          },
+          {
+            "text": "月度预算 · 分类预算 · 进度随时看",
+            "fonts": [
+              {
+                "familyName": "Source Han Sans SC",
+                "postScriptName": "SourceHanSansSC-Bold",
+                "isCustomFont": true,
+                "glyphCount": 19
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "path": "ios-medium/zh/dark/01-privacy.png",
+      "kind": "screenshot",
+      "platform": "ios-medium",
+      "language": "zh",
+      "appearance": "dark",
+      "scene": "01-privacy",
+      "width": 1206,
+      "height": 2622,
+      "bytes": 721462,
+      "sha256": "1db7395d723276c3d63b53e8bc12a0a016e9ae23c41b9375fd5d93bba449b964",
+      "copy": {
+        "title": "开源透明 数据隐私",
+        "sub": "开源 · 隐私优先 · 离线优先"
+      },
+      "raw": [
+        {
+          "path": "raw/ios-medium/zh/dark/01-home.png",
+          "width": 1206,
+          "height": 2622,
+          "bytes": 318265,
+          "sha256": "5f46697273f206cac3f3b6bd69f3b34db6b834029a1b40664735dee1bcd7c4bb"
+        }
+      ],
+      "checks": {
+        "missing": 0,
+        "overlaps": 0,
+        "clipped": 0,
+        "noSimulatedDeviceFrames": true,
+        "textToScreenshotGap": 106.15625,
+        "fonts": [
+          {
+            "text": "开源透明 数据隐私",
+            "fonts": [
+              {
+                "familyName": "Source Han Sans SC",
+                "postScriptName": "SourceHanSansSC-Bold",
+                "isCustomFont": true,
+                "glyphCount": 9
+              }
+            ]
+          },
+          {
+            "text": "开源 · 隐私优先 · 离线优先",
+            "fonts": [
+              {
+                "familyName": "Source Han Sans SC",
+                "postScriptName": "SourceHanSansSC-Bold",
+                "isCustomFont": true,
+                "glyphCount": 16
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "path": "ios-medium/zh/dark/02-cloud.png",
+      "kind": "screenshot",
+      "platform": "ios-medium",
+      "language": "zh",
+      "appearance": "dark",
+      "scene": "02-cloud",
+      "width": 1206,
+      "height": 2622,
+      "bytes": 525508,
+      "sha256": "403276253bcd0708642a4b9b624fb0d3abc4c88acc8d2a5cfea41b556fe3830a",
+      "copy": {
+        "title": "云服务 你做主",
+        "sub": "iCloud · WebDAV · S3 · 自托管"
+      },
+      "raw": [
+        {
+          "path": "raw/ios-medium/zh/dark/09-cloud.png",
+          "width": 1206,
+          "height": 2622,
+          "bytes": 127271,
+          "sha256": "ddb91cd08395db5d2e215532359725d2f82b11365f499bd733a8e5c9ae9af5d9"
+        }
+      ],
+      "checks": {
+        "missing": 0,
+        "overlaps": 0,
+        "clipped": 0,
+        "noSimulatedDeviceFrames": true,
+        "textToScreenshotGap": 106.15625,
+        "fonts": [
+          {
+            "text": "云服务 你做主",
+            "fonts": [
+              {
+                "familyName": "Source Han Sans SC",
+                "postScriptName": "SourceHanSansSC-Bold",
+                "isCustomFont": true,
+                "glyphCount": 7
+              }
+            ]
+          },
+          {
+            "text": "iCloud · WebDAV · S3 · 自托管",
+            "fonts": [
+              {
+                "familyName": "Source Han Sans SC",
+                "postScriptName": "SourceHanSansSC-Bold",
+                "isCustomFont": true,
+                "glyphCount": 26
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "path": "ios-medium/zh/dark/03-analytics.png",
+      "kind": "screenshot",
+      "platform": "ios-medium",
+      "language": "zh",
+      "appearance": "dark",
+      "scene": "03-analytics",
+      "width": 1206,
+      "height": 2622,
+      "bytes": 648513,
+      "sha256": "f188292701d6c9e71fa7acbc4ed01d527ba4bac788856c8597f8956bc521aaa1",
+      "copy": {
+        "title": "看清钱去哪了",
+        "sub": "分类排行 · 月度趋势 · 一目了然"
+      },
+      "raw": [
+        {
+          "path": "raw/ios-medium/zh/dark/02-analytics.png",
+          "width": 1206,
+          "height": 2622,
+          "bytes": 248047,
+          "sha256": "7b6347a885c75f616ad9629ef82bca51e1869414140d3425ceca3e78b775d4cc"
+        }
+      ],
+      "checks": {
+        "missing": 0,
+        "overlaps": 0,
+        "clipped": 0,
+        "noSimulatedDeviceFrames": true,
+        "textToScreenshotGap": 106.15625,
+        "fonts": [
+          {
+            "text": "看清钱去哪了",
+            "fonts": [
+              {
+                "familyName": "Source Han Sans SC",
+                "postScriptName": "SourceHanSansSC-Bold",
+                "isCustomFont": true,
+                "glyphCount": 6
+              }
+            ]
+          },
+          {
+            "text": "分类排行 · 月度趋势 · 一目了然",
+            "fonts": [
+              {
+                "familyName": "Source Han Sans SC",
+                "postScriptName": "SourceHanSansSC-Bold",
+                "isCustomFont": true,
+                "glyphCount": 18
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "path": "ios-medium/zh/dark/04-ai.png",
+      "kind": "screenshot",
+      "platform": "ios-medium",
+      "language": "zh",
+      "appearance": "dark",
+      "scene": "04-ai",
+      "width": 1206,
+      "height": 2622,
+      "bytes": 640224,
+      "sha256": "12dd55db94613deb5cd27807981845842bdcd3a9350066c4298a497495e65684",
+      "copy": {
+        "title": "AI 智能记账",
+        "sub": "对话记账 · 收支查询 · 智能分析"
+      },
+      "raw": [
+        {
+          "path": "raw/stills/ios/zh/dark/13-aichat.png",
+          "width": 1320,
+          "height": 2868,
+          "bytes": 279072,
+          "sha256": "818fdde16aebbf2c0a08d94870aa1b4a9bc5c05d3ddb51eec11f103edc892fb7"
+        }
+      ],
+      "checks": {
+        "missing": 0,
+        "overlaps": 0,
+        "clipped": 0,
+        "noSimulatedDeviceFrames": true,
+        "textToScreenshotGap": 106.15625,
+        "fonts": [
+          {
+            "text": "AI 智能记账",
+            "fonts": [
+              {
+                "familyName": "Source Han Sans SC",
+                "postScriptName": "SourceHanSansSC-Bold",
+                "isCustomFont": true,
+                "glyphCount": 7
+              }
+            ]
+          },
+          {
+            "text": "对话记账 · 收支查询 · 智能分析",
+            "fonts": [
+              {
+                "familyName": "Source Han Sans SC",
+                "postScriptName": "SourceHanSansSC-Bold",
+                "isCustomFont": true,
+                "glyphCount": 18
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "path": "ios-medium/zh/dark/05-add.png",
+      "kind": "screenshot",
+      "platform": "ios-medium",
+      "language": "zh",
+      "appearance": "dark",
+      "scene": "05-add",
+      "width": 1206,
+      "height": 2622,
+      "bytes": 634510,
+      "sha256": "f4a3ea223617cdafdc1729af6e744338ae55fa6dc2a15108a38f353e9206eb52",
+      "copy": {
+        "title": "极速记一笔",
+        "sub": "分类 · 账户 · 标签，一次记清楚"
+      },
+      "raw": [
+        {
+          "path": "raw/ios-medium/zh/dark/05-transaction.png",
+          "width": 1206,
+          "height": 2622,
+          "bytes": 212370,
+          "sha256": "bef32cd317ef17637a6fb6f6515a3160f0a88bf05ee603b1ae1fe29dd09ec2dd"
+        }
+      ],
+      "checks": {
+        "missing": 0,
+        "overlaps": 0,
+        "clipped": 0,
+        "noSimulatedDeviceFrames": true,
+        "textToScreenshotGap": 106.15625,
+        "fonts": [
+          {
+            "text": "极速记一笔",
+            "fonts": [
+              {
+                "familyName": "Source Han Sans SC",
+                "postScriptName": "SourceHanSansSC-Bold",
+                "isCustomFont": true,
+                "glyphCount": 5
+              }
+            ]
+          },
+          {
+            "text": "分类 · 账户 · 标签，一次记清楚",
+            "fonts": [
+              {
+                "familyName": "Source Han Sans SC",
+                "postScriptName": "SourceHanSansSC-Bold",
+                "isCustomFont": true,
+                "glyphCount": 18
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "path": "ios-medium/zh/dark/06-ledgers.png",
+      "kind": "screenshot",
+      "platform": "ios-medium",
+      "language": "zh",
+      "appearance": "dark",
+      "scene": "06-ledgers",
+      "width": 1206,
+      "height": 2622,
+      "bytes": 664788,
+      "sha256": "7117c2ccdf49ddfcb9f7952e80df1c6c793301856107b07fe0e416aa957f751a",
+      "copy": {
+        "title": "多账本管理",
+        "sub": "日常 · 旅行 · 成长，各自独立"
+      },
+      "raw": [
+        {
+          "path": "raw/ios-medium/zh/dark/04-ledgers.png",
+          "width": 1206,
+          "height": 2622,
+          "bytes": 250659,
+          "sha256": "d866f1ac6cf8744dd1c5de2a98936d7b75caa1d978b43e3bc262380c2123b3dc"
+        }
+      ],
+      "checks": {
+        "missing": 0,
+        "overlaps": 0,
+        "clipped": 0,
+        "noSimulatedDeviceFrames": true,
+        "textToScreenshotGap": 106.15625,
+        "fonts": [
+          {
+            "text": "多账本管理",
+            "fonts": [
+              {
+                "familyName": "Source Han Sans SC",
+                "postScriptName": "SourceHanSansSC-Bold",
+                "isCustomFont": true,
+                "glyphCount": 5
+              }
+            ]
+          },
+          {
+            "text": "日常 · 旅行 · 成长，各自独立",
+            "fonts": [
+              {
+                "familyName": "Source Han Sans SC",
+                "postScriptName": "SourceHanSansSC-Bold",
+                "isCustomFont": true,
+                "glyphCount": 17
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "path": "ios-medium/zh/dark/07-tags.png",
+      "kind": "screenshot",
+      "platform": "ios-medium",
+      "language": "zh",
+      "appearance": "dark",
+      "scene": "07-tags",
+      "width": 1206,
+      "height": 2622,
+      "bytes": 554717,
+      "sha256": "83db00ff65f205b077590f1dbaacfccec284cb5577f8a5867249cc22c2c680df",
+      "copy": {
+        "title": "彩色标签 灵活归类",
+        "sub": "工作 · 周末 · 与朋友，自由整理"
+      },
+      "raw": [
+        {
+          "path": "raw/ios-medium/zh/dark/08-tags.png",
+          "width": 1206,
+          "height": 2622,
+          "bytes": 142030,
+          "sha256": "b6cd1c1e86d7ec658be33736750e3ea43d5d01929cc4fb0ef1613daa64fe1376"
+        }
+      ],
+      "checks": {
+        "missing": 0,
+        "overlaps": 0,
+        "clipped": 0,
+        "noSimulatedDeviceFrames": true,
+        "textToScreenshotGap": 106.15625,
+        "fonts": [
+          {
+            "text": "彩色标签 灵活归类",
+            "fonts": [
+              {
+                "familyName": "Source Han Sans SC",
+                "postScriptName": "SourceHanSansSC-Bold",
+                "isCustomFont": true,
+                "glyphCount": 9
+              }
+            ]
+          },
+          {
+            "text": "工作 · 周末 · 与朋友，自由整理",
+            "fonts": [
+              {
+                "familyName": "Source Han Sans SC",
+                "postScriptName": "SourceHanSansSC-Bold",
+                "isCustomFont": true,
+                "glyphCount": 18
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "path": "ios-medium/zh/dark/08-accounts.png",
+      "kind": "screenshot",
+      "platform": "ios-medium",
+      "language": "zh",
+      "appearance": "dark",
+      "scene": "08-accounts",
+      "width": 1206,
+      "height": 2622,
+      "bytes": 636835,
+      "sha256": "6639d924e7c9a39946d39e7abc34016bf4daf33adbb59382f1e769f83a9cf05f",
+      "copy": {
+        "title": "资产清晰 净值一屏",
+        "sub": "多账户 · 总资产 · 总负债 · 净资产"
+      },
+      "raw": [
+        {
+          "path": "raw/ios-medium/zh/dark/03-accounts.png",
+          "width": 1206,
+          "height": 2622,
+          "bytes": 234499,
+          "sha256": "8fb54b2147b0cb1278d35b2382cd3875212d3ca83c2d9bd169b9716c5a8b39ec"
+        }
+      ],
+      "checks": {
+        "missing": 0,
+        "overlaps": 0,
+        "clipped": 0,
+        "noSimulatedDeviceFrames": true,
+        "textToScreenshotGap": 106.15625,
+        "fonts": [
+          {
+            "text": "资产清晰 净值一屏",
+            "fonts": [
+              {
+                "familyName": "Source Han Sans SC",
+                "postScriptName": "SourceHanSansSC-Bold",
+                "isCustomFont": true,
+                "glyphCount": 9
+              }
+            ]
+          },
+          {
+            "text": "多账户 · 总资产 · 总负债 · 净资产",
+            "fonts": [
+              {
+                "familyName": "Source Han Sans SC",
+                "postScriptName": "SourceHanSansSC-Bold",
+                "isCustomFont": true,
+                "glyphCount": 21
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "path": "ios-medium/zh/dark/09-budgets.png",
+      "kind": "screenshot",
+      "platform": "ios-medium",
+      "language": "zh",
+      "appearance": "dark",
+      "scene": "09-budgets",
+      "width": 1206,
+      "height": 2622,
+      "bytes": 639067,
+      "sha256": "bd3775c320b609a865cfe74519ff8b11d2e75fd9a7ab1332dba7287b1c2b56ef",
+      "copy": {
+        "title": "花钱有计划",
+        "sub": "月度预算 · 分类预算 · 进度随时看"
+      },
+      "raw": [
+        {
+          "path": "raw/ios-medium/zh/dark/06-budgets.png",
+          "width": 1206,
+          "height": 2622,
+          "bytes": 233030,
+          "sha256": "31d53c9e0e4d1a00a688436c6c9959cbc8fae8bfdf34747e1f98ce1d5d57fabc"
+        }
+      ],
+      "checks": {
+        "missing": 0,
+        "overlaps": 0,
+        "clipped": 0,
+        "noSimulatedDeviceFrames": true,
+        "textToScreenshotGap": 106.15625,
+        "fonts": [
+          {
+            "text": "花钱有计划",
+            "fonts": [
+              {
+                "familyName": "Source Han Sans SC",
+                "postScriptName": "SourceHanSansSC-Bold",
+                "isCustomFont": true,
+                "glyphCount": 5
+              }
+            ]
+          },
+          {
+            "text": "月度预算 · 分类预算 · 进度随时看",
+            "fonts": [
+              {
+                "familyName": "Source Han Sans SC",
+                "postScriptName": "SourceHanSansSC-Bold",
+                "isCustomFont": true,
+                "glyphCount": 19
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "path": "ios-medium/en/light/01-privacy.png",
+      "kind": "screenshot",
+      "platform": "ios-medium",
+      "language": "en",
+      "appearance": "light",
+      "scene": "01-privacy",
+      "width": 1206,
+      "height": 2622,
+      "bytes": 677560,
+      "sha256": "b0994dda4db1e8f5da07017cf66db95421081d6784f00593657b01d323b2e239",
+      "copy": {
+        "title": "Open-source, privacy-first",
+        "sub": "Open source · local first · no ads"
+      },
+      "raw": [
+        {
+          "path": "raw/ios-medium/en/light/01-home.png",
+          "width": 1206,
+          "height": 2622,
+          "bytes": 329874,
+          "sha256": "16ab1075512d6a5b7ee3b1dd95f91bc861a86e0e5cc6ae58d9c36647b79cfcf4"
+        }
+      ],
+      "checks": {
+        "missing": 0,
+        "overlaps": 0,
+        "clipped": 0,
+        "noSimulatedDeviceFrames": true,
+        "textToScreenshotGap": 145.5625,
+        "fonts": [
+          {
+            "text": "Open-source, privacy-first",
+            "fonts": [
+              {
+                "familyName": "Source Han Sans SC",
+                "postScriptName": "SourceHanSansSC-Bold",
+                "isCustomFont": true,
+                "glyphCount": 25
+              }
+            ]
+          },
+          {
+            "text": "Open source · local first · no ads",
+            "fonts": [
+              {
+                "familyName": "Source Han Sans SC",
+                "postScriptName": "SourceHanSansSC-Bold",
+                "isCustomFont": true,
+                "glyphCount": 33
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "path": "ios-medium/en/light/02-cloud.png",
+      "kind": "screenshot",
+      "platform": "ios-medium",
+      "language": "en",
+      "appearance": "light",
+      "scene": "02-cloud",
+      "width": 1206,
+      "height": 2622,
+      "bytes": 482346,
+      "sha256": "5ad8a79959863e0c1f145bd51f4bfd0a648271e002fe14adc8b84aadf4cae583",
+      "copy": {
+        "title": "Cloud, your way",
+        "sub": "iCloud · WebDAV · S3 · self-hosting"
+      },
+      "raw": [
+        {
+          "path": "raw/ios-medium/en/light/09-cloud.png",
+          "width": 1206,
+          "height": 2622,
+          "bytes": 123020,
+          "sha256": "8dfdf938ac9f3007ebe27b84ca8e50d0c6a25af0ace885664ec002c287553d22"
+        }
+      ],
+      "checks": {
+        "missing": 0,
+        "overlaps": 0,
+        "clipped": 0,
+        "noSimulatedDeviceFrames": true,
+        "textToScreenshotGap": 145.5625,
+        "fonts": [
+          {
+            "text": "Cloud, your way",
+            "fonts": [
+              {
+                "familyName": "Source Han Sans SC",
+                "postScriptName": "SourceHanSansSC-Bold",
+                "isCustomFont": true,
+                "glyphCount": 15
+              }
+            ]
+          },
+          {
+            "text": "iCloud · WebDAV · S3 · self-hosting",
+            "fonts": [
+              {
+                "familyName": "Source Han Sans SC",
+                "postScriptName": "SourceHanSansSC-Bold",
+                "isCustomFont": true,
+                "glyphCount": 35
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "path": "ios-medium/en/light/03-analytics.png",
+      "kind": "screenshot",
+      "platform": "ios-medium",
+      "language": "en",
+      "appearance": "light",
+      "scene": "03-analytics",
+      "width": 1206,
+      "height": 2622,
+      "bytes": 603442,
+      "sha256": "7ebeaa101412a9c29c52f936d4e4b23cd5e930f581a87714b62a56a795115d30",
+      "copy": {
+        "title": "See where money goes",
+        "sub": "Category rankings · monthly trends"
+      },
+      "raw": [
+        {
+          "path": "raw/ios-medium/en/light/02-analytics.png",
+          "width": 1206,
+          "height": 2622,
+          "bytes": 254384,
+          "sha256": "a5ffc0180ca63a2ef7d2621671954c03a669187744fc2fd957442bc04e3b1c27"
+        }
+      ],
+      "checks": {
+        "missing": 0,
+        "overlaps": 0,
+        "clipped": 0,
+        "noSimulatedDeviceFrames": true,
+        "textToScreenshotGap": 145.5625,
+        "fonts": [
+          {
+            "text": "See where money goes",
+            "fonts": [
+              {
+                "familyName": "Source Han Sans SC",
+                "postScriptName": "SourceHanSansSC-Bold",
+                "isCustomFont": true,
+                "glyphCount": 20
+              }
+            ]
+          },
+          {
+            "text": "Category rankings · monthly trends",
+            "fonts": [
+              {
+                "familyName": "Source Han Sans SC",
+                "postScriptName": "SourceHanSansSC-Bold",
+                "isCustomFont": true,
+                "glyphCount": 34
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "path": "ios-medium/en/light/04-ai.png",
+      "kind": "screenshot",
+      "platform": "ios-medium",
+      "language": "en",
+      "appearance": "light",
+      "scene": "04-ai",
+      "width": 1206,
+      "height": 2622,
+      "bytes": 618944,
+      "sha256": "6be13c3519c1f37414619945209d9742cdcc55ade0ad1edef820d8f58242a0b2",
+      "copy": {
+        "title": "AI smart logging",
+        "sub": "Chat to log · ask about your spending"
+      },
+      "raw": [
+        {
+          "path": "raw/stills/ios/en/light/13-aichat.png",
+          "width": 1320,
+          "height": 2868,
+          "bytes": 285369,
+          "sha256": "d74f3f255dd1ef2a28fd910bff5e0ac19033d6faa484f90b4a0e79d5705d6719"
+        }
+      ],
+      "checks": {
+        "missing": 0,
+        "overlaps": 0,
+        "clipped": 0,
+        "noSimulatedDeviceFrames": true,
+        "textToScreenshotGap": 145.5625,
+        "fonts": [
+          {
+            "text": "AI smart logging",
+            "fonts": [
+              {
+                "familyName": "Source Han Sans SC",
+                "postScriptName": "SourceHanSansSC-Bold",
+                "isCustomFont": true,
+                "glyphCount": 16
+              }
+            ]
+          },
+          {
+            "text": "Chat to log · ask about your spending",
+            "fonts": [
+              {
+                "familyName": "Source Han Sans SC",
+                "postScriptName": "SourceHanSansSC-Bold",
+                "isCustomFont": true,
+                "glyphCount": 37
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "path": "ios-medium/en/light/05-add.png",
+      "kind": "screenshot",
+      "platform": "ios-medium",
+      "language": "en",
+      "appearance": "light",
+      "scene": "05-add",
+      "width": 1206,
+      "height": 2622,
+      "bytes": 575166,
+      "sha256": "c24d16cedb3a755dfff257a1becf2e4f9056283644acd26584c71c5cbf5d016a",
+      "copy": {
+        "title": "Instant entry",
+        "sub": "Categories, accounts and tags together"
+      },
+      "raw": [
+        {
+          "path": "raw/ios-medium/en/light/05-transaction.png",
+          "width": 1206,
+          "height": 2622,
+          "bytes": 211107,
+          "sha256": "6431466c98e2713bcd3976c868cd54417456d797d7b994c86cf7b97b4d12dc4a"
+        }
+      ],
+      "checks": {
+        "missing": 0,
+        "overlaps": 0,
+        "clipped": 0,
+        "noSimulatedDeviceFrames": true,
+        "textToScreenshotGap": 145.5625,
+        "fonts": [
+          {
+            "text": "Instant entry",
+            "fonts": [
+              {
+                "familyName": "Source Han Sans SC",
+                "postScriptName": "SourceHanSansSC-Bold",
+                "isCustomFont": true,
+                "glyphCount": 13
+              }
+            ]
+          },
+          {
+            "text": "Categories, accounts and tags together",
+            "fonts": [
+              {
+                "familyName": "Source Han Sans SC",
+                "postScriptName": "SourceHanSansSC-Bold",
+                "isCustomFont": true,
+                "glyphCount": 38
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "path": "ios-medium/en/light/06-ledgers.png",
+      "kind": "screenshot",
+      "platform": "ios-medium",
+      "language": "en",
+      "appearance": "light",
+      "scene": "06-ledgers",
+      "width": 1206,
+      "height": 2622,
+      "bytes": 616404,
+      "sha256": "474b583260c324c1c20728b2ee58de2bbd8254d2deda2d9816ed6797afcfe296",
+      "copy": {
+        "title": "Multi-ledger",
+        "sub": "Everyday life · travel · learning"
+      },
+      "raw": [
+        {
+          "path": "raw/ios-medium/en/light/04-ledgers.png",
+          "width": 1206,
+          "height": 2622,
+          "bytes": 252193,
+          "sha256": "d42287a78fffbd7be2f5bf9fd35710e5d7471aca8a4f6fb3eed12ea5828edbe7"
+        }
+      ],
+      "checks": {
+        "missing": 0,
+        "overlaps": 0,
+        "clipped": 0,
+        "noSimulatedDeviceFrames": true,
+        "textToScreenshotGap": 145.5625,
+        "fonts": [
+          {
+            "text": "Multi-ledger",
+            "fonts": [
+              {
+                "familyName": "Source Han Sans SC",
+                "postScriptName": "SourceHanSansSC-Bold",
+                "isCustomFont": true,
+                "glyphCount": 12
+              }
+            ]
+          },
+          {
+            "text": "Everyday life · travel · learning",
+            "fonts": [
+              {
+                "familyName": "Source Han Sans SC",
+                "postScriptName": "SourceHanSansSC-Bold",
+                "isCustomFont": true,
+                "glyphCount": 33
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "path": "ios-medium/en/light/07-tags.png",
+      "kind": "screenshot",
+      "platform": "ios-medium",
+      "language": "en",
+      "appearance": "light",
+      "scene": "07-tags",
+      "width": 1206,
+      "height": 2622,
+      "bytes": 524911,
+      "sha256": "ea8716763d01e3c56072c973d53d750c317f4132276f9e167e4bfd5bec728fea",
+      "copy": {
+        "title": "Color-coded tags",
+        "sub": "Work · weekends · friends, organized"
+      },
+      "raw": [
+        {
+          "path": "raw/ios-medium/en/light/08-tags.png",
+          "width": 1206,
+          "height": 2622,
+          "bytes": 153120,
+          "sha256": "3ae2e0a1f4ac20fa8c3584f802f788c5dda2755583f23edb75a435682037dc35"
+        }
+      ],
+      "checks": {
+        "missing": 0,
+        "overlaps": 0,
+        "clipped": 0,
+        "noSimulatedDeviceFrames": true,
+        "textToScreenshotGap": 145.5625,
+        "fonts": [
+          {
+            "text": "Color-coded tags",
+            "fonts": [
+              {
+                "familyName": "Source Han Sans SC",
+                "postScriptName": "SourceHanSansSC-Bold",
+                "isCustomFont": true,
+                "glyphCount": 16
+              }
+            ]
+          },
+          {
+            "text": "Work · weekends · friends, organized",
+            "fonts": [
+              {
+                "familyName": "Source Han Sans SC",
+                "postScriptName": "SourceHanSansSC-Bold",
+                "isCustomFont": true,
+                "glyphCount": 36
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "path": "ios-medium/en/light/08-accounts.png",
+      "kind": "screenshot",
+      "platform": "ios-medium",
+      "language": "en",
+      "appearance": "light",
+      "scene": "08-accounts",
+      "width": 1206,
+      "height": 2622,
+      "bytes": 599961,
+      "sha256": "4f88631065d2d31d1e94eb6998153123328f14a29bac96dfe8d6f5aceb8fbbb0",
+      "copy": {
+        "title": "Net worth at a glance",
+        "sub": "Accounts · assets · liabilities"
+      },
+      "raw": [
+        {
+          "path": "raw/ios-medium/en/light/03-accounts.png",
+          "width": 1206,
+          "height": 2622,
+          "bytes": 254044,
+          "sha256": "a5344ababbc8ef39f57f38871c494c200359b363751de7ed2655ccd3034d15be"
+        }
+      ],
+      "checks": {
+        "missing": 0,
+        "overlaps": 0,
+        "clipped": 0,
+        "noSimulatedDeviceFrames": true,
+        "textToScreenshotGap": 145.5625,
+        "fonts": [
+          {
+            "text": "Net worth at a glance",
+            "fonts": [
+              {
+                "familyName": "Source Han Sans SC",
+                "postScriptName": "SourceHanSansSC-Bold",
+                "isCustomFont": true,
+                "glyphCount": 21
+              }
+            ]
+          },
+          {
+            "text": "Accounts · assets · liabilities",
+            "fonts": [
+              {
+                "familyName": "Source Han Sans SC",
+                "postScriptName": "SourceHanSansSC-Bold",
+                "isCustomFont": true,
+                "glyphCount": 31
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "path": "ios-medium/en/light/09-budgets.png",
+      "kind": "screenshot",
+      "platform": "ios-medium",
+      "language": "en",
+      "appearance": "light",
+      "scene": "09-budgets",
+      "width": 1206,
+      "height": 2622,
+      "bytes": 582420,
+      "sha256": "27912c660a6739879be615e912e0a564eb557195629fa25fdd4f9aa9de0f54a7",
+      "copy": {
+        "title": "Plan your spending",
+        "sub": "Monthly plans · category budgets"
+      },
+      "raw": [
+        {
+          "path": "raw/ios-medium/en/light/06-budgets.png",
+          "width": 1206,
+          "height": 2622,
+          "bytes": 220809,
+          "sha256": "e4bb0cb9571f44524b40898e83dff4e43fbc9b42a8e88f2852dcb7cfff2a15ee"
+        }
+      ],
+      "checks": {
+        "missing": 0,
+        "overlaps": 0,
+        "clipped": 0,
+        "noSimulatedDeviceFrames": true,
+        "textToScreenshotGap": 145.5625,
+        "fonts": [
+          {
+            "text": "Plan your spending",
+            "fonts": [
+              {
+                "familyName": "Source Han Sans SC",
+                "postScriptName": "SourceHanSansSC-Bold",
+                "isCustomFont": true,
+                "glyphCount": 18
+              }
+            ]
+          },
+          {
+            "text": "Monthly plans · category budgets",
+            "fonts": [
+              {
+                "familyName": "Source Han Sans SC",
+                "postScriptName": "SourceHanSansSC-Bold",
+                "isCustomFont": true,
+                "glyphCount": 32
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "path": "ios-medium/en/dark/01-privacy.png",
+      "kind": "screenshot",
+      "platform": "ios-medium",
+      "language": "en",
+      "appearance": "dark",
+      "scene": "01-privacy",
+      "width": 1206,
+      "height": 2622,
+      "bytes": 733917,
+      "sha256": "615f15a50ce65f098b92b1ce77d94ec2dcee0defa7e90c1a08cce59ef0e039bd",
+      "copy": {
+        "title": "Open-source, privacy-first",
+        "sub": "Open source · local first · no ads"
+      },
+      "raw": [
+        {
+          "path": "raw/ios-medium/en/dark/01-home.png",
+          "width": 1206,
+          "height": 2622,
+          "bytes": 339144,
+          "sha256": "d0718d909514dfa6a37204426b42671ccba53a91c80be2d5420e6535b8a68cc2"
+        }
+      ],
+      "checks": {
+        "missing": 0,
+        "overlaps": 0,
+        "clipped": 0,
+        "noSimulatedDeviceFrames": true,
+        "textToScreenshotGap": 145.5625,
+        "fonts": [
+          {
+            "text": "Open-source, privacy-first",
+            "fonts": [
+              {
+                "familyName": "Source Han Sans SC",
+                "postScriptName": "SourceHanSansSC-Bold",
+                "isCustomFont": true,
+                "glyphCount": 25
+              }
+            ]
+          },
+          {
+            "text": "Open source · local first · no ads",
+            "fonts": [
+              {
+                "familyName": "Source Han Sans SC",
+                "postScriptName": "SourceHanSansSC-Bold",
+                "isCustomFont": true,
+                "glyphCount": 33
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "path": "ios-medium/en/dark/02-cloud.png",
+      "kind": "screenshot",
+      "platform": "ios-medium",
+      "language": "en",
+      "appearance": "dark",
+      "scene": "02-cloud",
+      "width": 1206,
+      "height": 2622,
+      "bytes": 523420,
+      "sha256": "8077a4f26f95fb3794553f1ef95f9e76068e240e7596aaf6da413548cf19fb40",
+      "copy": {
+        "title": "Cloud, your way",
+        "sub": "iCloud · WebDAV · S3 · self-hosting"
+      },
+      "raw": [
+        {
+          "path": "raw/ios-medium/en/dark/09-cloud.png",
+          "width": 1206,
+          "height": 2622,
+          "bytes": 125451,
+          "sha256": "b7e4879e4131d0998131516700b01b00062da3a3456ca8d17b0b492ce2d672e3"
+        }
+      ],
+      "checks": {
+        "missing": 0,
+        "overlaps": 0,
+        "clipped": 0,
+        "noSimulatedDeviceFrames": true,
+        "textToScreenshotGap": 145.5625,
+        "fonts": [
+          {
+            "text": "Cloud, your way",
+            "fonts": [
+              {
+                "familyName": "Source Han Sans SC",
+                "postScriptName": "SourceHanSansSC-Bold",
+                "isCustomFont": true,
+                "glyphCount": 15
+              }
+            ]
+          },
+          {
+            "text": "iCloud · WebDAV · S3 · self-hosting",
+            "fonts": [
+              {
+                "familyName": "Source Han Sans SC",
+                "postScriptName": "SourceHanSansSC-Bold",
+                "isCustomFont": true,
+                "glyphCount": 35
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "path": "ios-medium/en/dark/03-analytics.png",
+      "kind": "screenshot",
+      "platform": "ios-medium",
+      "language": "en",
+      "appearance": "dark",
+      "scene": "03-analytics",
+      "width": 1206,
+      "height": 2622,
+      "bytes": 664210,
+      "sha256": "f1a9be8127caa365dadd0156006b5e0c60a65834fa34cf3c5f123d99ffcaf99f",
+      "copy": {
+        "title": "See where money goes",
+        "sub": "Category rankings · monthly trends"
+      },
+      "raw": [
+        {
+          "path": "raw/ios-medium/en/dark/02-analytics.png",
+          "width": 1206,
+          "height": 2622,
+          "bytes": 261352,
+          "sha256": "df1e75170db5830fab6e0e16fcb6e55daeded9de009048a67cc4702607ec5eef"
+        }
+      ],
+      "checks": {
+        "missing": 0,
+        "overlaps": 0,
+        "clipped": 0,
+        "noSimulatedDeviceFrames": true,
+        "textToScreenshotGap": 145.5625,
+        "fonts": [
+          {
+            "text": "See where money goes",
+            "fonts": [
+              {
+                "familyName": "Source Han Sans SC",
+                "postScriptName": "SourceHanSansSC-Bold",
+                "isCustomFont": true,
+                "glyphCount": 20
+              }
+            ]
+          },
+          {
+            "text": "Category rankings · monthly trends",
+            "fonts": [
+              {
+                "familyName": "Source Han Sans SC",
+                "postScriptName": "SourceHanSansSC-Bold",
+                "isCustomFont": true,
+                "glyphCount": 34
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "path": "ios-medium/en/dark/04-ai.png",
+      "kind": "screenshot",
+      "platform": "ios-medium",
+      "language": "en",
+      "appearance": "dark",
+      "scene": "04-ai",
+      "width": 1206,
+      "height": 2622,
+      "bytes": 706655,
+      "sha256": "cb5459e12fc8e7b3c4021b8a36c8439b1fcbe7c8e6cabd1477695c1b6ed53c03",
+      "copy": {
+        "title": "AI smart logging",
+        "sub": "Chat to log · ask about your spending"
+      },
+      "raw": [
+        {
+          "path": "raw/stills/ios/en/dark/13-aichat.png",
+          "width": 1320,
+          "height": 2868,
+          "bytes": 330998,
+          "sha256": "5209040e94366f8262b6697254d79b8e490c615f3995d4c32f253923feffdd7a"
+        }
+      ],
+      "checks": {
+        "missing": 0,
+        "overlaps": 0,
+        "clipped": 0,
+        "noSimulatedDeviceFrames": true,
+        "textToScreenshotGap": 145.5625,
+        "fonts": [
+          {
+            "text": "AI smart logging",
+            "fonts": [
+              {
+                "familyName": "Source Han Sans SC",
+                "postScriptName": "SourceHanSansSC-Bold",
+                "isCustomFont": true,
+                "glyphCount": 16
+              }
+            ]
+          },
+          {
+            "text": "Chat to log · ask about your spending",
+            "fonts": [
+              {
+                "familyName": "Source Han Sans SC",
+                "postScriptName": "SourceHanSansSC-Bold",
+                "isCustomFont": true,
+                "glyphCount": 37
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "path": "ios-medium/en/dark/05-add.png",
+      "kind": "screenshot",
+      "platform": "ios-medium",
+      "language": "en",
+      "appearance": "dark",
+      "scene": "05-add",
+      "width": 1206,
+      "height": 2622,
+      "bytes": 623424,
+      "sha256": "e44664686a87ecf1c486ffb616644523cb06b6a7158ad0e4cd2d854cf3b8f803",
+      "copy": {
+        "title": "Instant entry",
+        "sub": "Categories, accounts and tags together"
+      },
+      "raw": [
+        {
+          "path": "raw/ios-medium/en/dark/05-transaction.png",
+          "width": 1206,
+          "height": 2622,
+          "bytes": 212106,
+          "sha256": "38b5cff3888ed3a05df1f6fe4dcaf262c570994edd886c7008510755bba7f2e7"
+        }
+      ],
+      "checks": {
+        "missing": 0,
+        "overlaps": 0,
+        "clipped": 0,
+        "noSimulatedDeviceFrames": true,
+        "textToScreenshotGap": 145.5625,
+        "fonts": [
+          {
+            "text": "Instant entry",
+            "fonts": [
+              {
+                "familyName": "Source Han Sans SC",
+                "postScriptName": "SourceHanSansSC-Bold",
+                "isCustomFont": true,
+                "glyphCount": 13
+              }
+            ]
+          },
+          {
+            "text": "Categories, accounts and tags together",
+            "fonts": [
+              {
+                "familyName": "Source Han Sans SC",
+                "postScriptName": "SourceHanSansSC-Bold",
+                "isCustomFont": true,
+                "glyphCount": 38
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "path": "ios-medium/en/dark/06-ledgers.png",
+      "kind": "screenshot",
+      "platform": "ios-medium",
+      "language": "en",
+      "appearance": "dark",
+      "scene": "06-ledgers",
+      "width": 1206,
+      "height": 2622,
+      "bytes": 672315,
+      "sha256": "4d12bbb81e95b9d516fc107d9c2adfe094d316389ce7e6a7a5d05691718cfd6b",
+      "copy": {
+        "title": "Multi-ledger",
+        "sub": "Everyday life · travel · learning"
+      },
+      "raw": [
+        {
+          "path": "raw/ios-medium/en/dark/04-ledgers.png",
+          "width": 1206,
+          "height": 2622,
+          "bytes": 259758,
+          "sha256": "39900c6520a8599bee7cf408f2f0e8cc3919fb381815a19d71f5242296d81263"
+        }
+      ],
+      "checks": {
+        "missing": 0,
+        "overlaps": 0,
+        "clipped": 0,
+        "noSimulatedDeviceFrames": true,
+        "textToScreenshotGap": 145.5625,
+        "fonts": [
+          {
+            "text": "Multi-ledger",
+            "fonts": [
+              {
+                "familyName": "Source Han Sans SC",
+                "postScriptName": "SourceHanSansSC-Bold",
+                "isCustomFont": true,
+                "glyphCount": 12
+              }
+            ]
+          },
+          {
+            "text": "Everyday life · travel · learning",
+            "fonts": [
+              {
+                "familyName": "Source Han Sans SC",
+                "postScriptName": "SourceHanSansSC-Bold",
+                "isCustomFont": true,
+                "glyphCount": 33
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "path": "ios-medium/en/dark/07-tags.png",
+      "kind": "screenshot",
+      "platform": "ios-medium",
+      "language": "en",
+      "appearance": "dark",
+      "scene": "07-tags",
+      "width": 1206,
+      "height": 2622,
+      "bytes": 573357,
+      "sha256": "bea65ac4fea5e769b49820bdeef5a4bd3d760e42ce84b17e9cc2dcc0027f9091",
+      "copy": {
+        "title": "Color-coded tags",
+        "sub": "Work · weekends · friends, organized"
+      },
+      "raw": [
+        {
+          "path": "raw/ios-medium/en/dark/08-tags.png",
+          "width": 1206,
+          "height": 2622,
+          "bytes": 159914,
+          "sha256": "aba28bee08f20a400658e035e58b6adbd8feb1ce34f36d440ba6fbfd8fb2d554"
+        }
+      ],
+      "checks": {
+        "missing": 0,
+        "overlaps": 0,
+        "clipped": 0,
+        "noSimulatedDeviceFrames": true,
+        "textToScreenshotGap": 145.5625,
+        "fonts": [
+          {
+            "text": "Color-coded tags",
+            "fonts": [
+              {
+                "familyName": "Source Han Sans SC",
+                "postScriptName": "SourceHanSansSC-Bold",
+                "isCustomFont": true,
+                "glyphCount": 16
+              }
+            ]
+          },
+          {
+            "text": "Work · weekends · friends, organized",
+            "fonts": [
+              {
+                "familyName": "Source Han Sans SC",
+                "postScriptName": "SourceHanSansSC-Bold",
+                "isCustomFont": true,
+                "glyphCount": 36
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "path": "ios-medium/en/dark/08-accounts.png",
+      "kind": "screenshot",
+      "platform": "ios-medium",
+      "language": "en",
+      "appearance": "dark",
+      "scene": "08-accounts",
+      "width": 1206,
+      "height": 2622,
+      "bytes": 654819,
+      "sha256": "61680f8b73cfcf20d6b0d8d287fc11b27c45a0e4dc5484cc0745084d316fa423",
+      "copy": {
+        "title": "Net worth at a glance",
+        "sub": "Accounts · assets · liabilities"
+      },
+      "raw": [
+        {
+          "path": "raw/ios-medium/en/dark/03-accounts.png",
+          "width": 1206,
+          "height": 2622,
+          "bytes": 259309,
+          "sha256": "7b2c035624ac2259cae272bf95e29e64a434efe09801553c59f58ebe1f3f685c"
+        }
+      ],
+      "checks": {
+        "missing": 0,
+        "overlaps": 0,
+        "clipped": 0,
+        "noSimulatedDeviceFrames": true,
+        "textToScreenshotGap": 145.5625,
+        "fonts": [
+          {
+            "text": "Net worth at a glance",
+            "fonts": [
+              {
+                "familyName": "Source Han Sans SC",
+                "postScriptName": "SourceHanSansSC-Bold",
+                "isCustomFont": true,
+                "glyphCount": 21
+              }
+            ]
+          },
+          {
+            "text": "Accounts · assets · liabilities",
+            "fonts": [
+              {
+                "familyName": "Source Han Sans SC",
+                "postScriptName": "SourceHanSansSC-Bold",
+                "isCustomFont": true,
+                "glyphCount": 31
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "path": "ios-medium/en/dark/09-budgets.png",
+      "kind": "screenshot",
+      "platform": "ios-medium",
+      "language": "en",
+      "appearance": "dark",
+      "scene": "09-budgets",
+      "width": 1206,
+      "height": 2622,
+      "bytes": 639108,
+      "sha256": "77ef222835ed6039b27fa9d3883dcc00f94cf7c93d85aa8835d58af7404848a9",
+      "copy": {
+        "title": "Plan your spending",
+        "sub": "Monthly plans · category budgets"
+      },
+      "raw": [
+        {
+          "path": "raw/ios-medium/en/dark/06-budgets.png",
+          "width": 1206,
+          "height": 2622,
+          "bytes": 236447,
+          "sha256": "726612d2f2bc7dcedea059b0959f139ccce940689804e6466233d4ebac2d791f"
+        }
+      ],
+      "checks": {
+        "missing": 0,
+        "overlaps": 0,
+        "clipped": 0,
+        "noSimulatedDeviceFrames": true,
+        "textToScreenshotGap": 145.5625,
+        "fonts": [
+          {
+            "text": "Plan your spending",
+            "fonts": [
+              {
+                "familyName": "Source Han Sans SC",
+                "postScriptName": "SourceHanSansSC-Bold",
+                "isCustomFont": true,
+                "glyphCount": 18
+              }
+            ]
+          },
+          {
+            "text": "Monthly plans · category budgets",
+            "fonts": [
+              {
+                "familyName": "Source Han Sans SC",
+                "postScriptName": "SourceHanSansSC-Bold",
+                "isCustomFont": true,
+                "glyphCount": 32
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

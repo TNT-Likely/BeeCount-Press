@@ -1,0 +1,92 @@
+{
+  "kind": "xiaohongshu-tilted-native-screens",
+  "ratio": "3:4",
+  "font": "Source Han Sans SC Bold",
+  "sourcePlatform": "ios",
+  "sourceLocale": "zh",
+  "nativeSourcesUnchanged": true,
+  "sources": [
+    {
+      "path": "ios/zh/light/01-home.png",
+      "sha256": "b1b1484f87366f14eb444141c345556b9ea39747379d192b72c39dbbfee156ef"
+    },
+    {
+      "path": "ios/zh/light/02-analytics.png",
+      "sha256": "d6cb3972cc55d27ddae3a82cd89ab774dc7cf409c98b7cb0fccaa61840464a3d"
+    },
+    {
+      "path": "ios/zh/light/03-accounts.png",
+      "sha256": "f621372153ba86f8bd0002959ac8b5917700e3995e717d421c82d4f3a802a163"
+    },
+    {
+      "path": "ios/zh/light/04-ledgers.png",
+      "sha256": "2a39c65e3041d01a5fa00f4b12b8ce9e6c7993d0bfa89b7422ab89f7c3d66fb4"
+    },
+    {
+      "path": "ios/zh/light/05-transaction.png",
+      "sha256": "f44b31903f6d71669547f1d7278ecc305e27bc0a02cd90067f701b4a0e258bf7"
+    },
+    {
+      "path": "ios/zh/light/06-budgets.png",
+      "sha256": "b34840d05bf47712208966c8f902747cd5ceee82613aced03ee961f00284bb99"
+    },
+    {
+      "path": "ios/zh/dark/01-home.png",
+      "sha256": "496c36f99d17592770a156e23d4ec7063b8b31ed11d3f4c3bd1a84832862edfc"
+    },
+    {
+      "path": "ios/zh/dark/02-analytics.png",
+      "sha256": "ba08aec3958602bdd33420fca8e538d89a6dafa04ca6e18c71fb9cb000ccfbbe"
+    },
+    {
+      "path": "ios/zh/dark/03-accounts.png",
+      "sha256": "f2d8947d23cb26e75b41ae12ae1100c76993f41a0aca0c2a2ef0181126b7e0b2"
+    },
+    {
+      "path": "ios/zh/dark/04-ledgers.png",
+      "sha256": "78d6b774c74f16fd3397f3db1f3ddc4d32afd095611aa6fca4610e9f808fdfee"
+    },
+    {
+      "path": "ios/zh/dark/05-transaction.png",
+      "sha256": "a96d9e91176be7062c010c3741bc201aa6d4e1c9042aad78d89d44998be44ab8"
+    },
+    {
+      "path": "ios/zh/dark/06-budgets.png",
+      "sha256": "82e01f5a6f59bc861485b80a83ac6616d69dd19dd235f593ffdd67979fc4fdb3"
+    }
+  ],
+  "files": [
+    {
+      "path": "01-tilted-pages-light.png",
+      "mode": "light",
+      "width": 1440,
+      "height": 1920,
+      "bytes": 1023376,
+      "sha256": "094d31156ad6bbdf62812ecd16ba48c372fee2108370dcdc53bc48d8304e4307"
+    },
+    {
+      "path": "01-tilted-pages-light.jpg",
+      "mode": "light",
+      "width": 1440,
+      "height": 1920,
+      "bytes": 417120,
+      "sha256": "8d6f58456b66c78084713e9113ff31bfac20cc04cd0741096690ed9153e3331d"
+    },
+    {
+      "path": "02-tilted-pages-dark.png",
+      "mode": "dark",
+      "width": 1440,
+      "height": 1920,
+      "bytes": 1043899,
+      "sha256": "969ad2a4fbaab76b2dd30f5408b299d3ecc7fd9105678dcfecb56dad9d64f76e"
+    },
+    {
+      "path": "02-tilted-pages-dark.jpg",
+      "mode": "dark",
+      "width": 1440,
+      "height": 1920,
+      "bytes": 417727,
+      "sha256": "55ae700785d65ad28ac40ffbea6229b0c727c0dfe57690afdfb9873d216488e4"
+    }
+  ]
+}
