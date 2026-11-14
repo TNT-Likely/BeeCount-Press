@@ -1,143 +1,107 @@
-# BeeCount v4 商店素材
+# BeeCount 4.0 商店素材
 
-本目录是 v4 商店素材的独立排版与导出入口，沿用 `../templates/` 的蜂蜜色渐变、光晕、星芒与居中标题。按最新要求，完整原生截图直接展示，不添加模拟手机框、黑色边框、刘海或设备圆角遮罩。文案只描述当前真实界面中可见的功能，不沿用旧版的 AI、OCR、Widget 或未出现在本轮截图中的宣传承诺。
+本轮素材以 2026-11-12 的 `v4` 工作区为来源，在全新隔离模拟器中生成中英文合成账本并采集。所有页面来自实际 App；使用用户指定的样例头像。旧 `output/` 和 `output-final/` 保留为历史版本。
 
-## 完整素材集
+## 2026-11-13 · 经典文案新版
 
-默认导出 **98 张 PNG**：
+默认工作台现在打开 `?suite=classic&platform=ios-medium`。经典版只提供 **1206 × 2622**，对应用户 App Store Connect 截图中的「带灵动岛的 iPhone（中等显示屏）」上传槽。旧 A/B 套的 1320 × 2868 属于另一设备组，不能上传到这个槽；旧版 1284 × 2778 也不用于这个槽。尺寸已对照 [Apple 截图规范](https://developer.apple.com/help/app-store-connect/reference/app-information/screenshot-specifications/) 和用户提供的后台提示，核对日期为 2026-11-13。
 
-| 内容 | 组合 | 张数 | 尺寸 |
-| --- | --- | ---: | --- |
-| iOS 商店截图 | 12 主题 × 中文/英文 × 浅色/深色 | 48 | 1320 × 2868，原生 iPhone 6.9″ |
-| Android 商店截图 | 12 主题 × 中文/英文 × 浅色/深色 | 48 | 1080 × 2400 |
-| Google Play feature graphic | 中文、英文各一张 | 2 | 1024 × 500 |
+经典版沿用老版的主副标题层级与卖点顺序：开源隐私、云服务、统计、AI、快速记账、多账本、标签、资产，最后用预算页替换旧设置页。标题使用思源黑体 Bold；背景按用户反馈恢复为原有的米白蜂蜜渐变、柔和光斑与星星装饰。截图完整等比展示、轻微圆角与柔和阴影，不加手机框。AI 页沿用上一轮实际操作原图，本轮没有重新采集 App。
 
-12 个主题全部使用：
+文案按真实界面调整：不承诺「一秒入账」，不把标签描述为自动归类；云服务列出当前支持的 iCloud、WebDAV、S3 与自托管。不同步新增韩文或繁体中文。
 
-- `01-home` 收支明细
-- `02-analytics` 统计分析
-- `03-accounts` 账户资产
-- `04-ledgers` 多账本
-- `05-transaction` 记账与展开的二级分类
-- `06-budgets` 月度与分类预算
-- `07-mine` 常用工具与设置
-- `08-tags` 彩色标签
-- `09-cloud` BeeCount Cloud 云同步入口
-- `10-categories` 分类与展开的二级分类
-- `11-personalization` 主题配色
-- `12-search` 记录搜索
-
-这里提供的是完整候选素材集，而不是要求在单个商店截图位上传全部 12 张。上架时按对应商店的截图数量限制选择。
-
-## 原图与文件
-
-- `raw/{ios,android}/{zh,en}/{light,dark}/`：96 张原生真实 PNG，来自独立模拟器与本地合成账本数据。
-- `raw/manifest.json`：已有原图尺寸与 SHA256 来源清单；本轮不修改。
-- `assets/logo.png`：已有 BeeCount 标志。
-- `store-data.mjs`：主题、文案、尺寸与导出任务的唯一数据源。
-- `index.html`、`styles.css`、`screenshots.js`：无 npm/CDN 依赖的筛选预览页。
-- `export.mjs`：Node + Playwright + 本机 Chrome 元素截图导出器。
-- `output-final/`：本轮全新导出目录；旧 `output/` 不修改。
-
-**原图不裁切、不拉伸、不涂改。** 每张完整矩形原图等比缩放，直接展示；不绘制手机外框、黑边、外框阴影、刘海或圆角遮罩，原图自带的系统状态栏保持原样。深色版使用独立深色原图，并搭配深色蜂蜜光晕背景。
-
-**没有跨平台或跨语言 fallback。** iOS 只读 iOS 图，Android 只读 Android 图。Play feature 只用本语言的 Android 浅色 `01-home`、`02-analytics` 两张完整原图，同样不添加模拟设备框；不使用 iOS 图，也不按外观重复导出。
-
-截图采集和设备操作不属于本排版工具的工作；合成展示截图也不代表业务或云同步链路已通过验收。
-
-## 操作演示视频
-
-`media/{ios,android}/{zh,en}/{light,dark}/{01-add-transaction,02-ai-chat,04-data-analysis,05-copy-transaction,06-import-ledger}.{mp4,gif}`：真实工作流录屏（记一笔、AI 对话、数据分析、复制交易、导入账单），来自独立模拟器原生录制，按墙钟时间戳切分，无合成指针指示、无调试痕迹。`media/manifest.json` 记录来源 App SHA、时长与 SHA256。主工程 README 与官网使用其中的 iOS 浅色/暗黑版本作为通用展示；双平台完整矩阵保留在本目录。
-
-## 预览与筛选
-
-使用 Press 会话已有的本地 HTTP 预览配置，打开：
-
-```text
-http://127.0.0.1:8765/projects/beecount/store/v4/
-```
-
-页面可按平台、语言、外观和主题筛选。切换会同步到 URL，方便分享固定组合；手机宽度也可操作。原图链接打开完整来源 PNG；“下载当前清单”下载当前筛选的来源、目标路径与命令，不伪装成图片导出。
-
-固定组合示例：
-
-```text
-?platform=ios&lang=zh&mode=light&scene=all
-?platform=android&lang=en&mode=dark&scene=10-categories
-?platform=feature&lang=zh
-```
-
-“批量导出与预览说明”中可以复制当前筛选或全部 98 张的终端命令。复制的命令使用带时间戳的新输出目录。`file://` 不适用 ES module 页面；请沿用既有 HTTP 预览，不需要 CDN，也无需另开一套导出服务。
-
-## 批量导出
-
-要求 Node.js 20+、Playwright 和本机 Google Chrome。Playwright 可以装在独立工具环境，通过环境变量指定入口；不需要往 Press 仓库安装依赖。
-
-从 **Press 仓库根目录** 运行，默认生成全部 98 张：
+成图位于 `output-appstore-20261113-legacy-bg/ios-medium/{zh,en}/{light,dark}/`，共 **36 张：2 种语言 × 2 种外观 × 9 张**。每次上传同一文件夹内的 9 张，按文件名顺序排列。所有 PNG 为不透明 RGB，并附带尺寸、字体、布局与原图哈希校验结果。独立交付包及离线预览位于 BeeCount 的忽略目录 `.docs/store-refresh-20261113/`。
 
 ```bash
 BEECOUNT_PLAYWRIGHT_MODULE=/absolute/path/to/playwright/index.mjs \
   node projects/beecount/store/v4/export.mjs \
-  --origin=http://127.0.0.1:8765 \
-  --output=./projects/beecount/store/v4/output-final
+  --suite=classic --platform=ios-medium \
+  --origin=http://127.0.0.1:8767 \
+  --output=./projects/beecount/store/v4/output-appstore-new
 ```
 
-本机已有模块可使用：
+经典版导出器拒绝其他设备尺寸。A/B 的预览和导出仍可用。
 
-```text
-/Users/sunxiao/code/mine/BeeCount-Design/card-refresh/node_modules/playwright/index.mjs
-```
+## 两套表达
 
-筛选导出示例，需选择尚不存在的目录：
+| 顺序 | A · 页面展示 | B · 产品特色 |
+| --- | --- | --- |
+| 1 | 每一笔都清楚 | 本地优先 |
+| 2 | 随手记一笔 | 云服务按需选 |
+| 3 | 看清钱去哪了 | AI 按需开启 |
+| 4 | 花钱有计划 | 图片也能记账 |
+| 5 | 账户心中有数 | 开源透明 |
+| 6 | 生活分本记录 | 旧账轻松导入 |
+| 7 | 给记录加标签 | 多账本分开记 |
+| 8 | 换个喜欢的颜色 | 外观由你决定 |
+
+A 另备搜索、分类、云服务、工具四张候选图。B 的 AI 对话和图片记账界面来自本轮实际模型调用后的原生画面。两套统一沿用旧版蜂蜜色背景，只保留一行短标题，放大真实截图并添加轻微圆角；不加手机框。
+
+两套均有中文 / 英文、浅色 / 深色和三个竖版输出尺寸。每组推荐上传 8 张；同一组不要混用明暗版本。特色文案明确云和 AI 按需使用，不承诺启用云或第三方 AI 后数据仍永不离开设备。
+
+## 当前文件
+
+- `store-data.mjs`：两套文案、推荐顺序、原图引用与尺寸。
+- `index.html`、`styles.css`、`screenshots.js`：无 CDN 的本地预览工作台。方案筛选对应 `?suite=pages` / `?suite=features`。
+- `raw/{ios,ios-medium,android}/{zh,en}/{light,dark}/`：144 张基础原图。
+- `raw/stills/{ios,android}/…`：16 张操作中的原生静态画面；中尺寸 iPhone 的 B 套按实际原图比例排入大尺寸 iPhone 操作画面，不拉伸、不跨操作系统借图。
+- `raw/manifest.json`：尺寸、源码身份和 SHA256。
+- `media/{ios,android}/{zh,en}/{light,dark}/`：六种实际工作流及 iOS 快捷指令的 MP4、GIF 与静态封面。
+- `output-launch-20261112/pages/`：A 全部 146 张 PNG（含 48 张额外候选）。
+- `output-launch-20261112/features/`：B 全部 98 张 PNG。
+
+本轮定稿导出 `output-launch-20261112/{pages,features}/` 与原图、动图和生成器一起在本仓维护。完整交付包在 BeeCount 忽略的 `.docs/v4-launch-refresh-20261112/delivery/`。
+
+## 尺寸
+
+| 目标 | 成图 | 原生来源 |
+| --- | --- | --- |
+| iPhone Dynamic Island · medium | 1206 × 2622 | 独立 iPhone 17 Pro；操作静态画面见上文 |
+| iPhone Dynamic Island · large | 1320 × 2868 | 独立 iPhone 17 Pro Max |
+| Google Play 手机 | 1080 × 1920 | 独立 Android，完整 1080 × 2400 原图等比排入 |
+| Play feature graphic | 1024 × 500 | 对应语言的 Android 原图 |
+
+苹果当前要求提供中尺寸 Dynamic Island iPhone 截图，每个尺寸最多 10 张；本套另提供大尺寸。来源：[Apple 截图规范](https://developer.apple.com/help/app-store-connect/reference/app-information/screenshot-specifications/)。Google Play 每种设备最多 8 张；本套采用推荐的 9:16 手机比例，feature graphic 为 1024 × 500。来源：[Google Play 素材规范](https://support.google.com/googleplay/android-developer/answer/9866151?hl=en)。核对日期：2026-11-12。
+
+原图完整、等比展示，截图外沿仅有轻微圆角，成图不添加模拟手机框、刘海或设备外壳；不涂改 App 里的金额、界面文案或模型回答。
+
+标题字体采用端正的思源黑体 Source Han Sans SC Bold（v2.005），使用真实 700 字重、正常直立字形。遵循 SIL Open Font License 1.1，可免费商用。原始字体与许可证保存在 `assets/fonts/`；[官方许可](https://github.com/adobe-fonts/source-han-sans/blob/release/LICENSE.txt)。
+
+## 预览与重新导出
+
+在 Press 根目录运行 `python3 -m http.server 8766 --bind 127.0.0.1`，打开：
+
+- A：<http://127.0.0.1:8766/projects/beecount/store/v4/?suite=pages>
+- B：<http://127.0.0.1:8766/projects/beecount/store/v4/?suite=features>
+
+导出要求 Node 20+、Playwright、本机 Google Chrome。Playwright 可位于外部工具环境，无需为 Press 安装依赖：
 
 ```bash
-# 两个平台的中文深色版，共 24 张
-node projects/beecount/store/v4/export.mjs \
-  --platform=ios,android --lang=zh --mode=dark \
-  --output=./projects/beecount/store/v4/output-zh-dark
+BEECOUNT_PLAYWRIGHT_MODULE=/absolute/path/to/playwright/index.mjs \
+  node projects/beecount/store/v4/export.mjs \
+  --suite=pages --origin=http://127.0.0.1:8766 \
+  --output=./projects/beecount/store/v4/output-new/pages
 
-# Android 英文浅色的两个二级分类主题，共 2 张
-node projects/beecount/store/v4/export.mjs \
-  --platform=android --lang=en --mode=light \
-  --scene=05-transaction,10-categories \
-  --output=./projects/beecount/store/v4/output-categories
-
-# 仅两张 Play feature；来源固定为 Android 浅色
-node projects/beecount/store/v4/export.mjs \
-  --platform=feature \
-  --output=./projects/beecount/store/v4/output-feature
+BEECOUNT_PLAYWRIGHT_MODULE=/absolute/path/to/playwright/index.mjs \
+  node projects/beecount/store/v4/export.mjs \
+  --suite=features --origin=http://127.0.0.1:8766 \
+  --output=./projects/beecount/store/v4/output-new/features
 ```
 
-以上筛选命令同样需要已安装 Playwright 或已设置 `BEECOUNT_PLAYWRIGHT_MODULE`。省略 `--origin` 时默认使用 `http://127.0.0.1:8765`。`--scene` 只筛选竖版截图；如不需要 feature，应在 `--platform` 中排除它。`--help` 显示完整参数。
+可使用 `--platform=ios,ios-medium,android,feature`、`--lang=zh,en`、`--mode=light,dark`、`--scene=<主题ID>` 筛选。已有目录默认拒绝覆盖；`--overwrite` 只替换本次清单中的文件，不删除其他内容。禁止输出到 `raw/`、`media/`、`assets/` 或旧 `output/`。
 
-### 覆盖保护
+导出器核对实际字体、文字越界与重叠、完整原图比例、原图与成图哈希、PNG 尺寸、网络及 JS 错误。结果见各输出目录的 `manifest.json`、`validation.json`、`SHA256SUMS`。A 和 B 分别导出，不能把 B 所需的操作静态画面缺失伪装成 A 原图替代。
 
-- 输出必须是 v4 内的独立目录，不能指向 `raw/`、`media/`、`assets/` 或旧 `output/`。
-- **默认拒绝任何已存在的输出目录。** 失败后改用新的目录，或者明确加上 `--overwrite`。
-- `--overwrite` 仅替换本次参数所列 PNG，以及本次的 `manifest.json`、`validation.json`、`SHA256SUMS`；不删除目录、不清理其他文件、不跟随输出路径的符号链接。
-- 筛选导出的清单只列本次任务，不会把该目录以前留下的其他 PNG 冒充成本次结果。
+## 工作流动图
 
-## 输出清单与校验
+六种流程：手动记账、图片识别记账、AI 对话、收支分析、复制交易、CSV 导入。图片识别调用真实视觉模型，并断言新增支出合计为合成小票的 28 元、记录及原图附件存在；AI 对话调用实际模型。iOS 使用真实系统相册选择合成小票，并停留约 3.5 秒；入账后打开原图附件。Android 图片与 CSV 文件由夹具提供。
 
-```text
-output-final/
-  ios/{zh,en}/{light,dark}/01-home.png … 12-search.png
-  android/{zh,en}/{light,dark}/01-home.png … 12-search.png
-  feature/{zh,en}/feature.png
-  manifest.json
-  validation.json
-  SHA256SUMS
-```
+另有一条中文浅色的 iOS 快捷指令演示：手动点击原生快捷指令，打开小票、系统截屏、调用真实 AutoBillingAppIntent，再查看实际新增的 28 元支出。此条使用正常 App 入口，不是集成测试回调，不表示实录了物理敲击背面。文件名 `07-ios-shortcut`。
 
-导出器会在完成前检查：
+App README 默认展示手动、图片、AI 三种记录方式，其余操作与暗黑模式折叠。官网使用同一套 iOS 通用展示视频与各自实际首帧封面；双平台原录屏在本仓保留。
 
-1. 96 张原图全部存在、尺寸正确，且与已有 `raw/manifest.json` 的 SHA256 一致。
-2. 每个标题、副标题与截图不重叠；文字和完整原生截图不越界，英文不溢出。
-3. 图片保持完整原始宽高比，且来源的平台、语言、外观严格对应；同时检查截图容器与图片不存在模拟设备边框、背景、圆角、遮罩或外框阴影。
-4. 等待图片解码与系统字体就绪；通过 Chrome 实际字体记录检查标题、副标题和 feature 文案的字形，不依赖远程字体。
-5. 页面无 JS 错误、失败请求或外部 CDN 请求；每张最终 PNG 的尺寸正确。
-6. 导出后重读全部成图核对 SHA256，并再次核对 96 张原图字节未改变。
+## 苹果产品页测试
 
-`manifest.json` 包含每张图的尺寸、语言、外观、标题、原图路径/哈希、成图 SHA256 与字体记录。`validation.json` 汇总 missing、overlap、clipped、font 检查和数量。只有全部检查通过才写出完成清单。
+建议以 A 的同语言、同外观 8 张作为原始产品页，以 B 对应的 8 张作为一个处理版本，保持图标、视频及其他文案一致。测试的是两种完整叙事，不将结论归因于单独一张图。所需的两个 iPhone 尺寸均按相同顺序准备。
 
-可在输出目录使用 `shasum -a 256 -c SHA256SUMS` 独立复核文件。上架前仍应人工查看代表性成图，尤其是中英文标题、深色界面和 Play 横版。
+在 App Store Connect 的 Product Page Optimization 中创建、提交并启动测试；本次只准备素材，不替用户启动公开测试或提交商店审核。功能与可测试素材以 [Apple 产品页优化说明](https://developer.apple.com/app-store/product-page-optimization/) 为准。

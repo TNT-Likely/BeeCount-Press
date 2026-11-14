@@ -26,6 +26,8 @@ BeeCount-Press/
 
 v4 真实模拟器截图、中英文与明暗模式、iOS / Android 商店排版位于 [`projects/beecount/store/v4/`](projects/beecount/store/v4/README.md)。这套素材独立于旧版商店模板，原图不跨平台兜底，页面无 CDN 依赖。
 
+4.0 小红书 3:4 倾斜截图墙位于 [`projects/beecount/xhs-v4/`](projects/beecount/xhs-v4/README.md)，提供浅色、深色两张 1440 × 1920 成图及可重复导出的 HTML 模板。
+
 ## 快速开始
 
 ```bash

@@ -2,7 +2,7 @@ import { mkdir, writeFile, readFile, lstat, readdir } from 'node:fs/promises';
 import { resolve, dirname, relative, sep } from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
 import { createHash } from 'node:crypto';
-import { THEMES, FORMATS, LANGUAGES, MODES, exportJobs } from './store-data.mjs';
+import { LANGUAGES, MODES, exportJobs, themesForSuite, platformsForSuite } from './store-data.mjs';
 
 const root = dirname(fileURLToPath(import.meta.url));
 const help = `BeeCount v4 store artwork — local Chrome / Playwright element screenshots
@@ -13,9 +13,12 @@ Run from the Press repository root:
     --origin=http://127.0.0.1:8765 \\
     --output=./projects/beecount/store/v4/output-final
 
-Default: 12 scenes × 2 languages × 2 platforms × 2 appearances + 2 Play features = 98 PNGs.
+Default pages: 12 scenes × 2 languages × 3 device sizes × 2 appearances + 2 Play features = 146 PNGs.
+--suite=features exports the alternate set of 8 feature-led creatives (98 PNGs).
+--suite=classic exports 9 legacy stories for the App Store medium slot only (36 PNGs).
+Its only accepted platform is ios-medium, at 1206 × 2622.
 Filters accept comma-separated values:
-  --platform=ios,android,feature  --lang=zh,en  --mode=light,dark
+  --platform=ios,ios-medium,android,feature  --lang=zh,en  --mode=light,dark
   --scene=05-transaction,10-categories
 Feature always uses the matching language's Android light sources, once per language.
 --scene filters portrait screenshots, not the feature graphic; omit feature from --platform
@@ -30,7 +33,7 @@ const options = {};
 for (const arg of process.argv.slice(2)) {
   if (arg === '--help') { console.log(help); process.exit(0); }
   if (arg === '--overwrite') { options.overwrite = true; continue; }
-  const match = /^--(origin|output|platform|lang|mode|scene)=(.+)$/.exec(arg);
+  const match = /^--(origin|output|platform|lang|mode|scene|suite)=(.+)$/.exec(arg);
   if (!match || Object.hasOwn(options, match[1])) throw new Error(`Unknown or duplicate option: ${arg}\nUse --help.`);
   options[match[1]] = match[2];
 }
@@ -41,11 +44,15 @@ function selection(name, allowed) {
   }
   return values;
 }
+const suite = options.suite || 'pages';
+if (!['pages', 'features', 'classic'].includes(suite)) throw new Error('Unknown suite');
+const suiteThemes = themesForSuite(suite);
 const selections = {
-  platforms: selection('platform', Object.keys(FORMATS)),
+  suite,
+  platforms: selection('platform', platformsForSuite(suite)),
   languages: selection('lang', LANGUAGES),
   modes: selection('mode', MODES),
-  scenes: selection('scene', THEMES.map(theme => theme.id)),
+  scenes: selection('scene', suiteThemes.map(theme => theme.id)),
 };
 const jobs = exportJobs(selections);
 const origin = new URL(options.origin || 'http://127.0.0.1:8765');
@@ -77,24 +84,26 @@ const knownFiles = [...jobs.map(job => job.path), 'manifest.json', 'validation.j
 for (const name of knownFiles) await assertNoSymlink(resolve(output, name));
 
 function pngDimensions(bytes, label) {
-  if (bytes.length < 24 || bytes.subarray(0, 8).toString('hex') !== '89504e470d0a1a0a' || bytes.subarray(12, 16).toString('ascii') !== 'IHDR') throw new Error(`Not a PNG: ${label}`);
+  if (bytes.length < 26 || bytes.subarray(0, 8).toString('hex') !== '89504e470d0a1a0a' || bytes.subarray(12, 16).toString('ascii') !== 'IHDR') throw new Error(`Not a PNG: ${label}`);
   return { width: bytes.readUInt32BE(16), height: bytes.readUInt32BE(20) };
 }
 // Inventory every expected native source before opening Chrome. No fallback exists.
-const allNativeJobs = exportJobs({ platforms: ['ios', 'android'] });
+const sourceSuites = suite === 'pages' ? ['pages'] : ['pages', 'features'];
+const allNativeJobs = sourceSuites.flatMap(suite => exportJobs({ suite, platforms: ['ios', 'ios-medium', 'android'] }));
 const sourceMap = new Map();
 const providedManifest = JSON.parse(await readFile(resolve(root, 'raw/manifest.json'), 'utf8'));
 for (const job of allNativeJobs) {
   const source = job.raw[0];
   const bytes = await readFile(resolve(root, source));
   const dimensions = pngDimensions(bytes, source);
-  if (dimensions.width !== job.width || dimensions.height !== job.height) throw new Error(`Native source has wrong dimensions: ${source}`);
+  if (dimensions.width !== (job.sourceFormat?.width || job.width) || dimensions.height !== (job.sourceFormat?.height || job.height)) throw new Error(`Native source has wrong dimensions: ${source}`);
   const entry = { path: source, ...dimensions, bytes: bytes.length, sha256: sha256(bytes) };
   const provided = providedManifest.files.find(file => `raw/${file.path}` === source);
   if (!provided || provided.sha256 !== entry.sha256 || provided.width !== entry.width || provided.height !== entry.height) throw new Error(`Source differs from raw/manifest.json: ${source}`);
   sourceMap.set(source, entry);
 }
-if (sourceMap.size !== 96) throw new Error(`Expected 96 independent native sources; found ${sourceMap.size}`);
+const expectedSources = suite === 'pages' ? 144 : 160;
+if (sourceMap.size !== expectedSources) throw new Error(`Expected ${expectedSources} independent native sources; found ${sourceMap.size}`);
 
 let playwright;
 try {
@@ -133,17 +142,17 @@ try {
   await mkdir(output, { recursive: true });
   let lastGroup;
   for (const job of jobs) {
-    const group = `${job.platform}/${job.lang}/${job.mode}`;
+    const group = `${job.platform}/${job.lang}/${job.mode}/${job.scene}`;
     if (group !== lastGroup) {
       await page.setViewportSize({ width: job.width, height: job.height });
       const url = new URL('/projects/beecount/store/v4/', origin);
-      url.search = new URLSearchParams({ platform: job.platform, lang: job.lang, mode: job.mode, scene: 'all', export: '1' });
+      url.search = new URLSearchParams({ suite, platform: job.platform, lang: job.lang, mode: job.mode, scene: job.scene, export: '1' });
       await page.goto(url.href, { waitUntil: 'networkidle', timeout: 20_000 });
       await page.waitForFunction(() => window.BeeCountStore && window.storeReady, null, { timeout: 10_000 });
       const ready = await page.evaluate(() => window.storeReady);
       if (!ready.ok) throw new Error(`Missing images: ${ready.missing.join(', ')}`);
       const count = await page.evaluate(() => window.BeeCountStore.totalCount);
-      if (count !== 98) throw new Error(`Gallery/exporter mismatch: ${count}`);
+      if (count !== exportJobs({ suite }).length) throw new Error(`Gallery/exporter mismatch: ${count}`);
       lastGroup = group;
     }
     await page.evaluate(scene => window.BeeCountStore.selectScene(scene), job.scene);
@@ -156,12 +165,14 @@ try {
       const { nodeId } = await cdp.send('DOM.querySelector', { nodeId: documentRoot.nodeId, selector: `${selector} [data-font-node="${text.node}"]` });
       const result = await cdp.send('CSS.getPlatformFontsForNode', { nodeId });
       if (!result.fonts.length || result.fonts.some(font => font.glyphCount < 1 || /lastresort|times new roman/i.test(font.familyName))) throw new Error(`Missing or unexpected font glyphs: ${job.path} ${text.text}`);
+      if (!result.fonts.every(font => font.isCustomFont && /SourceHanSansSC-Bold/.test(font.postScriptName))) throw new Error(`Headline must use the bundled upright Source Han Sans SC Bold: ${job.path} ${text.text}`);
       for (const font of result.fonts) fontFamilies.add(font.familyName);
       fonts.push({ text: text.text, fonts: result.fonts.map(({ familyName, postScriptName, isCustomFont, glyphCount }) => ({ familyName, postScriptName, isCustomFont, glyphCount })) });
     }
     if (runtimeErrors.length || failedRequests.length) throw new Error(`Browser errors: ${JSON.stringify({ runtimeErrors, failedRequests })}`);
     const png = await page.locator(selector).screenshot({ animations: 'disabled', type: 'png', scale: 'css' });
     const dimensions = pngDimensions(png, job.path);
+    if (png[25] !== 2) throw new Error(`Expected opaque 24-bit RGB export: ${job.path}`);
     if (dimensions.width !== job.width || dimensions.height !== job.height) throw new Error(`Export dimensions do not match: ${job.path}`);
     const target = resolve(output, job.path);
     await assertNoSymlink(target);
@@ -196,7 +207,7 @@ try {
   const manifest = {
     schemaVersion: 3, kind: 'beecount-v4-store-artwork', generatedAt: new Date().toISOString(),
     renderer: `Chrome ${browser.version()} / Playwright`, origin: origin.origin, count,
-    themeCount: THEMES.length, selections, nativeScreenshotsUncropped: true, noSimulatedDeviceFrames: true,
+    themeCount: suiteThemes.length, selections, nativeScreenshotsUncropped: true, noSimulatedDeviceFrames: true,
     featureSources: 'Android light only, matching language', images,
   };
   for (const [name, content] of [

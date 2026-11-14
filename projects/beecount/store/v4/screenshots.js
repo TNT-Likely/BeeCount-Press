@@ -1,25 +1,33 @@
 'use strict';
-import { THEMES, FORMATS, LANGUAGES, MODES, FEATURE_COPY, makeJob } from './store-data.mjs';
+import { FORMATS, NATIVE_FORMATS, LANGUAGES, MODES, makeJob, themesForSuite, platformsForSuite, exportJobs } from './store-data.mjs';
 
 const params = new URLSearchParams(location.search);
+const suite = ['pages', 'features', 'classic'].includes(params.get('suite')) ? params.get('suite') : 'classic';
+const themes = themesForSuite(suite);
+document.getElementById('suite').value = suite;
+document.getElementById('suite').addEventListener('change', event => {
+  const query = new URLSearchParams(location.search);
+  query.set('suite', event.target.value); query.delete('scene');
+  location.search = query.toString();
+});
 const exportMode = params.get('export') === '1';
 const controls = Object.fromEntries(['platform', 'lang', 'mode', 'scene'].map(key => [key, document.getElementById(key)]));
 const cards = document.getElementById('cards');
 const status = document.getElementById('status');
-const totalCount = THEMES.length * 2 * 2 * 2 + 2;
+const totalCount = exportJobs({ suite }).length;
 let resizeObserver;
 let renderVersion = 0;
 const ui = {
   zh: {
-    heading: 'BeeCount v4 商店素材',
-    intro: '12 个真实界面，中文与英文、iOS 与 Android、浅色与深色完整对应。延续蜂蜜渐变与居中标题，完整原生截图直接展示，不加模拟手机框，不裁切，不跨平台借图。',
+    heading: suite === 'classic' ? '经典文案 · 新版商店图' : suite === 'features' ? 'B · 特色展示' : 'A · 页面展示',
+    intro: suite === 'classic' ? '沿用老版的开源、隐私、云服务与 AI 叙事，搭配 4.0 真实界面。9 张图按上架顺序排列；默认尺寸对应 App Store Connect 的中尺寸 iPhone 上传槽。' : suite === 'features' ? '本地优先、可选云服务、可选 AI、图片识别等 8 个特色。与 A 套保持一致的品牌、输出尺寸及 8 张推荐数量，便于比较两种表达。' : '以日常、记账、洞察、预算为主线，前 8 张为推荐上架顺序。另备 4 张候选；中英文、iOS 双尺寸与 Android、明暗模式均独立对应。',
     readme: '使用说明', platform: '平台', language: '语言', appearance: '外观', scene: '主题',
-    download: '下载当前清单', allScenes: '全部 12 个主题', featureScene: 'Play 横版宣传图',
+    download: '下载当前清单', allScenes: suite === 'classic' ? '全部 9 张商店图' : suite === 'features' ? '全部 8 个特色' : '全部 12 个页面', featureScene: 'Play 横版宣传图',
     exportHelp: '批量导出与预览说明',
     exportIntro: '页面不依赖 CDN。PNG 由 Node + Playwright 使用本机 Chrome 按元素截图，下面的按钮复制命令，不会在浏览器中重绘原图。',
-    copyCurrent: '复制当前筛选导出命令', copyAll: '复制全部 98 张导出命令',
+    copyCurrent: '复制当前筛选导出命令', copyAll: `复制本套全部 ${totalCount} 张导出命令`,
     commandLabel: '在 Press 仓库根目录运行；如未安装 Playwright，请先设置 BEECOUNT_PLAYWRIGHT_MODULE。',
-    outputNote: '输出目录默认拒绝覆盖。Play feature 固定使用 Android 浅色原图，只按语言导出两张；12 个主题是完整候选素材集，可按商店名额挑选上传。',
+    outputNote: '输出目录默认拒绝覆盖。Play feature 固定使用 Android 浅色原图，只按语言导出两张；经典版每组 9 张，A/B 每组推荐 8 张；同一上传组请保持语言和外观一致。',
     source: '查看原图', homeSource: '首页原图', analyticsSource: '统计原图',
     featureNote: 'Play feature 使用本语言的 Android 浅色首页与统计原图，不使用 iOS 图片。',
     deviceNote: '画面来自独立模拟器的合成数据；完整原生截图直接展示，无模拟手机框，不裁切。',
@@ -28,15 +36,15 @@ const ui = {
     missing: '原图载入失败，不使用替代图：',
   },
   en: {
-    heading: 'BeeCount v4 store artwork',
-    intro: '12 real screens in Chinese and English, for iOS and Android, in light and dark. Honey gradients and centered headlines continue the original artwork. Native screenshots are shown whole, without device mockups.',
+    heading: suite === 'classic' ? 'Classic copy · New store artwork' : suite === 'features' ? 'B · Feature-led artwork' : 'A · Screen-led artwork',
+    intro: suite === 'classic' ? 'The original open-source, privacy, cloud and AI story, with real v4 screens. Nine images in upload order. The default size matches the medium Dynamic Island iPhone slot in App Store Connect.' : suite === 'features' ? 'Eight stories: local first, optional cloud, optional AI, image recognition and more. Matching branding, dimensions and recommended image count make this a clear alternative to A.' : 'Track, understand and plan. The first 8 screens are the recommended sequence, with 4 extra candidates. English and Chinese, two iPhone sizes and Android, light and dark.',
     readme: 'Instructions', platform: 'Platform', language: 'Language', appearance: 'Appearance', scene: 'Scene',
-    download: 'Download current manifest', allScenes: 'All 12 scenes', featureScene: 'Play feature graphic',
+    download: 'Download current manifest', allScenes: suite === 'classic' ? 'All 9 store images' : suite === 'features' ? 'All 8 features' : 'All 12 screens', featureScene: 'Play feature graphic',
     exportHelp: 'Batch export and preview',
     exportIntro: 'This page has no CDN dependencies. Node + Playwright captures each element in local Chrome. The buttons copy terminal commands; the browser does not redraw the source screenshots.',
-    copyCurrent: 'Copy filtered export command', copyAll: 'Copy all 98 exports command',
+    copyCurrent: 'Copy filtered export command', copyAll: `Copy all ${totalCount} exports`,
     commandLabel: 'Run from the Press repository root. Set BEECOUNT_PLAYWRIGHT_MODULE first if Playwright is not installed in your tool environment.',
-    outputNote: 'Existing output directories are refused by default. Play feature uses Android light sources, once per language. All 12 scenes are provided as candidates; select uploads to fit each store’s limits.',
+    outputNote: 'Existing output directories are refused by default. Play feature uses Android light sources, once per language. Use all 9 classic images, or the recommended 8 from A/B. Keep one language and appearance per upload group.',
     source: 'Source image', homeSource: 'Home source', analyticsSource: 'Analytics source',
     featureNote: 'Play feature uses the matching language’s Android light home and analytics sources, never iOS images.',
     deviceNote: 'Real isolated-simulator screens with synthetic data. Complete native screenshots, with no simulated device frame.',
@@ -46,7 +54,10 @@ const ui = {
   },
 };
 
-for (const [key, values] of Object.entries({ platform: Object.keys(FORMATS), lang: LANGUAGES, mode: MODES })) {
+for (const option of controls.platform.options) {
+  option.hidden = option.disabled = !platformsForSuite(suite).includes(option.value);
+}
+for (const [key, values] of Object.entries({ platform: platformsForSuite(suite), lang: LANGUAGES, mode: MODES })) {
   if (values.includes(params.get(key))) controls[key].value = params.get(key);
 }
 
@@ -73,11 +84,11 @@ function addDecorations(poster) {
   }
 }
 
-function addScreenshot(poster, { source, width, left, top, alt, name }) {
-  // Position the entire native image directly. There is no simulated device,
-  // border, rounded mask, added notch or outer shadow.
+function addScreenshot(poster, { source, width, left, top, alt, name, sourceFormat }) {
+  // Position the complete native image without a device frame or an added notch.
+  // The classic poster adds a soft shadow to its rounded image surface.
   const sourcePlatform = poster.dataset.platform === 'feature' ? 'android' : poster.dataset.platform;
-  const native = FORMATS[sourcePlatform];
+  const native = sourceFormat || NATIVE_FORMATS[sourcePlatform];
   const height = width * native.height / native.width;
   const surface = document.createElement('div');
   surface.className = `screenshot-surface ${name || ''}`;
@@ -97,12 +108,12 @@ function addScreenshot(poster, { source, width, left, top, alt, name }) {
 function buildPoster(job) {
   const poster = document.createElement('article');
   poster.className = 'poster';
-  Object.assign(poster.dataset, { scene: job.scene, platform: job.platform, lang: job.lang, mode: job.mode, kind: job.kind });
+  Object.assign(poster.dataset, { scene: job.scene, platform: job.platform, lang: job.lang, mode: job.mode, suite: job.suite || suite, kind: job.kind });
   Object.assign(poster.style, { width: `${job.width}px`, height: `${job.height}px` });
   poster.setAttribute('aria-label', job.copy.title || job.copy.tagline);
   if (job.kind === 'feature') {
     poster.classList.add('card-feature');
-    const copy = FEATURE_COPY[job.lang];
+    const copy = job.copy;
     const zone = document.createElement('div');
     zone.className = 'feature-content-zone';
     const logoRow = document.createElement('div');
@@ -115,12 +126,9 @@ function buildPoster(job) {
     logo.height = 68;
     const stack = document.createElement('div');
     stack.className = 'feature-brand-stack';
-    stack.append(textNode('h1', 'feature-brand', copy.brand, true), textNode('p', 'feature-brand-sub', copy.brandSub, true));
+    stack.append(textNode('h1', 'feature-brand', copy.brand, true));
     logoRow.append(logo, stack);
-    const chips = document.createElement('div');
-    chips.className = 'feature-chips';
-    for (const label of copy.chips) chips.append(textNode('span', 'feature-chip', label, true));
-    zone.append(logoRow, textNode('p', 'feature-tagline', copy.tagline, true), chips);
+    zone.append(logoRow, textNode('p', 'feature-tagline', copy.tagline, true));
     poster.append(zone);
     addScreenshot(poster, { source: job.raw[0], width: 176, left: 575, top: 70, alt: job.lang === 'zh' ? 'Android 分类统计界面' : 'Android spending analytics', name: 'feature-analytics' });
     addScreenshot(poster, { source: job.raw[1], width: 176, left: 801, top: 36, alt: job.lang === 'zh' ? 'Android 收支明细界面' : 'Android daily entries', name: 'feature-home' });
@@ -128,12 +136,13 @@ function buildPoster(job) {
     addDecorations(poster);
     const header = document.createElement('header');
     header.className = 'poster-header';
-    header.append(textNode('h1', 'headline', job.copy.title, true), textNode('p', 'subtitle', job.copy.sub, true));
+    header.append(textNode('h1', 'headline', job.copy.title, true));
+    if (suite === 'classic') header.append(textNode('p', 'poster-subtitle', job.copy.sub, true));
     poster.append(header);
-    const imageWidth = job.width * .765;
+    const imageWidth = job.width * (suite === 'classic' ? (job.platform === 'android' ? .64 : .80) : (job.platform === 'android' ? .70 : .87));
     addScreenshot(poster, {
-      source: job.raw[0], width: imageWidth, left: (job.width - imageWidth) / 2,
-      top: job.height * .178, alt: job.copy.title,
+      source: job.raw[0], sourceFormat: job.sourceFormat, width: imageWidth, left: (job.width - imageWidth) / 2,
+      top: job.height * (suite === 'classic' ? .17 : .105), alt: job.copy.title,
     });
   }
   return poster;
@@ -141,7 +150,7 @@ function buildPoster(job) {
 
 function currentJobs() {
   const state = window.screenshotState;
-  return state.scenes.map(scene => makeJob(state.platform, state.lang, state.mode, scene));
+  return state.scenes.map(scene => makeJob(state.platform, state.lang, state.mode, scene, suite));
 }
 
 function selectScene(scene) {
@@ -153,15 +162,16 @@ function selectScene(scene) {
 function commandFor(all = false) {
   const state = window.screenshotState;
   const stamp = new Date().toISOString().replace(/[-:]/g, '').replace(/\..+/, '').replace('T', '-');
-  const args = [`--origin=${location.protocol === 'http:' ? location.origin : 'http://127.0.0.1:8765'}`];
+  const args = [`--suite=${suite}`, `--origin=${location.protocol === 'http:' ? location.origin : 'http://127.0.0.1:8765'}`];
   let suffix = 'all';
+  if (all && suite === 'classic') args.push('--platform=ios-medium');
   if (!all) {
     args.push(`--platform=${state.platform}`, `--lang=${state.lang}`);
     if (state.platform !== 'feature') args.push(`--mode=${state.mode}`);
     if (state.scene !== 'all' && state.platform !== 'feature') args.push(`--scene=${state.scene}`);
     suffix = `${state.platform}-${state.lang}-${state.mode}${state.scene === 'all' || state.platform === 'feature' ? '' : `-${state.scene}`}`;
   }
-  args.push(`--output=./projects/beecount/store/v4/output-${suffix}-${stamp}`);
+  args.push(`--output=./projects/beecount/store/v4/output-${suite}-${suffix}-${stamp}`);
   return `node projects/beecount/store/v4/export.mjs ${args.join(' ')}`;
 }
 
@@ -181,7 +191,7 @@ async function copyCommand(all) {
 function updateSceneOptions(platform, lang, requested) {
   const options = platform === 'feature'
     ? [['feature', ui[lang].featureScene]]
-    : [['all', ui[lang].allScenes], ...THEMES.map(theme => [theme.id, theme[lang].title])];
+    : [['all', ui[lang].allScenes], ...themes.map(theme => [theme.id, theme[lang].title])];
   controls.scene.replaceChildren(...options.map(([value, label]) => new Option(label, value)));
   controls.scene.value = options.some(([value]) => value === requested) ? requested : options[0][0];
   controls.scene.disabled = platform === 'feature';
@@ -196,7 +206,7 @@ function render() {
   if (platform === 'feature') controls.mode.value = 'light';
   const mode = controls.mode.value;
   const scene = controls.scene.value;
-  const scenes = platform === 'feature' ? ['feature'] : scene === 'all' ? THEMES.map(theme => theme.id) : [scene];
+  const scenes = platform === 'feature' ? ['feature'] : scene === 'all' ? themes.map(theme => theme.id) : [scene];
   window.screenshotState = { platform, lang, mode, scene, scenes, totalCount };
   document.documentElement.lang = lang === 'zh' ? 'zh-CN' : 'en';
   document.body.classList.toggle('export', exportMode);
@@ -241,7 +251,7 @@ function render() {
   resizeObserver = new ResizeObserver(resize);
   resizeObserver.observe(cards);
   resize();
-  const query = new URLSearchParams({ platform, lang, mode, scene });
+  const query = new URLSearchParams({ suite, platform, lang, mode, scene });
   if (exportMode) query.set('export', '1');
   history.replaceState(null, '', `${location.pathname}?${query}`);
   window.storeReady = (async () => {
@@ -264,7 +274,7 @@ function render() {
 function validatePoster(scene) {
   const poster = [...cards.querySelectorAll('.poster')].find(item => item.dataset.scene === scene);
   if (!poster) throw new Error(`Missing poster: ${scene}`);
-  const job = makeJob(poster.dataset.platform, poster.dataset.lang, poster.dataset.mode, scene);
+  const job = makeJob(poster.dataset.platform, poster.dataset.lang, poster.dataset.mode, scene, suite);
   const bounds = poster.getBoundingClientRect();
   const relativeRect = node => {
     const r = node.getBoundingClientRect();
@@ -293,11 +303,11 @@ function validatePoster(scene) {
   const surfaceNodes = [...poster.querySelectorAll('.screenshot-surface')];
   const surfaces = surfaceNodes.map(relativeRect);
   const nativePlatform = job.kind === 'feature' ? 'android' : job.platform;
-  const expected = FORMATS[nativePlatform];
+  const expected = job.sourceFormat || FORMATS[nativePlatform];
   const checkFrameless = (node, label) => {
     const style = getComputedStyle(node);
     const sides = ['Top', 'Right', 'Bottom', 'Left'];
-    if (style.borderRadius !== '0px' || style.boxShadow !== 'none' || style.clipPath !== 'none' || style.maskImage !== 'none' || style.backgroundColor !== 'rgba(0, 0, 0, 0)' || sides.some(side => Number.parseFloat(style[`border${side}Width`]) !== 0 || Number.parseFloat(style[`padding${side}`]) !== 0)) issues.push(`Simulated device decoration on ${label}`);
+    if ((!node.classList.contains('screenshot-surface') && style.borderRadius !== '0px') || (style.boxShadow !== 'none' && !(suite === 'classic' && node.classList.contains('screenshot-surface'))) || style.clipPath !== 'none' || style.maskImage !== 'none' || style.backgroundColor !== 'rgba(0, 0, 0, 0)' || sides.some(side => Number.parseFloat(style[`border${side}Width`]) !== 0 || Number.parseFloat(style[`padding${side}`]) !== 0)) issues.push(`Unexpected border, mask or device decoration on ${label}`);
   };
   if (poster.querySelector('.device-frame,.bezel,.notch')) issues.push('Simulated device markup remains');
   surfaceNodes.forEach((node, index) => checkFrameless(node, `source surface ${index}`));
@@ -314,6 +324,9 @@ function validatePoster(scene) {
     if (style.objectFit !== 'contain' || style.transform !== 'none') issues.push(`Source has cropping styles: ${job.raw[index]}`);
     return { path: job.raw[index], naturalWidth: image.naturalWidth, naturalHeight: image.naturalHeight, rect };
   });
+  for (const text of texts) for (const surface of surfaces) {
+    if (intersects(text.rect, surface)) issues.push(`Text overlaps a source screenshot: ${text.text}`);
+  }
   const header = poster.querySelector('.poster-header');
   let textToScreenshotGap;
   if (header) {
@@ -328,7 +341,7 @@ function validatePoster(scene) {
   return { ok: issues.length === 0, issues, width: bounds.width, height: bounds.height, textToScreenshotGap, noSimulatedDeviceFrames: true, texts, surfaces, sources };
 }
 
-window.BeeCountStore = { version: 3, themes: THEMES, formats: FORMATS, totalCount, selectScene, currentJobs, validatePoster };
+window.BeeCountStore = { version: 4, themes, formats: FORMATS, totalCount, selectScene, currentJobs, validatePoster };
 for (const control of Object.values(controls)) control.addEventListener('change', render);
 document.getElementById('copy-current').addEventListener('click', () => copyCommand(false));
 document.getElementById('copy-all').addEventListener('click', () => copyCommand(true));
