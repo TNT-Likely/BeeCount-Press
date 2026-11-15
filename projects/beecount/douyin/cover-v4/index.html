@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8">
+<style>
+  /* 抖音 4.0 上线横版封面 · 1440x1080 (4:3)
+     渲染：浏览器打开本文件，窗口设为 1440x1080 后截图
+     字体：马善政毛笔楷书 (SIL OFL 1.1) assets/MaShanZheng-Regular.ttf
+     截图：../../store/v4/raw/ios-medium/zh/light/ 的真实原图 */
+  @font-face {
+    font-family: 'MSZ';
+    src: url('assets/MaShanZheng-Regular.ttf') format('truetype');
+  }
+  :root {
+    --bg: #E3D8CA;
+    --ink-white: #FDFBF7;
+    --ink-dark: #191106;
+  }
+  * { margin: 0; padding: 0; }
+  body { width: 1440px; height: 1080px; background: var(--bg); overflow: hidden; position: relative; }
+
+  .title, .sub { font-family: 'MSZ'; color: var(--ink-white); z-index: 10; }
+
+  /* 主列：蜜蜂记账 竖排大字 */
+  .title {
+    position: absolute; left: 64px; top: 88px;
+    -webkit-text-stroke: 8px var(--ink-white);
+    display: flex; flex-direction: column;
+    line-height: 1.04;
+  }
+  .title span { display: block; }
+  .title .a { font-size: 200px; transform: rotate(-2.5deg) translateX(4px); }
+  .title .b { font-size: 193px; transform: rotate(1.5deg) translateX(-2px); }
+  .title .c { font-size: 196px; transform: rotate(-1.5deg) translateX(6px); }
+  .title .d { font-size: 190px; transform: rotate(2deg) translateX(0px); }
+
+  /* 副列：4.0 上线 竖排小字（书法落款位，同字体同色） */
+  .sub {
+    position: absolute; left: 292px; bottom: 160px;
+    -webkit-text-stroke: 4px var(--ink-white);
+    display: flex; flex-direction: column;
+    line-height: 1.18;
+  }
+  .sub span { display: block; }
+  .sub .num { font-size: 88px; letter-spacing: 2px; transform: rotate(-2deg) translateY(-5px); }
+  .sub .s1  { font-size: 88px; transform: rotate(1.5deg) translateX(4px); }
+  .sub .s2  { font-size: 88px; transform: rotate(-1deg) translateX(2px); }
+
+  .phone {
+    position: absolute; border-radius: 40px; overflow: hidden;
+    box-shadow: 0 26px 60px rgba(74, 56, 34, 0.28), 0 6px 16px rgba(74, 56, 34, 0.14);
+  }
+  .phone img { width: 100%; height: 100%; object-fit: cover; display: block; }
+
+  .p-home     { left: 486px; top: 150px; height: 880px; width: calc(880px * 1206 / 2622); z-index: 1; }
+  .p-keyboard { right: 70px;  top: 44px;  height: 990px; width: calc(990px * 1206 / 2622); z-index: 2; }
+</style></head>
+<body>
+  <div class="title"><span class="a">蜜</span><span class="b">蜂</span><span class="c">记</span><span class="d">账</span></div>
+  <div class="sub"><span class="num">4.0</span><span class="s1">上</span><span class="s2">线</span></div>
+  <div class="phone p-home"><img src="../../store/v4/raw/ios-medium/zh/light/01-home.png" alt=""></div>
+  <div class="phone p-keyboard"><img src="../../store/v4/raw/ios-medium/zh/light/05-transaction.png" alt=""></div>
+</body></html>
